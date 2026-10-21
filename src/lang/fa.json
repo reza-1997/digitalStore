@@ -1,0 +1,63 @@
+{
+    "navbar": {
+        "logo": "فروشگاه دیجیتال",
+        "aria": {
+            "navigation": "ناوبری اصلی",
+            "openMenu": "باز کردن منو",
+            "closeMenu": "بستن منو",
+            "search": "جست‌وجو",
+            "account": "حساب کاربری",
+            "cart": "سبد خرید",
+            "toggleTheme": "تغییر تم",
+            "changeLanguage": "تغییر زبان",
+            "categorySubmenu": "زیرمنوی دسته‌بندی",
+            "submitSearch": "اجرای جست‌وجو",
+            "home": "صفحه اصلی"
+        },
+        "tooltip": {
+            "search": "جست‌وجو",
+            "account": "حساب کاربری",
+            "cart": "سبد خرید",
+            "lightMode": "فعال‌کردن تم روشن",
+            "darkMode": "فعال‌کردن تم تاریک",
+            "changeLanguage": "تغییر زبان به انگلیسی"
+        },
+        "search": {
+            "title": "جست‌وجوی محصولات",
+            "placeholder": "نام محصول را وارد کنید...",
+            "submit": "جست‌وجو"
+        },
+        "menu": {
+            "home": "صفحه اصلی",
+            "search": "جست‌وجو",
+            "account": "حساب کاربری",
+            "cart": "سبد خرید",
+            "lightMode": "تم روشن",
+            "darkMode": "تم تاریک",
+            "changeLanguage": "تغییر به انگلیسی"
+        },
+        "category": {
+            "loading": "در حال بارگذاری دسته‌بندی‌ها",
+            "error": "خطا در دریافت دسته‌بندی‌ها",
+            "viewAll": "مشاهده همه محصولات"
+        },
+        "errors": {
+            "categories": "دریافت دسته‌بندی‌ها ناموفق بود."
+        },
+        "brand": {
+            "view": "مشاهده بیشتر ",
+            "error": "برندی موجود نیست"
+        }
+    },
+    "common": {
+        "search": "جستجو",
+        "cart": "سبد خرید",
+        "account": "حساب کاربری"
+    },
+    "heroBanner": {
+        "featuredCategory": "دسته‌بندی ویژه",
+        "descriptionPrefix": "جدیدترین محصولات و تجهیزات",
+        "descriptionSuffix": "با بالاترین کیفیت",
+        "shopNow": "خرید آنلاین"
+    }
+}

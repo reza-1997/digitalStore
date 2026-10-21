@@ -1,0 +1,64 @@
+{
+    "navbar": {
+        "logo": "DIGITALSTORE",
+        "aria": {
+            "navigation": "Main navigation",
+            "openMenu": "Open navigation menu",
+            "closeMenu": "Close menu",
+            "search": "Search",
+            "account": "Account",
+            "cart": "Shopping cart",
+            "toggleTheme": "Toggle theme",
+            "changeLanguage": "Change language",
+            "categorySubmenu": "Category submenu",
+            "submitSearch": "Submit search",
+            "home": "Home"
+        },
+        "tooltip": {
+            "search": "Search",
+            "account": "Account",
+            "cart": "Shopping cart",
+            "lightMode": "Switch to light mode",
+            "darkMode": "Switch to dark mode",
+            "changeLanguage": "Switch to Persian"
+        },
+        "search": {
+            "title": "Search products",
+            "placeholder": "Enter a product name...",
+            "submit": "Search"
+        },
+        "menu": {
+            "home": "Home",
+            "search": "Search",
+            "account": "Account",
+            "cart": "Shopping cart",
+            "lightMode": "Light mode",
+            "darkMode": "Dark mode",
+            "changeLanguage": "Switch to Persian"
+        },
+        "category": {
+            "loading": "Loading categories",
+            "error": "Could not load categories",
+            "viewAll": "View all products"
+        },
+        "errors": {
+            "categories": "Failed to load categories.",
+            "error": "No brands available"
+        },
+        "brand": {
+            "view": "View more",
+            "error": "No brands available"
+        }
+    },
+    "common": {
+        "search": "Search",
+        "cart": "Cart",
+        "account": "Account"
+    },
+    "heroBanner": {
+        "featuredCategory": "Featured Category",
+        "descriptionPrefix": "Explore high-performance solutions in",
+        "descriptionSuffix": "with top quality",
+        "shopNow": "Shop Now"
+    }
+}
