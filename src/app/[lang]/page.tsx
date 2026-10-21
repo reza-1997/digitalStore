@@ -1,3 +1,4 @@
+import { BrandSlider } from '@/src/components/home/BrandSlider';
 import { HeroBanner } from '@/src/components/home/HeroBanner';
 import { getDictionary } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
@@ -16,6 +17,7 @@ const Home = async ({ params }: HomePageProps) => {
         <Box sx={{ minHeight: '100vh', backgroundColor: 'background.default' }}>
             <Container maxWidth="xl" disableGutters>
                 <HeroBanner dict={dict.heroBanner} lang={lang} />
+                <BrandSlider lang={lang} />
             </Container>
         </Box>
     );
