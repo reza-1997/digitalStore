@@ -153,8 +153,8 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
                                     {/* Brand Logo Image */}
                                     <Box
                                         sx={{
-                                            width: 75,
-                                            height: 75,
+                                            width: 100,
+                                            height: 100,
                                             mb: 1.5,
                                             display: 'flex',
                                             alignItems: 'center',
