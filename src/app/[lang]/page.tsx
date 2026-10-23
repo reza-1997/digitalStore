@@ -1,4 +1,5 @@
 import { BrandSlider } from '@/src/components/home/BrandSlider';
+import { FeaturedProductsSlider } from '@/src/components/home/FeaturedProducts';
 import { HeroBanner } from '@/src/components/home/HeroBanner';
 import { getDictionary } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
@@ -18,6 +19,8 @@ const Home = async ({ params }: HomePageProps) => {
             <Container maxWidth="xl" disableGutters>
                 <HeroBanner dict={dict.heroBanner} lang={lang} />
                 <BrandSlider lang={lang} />
+                <FeaturedProductsSlider dict={dict.productCard} lang={lang} />
+                
             </Container>
         </Box>
     );

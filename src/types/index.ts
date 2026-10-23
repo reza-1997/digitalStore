@@ -132,3 +132,11 @@ export interface HeroBannerDict {
     descriptionSuffix: string;
     shopNow: string;
 }
+export interface ProductCardDict {
+    newArrival: string;
+    addToCart: string;
+    wishlist: string;
+    compare: string;
+    quickView: string;
+    featuredTitle: string;
+}

@@ -67,35 +67,48 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
                 bgcolor: 'background.default',
                 overflow: 'visible',
 
-                /* Custom Navigation Buttons Styling */
+                /* Custom Navigation Buttons */
                 '& .custom-brand-prev, & .custom-brand-next': {
                     position: 'absolute',
                     top: '50%',
                     transform: 'translateY(-50%)',
-                    zIndex: 10,
-                    width: 45,
-                    height: 45,
+                    zIndex: 20,
+
+                    width: { xs: 36, sm: 40, md: 45 },
+                    height: { xs: 36, sm: 40, md: 45 },
+
                     borderRadius: '50%',
-                    bgcolor: 'rgba(0, 0, 0, 0.15)',
+                    bgcolor: 'rgba(0, 0, 0, 0.25)',
                     backdropFilter: 'blur(4px)',
                     color: theme.palette.text.primary,
+
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
+
                     cursor: 'pointer',
-                    transition: 'all 0.25s ease-in-out',
-                    opacity: isHovered ? 1 : 0,
-                    visibility: isHovered ? 'visible' : 'hidden',
+                    transition: 'opacity 0.25s ease, background-color 0.25s ease',
+
+                    // Always visible on touch devices
+                    opacity: { xs: 1, md: isHovered ? 1 : 0 },
+                    visibility: { xs: 'visible', md: isHovered ? 'visible' : 'hidden' },
+
                     '&:hover': {
-                        bgcolor: 'rgba(0, 0, 0, 0.3)',
-                        transform: 'translateY(-50%) scale(1.08)',
+                        bgcolor: 'rgba(0, 0, 0, 0.4)',
+                    },
+
+                    '&.swiper-button-disabled': {
+                        opacity: 0.35,
+                        pointerEvents: 'none',
                     },
                 },
+
                 '& .custom-brand-prev': {
-                    left: { xs: 0, sm: 0, md: 0, lg: '0px', xl: '-35px' },
+                    left: { xs: "-4px", sm:"-8px" , md: "-15px", lg: "-22px", xl: '-30px' },
                 },
+
                 '& .custom-brand-next': {
-                    right: { xs: 0, sm: 0, md: 0, lg: '0px', xl: '-35px' },
+                    right: { xs: "-4px", sm:"-8px" , md: "-15px", lg: "-22px", xl: '-30px' },
                 },
             }}
         >
@@ -202,10 +215,10 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
 
                 {/* Custom Navigation Arrows */}
                 <Box className="custom-brand-prev">
-                    {isRtl ? <NextIcon fontSize="large" /> : <PrevIcon fontSize="large" />}
+                    <PrevIcon fontSize="large" />
                 </Box>
                 <Box className="custom-brand-next">
-                    {isRtl ? <PrevIcon fontSize="large" /> : <NextIcon fontSize="large" />}
+                    <NextIcon fontSize="large" />
                 </Box>
             </Container>
         </Box>

@@ -119,6 +119,52 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                     '0%': { width: '0%' },
                     '100%': { width: '100%' },
                 },
+
+                /* Custom Navigation Buttons */
+                '& .custom-swiper-button-prev, & .custom-swiper-button-next': {
+                    position: 'absolute',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    zIndex: 20,
+
+                    width: { xs: 40, sm: 44, md: 50 },
+                    height: { xs: 40, sm: 44, md: 50 },
+
+                    borderRadius: '50%',
+                    bgcolor: 'rgba(0, 0, 0, 0.50)',
+                    backdropFilter: 'blur(4px)',
+                    color: '#ffffff',
+
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+
+                    cursor: 'pointer',
+                    transition: 'opacity 0.25s ease, background-color 0.25s ease',
+
+                    opacity: { xs: 1, md: isHovered ? 1 : 0 },
+                    visibility: { xs: 'visible', md: isHovered ? 'visible' : 'hidden' },
+
+                    '&:hover': {
+                        bgcolor: 'rgba(0, 0, 0, 0.75)',
+                    },
+
+                    '&.swiper-button-disabled': {
+                        opacity: 0.35,
+                        cursor: 'default',
+                        pointerEvents: 'none',
+                    },
+                },
+
+                '& .custom-swiper-button-prev': {
+                    left: { xs: 12, md: 28 },
+                },
+
+                '& .custom-swiper-button-next': {
+                    right: { xs: 12, md: 28 },
+                },
+
+
             }}
         >
             <Swiper
@@ -269,66 +315,14 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                 })}
             </Swiper>
 
-            {/* Custom Navigation Prev Button */}
-            <Box
-                className="custom-swiper-button-prev"
-                sx={{
-                    position: 'absolute',
-                    left: { xs: '12px', md: '28px' },
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 10,
-                    width: 50,
-                    height: 50,
-                    borderRadius: '50%',
-                    bgcolor: 'rgba(0, 0, 0, 0.50)',
-                    backdropFilter: 'blur(4px)',
-                    color: '#ffffff',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: 'pointer',
-                    transition: 'all 0.25s ease-in-out',
-                    opacity: isHovered ? 1 : 0,
-                    visibility: isHovered ? 'visible' : 'hidden',
-                    '&:hover': {
-                        bgcolor: 'rgba(0, 0, 0, 0.55)',
-                        transform: 'translateY(-50%) scale(1.06)',
-                    },
-                }}
-            >
-                {isRtl ? <NextIcon fontSize="large" /> : <PrevIcon fontSize="large" />}
+            {/* Prev Button */}
+            <Box className="custom-swiper-button-prev">
+                <PrevIcon fontSize="large" />
             </Box>
 
-            {/* Custom Navigation Next Button */}
-            <Box
-                className="custom-swiper-button-next"
-                sx={{
-                    position: 'absolute',
-                    right: { xs: '12px', md: '28px' },
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 10,
-                    width: 50,
-                    height: 50,
-                    borderRadius: '50%',
-                    bgcolor: 'rgba(0, 0, 0, 0.50)',
-                    backdropFilter: 'blur(4px)',
-                    color: '#ffffff',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    cursor: 'pointer',
-                    transition: 'all 0.25s ease-in-out',
-                    opacity: isHovered ? 1 : 0,
-                    visibility: isHovered ? 'visible' : 'hidden',
-                    '&:hover': {
-                        bgcolor: 'rgba(0, 0, 0, 0.55)',
-                        transform: 'translateY(-50%) scale(1.06)',
-                    },
-                }}
-            >
-                {isRtl ? <PrevIcon fontSize="large" /> : <NextIcon fontSize="large" />}
+            {/*  Next Button */}
+            <Box className="custom-swiper-button-next">
+                <NextIcon fontSize="large" />
             </Box>
         </Box>
     );

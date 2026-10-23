@@ -60,5 +60,13 @@
         "descriptionPrefix": "Explore high-performance solutions in",
         "descriptionSuffix": "with top quality",
         "shopNow": "Shop Now"
+    },
+    "productCard": {
+        "newArrival": "NEW",
+        "addToCart": "Add to Cart",
+        "wishlist": "Add to Wishlist",
+        "compare": "Compare",
+        "quickView": "Quick View",
+        "featuredTitle": "Featured Products"
     }
 }

@@ -1,4 +1,5 @@
-import type { Product } from '@/src/types';
+import { Product } from "../types";
+
 
 /**
  * Researched real product/model names grouped by the existing 25 subcategories (6 each = 150).
@@ -16,6 +17,7 @@ export const PRODUCTS: Product[] = [
         title: { en: 'Samsung Galaxy S25 Ultra', fa: 'سامسونگ گلکسی S25 اولترا' },
         description: { en: 'The Samsung Galaxy S25 Ultra is a real product/model listed by its manufacturer. Verify the exact regional SKU and compatibility before purchase.', fa: 'سامسونگ گلکسی S25 اولترا از محصولات معرفی‌شده توسط سازنده است. پیش از خرید، کد مدل منطقه‌ای و سازگاری دقیق بررسی شود.' },
         price: 39.99,
+        discountPrice: 20,
         stock: 23,
         inStock: true,
         brand: { en: 'Samsung', fa: 'سامسونگ' },

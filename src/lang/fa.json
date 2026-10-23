@@ -59,5 +59,13 @@
         "descriptionPrefix": "جدیدترین محصولات و تجهیزات",
         "descriptionSuffix": "با بالاترین کیفیت",
         "shopNow": "خرید آنلاین"
+    },
+    "productCard": {
+        "newArrival": "جدید",
+        "addToCart": "افزودن به سبد خرید",
+        "wishlist": "افزودن به علاقه‌مندی‌ها",
+        "compare": "مقایسه محصول",
+        "quickView": "نمایش سریع",
+        "featuredTitle": "محصولات ویژه"
     }
 }
