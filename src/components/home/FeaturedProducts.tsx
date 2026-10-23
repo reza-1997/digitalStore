@@ -35,17 +35,6 @@ export const FeaturedProductsSlider = ({ lang, dict }: FeaturedProductsSliderPro
     // Fetch featured products using RTK Query
     const { data: products = [], isLoading, isError } = useGetFilteredProductsQuery({ isFeatured: true });
 
-    if (isLoading) {
-        return (
-            <Container maxWidth="xl" sx={{ py: 6 }}>
-                <Box sx={{ display: 'flex', gap: 3, justifyContent: 'center' }}>
-                    {[...Array(4)].map((_, i) => (
-                        <Skeleton key={i} variant="rectangular" width={260} height={340} sx={{ borderRadius: 2 }} />
-                    ))}
-                </Box>
-            </Container>
-        );
-    }
 
     if (isError || !products || products.length === 0) {
         return null;
@@ -149,7 +138,7 @@ export const FeaturedProductsSlider = ({ lang, dict }: FeaturedProductsSliderPro
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.slug} style={{ height: 'auto', display: 'flex' }}>
-                            <ProductCard product={product} lang={lang} dict={dict} />
+                            <ProductCard product={product} lang={lang} dict={dict} isLoading={isLoading} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

@@ -17,6 +17,7 @@ import {
 
 import type { Product, ProductCardDict } from '@/src/types';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
+import { ProductCardSkeleton } from './ProductCardSkeleton';
 
 interface ProductCardProps {
     product: Product;
@@ -27,6 +28,7 @@ interface ProductCardProps {
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
     onAddToCart?: (product: Product) => void;
+    isLoading: boolean;
 }
 
 export const ProductCard = ({
@@ -37,7 +39,13 @@ export const ProductCard = ({
     onCompare,
     onQuickView,
     onAddToCart,
+    isLoading,
 }: ProductCardProps) => {
+
+    if (isLoading) {
+        return <ProductCardSkeleton />;
+    }
+
     const isRtl = lang === 'fa';
 
     const brandName = product.brand[lang] || product.brand.en;
