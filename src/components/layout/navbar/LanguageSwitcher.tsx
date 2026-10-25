@@ -21,7 +21,7 @@ export const LanguageSwitcher = ({
     onLanguageChange,
 }: LanguageSwitcherProps) => {
 
-    
+
     return (
         <Tooltip title={tooltipTitle}>
             <Button
@@ -37,6 +37,9 @@ export const LanguageSwitcher = ({
                     borderRadius: 5,
                     gap: 1,
                     px: { xs: 1, sm: 1.5 },
+                    ":hover": {
+                        color: "secondary.main"
+                    }
                 }}
             >
                 <GlobeIcon fontSize="small" sx={{ mb: 0.2 }} />

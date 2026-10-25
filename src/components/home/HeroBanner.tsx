@@ -325,7 +325,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                     textTransform: 'none',
                                                     boxShadow: '0 4px 14px rgba(0,0,0,0.25)',
                                                     '&:hover': {
-                                                        bgcolor: '#000000',
+                                                        bgcolor: 'secondary.main',
                                                         color: '#ffffff',
                                                         boxShadow: '0 6px 20px rgba(0,0,0,0.35)',
                                                     },

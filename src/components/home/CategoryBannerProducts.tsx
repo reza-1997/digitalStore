@@ -139,7 +139,7 @@ export const CategoryBannerProducts = ({
                             borderRadius: 8,
                             textTransform: 'none',
                             '&:hover': {
-                                bgcolor: '#000',
+                                bgcolor: 'secondary.main',
                                 color: '#fff',
                             },
                         }}
@@ -155,7 +155,7 @@ export const CategoryBannerProducts = ({
                     display: 'grid',
                     gridTemplateColumns: {
                         xs: 'repeat(1, 1fr)',
-                        sm: 'repeat(2, 1fr)',
+                        sm: 'repeat(3, 1fr)',
                         md: 'repeat(5, 1fr)',
                     },
                     gap: 2.5,

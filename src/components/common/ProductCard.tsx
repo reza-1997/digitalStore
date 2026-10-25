@@ -505,7 +505,7 @@ export const ProductCard = ({
                         sx={{
                             fontWeight: 800,
                             color: hasDiscount
-                                ? '#e53935'
+                                ? theme.palette.secondary.main
                                 : 'text.primary',
                             fontSize: {
                                 xs: '1.1rem',

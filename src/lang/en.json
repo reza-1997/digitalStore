@@ -96,5 +96,11 @@
         "exploreMore": "Explore All Gaming Products",
         "shopNow": "Shop Now",
         "tagline": "Next-Gen Gaming Experience"
+    },
+    "overEarBanner": {
+        "badge": "SAVINGS UP TO 40% OFF",
+        "title": "Over-Ear Wireless Noise Headphones",
+        "startingAt": "Starting At",
+        "shopNow": "SHOP NOW"
     }
 }

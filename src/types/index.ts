@@ -169,3 +169,9 @@ export interface CategoryBannerProductsDict {
     shopNow: string;
     tagline: string;
 }
+export interface OverEarBannerDict {
+    badge: string;
+    title: string;
+    startingAt: string;
+    shopNow: string;
+}

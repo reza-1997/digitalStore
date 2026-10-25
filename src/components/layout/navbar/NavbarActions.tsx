@@ -45,6 +45,7 @@ export const NavbarActions = ({
         color: color,
         '&:hover': {
             backgroundColor: 'action.hover',
+            color: "secondary.main"
         },
     };
 

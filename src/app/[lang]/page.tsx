@@ -3,6 +3,7 @@ import { CategoryBannerProducts } from '@/src/components/home/CategoryBannerProd
 import { FeaturedProductsSlider } from '@/src/components/home/FeaturedProducts';
 import { FeaturesBar } from '@/src/components/home/FeaturesBar';
 import { HeroBanner } from '@/src/components/home/HeroBanner';
+import { OverEarBanner } from '@/src/components/home/OverEarBanner';
 import { getDictionary } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
 
@@ -24,6 +25,7 @@ const Home = async ({ params }: HomePageProps) => {
                 <FeaturedProductsSlider dict={dict.productCard} lang={lang} />
                 <FeaturesBar lang={lang} dict={dict.featuresBar} />
                 <CategoryBannerProducts dict={dict.categoryBannerProducts} lang={lang} dictProductCard={dict.productCard} />
+                <OverEarBanner dict={dict.overEarBanner} lang={lang} />
             </Container>
         </Box>
     );
