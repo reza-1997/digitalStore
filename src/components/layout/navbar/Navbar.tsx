@@ -27,11 +27,12 @@ import MenuDrawer from './Drawer/MenuDrawerMain';
 
 import { NavCategoryItem } from './NavCategoryItem';
 import { NavbarActions } from './NavbarActions';
-import type { Category, NavbarDict } from '@/src/types';
+import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
 
 interface NavbarProps {
     lang: 'fa' | 'en';
-    dict: NavbarDict;
+    dictNavbar: NavbarDict;
+    dictProductCard: ProductCardDict,
     cartCount?: number;
 }
 
@@ -42,8 +43,9 @@ interface NavbarProps {
  */
 export const Navbar = ({
     lang,
-    dict,
+    dictNavbar,
     cartCount = 5,
+    dictProductCard
 }: NavbarProps) => {
     const router = useRouter();
     const pathname = usePathname();
@@ -88,7 +90,7 @@ export const Navbar = ({
         }
         setAnchorEl(event.currentTarget);
         setActiveMenu(item);
-        setHoveredCategoryCaptionOnImage(dict.category.viewAll);
+        setHoveredCategoryCaptionOnImage(dictNavbar.category.viewAll);
         setHoveredChangeLinkInPopover(`/${lang}/category/${item?.slug}`);
     };
 
@@ -216,7 +218,7 @@ export const Navbar = ({
                             {/* Mobile Hamburger Drawer Button */}
                             {isMobile && (
                                 <IconButton
-                                    aria-label={dict.aria.openMenu}
+                                    aria-label={dictNavbar.aria.openMenu}
                                     onClick={() => setMenuDrawerOpen(true)}
                                     sx={actionButtonSx}
                                 >
@@ -237,14 +239,14 @@ export const Navbar = ({
                                     color: navbarTextColor,
                                 }}
                             >
-                                {dict.logo}
+                                {dictNavbar.logo}
                             </Typography>
 
                             {/* Desktop Category Navigation */}
                             {!isMobile && (
                                 <Box
                                     component="nav"
-                                    aria-label={dict.aria.navigation}
+                                    aria-label={dictNavbar.aria.navigation}
                                     sx={{
                                         display: 'flex',
                                         alignItems: 'center',
@@ -267,7 +269,7 @@ export const Navbar = ({
                                                     key={category.id}
                                                     category={category}
                                                     lang={lang}
-                                                    dict={dict}
+                                                    dict={dictNavbar}
                                                     isActive={isActive}
                                                     isMenuOpen={open}
                                                     onMouseEnter={handleEnter}
@@ -279,7 +281,7 @@ export const Navbar = ({
                                     {/* Error State Fallback */}
                                     {isCategoriesError && (
                                         <Typography variant="caption" color="error">
-                                            {dict.category.error}
+                                            {dictNavbar.category.error}
                                         </Typography>
                                     )}
                                 </Box>
@@ -289,7 +291,7 @@ export const Navbar = ({
                         {/* Right Section: Quick Action Controls */}
                         <NavbarActions
                             lang={lang}
-                            dict={dict}
+                            dict={dictNavbar}
                             cartCount={cartCount}
                             mode={mode}
                             onSearchClick={() => setSearchOpen(true)}
@@ -306,8 +308,8 @@ export const Navbar = ({
                 open={searchOpen}
                 lang={lang}
                 dict={{
-                    ...dict.search,
-                    submitSearch: dict.aria.submitSearch,
+                    ...dictNavbar.search,
+                    submitSearch: dictNavbar.aria.submitSearch,
                 }}
                 onClose={() => setSearchOpen(false)}
             />
@@ -316,8 +318,8 @@ export const Navbar = ({
             <MenuDrawer
                 open={menuDrawerOpen}
                 lang={lang}
-                logo={dict.logo}
-                dict={dict}
+                logo={dictNavbar.logo}
+                dict={dictNavbar}
                 categories={categories as Category[]}
                 cartCount={cartCount}
                 mode={mode}
@@ -336,7 +338,8 @@ export const Navbar = ({
                 lang={lang}
                 handleLeave={handleLeave}
                 closeTimer={closeTimer}
-                dict={dict}
+                dict={dictNavbar}
+                dictProductCard={dictProductCard}
                 hoveredCategoryCaptionOnImage={hoveredCategoryCaptionOnImage}
                 setHoveredCategoryCaptionOnImage={setHoveredCategoryCaptionOnImage}
                 hoveredChangeLinkInPopover={hoveredChangeLinkInPopover}

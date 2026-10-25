@@ -1,5 +1,7 @@
 import { BrandSlider } from '@/src/components/home/BrandSlider';
+import { CategoryBannerProducts } from '@/src/components/home/CategoryBannerProducts';
 import { FeaturedProductsSlider } from '@/src/components/home/FeaturedProducts';
+import { FeaturesBar } from '@/src/components/home/FeaturesBar';
 import { HeroBanner } from '@/src/components/home/HeroBanner';
 import { getDictionary } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
@@ -20,7 +22,8 @@ const Home = async ({ params }: HomePageProps) => {
                 <HeroBanner dict={dict.heroBanner} lang={lang} />
                 <BrandSlider lang={lang} />
                 <FeaturedProductsSlider dict={dict.productCard} lang={lang} />
-                
+                <FeaturesBar lang={lang} dict={dict.featuresBar} />
+                <CategoryBannerProducts dict={dict.categoryBannerProducts} lang={lang} dictProductCard={dict.productCard} />
             </Container>
         </Box>
     );

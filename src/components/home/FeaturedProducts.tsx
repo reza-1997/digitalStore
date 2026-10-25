@@ -105,6 +105,7 @@ export const FeaturedProductsSlider = ({ lang, dict }: FeaturedProductsSliderPro
                     variant="h4"
                     sx={{
                         fontWeight: 800,
+                        color: theme.palette.text.primary,
                         mb: 4,
                         textAlign: isRtl ? 'right' : 'left',
                         fontSize: { xs: '1.5rem', md: '2rem' },

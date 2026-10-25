@@ -140,3 +140,32 @@ export interface ProductCardDict {
     quickView: string;
     featuredTitle: string;
 }
+export interface FeaturesBarDict {
+    shipping: {
+        title: string;
+        subtitle: string;
+    };
+    returns: {
+        title: string;
+        subtitle: string;
+    };
+    payment: {
+        title: string;
+        subtitle: string;
+    };
+    gifts: {
+        title: string;
+        subtitle: string;
+    };
+    support: {
+        title: string;
+        subtitle: string;
+    };
+}
+
+export interface CategoryBannerProductsDict {
+    seeMore: string;
+    exploreMore: string;
+    shopNow: string;
+    tagline: string;
+}

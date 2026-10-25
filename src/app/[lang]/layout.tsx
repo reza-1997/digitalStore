@@ -48,7 +48,7 @@ export default async function RootLayout({
             <body className={myFont.className}>
                 <Providers>
                     <ThemeRegistry>
-                        <Navbar lang={lang} dict={dict.navbar} />
+                        <Navbar lang={lang} dictNavbar={dict.navbar} dictProductCard={dict.productCard} />
                         {children}
                     </ThemeRegistry>
                 </Providers>

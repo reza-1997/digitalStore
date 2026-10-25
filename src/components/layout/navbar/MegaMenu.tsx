@@ -12,14 +12,16 @@ import {
     useTheme,
 } from '@mui/material';
 
-import type { Category, NavbarDict, Product } from '@/src/types';
+import type { Category, NavbarDict, Product, ProductCardDict } from '@/src/types';
 import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { SubcategoryAccordionItem } from './SubcategoryAccordionItem';
 import { MegaMenuSkeleton } from './Skeleton/MegaMenuSkeleton';
+import { ProductCard } from '../../common/ProductCard';
 
 interface MegaMenuProps {
     open: boolean;
     dict: NavbarDict;
+    dictProductCard: ProductCardDict;
     anchorEl: HTMLElement | null;
     category: Category | null;
     lang: 'fa' | 'en';
@@ -43,6 +45,7 @@ export const MegaMenu = ({
     hoveredCategoryCaptionOnImage,
     hoveredChangeLinkInPopover,
     setHoveredChangeLinkInPopover,
+    dictProductCard
 }: MegaMenuProps) => {
 
     const { data: subCategories, isLoading: isSubCategoriesLoading } =
@@ -60,7 +63,7 @@ export const MegaMenu = ({
     const [hoveredBrandProducts, setHoveredBrandProducts] = useState<Product[] | null>(null);
 
     // Track hovered individual product card slug for smooth image fade swap
-    const [hoveredCardProductSlug, setHoveredCardProductSlug] = useState<string | null>(null);
+    // const [hoveredCardProductSlug, setHoveredCardProductSlug] = useState<string | null>(null);
 
     const subCategoriesWithBrands = useMemo(() => {
         if (!subCategories) return [];
@@ -78,7 +81,7 @@ export const MegaMenu = ({
         setHoveredChangeLinkInPopover(null);
         setHoveredCategoryCaptionOnImage(null);
         setHoveredBrandProducts(null);
-        setHoveredCardProductSlug(null);
+        // setHoveredCardProductSlug(null);
     };
 
     return (
@@ -216,114 +219,40 @@ export const MegaMenu = ({
                             )}
 
                             {hoveredBrandProducts && hoveredBrandProducts.length > 0 ? (
-                                /* Brand Products Grid with Fixed Card Widths */
+
+                                /* Brand Products Grid */
                                 <Box
                                     sx={{
-                                        display: 'flex',
-                                        flexWrap: 'wrap',
+                                        display: 'grid',
+                                        gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
                                         gap: 2,
                                         width: '100%',
                                         maxWidth: 900,
-                                        justifyContent: 'flex-start',
+                                        alignItems: 'stretch',
+                                        minWidth: 0,
+
+                                        '& > *': {
+                                            width: '100%',
+                                            minWidth: 0,
+                                            height: '100%',
+                                        },
+
+                                        [theme.breakpoints.down('lg')]: {
+                                            gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+                                        },
+
+                                        [theme.breakpoints.down('md')]: {
+                                            gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+                                        },
                                     }}
                                 >
                                     {hoveredBrandProducts.slice(0, 4).map((product) => {
-                                        const modelSpec = product.specifications?.find(
-                                            (spec) => spec.key.en.toLowerCase() === 'model'
-                                        );
-                                        const modelText = modelSpec ? modelSpec.value[lang] : '';
-
-                                        const isCardHovered = hoveredCardProductSlug === product.slug;
-                                        const hasSecondImage = Boolean(product.images?.[1]);
-
                                         return (
-                                            <Paper
-                                                key={product.slug}
-                                                component={Link}
-                                                href={`/${lang}/product/${product.slug}`}
-                                                onMouseEnter={() => setHoveredCardProductSlug(product.slug)}
-                                                onMouseLeave={() => setHoveredCardProductSlug(null)}
-                                                elevation={0}
-                                                sx={{
-                                                    flex: '0 0 160px',
-                                                    p: 1,
-                                                    display: 'flex',
-                                                    flexDirection: 'column',
-                                                    alignItems: 'center',
-                                                    textAlign: 'center',
-                                                    bgcolor: theme.palette.action.selected,
-                                                    borderRadius: 1,
-                                                    textDecoration: 'none',
-                                                    transition: 'transform 0.2s ease-in-out',
-                                                    '&:hover': {
-                                                        bgcolor: theme.palette.grey[50],
-                                                    },
-                                                }}
-                                            >
-                                                {/* Image Container for Smooth Cross-Fade Transition */}
-                                                <Box
-                                                    sx={{
-                                                        position: 'relative',
-                                                        width: '100%',
-                                                        height: 160,
-                                                        mb: 1.5,
-                                                        display: 'grid',
-                                                        placeItems: 'center',
-                                                    }}
-                                                >
-                                                    {/* Default Primary Image */}
-                                                    <Box
-                                                        component="img"
-                                                        src={product.images?.[0]}
-                                                        alt={product.title[lang]}
-                                                        sx={{
-                                                            gridArea: '1 / 1',
-                                                            height: 160,
-                                                            width: 150,
-                                                            objectFit: 'contain',
-                                                            transition: 'opacity 0.4s ease-in-out',
-                                                            opacity: isCardHovered && hasSecondImage ? 0 : 1,
-                                                        }}
-                                                    />
 
-                                                    {/* Secondary Image (Fades in on Hover) */}
-                                                    {hasSecondImage && (
-                                                        <Box
-                                                            component="img"
-                                                            src={product.images[1]}
-                                                            alt={product.title[lang]}
-                                                            sx={{
-                                                                gridArea: '1 / 1',
-                                                                height: 150,
-                                                                width: 150,
-                                                                objectFit: 'contain',
-                                                                transition: 'opacity 0.4s ease-in-out',
-                                                                opacity: isCardHovered ? 1 : 0,
-                                                            }}
-                                                        />
-                                                    )}
-                                                </Box>
-
-                                                <Typography
-                                                    variant="subtitle2"
-                                                    sx={{
-                                                        fontWeight: 600,
-                                                        color: 'text.primary',
-                                                        mb: 0.5,
-                                                        display: '-webkit-box',
-                                                        WebkitLineClamp: 2,
-                                                        WebkitBoxOrient: 'vertical',
-                                                        overflow: 'hidden',
-                                                    }}
-                                                >
-                                                    {product.title[lang]}
-                                                </Typography>
-                                                {modelText && (
-                                                    <Typography variant="caption" color="text.secondary">
-                                                        {modelText}
-                                                    </Typography>
-                                                )}
-                                            </Paper>
+                                            <ProductCard dict={dictProductCard}
+                                                isLoading={isSubCategoriesLoading}
+                                                lang={lang}
+                                                product={product} />
                                         );
                                     })}
                                 </Box>

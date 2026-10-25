@@ -1,4 +1,5 @@
-import { Category, Subcategory, Collection, Product, Brand } from "../types";
+import { Category, Subcategory, Collection, Brand } from "../types";
+
 
 
 export const CATEGORIES: Category[] = [
@@ -45,7 +46,9 @@ export const CATEGORIES: Category[] = [
         iconName: 'SportsEsports',
         image: ['https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
             "https://images.unsplash.com/photo-1665592512676-840f7b669aeb?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-            "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1357&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1357&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+            "https://images.unsplash.com/photo-1618193139062-2c5bf4f935b7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+            "https://images.unsplash.com/photo-1661347561879-c9ab77bac89f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
         ],
     },
 ];

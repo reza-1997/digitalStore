@@ -68,5 +68,33 @@
         "compare": "Compare",
         "quickView": "Quick View",
         "featuredTitle": "Featured Products"
+    },
+    "featuresBar": {
+        "shipping": {
+            "title": "Free Shipping",
+            "subtitle": "For all Orders Over $100"
+        },
+        "returns": {
+            "title": "30 Days Returns",
+            "subtitle": "For an Exchange Product"
+        },
+        "payment": {
+            "title": "Secured Payment",
+            "subtitle": "Payment Cards Accepted"
+        },
+        "gifts": {
+            "title": "Special Gifts",
+            "subtitle": "Perfect Gifts, Every Time"
+        },
+        "support": {
+            "title": "Support 24/7",
+            "subtitle": "Contact us Anytime"
+        }
+    },
+    "categoryBannerProducts": {
+        "seeMore": "See More",
+        "exploreMore": "Explore All Gaming Products",
+        "shopNow": "Shop Now",
+        "tagline": "Next-Gen Gaming Experience"
     }
 }

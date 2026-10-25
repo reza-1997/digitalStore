@@ -1,19 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Box, Button, Typography, Container, useTheme, Skeleton } from '@mui/material';
+import { Box, Button, Typography, Container, Skeleton } from '@mui/material';
 import {
     KeyboardArrowLeft as PrevIcon,
     KeyboardArrowRight as NextIcon,
 } from '@mui/icons-material';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
 
 import type { HeroBannerDict } from '@/src/types';
 import { useGetAllCategoriesQuery } from '@/src/lib/api/apiSlice';
@@ -25,13 +24,12 @@ interface HeroBannerProps {
 
 /**
  * HeroBanner Component
- * Full-width hero banner with category slides, auto-play timer, and progress line pagination.
+ * Full-width hero banner with horizontal slide transition and right-to-left text animations.
  */
 export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
     const isRtl = lang === 'fa';
 
     const [isHovered, setIsHovered] = useState(false);
-    const [, setActiveIndex] = useState(0);
 
     const { data: categories = [], isLoading, isError } = useGetAllCategoriesQuery();
 
@@ -111,13 +109,33 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                         bottom: 0,
                         width: '0%',
                         backgroundColor: '#ffffff',
-                        animation: 'progressAnimation 4s linear forwards',
+                        animation: 'progressAnimation 2.5s linear forwards',
                     },
                 },
 
                 '@keyframes progressAnimation': {
                     '0%': { width: '0%' },
                     '100%': { width: '100%' },
+                },
+
+                /* Keyframe animation for content sliding in from right */
+                '@keyframes slideInFromRight': {
+                    '0%': {
+                        opacity: 0,
+                        transform: isRtl ? 'translateX(-60vw)' : 'translateX(60vw)',
+                    },
+                    '100%': {
+                        opacity: 1,
+                        transform: 'translateX(0)',
+                    },
+                },
+
+                '& .swiper-slide .animated-hero-item': {
+                    opacity: 0,
+                },
+
+                '& .swiper-slide-active .animated-hero-item': {
+                    animation: 'slideInFromRight 5s cubic-bezier(0.3, 1, 0.3, 1) both',
                 },
 
                 /* Custom Navigation Buttons */
@@ -163,18 +181,15 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                 '& .custom-swiper-button-next': {
                     right: { xs: 12, md: 28 },
                 },
-
-
             }}
         >
             <Swiper
                 key={lang}
                 dir={isRtl ? 'rtl' : 'ltr'}
-                modules={[Autoplay, Pagination, Navigation, EffectFade]}
-                effect="fade"
-                fadeEffect={{ crossFade: true }}
+                modules={[Autoplay, Pagination, Navigation]}
                 spaceBetween={0}
                 slidesPerView={1}
+                speed={700}
                 navigation={{
                     nextEl: '.custom-swiper-button-next',
                     prevEl: '.custom-swiper-button-prev',
@@ -187,11 +202,13 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                 }}
                 loop={categories.length > 1}
                 onSlideChange={(swiper) => {
-                    setActiveIndex(swiper.realIndex);
 
                     const isLightSlide = swiper.realIndex === 2;
+
                     window.dispatchEvent(
-                        new CustomEvent('heroSlideChange', { detail: { isLightSlide } })
+                        new CustomEvent('heroSlideChange', {
+                            detail: { isLightSlide },
+                        })
                     );
                 }}
             >
@@ -231,6 +248,8 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                     }}
                                 >
                                     <Box
+                                        className="hero-content"
+
                                         sx={{
                                             maxWidth: { xs: '100%', sm: 500, md: 600 },
                                             color: '#fff',
@@ -239,6 +258,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                     >
                                         {/* Subtitle / Tagline */}
                                         <Typography
+                                            className="animated-hero-item"
                                             variant="subtitle2"
                                             sx={{
                                                 color: '#E0A96D',
@@ -247,6 +267,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                 mb: 1,
                                                 fontSize: { xs: '0.8rem', sm: '0.95rem' },
                                                 textTransform: 'uppercase',
+                                                animationDelay: '0.1s',
                                             }}
                                         >
                                             {dict.featuredCategory}
@@ -254,6 +275,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
 
                                         {/* Category Title */}
                                         <Typography
+                                            className="animated-hero-item"
                                             variant="h2"
                                             component="h1"
                                             sx={{
@@ -262,6 +284,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                 lineHeight: 1.15,
                                                 mb: 1.5,
                                                 letterSpacing: isRtl ? 0 : '-1px',
+                                                animationDelay: '0.25s',
                                             }}
                                         >
                                             {categoryName}
@@ -269,6 +292,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
 
                                         {/* Category Description */}
                                         <Typography
+                                            className="animated-hero-item"
                                             variant="h6"
                                             sx={{
                                                 fontWeight: 400,
@@ -277,53 +301,56 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                 fontSize: { xs: '0.9rem', sm: '1.1rem' },
                                                 lineHeight: 1.4,
                                                 maxWidth: 480,
+                                                animationDelay: '0.4s',
                                             }}
                                         >
                                             {`${dict.descriptionPrefix} ${categoryName} ${dict.descriptionSuffix}`}
                                         </Typography>
 
                                         {/* Call-to-action Button */}
-                                        <Button
-                                            component={Link}
-                                            href={`/${lang}/category/${categorySlug}`}
-                                            variant="contained"
-                                            size="medium"
-                                            sx={{
-                                                bgcolor: '#ffffff',
-                                                color: '#000000',
-                                                fontWeight: 700,
-                                                px: 3.5,
-                                                py: 1.2,
-                                                borderRadius: 8,
-                                                fontSize: '0.95rem',
-                                                textTransform: 'none',
-                                                boxShadow: '0 4px 14px rgba(0,0,0,0.25)',
-                                                '&:hover': {
-                                                    bgcolor: '#000000',
-                                                    color: '#ffffff',
-                                                    boxShadow: '0 6px 20px rgba(0,0,0,0.35)',
-                                                },
-                                            }}
-                                        >
-                                            {dict.shopNow}
-                                        </Button>
+                                        <Box className="animated-hero-item" sx={{ animationDelay: '0.6s' }}>
+                                            <Button
+                                                component={Link}
+                                                href={`/${lang}/category/${categorySlug}`}
+                                                variant="contained"
+                                                size="medium"
+                                                sx={{
+                                                    bgcolor: '#ffffff',
+                                                    color: '#000000',
+                                                    fontWeight: 700,
+                                                    px: 3.5,
+                                                    py: 1.2,
+                                                    borderRadius: 8,
+                                                    fontSize: '0.95rem',
+                                                    textTransform: 'none',
+                                                    boxShadow: '0 4px 14px rgba(0,0,0,0.25)',
+                                                    '&:hover': {
+                                                        bgcolor: '#000000',
+                                                        color: '#ffffff',
+                                                        boxShadow: '0 6px 20px rgba(0,0,0,0.35)',
+                                                    },
+                                                }}
+                                            >
+                                                {dict.shopNow}
+                                            </Button>
+                                        </Box>
                                     </Box>
                                 </Container>
                             </Box>
-                        </SwiperSlide>
+                        </SwiperSlide >
                     );
                 })}
-            </Swiper>
+            </Swiper >
 
             {/* Prev Button */}
-            <Box className="custom-swiper-button-prev">
+            < Box className="custom-swiper-button-prev" >
                 <PrevIcon fontSize="large" />
-            </Box>
+            </Box >
 
-            {/*  Next Button */}
-            <Box className="custom-swiper-button-next">
+            {/* Next Button */}
+            < Box className="custom-swiper-button-next" >
                 <NextIcon fontSize="large" />
-            </Box>
-        </Box>
+            </Box >
+        </Box >
     );
 };

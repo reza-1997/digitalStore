@@ -7,6 +7,7 @@ import {
     IconButton,
     Tooltip,
     Rating,
+    useTheme,
 } from '@mui/material';
 import {
     FavoriteBorder as WishlistIcon,
@@ -47,6 +48,7 @@ export const ProductCard = ({
     }
 
     const isRtl = lang === 'fa';
+    const theme = useTheme()
 
     const brandName = product.brand[lang] || product.brand.en;
     const productTitle = product.title[lang] || product.title.en;
@@ -115,7 +117,10 @@ export const ProductCard = ({
                 transition: 'box-shadow 0.3s ease',
 
                 '&:hover': {
-                    boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+                    boxShadow:
+                        theme.palette.mode === 'dark'
+                            ? '0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12)'
+                            : '0 8px 24px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04)',
                 },
 
                 // Desktop hover interactions.
@@ -288,8 +293,8 @@ export const ProductCard = ({
                                     '0 3px 10px rgba(0,0,0,0.12)',
                                 p: 1.2,
                                 '&:hover': {
-                                    bgcolor: 'primary.main',
-                                    color: '#fff',
+                                    bgcolor: 'text.primary',
+                                    color: 'background.paper',
                                 },
                             }}
                         >
@@ -412,7 +417,7 @@ export const ProductCard = ({
                         textDecoration: 'none',
                         overflowWrap: 'anywhere',
                         '&:hover': {
-                            color: 'primary.main',
+                            color: theme.palette.text.secondary,
                         },
                         '&:focus-visible': {
                             outline: '2px solid',

@@ -67,5 +67,33 @@
         "compare": "مقایسه محصول",
         "quickView": "نمایش سریع",
         "featuredTitle": "محصولات ویژه"
+    },
+    "featuresBar": {
+        "shipping": {
+            "title": "ارسال رایگان",
+            "subtitle": "برای تمامی سفارشات بالای ۱۰۰ دلار"
+        },
+        "returns": {
+            "title": "ضمانت بازگشت ۳۰ روزه",
+            "subtitle": "برای تعویض کالا"
+        },
+        "payment": {
+            "title": "پرداخت امن",
+            "subtitle": "پذیرش کلیه کارت‌های بانکی"
+        },
+        "gifts": {
+            "title": "هدیه‌های ویژه",
+            "subtitle": "هدیه‌های بی‌نقص در هر خرید"
+        },
+        "support": {
+            "title": "پشتیبانی ۲۴/۷",
+            "subtitle": "در هر لحظه با ما در تماس باشید"
+        }
+    },
+    "categoryBannerProducts": {
+        "seeMore": "مشاهده بیشتر",
+        "exploreMore": "مشاهده همه محصولات گیمینگ",
+        "shopNow": "خرید آنلاین",
+        "tagline": "دنیای بازی و سرگرمی"
     }
 }
