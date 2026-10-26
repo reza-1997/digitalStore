@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Box, Typography, Button, Container, useTheme } from '@mui/material';
+import { Box, Typography, Button, Container, useTheme, Skeleton } from '@mui/material';
 
 import { getImageUrl } from '@/src/utils/imageUrl';
 import type { OverEarBannerDict } from '@/src/types';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
+import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
+import { getProductPricingSummary } from '@/src/utils/productCalculations';
 
 interface OverEarBannerProps {
     lang: 'fa' | 'en';
@@ -19,6 +21,12 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
     const bannerImage = getImageUrl('overEarBannerModel.jpg');
     const bannerImageInDark = getImageUrl('overEarBannerModelInDark.png');
     const subcategoryHref = `/${lang}/category/headphones/over-ear-headphones`;
+
+    // Fetch products using the Product type
+    const { data: products = [], isLoading } = useGetProductsBySubcategorySlugQuery('over-ear-headphones');
+
+    // Calculate metrics using the shared utility function
+    const productsMetrics = getProductPricingSummary(products);
 
     const contentAlignment = isRtl ? 'flex-end' : 'flex-start';
 
@@ -37,7 +45,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                         ? `url(${bannerImageInDark})`
                         : `url(${bannerImage})`,
                 backgroundSize: 'cover',
-                backgroundPosition: { xs: '25% 75%', sm: '25% 75%', md: "center" },
+                backgroundPosition: { xs: '25% 75%', sm: '25% 75%', md: 'center' },
                 backgroundAttachment: 'fixed',
                 minHeight: { xs: '60vh', md: '70vh' },
                 display: 'flex',
@@ -45,6 +53,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                 my: 4,
             }}
         >
+            {/* Light mode overlay */}
             <Box
                 sx={{
                     display:
@@ -78,28 +87,32 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                         direction: 'ltr',
                     }}
                 >
-                    {/* Badge */}
-                    <Box
-                        component="span"
-                        sx={{
-                            alignSelf: contentAlignment,
-                            direction: isRtl ? 'rtl' : 'ltr',
-                            textAlign: isRtl ? 'right' : 'left',
-                            bgcolor: theme.palette.secondary.main,
-                            color: '#fff',
-                            fontSize: { xs: '0.75rem', sm: '0.85rem' },
-                            fontWeight: 700,
-                            px: 1.5,
-                            py: 0.6,
-                            borderRadius: 0.5,
-                            letterSpacing: 0.5,
-                            mb: 2,
-                            textTransform: 'uppercase',
-                            boxShadow: '0 2px 8px rgba(229,57,53,0.3)',
-                        }}
-                    >
-                        {dict.badge}
-                    </Box>
+                    {/* Badge showing max calculated discount */}
+                    {productsMetrics.maxDiscount > 0 && (
+                        <Box
+                            component="span"
+                            sx={{
+                                alignSelf: contentAlignment,
+                                direction: isRtl ? 'rtl' : 'ltr',
+                                textAlign: isRtl ? 'right' : 'left',
+                                bgcolor: theme.palette.secondary.main,
+                                color: '#fff',
+                                fontSize: { xs: '0.75rem', sm: '0.85rem' },
+                                fontWeight: 700,
+                                px: 1.5,
+                                py: 0.6,
+                                borderRadius: 0.5,
+                                letterSpacing: 0.5,
+                                mb: 2,
+                                textTransform: 'uppercase',
+                                boxShadow: '0 2px 8px rgba(53, 62, 229, 0.3)',
+                            }}
+                        >
+                            {lang === 'fa'
+                                ? `تخفیف ویژه تا ${productsMetrics.maxDiscount}٪`
+                                : `SAVINGS UP TO ${productsMetrics.maxDiscount}% OFF`}
+                        </Box>
+                    )}
 
                     {/* Title */}
                     <Typography
@@ -109,7 +122,9 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                             width: '100%',
                             fontWeight: 800,
                             fontSize: { xs: '2rem', sm: '2.8rem', md: '3.5rem' },
-                            color: 'text.primary',
+                            color: theme.palette.mode === 'light'
+                                ? 'text.primary'
+                                : { xs: 'text.secondary', sm: 'text.secondary', md: 'text.primary' },
                             lineHeight: 1.5,
                             mb: 3,
                             direction: isRtl ? 'rtl' : 'ltr',
@@ -119,7 +134,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                         {dict.title}
                     </Typography>
 
-                    {/* Starting At Price */}
+                    {/* Starting At Price (Dynamic lowest price) */}
                     <Box
                         sx={{
                             alignSelf: contentAlignment,
@@ -141,17 +156,21 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                             {dict.startingAt}
                         </Typography>
 
-                        <Typography
-                            variant="h5"
-                            component="span"
-                            sx={{
-                                color: theme.palette.secondary.dark,
-                                fontWeight: 800,
-                                fontSize: { xs: '1.5rem', sm: '1.85rem' },
-                            }}
-                        >
-                            <CustomNumeralNumericFormat prefix="$" value={151.99} />
-                        </Typography>
+                        {isLoading ? (
+                            <Skeleton width={80} height={35} />
+                        ) : (
+                            <Typography
+                                variant="h5"
+                                component="span"
+                                sx={{
+                                    color: theme.palette.secondary.dark,
+                                    fontWeight: 800,
+                                    fontSize: { xs: '1.5rem', sm: '1.85rem' },
+                                }}
+                            >
+                                <CustomNumeralNumericFormat prefix="$" value={productsMetrics.minPrice} />
+                            </Typography>
+                        )}
                     </Box>
 
                     {/* Shop Now Button */}
@@ -174,7 +193,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                             transition: 'all 0.3s ease',
                             '&:hover': {
                                 bgcolor: theme.palette.primary.main,
-                                color: theme.palette.background.default
+                                color: theme.palette.background.default,
                             },
                         }}
                     >

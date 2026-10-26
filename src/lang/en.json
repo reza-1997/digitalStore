@@ -67,7 +67,8 @@
         "wishlist": "Add to Wishlist",
         "compare": "Compare",
         "quickView": "Quick View",
-        "featuredTitle": "Featured Products"
+        "featuredTitle": "Featured Products",
+        "newArrivalsTitle": "New Arrivals"
     },
     "featuresBar": {
         "shipping": {
@@ -100,6 +101,13 @@
     "overEarBanner": {
         "badge": "SAVINGS UP TO 40% OFF",
         "title": "Over-Ear Wireless Noise Headphones",
+        "startingAt": "Starting At",
+        "shopNow": "SHOP NOW"
+    },
+    "promoBanners": {
+        "badge": "UP TO %d% OFF",
+        "fitnessTitle": "Smart Fitness Bands & Trackers",
+        "gamingTitle": "High-Performance Gaming Mice",
         "startingAt": "Starting At",
         "shopNow": "SHOP NOW"
     }

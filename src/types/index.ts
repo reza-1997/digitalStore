@@ -139,6 +139,7 @@ export interface ProductCardDict {
     compare: string;
     quickView: string;
     featuredTitle: string;
+    newArrivalsTitle: string
 }
 export interface FeaturesBarDict {
     shipping: {
@@ -172,6 +173,13 @@ export interface CategoryBannerProductsDict {
 export interface OverEarBannerDict {
     badge: string;
     title: string;
+    startingAt: string;
+    shopNow: string;
+}
+export interface PromoBannerDict {
+    badge: string;
+    fitnessTitle: string;
+    gamingTitle: string;
     startingAt: string;
     shopNow: string;
 }
