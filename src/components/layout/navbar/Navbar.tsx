@@ -78,16 +78,23 @@ export const Navbar = ({
     } = useGetAllCategoriesQuery();
 
     /**
+     * Cancel a pending MegaMenu close
+     */
+    const cancelClose = () => {
+        if (closeTimer.current) {
+            clearTimeout(closeTimer.current);
+            closeTimer.current = null;
+        }
+    };
+
+    /**
      * Handle mouse enter on category items (Opens MegaMenu)
      */
     const handleEnter = (
         event: React.MouseEvent<HTMLElement>,
         item: Category
     ) => {
-        if (closeTimer.current) {
-            clearTimeout(closeTimer.current);
-            closeTimer.current = null;
-        }
+        cancelClose();
         setAnchorEl(event.currentTarget);
         setActiveMenu(item);
         setHoveredCategoryCaptionOnImage(dictNavbar.category.viewAll);
@@ -342,7 +349,7 @@ export const Navbar = ({
                 category={activeMenu}
                 lang={lang}
                 handleLeave={handleLeave}
-                closeTimer={closeTimer}
+                cancelClose={cancelClose}
                 dict={dictNavbar}
                 dictProductCard={dictProductCard}
                 hoveredCategoryCaptionOnImage={hoveredCategoryCaptionOnImage}

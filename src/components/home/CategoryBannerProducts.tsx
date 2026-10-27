@@ -9,6 +9,26 @@ import type { CategoryBannerProductsDict, Product, ProductCardDict } from '@/src
 import { useMemo } from 'react';
 import { ProductCard } from '../common/ProductCard';
 
+// Deterministic Fisher-Yates shuffle (mulberry32 PRNG seeded from a string hash)
+const seededShuffle = <T,>(items: T[], seedText: string): T[] => {
+    let seed = 0;
+    for (let i = 0; i < seedText.length; i++) {
+        seed = (Math.imul(31, seed) + seedText.charCodeAt(i)) | 0;
+    }
+    const random = () => {
+        seed = (seed + 0x6d2b79f5) | 0;
+        let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+    const result = [...items];
+    for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+};
+
 interface CategoryBannerProductsProps {
     lang: 'fa' | 'en';
     dict: CategoryBannerProductsDict;
@@ -46,11 +66,10 @@ export const CategoryBannerProducts = ({
     // Fetch products belonging to this category
     const { data: products = [], isLoading: isProductsLoading } = useGetProductsByCategorySlugQuery(categorySlug);
 
-    // Pick 4 random products from the category
+    // Pick 4 shuffled products; the shuffle is seeded so server and client renders match
     const randomProducts = useMemo(() => {
         if (!products.length) return [];
-        const shuffled = [...products].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, 4);
+        return seededShuffle(products, products.map((product) => product.slug).join('|')).slice(0, 4);
     }, [products]);
 
     if (isCategoryLoading || isProductsLoading) {

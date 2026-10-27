@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { Box, Typography, Container, useTheme } from '@mui/material';
 import {
     KeyboardArrowLeft as PrevIcon,
@@ -39,6 +39,11 @@ export const ProductSlider = ({
     const isRtl = lang === 'fa';
     const theme = useTheme();
     const [isHovered, setIsHovered] = useState(false);
+
+    // Unique selectors so multiple sliders on a page don't share navigation buttons
+    const navId = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+    const prevClass = `slider-prev-${navId}`;
+    const nextClass = `slider-next-${navId}`;
 
     if (!isLoading && (!products || products.length === 0)) {
         return null;
@@ -94,12 +99,13 @@ export const ProductSlider = ({
                     },
                 },
 
+                // In RTL, "previous" sits on the right and "next" on the left
                 '& .slider-prev': {
-                    left: { xs: 8, sm: 8, md: 5, lg: 5, xl: -35 },
+                    [isRtl ? 'right' : 'left']: { xs: 8, sm: 8, md: 5, lg: 5, xl: -35 },
                 },
 
                 '& .slider-next': {
-                    right: { xs: 8, sm: 8, md: 5, lg: 5, xl: -35 },
+                    [isRtl ? 'left' : 'right']: { xs: 8, sm: 8, md: 5, lg: 5, xl: -35 },
                 },
             }}
         >
@@ -124,8 +130,8 @@ export const ProductSlider = ({
                     spaceBetween={20}
                     slidesPerView={1}
                     navigation={{
-                        nextEl: '.slider-next',
-                        prevEl: '.slider-prev',
+                        nextEl: `.${nextClass}`,
+                        prevEl: `.${prevClass}`,
                     }}
                     autoplay={{
                         delay: 4000,
@@ -148,11 +154,11 @@ export const ProductSlider = ({
                 </Swiper>
 
                 {/* Custom Navigation Arrows */}
-                <Box className="slider-prev">
-                    <PrevIcon />
+                <Box className={`slider-prev ${prevClass}`}>
+                    {isRtl ? <NextIcon /> : <PrevIcon />}
                 </Box>
-                <Box className="slider-next">
-                    <NextIcon />
+                <Box className={`slider-next ${nextClass}`}>
+                    {isRtl ? <PrevIcon /> : <NextIcon />}
                 </Box>
             </Container>
         </Box>

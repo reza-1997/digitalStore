@@ -1,5 +1,6 @@
 'use client';
 
+import type { Theme } from '@mui/material/styles';
 import Link from 'next/link';
 import {
     Box,
@@ -26,7 +27,7 @@ interface SubcategoriesListProps {
     onClose: () => void;
     dict: NavbarDict;
     dictProductCard: ProductCardDict
-    theme: any;
+    theme: Theme;
 }
 
 // Component to render subcategories and their brands inside category accordion

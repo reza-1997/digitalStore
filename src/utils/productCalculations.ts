@@ -17,17 +17,21 @@ export const getProductPricingSummary = (products: Product[]): ProductCalculatio
     let highestDiscount = 0;
 
     products.forEach((product: Product) => {
-        const price = product.price;
-        const discountPrice = product.discountPrice;
+        const { price, discountPrice } = product;
 
-        // Determine effective price
-        const effectivePrice = discountPrice !== undefined ? discountPrice : price;
+        // Same validation as ProductCard: ignore null, negative, or non-reducing discounts
+        const hasDiscount =
+            discountPrice != null &&
+            discountPrice >= 0 &&
+            discountPrice < price &&
+            price > 0;
+
+        const effectivePrice = hasDiscount ? discountPrice : price;
         if (effectivePrice < lowestPrice) {
             lowestPrice = effectivePrice;
         }
 
-        // Calculate discount percentage if valid discount exists
-        if (discountPrice !== undefined && price > 0 && price > discountPrice) {
+        if (hasDiscount) {
             const discountPercentage = Math.round(((price - discountPrice) / price) * 100);
             if (discountPercentage > highestDiscount) {
                 highestDiscount = discountPercentage;
@@ -37,6 +41,6 @@ export const getProductPricingSummary = (products: Product[]): ProductCalculatio
 
     return {
         minPrice: lowestPrice === Infinity ? 0 : lowestPrice,
-        maxDiscount: highestDiscount > 0 ? highestDiscount : 0,
+        maxDiscount: highestDiscount,
     };
 };

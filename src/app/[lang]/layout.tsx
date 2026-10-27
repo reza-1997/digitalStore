@@ -1,10 +1,12 @@
 
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
+import { Suspense } from "react";
+import { notFound } from "next/navigation";
 
 import ThemeRegistry from "@/src/theme/ThemeRegistry";
 import Providers from "@/src/lib/store/StoreProvider";
-import { getDictionary } from "@/src/lang/getDictionary";
+import { getDictionary, hasLocale } from "@/src/lang/getDictionary";
 import { Navbar } from "@/src/components/layout/navbar/Navbar";
 
 
@@ -24,16 +26,13 @@ export function generateStaticParams() {
     return [{ lang: "en" }, { lang: "fa" }];
 }
 
-interface RootLayoutProps {
-    children: React.ReactNode;
-    params: Promise<{ lang: "fa" | "en" }>;
-}
-
 export default async function RootLayout({
     children,
     params,
-}: RootLayoutProps) {
+}: LayoutProps<"/[lang]">) {
     const { lang } = await params;
+    if (!hasLocale(lang)) notFound();
+
     const isFa = lang === "fa";
 
     // Load dictionary on server side based on current language
@@ -46,12 +45,15 @@ export default async function RootLayout({
             suppressHydrationWarning
         >
             <body className={myFont.className}>
-                <Providers>
-                    <ThemeRegistry>
-                        <Navbar lang={lang} dictNavbar={dict.navbar} dictProductCard={dict.productCard} />
-                        {children}
-                    </ThemeRegistry>
-                </Providers>
+                {/* The Redux store uses Math.random() (nanoid) on creation, so it must render at request time */}
+                <Suspense>
+                    <Providers>
+                        <ThemeRegistry>
+                            <Navbar lang={lang} dictNavbar={dict.navbar} dictProductCard={dict.productCard} />
+                            {children}
+                        </ThemeRegistry>
+                    </Providers>
+                </Suspense>
             </body>
         </html>
     );
