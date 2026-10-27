@@ -139,7 +139,9 @@ export interface ProductCardDict {
     compare: string;
     quickView: string;
     featuredTitle: string;
-    newArrivalsTitle: string
+    newArrivalsTitle: string;
+    topDealsTitle: string;
+    seeAll: string;
 }
 export interface FeaturesBarDict {
     shipping: {

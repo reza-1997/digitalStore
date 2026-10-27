@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import {
     Box,
@@ -18,13 +19,13 @@ import {
 
 import type { Product, ProductCardDict } from '@/src/types';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
+import ProductImage from './ProductImage';
 import { ProductCardSkeleton } from './ProductCardSkeleton';
 
 interface ProductCardProps {
     product: Product;
     lang: 'fa' | 'en';
     dict: ProductCardDict;
-
     onToggleWishlist?: (product: Product) => void;
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
@@ -42,20 +43,26 @@ export const ProductCard = ({
     onAddToCart,
     isLoading,
 }: ProductCardProps) => {
+    const theme = useTheme();
+    const isRtl = lang === 'fa';
+
+    // Keep hooks before conditional returns.
+    const [isImageHovered, setIsImageHovered] = useState(false);
 
     if (isLoading) {
         return <ProductCardSkeleton />;
     }
 
-    const isRtl = lang === 'fa';
-    const theme = useTheme()
-
     const brandName = product.brand[lang] || product.brand.en;
     const productTitle = product.title[lang] || product.title.en;
 
     const primaryImage = product.images?.[0];
-    const secondaryImage = product.images?.[1] || primaryImage;
-    const hasSecondaryImage = secondaryImage !== primaryImage;
+    const secondaryImage = product.images?.[1];
+
+    const hasPrimaryImage = Boolean(primaryImage?.trim());
+    const hasSecondaryImage =
+        Boolean(secondaryImage?.trim()) &&
+        secondaryImage !== primaryImage;
 
     // Validate the discount before displaying discount UI.
     const hasDiscount =
@@ -68,7 +75,6 @@ export const ProductCard = ({
         ? product.discountPrice!
         : product.price;
 
-    // Calculate the actual discount percentage.
     const discountPercent = hasDiscount
         ? Math.round(
             ((product.price - finalPrice) / product.price) * 100,
@@ -99,7 +105,9 @@ export const ProductCard = ({
     ];
 
     const productHref = `/${lang}/product/${product.slug}`;
-    const brandHref = `/${lang}/category/${product.categorySlug}/${product.subcategorySlug}?brand=${encodeURIComponent(brandName)}`;
+    const brandHref =
+        `/${lang}/category/${product.categorySlug}/${product.subcategorySlug}` +
+        `?brand=${encodeURIComponent(brandName)}`;
 
     return (
         <Box
@@ -111,6 +119,7 @@ export const ProductCard = ({
                 width: '100%',
                 minWidth: 0,
                 height: '100%',
+                border: 1,
                 borderColor: 'divider',
                 borderRadius: 1,
                 overflow: 'hidden',
@@ -119,8 +128,8 @@ export const ProductCard = ({
                 '&:hover': {
                     boxShadow:
                         theme.palette.mode === 'dark'
-                            ? '0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12)'
-                            : '0 8px 24px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04)',
+                            ? '0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.12)'
+                            : '0 8px 24px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)',
                 },
 
                 // Desktop hover interactions.
@@ -135,14 +144,6 @@ export const ProductCard = ({
                         opacity: 1,
                         visibility: 'visible',
                         transform: 'translateY(0)',
-                    },
-
-                    '&:hover .primary-image': {
-                        opacity: hasSecondaryImage ? 0 : 1,
-                    },
-
-                    '&:hover .secondary-image': {
-                        opacity: hasSecondaryImage ? 1 : 0,
                     },
                 },
             }}
@@ -162,7 +163,6 @@ export const ProductCard = ({
                         pointerEvents: 'none',
                     }}
                 >
-                    {/* Discount badge: always visible */}
                     {hasDiscount && (
                         <Box
                             component="span"
@@ -184,14 +184,13 @@ export const ProductCard = ({
                         >
                             <CustomNumeralNumericFormat
                                 value={discountPercent}
-                                prefix={" - "}
-                                dir={lang === "fa" ? "ltr" : "ltr"}
-                                suffix={"%"}
+                                prefix=" - "
+                                suffix="%"
+                                dir="ltr"
                             />
                         </Box>
                     )}
 
-                    {/* New badge: below the discount badge */}
                     {product.isNewArrival && (
                         <Box
                             className="new-arrival-badge"
@@ -209,16 +208,13 @@ export const ProductCard = ({
                                 fontWeight: 700,
                                 lineHeight: 1.4,
                                 whiteSpace: 'nowrap',
-
-                                // Hidden by default on desktop.
                                 opacity: 0,
                                 visibility: 'hidden',
                                 transform: 'translateY(-4px)',
-
                                 transition:
                                     'opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease',
 
-                                // Always visible on mobile and touch devices.
+                                // Always visible on touch devices.
                                 '@media (max-width: 899.95px)': {
                                     opacity: 1,
                                     visibility: 'visible',
@@ -249,8 +245,6 @@ export const ProductCard = ({
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 1,
-
-                    // Always visible on mobile and tablet.
                     opacity: { xs: 1, sm: 1, md: 0 },
                     visibility: {
                         xs: 'visible',
@@ -289,8 +283,7 @@ export const ProductCard = ({
                             sx={{
                                 bgcolor: 'background.paper',
                                 color: 'text.primary',
-                                boxShadow:
-                                    '0 3px 10px rgba(0,0,0,0.12)',
+                                boxShadow: '0 3px 10px rgba(0,0,0,0.12)',
                                 p: 1.2,
                                 '&:hover': {
                                     bgcolor: 'text.primary',
@@ -309,6 +302,10 @@ export const ProductCard = ({
                 component={Link}
                 href={productHref}
                 aria-label={productTitle}
+                onMouseEnter={() => setIsImageHovered(true)}
+                onMouseLeave={() => setIsImageHovered(false)}
+                onFocus={() => setIsImageHovered(true)}
+                onBlur={() => setIsImageHovered(false)}
                 sx={{
                     position: 'relative',
                     display: 'block',
@@ -322,45 +319,67 @@ export const ProductCard = ({
                     textDecoration: 'none',
                 }}
             >
-                <Box
-                    component="img"
-                    src={primaryImage}
-                    alt={productTitle}
-                    loading="lazy"
-                    decoding="async"
-                    draggable={false}
-                    className="primary-image"
-                    sx={{
-                        position: 'absolute',
-                        inset: 0,
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        opacity: 1,
-                        transition: 'opacity 0.35s ease',
-                    }}
-                />
+                {hasPrimaryImage && (
+                    <ProductImage
+                        src={primaryImage}
+                        alt={productTitle}
+                        className="primary-image"
+                        sizes="(max-width: 600px) 100vw, 300px"
+                        fallbackLabel={
+                            lang === 'fa'
+                                ? 'تصویر موجود نیست'
+                                : 'Image unavailable'
+                        }
+                        style={{
+                            opacity:
+                                isImageHovered && hasSecondaryImage
+                                    ? 0
+                                    : 1,
+                            zIndex: 1,
+                            transition: 'opacity 0.5s ease',
+                        }}
+                    />
+                )}
 
-                <Box
-                    component="img"
-                    src={secondaryImage}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    draggable={false}
-                    className="secondary-image"
-                    sx={{
-                        position: 'absolute',
-                        inset: 0,
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        opacity: 0,
-                        transition: 'opacity 0.35s ease',
-                        pointerEvents: 'none',
-                    }}
-                />
+                {hasSecondaryImage && (
+                    <ProductImage
+                        src={secondaryImage}
+                        alt=""
+                        aria-hidden
+                        className="secondary-image"
+                        sizes="(max-width: 600px) 100vw, 300px"
+                        fallbackLabel={
+                            lang === 'fa'
+                                ? 'تصویر موجود نیست'
+                                : 'Image unavailable'
+                        }
+                        style={{
+                            opacity: isImageHovered ? 1 : 0,
+                            zIndex: 2,
+                            transition: 'opacity 0.5s ease',
+                            pointerEvents: 'none',
+                        }}
+                    />
+                )}
+
+                {!hasPrimaryImage && (
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            inset: 0,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            bgcolor: 'action.hover',
+                            color: 'text.secondary',
+                            fontSize: '0.85rem',
+                        }}
+                    >
+                        {lang === 'fa'
+                            ? 'تصویر موجود نیست'
+                            : 'Image unavailable'}
+                    </Box>
+                )}
             </Box>
 
             {/* Product information */}
@@ -385,9 +404,9 @@ export const ProductCard = ({
                         lineHeight: 1.5,
                         textDecoration: 'none',
                         width: 'fit-content',
-                        color: "text.secondary",
+                        color: 'text.secondary',
                         '&:hover': {
-                            color: 'primary.main',
+                            color: 'secondary.dark',
                             textDecoration: 'underline',
                         },
                     }}
@@ -417,7 +436,7 @@ export const ProductCard = ({
                         textDecoration: 'none',
                         overflowWrap: 'anywhere',
                         '&:hover': {
-                            color: theme.palette.text.secondary,
+                            color: theme.palette.secondary.main,
                         },
                         '&:focus-visible': {
                             outline: '2px solid',
@@ -447,12 +466,12 @@ export const ProductCard = ({
                         readOnly
                         size="small"
                         aria-label={
-                            lang === 'fa'
+                            isRtl
                                 ? `امتیاز ${product.rating} از ۵`
                                 : `Rating ${product.rating} out of 5`
                         }
                         sx={{
-                            fontSize: "1.1rem",
+                            fontSize: '1.1rem',
                             color: '#f5a623',
                             '& .MuiRating-iconEmpty': {
                                 color: 'action.disabled',
@@ -468,7 +487,7 @@ export const ProductCard = ({
                             color: 'text.primary',
                             fontVariantNumeric: 'tabular-nums',
                             whiteSpace: 'nowrap',
-                            mr: lang === "fa" ? 1.5 : 0
+                            mr: isRtl ? 1.5 : 0,
                         }}
                     >
                         <CustomNumeralNumericFormat value={product.rating} />
@@ -483,7 +502,11 @@ export const ProductCard = ({
                             whiteSpace: 'nowrap',
                         }}
                     >
-                        <CustomNumeralNumericFormat suffix=')' prefix='(' value={product.reviewsCount} />
+                        <CustomNumeralNumericFormat
+                            prefix="("
+                            suffix=")"
+                            value={product.reviewsCount}
+                        />
                     </Typography>
                 </Box>
 
@@ -498,7 +521,6 @@ export const ProductCard = ({
                         mt: 0.75,
                     }}
                 >
-                    {/* Final price */}
                     <Typography
                         component="span"
                         variant="h6"
@@ -517,10 +539,12 @@ export const ProductCard = ({
                             overflowWrap: 'anywhere',
                         }}
                     >
-                        <CustomNumeralNumericFormat prefix='$' value={finalPrice} />
+                        <CustomNumeralNumericFormat
+                            prefix="$"
+                            value={finalPrice}
+                        />
                     </Typography>
 
-                    {/* Original price */}
                     {hasDiscount && (
                         <Typography
                             component="span"
@@ -536,7 +560,10 @@ export const ProductCard = ({
                                 overflowWrap: 'anywhere',
                             }}
                         >
-                            <CustomNumeralNumericFormat prefix='$' value={product.price} />
+                            <CustomNumeralNumericFormat
+                                prefix="$"
+                                value={product.price}
+                            />
                         </Typography>
                     )}
                 </Box>

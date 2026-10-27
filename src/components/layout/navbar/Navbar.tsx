@@ -185,7 +185,11 @@ export const Navbar = ({
                     borderBottom: '1px solid',
                     borderColor: open ? 'divider' : 'transparent',
                     transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
-                    zIndex: 1400,
+                    // Keep the navbar behind the mobile drawer.
+                    zIndex: menuDrawerOpen ? theme.zIndex.appBar : 1400,
+
+                    // Hide navbar content while the mobile drawer is open.
+                    visibility: menuDrawerOpen ? 'hidden' : 'visible',
                 }}
             >
                 <Box
@@ -328,6 +332,7 @@ export const Navbar = ({
                 onSearch={() => setSearchOpen(true)}
                 onToggleTheme={toggleTheme}
                 onChangeLanguage={handleLanguageChange}
+                dictProductCard={dictProductCard}
             />
 
             {/* Desktop Mega Menu Overlay Popover */}

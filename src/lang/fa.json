@@ -67,7 +67,9 @@
         "compare": "مقایسه محصول",
         "quickView": "نمایش سریع",
         "featuredTitle": "محصولات ویژه",
-        "newArrivalsTitle": "محصولات جدید"
+        "newArrivalsTitle": "محصولات جدید",
+        "topDealsTitle": "پیشنهادات شگفت‌انگیز و پرتخفیف",
+        "seeAll": "مشاهده همه"
     },
     "featuresBar": {
         "shipping": {

@@ -30,7 +30,7 @@ import {
     ExpandMore as ExpandMoreIcon,
 } from '@mui/icons-material';
 
-import type { Category, NavbarDict } from '@/src/types';
+import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
 import { SubcategoriesList } from './MenuDrawerSubcategoriesList';
 
 
@@ -48,6 +48,8 @@ interface MenuDrawerProps {
     onSearch: () => void;
     onToggleTheme: () => void;
     onChangeLanguage: () => void;
+    dictProductCard: ProductCardDict
+
 }
 
 // Main mobile navigation drawer component with nested accordions and loading states
@@ -65,6 +67,7 @@ export default function MenuDrawer({
     onSearch,
     onToggleTheme,
     onChangeLanguage,
+    dictProductCard
 }: MenuDrawerProps) {
     const isRtl = lang === 'fa';
     const theme = useTheme();
@@ -101,10 +104,13 @@ export default function MenuDrawer({
             anchor={isRtl ? 'right' : 'left'}
             open={open}
             onClose={onClose}
+            sx={{
+                zIndex: theme.zIndex.modal + 1,
+            }}
             slotProps={{
                 paper: {
                     sx: {
-                        width: { xs: '100vw', sm: 380 },
+                        width: { xs: '100vw', sm: '90vw' },
                         maxWidth: '100vw',
                         p: 2,
                         backgroundImage: 'none',
@@ -264,6 +270,7 @@ export default function MenuDrawer({
                                             onClose={onClose}
                                             dict={dict}
                                             theme={theme}
+                                            dictProductCard={dictProductCard}
                                         />
                                     </AccordionDetails>
                                 </Accordion>

@@ -5,7 +5,6 @@ import Link from 'next/link';
 import {
     Box,
     List,
-    ListItemButton,
     Accordion,
     AccordionSummary,
     AccordionDetails,
@@ -15,8 +14,10 @@ import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
 
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { BRANDS } from '@/src/data/mockData';
-import type { Subcategory, Brand, NavbarDict } from '@/src/types';
+import type { Subcategory, Brand, NavbarDict, ProductCardDict } from '@/src/types';
 import { BrandsListSkeleton } from '../Skeleton/MenuDrawerBrandsListSkeleton';
+import { ProductCardHorizontal } from '@/src/components/common/ProductCardHorizontal';
+
 
 
 interface BrandsListProps {
@@ -27,9 +28,8 @@ interface BrandsListProps {
     onBrandAccordionChange: (brandSlug: string) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
     onClose: () => void;
     theme: any;
-    dict: NavbarDict
-    ;
-
+    dict: NavbarDict;
+    dictProductCard: ProductCardDict
 }
 
 // Component to render filtered brands and their top products inside subcategory accordion
@@ -41,7 +41,8 @@ export function BrandsList({
     onBrandAccordionChange,
     onClose,
     theme,
-    dict
+    dict,
+    dictProductCard
 }: BrandsListProps) {
     // Fetch products belonging to the selected subcategory
     const { data: currentSubProducts = [], isLoading: isProductsLoading } = useGetProductsBySubcategorySlugQuery(
@@ -138,71 +139,8 @@ export function BrandsList({
                             {/* Display top 2 brand products */}
                             <List disablePadding sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                                 {brandProducts.slice(0, 2).map((product) => {
-                                    const modelSpec = product.specifications?.find(
-                                        (spec) => spec.key.en.toLowerCase() === 'model'
-                                    );
-                                    const modelText = modelSpec ? modelSpec.value[lang] : '';
-                                    const productImage = product.images?.[0];
-
                                     return (
-                                        <ListItemButton
-                                            key={product.slug}
-                                            component={Link}
-                                            href={`/${lang}/product/${product.slug}`}
-                                            onClick={onClose}
-                                            sx={{
-                                                p: 1.5,
-                                                borderRadius: 1,
-                                                bgcolor: 'action.hover',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                gap: 2,
-                                                '&:hover': { bgcolor: 'action.selected' },
-                                            }}
-                                        >
-                                            {productImage && (
-                                                <Box
-                                                    sx={{
-                                                        position: 'relative',
-                                                        width: 80,
-                                                        height: 90,
-                                                        borderRadius: 1,
-                                                        overflow: 'hidden',
-                                                        flexShrink: 0,
-                                                        bgcolor: '#fff',
-                                                        border: '1px solid',
-                                                        borderColor: 'divider',
-                                                    }}
-                                                >
-                                                    <Box
-                                                        component="img"
-                                                        src={productImage}
-                                                        alt={product.title[lang]}
-                                                        sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                                    />
-                                                </Box>
-                                            )}
-                                            <Box sx={{ minWidth: 0, flexGrow: 1 }}>
-                                                <Typography
-                                                    variant="body2"
-                                                    sx={{
-                                                        fontWeight: 600,
-                                                        mb: 0.5,
-                                                        display: '-webkit-box',
-                                                        WebkitLineClamp: 2,
-                                                        WebkitBoxOrient: 'vertical',
-                                                        overflow: 'hidden',
-                                                    }}
-                                                >
-                                                    {product.title[lang]}
-                                                </Typography>
-                                                {modelText && (
-                                                    <Typography variant="caption" color="text.secondary" sx={{ display: 'block' }}>
-                                                        {modelText}
-                                                    </Typography>
-                                                )}
-                                            </Box>
-                                        </ListItemButton>
+                                        <ProductCardHorizontal dict={dictProductCard} lang={lang} product={product} isLoading={isProductsLoading} />
                                     );
                                 })}
                             </List>

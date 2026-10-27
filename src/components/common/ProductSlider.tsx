@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Typography, Container, useTheme } from '@mui/material';
 import {
     KeyboardArrowLeft as PrevIcon,
@@ -35,7 +35,7 @@ export const ProductSlider = ({
     products = [],
     isLoading = false,
 }: ProductSliderProps) => {
-    
+
     const isRtl = lang === 'fa';
     const theme = useTheme();
     const [isHovered, setIsHovered] = useState(false);

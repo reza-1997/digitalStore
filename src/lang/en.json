@@ -68,7 +68,9 @@
         "compare": "Compare",
         "quickView": "Quick View",
         "featuredTitle": "Featured Products",
-        "newArrivalsTitle": "New Arrivals"
+        "newArrivalsTitle": "New Arrivals",
+        "topDealsTitle": "Top Discounted Deals",
+        "seeAll": "See All"
     },
     "featuresBar": {
         "shipping": {
