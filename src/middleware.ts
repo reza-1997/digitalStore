@@ -3,8 +3,8 @@ import type { NextRequest } from 'next/server';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 
-let locales = ['en', 'fa'];
-let defaultLocale = 'en';
+const locales = ['en', 'fa'];
+const defaultLocale = 'fa';
 
 function getLocale(request: NextRequest): string {
     const negotiatorHeaders: Record<string, string> = {};
@@ -31,16 +31,19 @@ export function middleware(request: NextRequest) {
     if (pathnameIsMissingLocale) {
         const locale = getLocale(request);
 
-        // e.g. incoming request is /products -> redirect to /en/products or /fa/products
+        // e.g. incoming request is /products?q=x -> redirect to /fa/products?q=x
         return NextResponse.redirect(
-            new URL(`/${locale}${pathname === '/' ? '' : pathname}`, request.url)
+            new URL(
+                `/${locale}${pathname === '/' ? '' : pathname}${request.nextUrl.search}`,
+                request.url
+            )
         );
     }
 }
 
 export const config = {
     matcher: [
-        // Skip all internal paths (_next, images, favicon, etc.)
-        '/((?!api|_next/static|_next/image|favicon.ico).*)',
+        // Skip internal paths and static files in public/ (any last segment with an extension)
+        '/((?!api|_next/static|_next/image|favicon.ico|.*\\.[^/]+$).*)',
     ],
 };

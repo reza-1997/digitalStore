@@ -7,17 +7,13 @@ import { NewArrivalsSlider } from '@/src/components/home/NewArrivalsSlider';
 import { OverEarBanner } from '@/src/components/home/OverEarBanner';
 import { PromoBannersGrid } from '@/src/components/home/PromoBannersGrid';
 import { TopDiscountedProducts } from '@/src/components/home/TopDiscountedProducts';
-import { getDictionary } from '@/src/lang/getDictionary';
+import { getDictionary, hasLocale } from '@/src/lang/getDictionary';
+import { notFound } from 'next/navigation';
 import { Box, Container } from '@mui/material';
 
-interface HomePageProps {
-    params: Promise<{
-        lang: 'fa' | 'en';
-    }>;
-}
-
-const Home = async ({ params }: HomePageProps) => {
+const Home = async ({ params }: PageProps<'/[lang]'>) => {
     const { lang } = await params;
+    if (!hasLocale(lang)) notFound();
     const dict = await getDictionary(lang);
 
     return (

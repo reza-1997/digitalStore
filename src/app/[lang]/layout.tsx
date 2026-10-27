@@ -1,10 +1,11 @@
 
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
+import { notFound } from "next/navigation";
 
 import ThemeRegistry from "@/src/theme/ThemeRegistry";
 import Providers from "@/src/lib/store/StoreProvider";
-import { getDictionary } from "@/src/lang/getDictionary";
+import { getDictionary, hasLocale } from "@/src/lang/getDictionary";
 import { Navbar } from "@/src/components/layout/navbar/Navbar";
 
 
@@ -24,16 +25,12 @@ export function generateStaticParams() {
     return [{ lang: "en" }, { lang: "fa" }];
 }
 
-interface RootLayoutProps {
-    children: React.ReactNode;
-    params: Promise<{ lang: "fa" | "en" }>;
-}
-
 export default async function RootLayout({
     children,
     params,
-}: RootLayoutProps) {
+}: LayoutProps<"/[lang]">) {
     const { lang } = await params;
+    if (!hasLocale(lang)) notFound();
     const isFa = lang === "fa";
 
     // Load dictionary on server side based on current language
