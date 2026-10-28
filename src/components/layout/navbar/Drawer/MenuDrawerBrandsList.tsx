@@ -1,5 +1,6 @@
 'use client';
 
+import type { Theme } from '@mui/material/styles';
 import { useMemo } from 'react';
 import Link from 'next/link';
 import {
@@ -27,7 +28,7 @@ interface BrandsListProps {
     expandedBrandSlug: string | null;
     onBrandAccordionChange: (brandSlug: string) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
     onClose: () => void;
-    theme: any;
+    theme: Theme;
     dict: NavbarDict;
     dictProductCard: ProductCardDict
 }
@@ -140,7 +141,7 @@ export function BrandsList({
                             <List disablePadding sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                                 {brandProducts.slice(0, 2).map((product) => {
                                     return (
-                                        <ProductCardHorizontal dict={dictProductCard} lang={lang} product={product} isLoading={isProductsLoading} />
+                                        <ProductCardHorizontal key={product.slug} dict={dictProductCard} lang={lang} product={product} isLoading={isProductsLoading} />
                                     );
                                 })}
                             </List>

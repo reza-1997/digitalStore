@@ -10,7 +10,7 @@ const SUPABASE_IMAGE_URL = `${SUPABASE_URL}/storage/v1/object/public/${BUCKET_NA
 
 
 export const getImageUrl = (imageName: string): string => {
-    if (!imageName) return '';
+    if (!imageName || !SUPABASE_URL) return '';
 
     const cleanImageName = imageName.replace(/^\/+/, '');
     return `${SUPABASE_IMAGE_URL}/${cleanImageName}`;

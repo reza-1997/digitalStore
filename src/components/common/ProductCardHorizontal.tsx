@@ -37,15 +37,14 @@ export const ProductCardHorizontal = ({
     onAddToCart,
     isLoading
 }: ProductCardHorizontalProps) => {
+    const theme = useTheme();
+    const [isImageHovered, setIsImageHovered] = useState(false);
 
     if (isLoading) {
         return <ProductCardHorizontalSkeleton />;
     }
 
     const isRtl = lang === 'fa';
-    const theme = useTheme();
-
-    const [isImageHovered, setIsImageHovered] = useState(false);
 
     const brandName =
         product.brand?.[lang] || product.brand?.en || '';

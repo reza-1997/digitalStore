@@ -40,10 +40,10 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                 marginLeft: '-50vw',
                 marginRight: '-50vw',
                 overflow: 'hidden',
-                backgroundImage:
-                    theme.palette.mode === 'dark'
-                        ? `url(${bannerImageInDark})`
-                        : `url(${bannerImage})`,
+                backgroundImage: (() => {
+                    const image = theme.palette.mode === 'dark' ? bannerImageInDark : bannerImage;
+                    return image ? `url(${image})` : undefined;
+                })(),
                 backgroundSize: 'cover',
                 backgroundPosition: { xs: '25% 75%', sm: '25% 75%', md: 'center' },
                 backgroundAttachment: 'fixed',

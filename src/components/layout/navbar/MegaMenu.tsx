@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, RefObject } from 'react';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import {
     Box,
@@ -26,7 +26,7 @@ interface MegaMenuProps {
     category: Category | null;
     lang: 'fa' | 'en';
     handleLeave: () => void;
-    closeTimer: RefObject<ReturnType<typeof setTimeout> | null>;
+    cancelClose: () => void;
     setHoveredCategoryCaptionOnImage: (title: string | null) => void;
     hoveredCategoryCaptionOnImage: string | null;
     hoveredChangeLinkInPopover: string | null;
@@ -39,7 +39,7 @@ export const MegaMenu = ({
     category,
     lang,
     handleLeave,
-    closeTimer,
+    cancelClose,
     dict,
     setHoveredCategoryCaptionOnImage,
     hoveredCategoryCaptionOnImage,
@@ -104,12 +104,7 @@ export const MegaMenu = ({
             }}
             slotProps={{
                 paper: {
-                    onMouseEnter: () => {
-                        if (closeTimer.current) {
-                            clearTimeout(closeTimer.current);
-                            closeTimer.current = null;
-                        }
-                    },
+                    onMouseEnter: cancelClose,
                     onMouseLeave: handleResetHover,
                     sx: {
                         pointerEvents: 'auto',
@@ -249,7 +244,7 @@ export const MegaMenu = ({
                                     {hoveredBrandProducts.slice(0, 4).map((product) => {
                                         return (
 
-                                            <ProductCard dict={dictProductCard}
+                                            <ProductCard key={product.slug} dict={dictProductCard}
                                                 isLoading={isSubCategoriesLoading}
                                                 lang={lang}
                                                 product={product} />

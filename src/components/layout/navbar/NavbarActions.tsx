@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Box, colors, IconButton, Tooltip } from '@mui/material';
+import { Box, IconButton, Tooltip } from '@mui/material';
 import {
     Search as SearchIcon,
     PersonOutlined as UserIcon,
@@ -12,7 +12,6 @@ import {
 
 import { LanguageSwitcher } from './LanguageSwitcher';
 import type { NavbarDict } from '@/src/types';
-import { color } from 'motion';
 
 interface NavbarActionsProps {
     lang: 'fa' | 'en';
