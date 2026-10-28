@@ -204,6 +204,7 @@ export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
                             zIndex: 1,
                         }}
                     >
+                        {fitnessImage && (
                         <Box
                             component="img"
                             src={fitnessImage}
@@ -221,6 +222,7 @@ export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
                                 },
                             }}
                         />
+                        )}
                     </Box>
                 </Box>
 
@@ -384,6 +386,7 @@ export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
                             zIndex: 1,
                         }}
                     >
+                        {gamingImage && (
                         <Box
                             component="img"
                             src={gamingImage}
@@ -401,6 +404,7 @@ export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
                                 },
                             }}
                         />
+                        )}
                     </Box>
                 </Box>
             </Box>

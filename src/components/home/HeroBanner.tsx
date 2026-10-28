@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Box, Button, Typography, Container, Skeleton } from '@mui/material';
 import {
@@ -212,10 +212,10 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                     );
                 }}
             >
-                {categories.map((category: any) => {
+                {categories.map((category) => {
                     const categoryName = category.name[lang];
                     const categorySlug = category.slug;
-                    const imageUrl = category.image[1];
+                    const imageUrl = category.image?.[1];
 
                     return (
                         <SwiperSlide key={category.id}>
@@ -224,7 +224,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                     position: 'relative',
                                     width: '100%',
                                     height: '100%',
-                                    backgroundImage: `url(${imageUrl})`,
+                                    backgroundImage: imageUrl ? `url(${imageUrl})` : undefined,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     display: 'flex',

@@ -8,12 +8,13 @@ import { OverEarBanner } from '@/src/components/home/OverEarBanner';
 import { PromoBannersGrid } from '@/src/components/home/PromoBannersGrid';
 import { TopDiscountedProducts } from '@/src/components/home/TopDiscountedProducts';
 import { getDictionary, hasLocale } from '@/src/lang/getDictionary';
-import { notFound } from 'next/navigation';
 import { Box, Container } from '@mui/material';
+import { notFound } from 'next/navigation';
 
 const Home = async ({ params }: PageProps<'/[lang]'>) => {
     const { lang } = await params;
     if (!hasLocale(lang)) notFound();
+
     const dict = await getDictionary(lang);
 
     return (

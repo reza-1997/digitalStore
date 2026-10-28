@@ -175,6 +175,7 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
                                             position: 'relative',
                                         }}
                                     >
+                                        {brandLogo && (
                                         <Box
                                             component="img"
                                             src={brandLogo}
@@ -190,6 +191,7 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
                                                 e.currentTarget.style.display = 'none';
                                             }}
                                         />
+                                        )}
                                     </Box>
 
                                     {/* Brand Name */}

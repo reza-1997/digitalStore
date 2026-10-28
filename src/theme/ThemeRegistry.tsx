@@ -53,6 +53,8 @@ export default function ThemeRegistry({
 
         const savedMode = localStorage.getItem('theme');
 
+        // localStorage/matchMedia are client-only; reading them after mount avoids hydration mismatches.
+        /* eslint-disable react-hooks/set-state-in-effect */
         if (savedMode === 'light' || savedMode === 'dark') {
             setMode(savedMode);
         } else {
@@ -62,6 +64,7 @@ export default function ThemeRegistry({
         }
 
         setIsThemeReady(true);
+        /* eslint-enable react-hooks/set-state-in-effect */
 
         // Follow system changes only while no manual preference exists.
         const handleSystemThemeChange = (
