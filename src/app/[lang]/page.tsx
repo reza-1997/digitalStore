@@ -6,6 +6,7 @@ import { HeroBanner } from '@/src/components/home/HeroBanner';
 import { NewArrivalsSlider } from '@/src/components/home/NewArrivalsSlider';
 import { OverEarBanner } from '@/src/components/home/OverEarBanner';
 import { PromoBannersGrid } from '@/src/components/home/PromoBannersGrid';
+import { SmartphoneBanner } from '@/src/components/home/SmartphoneBanner';
 import { TopDiscountedProducts } from '@/src/components/home/TopDiscountedProducts';
 import { getDictionary, hasLocale } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
@@ -29,6 +30,7 @@ const Home = async ({ params }: PageProps<'/[lang]'>) => {
                 <NewArrivalsSlider dict={dict.productCard} lang={lang} />
                 <PromoBannersGrid dict={dict.promoBanners} lang={lang} />
                 <TopDiscountedProducts dict={dict.productCard} lang={lang} />
+                <SmartphoneBanner dict={dict.smartphoneBanner} lang={lang} />
             </Container>
         </Box>
     );

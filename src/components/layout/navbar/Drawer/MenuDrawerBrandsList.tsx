@@ -17,7 +17,7 @@ import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { BRANDS } from '@/src/data/mockData';
 import type { Subcategory, Brand, NavbarDict, ProductCardDict } from '@/src/types';
 import { BrandsListSkeleton } from '../Skeleton/MenuDrawerBrandsListSkeleton';
-import { ProductCardHorizontal } from '@/src/components/common/ProductCardHorizontal';
+import { ProductCardHorizontal } from '@/src/components/common/product';
 
 
 

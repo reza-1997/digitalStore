@@ -2,7 +2,7 @@
 
 import { useGetFilteredProductsQuery } from '@/src/lib/api/apiSlice';
 import type { ProductCardDict } from '@/src/types';
-import { ProductSlider } from '../common/ProductSlider';
+import { ProductSlider } from '@/src/components/common/product';
 
 interface NewArrivalsSliderProps {
     lang: 'fa' | 'en';

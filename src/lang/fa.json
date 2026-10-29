@@ -111,5 +111,9 @@
         "gamingTitle": "ماوس‌های حرفه‌ای مخصوص بازی (Gaming)",
         "startingAt": "شروع قیمت از",
         "shopNow": "خرید کنید"
+    },
+    "smartphoneBanner": {
+        "badge": "پرفروش‌ترین محصولات این هفته!",
+        "shopNow": "خرید کنید"
     }
 }

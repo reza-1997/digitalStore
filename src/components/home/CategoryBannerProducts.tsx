@@ -7,7 +7,7 @@ import { ArrowForward as ArrowRightIcon, ArrowBack as ArrowLeftIcon } from '@mui
 import { useGetAllCategoriesQuery, useGetProductsByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import type { CategoryBannerProductsDict, Product, ProductCardDict } from '@/src/types';
 import { useMemo } from 'react';
-import { ProductCard } from '../common/ProductCard';
+import { ProductCard } from '@/src/components/common/product';
 
 // Deterministic Fisher-Yates shuffle (mulberry32 PRNG seeded from a string hash)
 const seededShuffle = <T,>(items: T[], seedText: string): T[] => {
@@ -174,7 +174,7 @@ export const CategoryBannerProducts = ({
                     display: 'grid',
                     gridTemplateColumns: {
                         xs: 'repeat(1, 1fr)',
-                        sm: 'repeat(3, 1fr)',
+                        sm: 'repeat(2, 1fr)',
                         md: 'repeat(5, 1fr)',
                     },
                     gap: 2.5,
@@ -215,6 +215,8 @@ export const CategoryBannerProducts = ({
                         textDecoration: 'none',
                         transition: 'all 0.3s ease',
                         minHeight: 360,
+                        // On sm, span across both columns to take full width
+                        gridColumn: { sm: 'span 2', md: 'auto' },
                         '&:hover': {
                             boxShadow:
                                 theme.palette.mode === 'dark'

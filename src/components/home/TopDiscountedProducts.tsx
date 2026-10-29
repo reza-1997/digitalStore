@@ -23,7 +23,7 @@ import 'swiper/css/navigation';
 
 import { useGetAllProductsQuery } from '@/src/lib/api/apiSlice';
 import type { Product, ProductCardDict } from '@/src/types';
-import { ProductCardHorizontal } from '../common/ProductCardHorizontal';
+import { ProductCardHorizontal } from '@/src/components/common/product';
 
 
 

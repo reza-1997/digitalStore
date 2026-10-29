@@ -1,20 +1,18 @@
-import { Product, ProductCardDict } from "@/src/types";
-import { DiscountedProduct } from "../home/TopDiscountedProducts";
+ import { Product, ProductCardDict } from "@/src/types";
+import { DiscountedProduct } from "../../home/TopDiscountedProducts";
 
-
-
-import {
-    FavoriteBorder as WishlistIcon,
-    CompareArrows as CompareIcon,
-    VisibilityOutlined as QuickViewIcon,
-    ShoppingBagOutlined as CartIcon,
-} from '@mui/icons-material';
-import { Box, IconButton, Rating, Tooltip, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import Link from "next/link";
 import CustomNumeralNumericFormat from "@/src/utils/CustomNumeralNumericFormat";
 import ProductImage from "./ProductImage";
 import { useState } from "react";
 import { ProductCardHorizontalSkeleton } from "./ProductCardHorizontalSkeleton";
+import { getProductCardActions } from "@/src/utils/productCardActions";
+import { useProductDiscount } from './hooks/useProductDiscount';
+import { ProductDiscountBadge } from './ProductDiscountBadge';
+import { ProductNewArrivalBadge } from './ProductNewArrivalBadge';
+import { ProductRating } from './ProductRating';
+import { ProductActionButtons } from './ProductActionButtons';
 
 
 interface ProductCardHorizontalProps {
@@ -59,22 +57,11 @@ export const ProductCardHorizontal = ({
         Boolean(secondaryImage) &&
         secondaryImage !== primaryImage;
 
-    const hasDiscount =
-        product.discountPrice != null &&
-        product.discountPrice >= 0 &&
-        product.discountPrice < product.price &&
-        product.price > 0;
-
-    const finalPrice = hasDiscount
-        ? product.discountPrice!
-        : product.price;
-
-
-    const discountPercent = hasDiscount
-        ? product._discountPercent || Math.round(
-            ((product.price - finalPrice) / product.price) * 100,
-        )
-        : 0;
+    const { hasDiscount, finalPrice, discountPercent } = useProductDiscount(
+        product.price,
+        product.discountPrice,
+        product._discountPercent,
+    );
 
     const productHref = `/${lang}/product/${product.slug}`;
 
@@ -82,28 +69,13 @@ export const ProductCardHorizontal = ({
         `/${lang}/category/${product.categorySlug}/` +
         `${product.subcategorySlug}?brand=${encodeURIComponent(brandName)}`;
 
-    const actions = [
-        {
-            label: dict.wishlist,
-            Icon: WishlistIcon,
-            onClick: onToggleWishlist,
-        },
-        {
-            label: dict.compare,
-            Icon: CompareIcon,
-            onClick: onCompare,
-        },
-        {
-            label: dict.quickView,
-            Icon: QuickViewIcon,
-            onClick: onQuickView,
-        },
-        {
-            label: dict.addToCart,
-            Icon: CartIcon,
-            onClick: onAddToCart,
-        },
-    ];
+    const actions = getProductCardActions(
+        dict,
+        onToggleWishlist,
+        onCompare,
+        onQuickView,
+        onAddToCart,
+    );
 
     return (
         <Box
@@ -280,44 +252,13 @@ export const ProductCardHorizontal = ({
                 </Typography>
 
                 {/* Rating and review count */}
-                <Box
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: isRtl ? 'flex-start' : 'flex-start',
-                        flexWrap: 'wrap',
-                        gap: 0.4,
-                        direction: isRtl ? 'rtl' : 'ltr',
-                        mt: 0.25,
-                        minWidth: 0,
-                    }}
-                >
-                    <Rating
-                        value={Number(product.rating) || 0}
-                        precision={0.1}
-                        readOnly
-                        size="small"
-                        sx={{
-                            fontSize: { xs: '0.85rem', sm: '0.80rem', md: '1rem' },
-                            color: '#f5a623',
-                        }}
-                    />
-                    <Typography
-                        component="span"
-                        sx={{
-                            fontSize: '0.72rem',
-                            color: 'text.secondary',
-                            whiteSpace: 'nowrap',
-                            direction: 'ltr',
-                        }}
-                    >
-                        <CustomNumeralNumericFormat
-                            prefix="("
-                            suffix=")"
-                            value={product.reviewsCount}
-                        />
-                    </Typography>
-                </Box>
+                <ProductRating
+                    rating={product.rating}
+                    reviewsCount={product.reviewsCount}
+                    isRtl={isRtl}
+                    showRatingValue={false}
+                    size="small"
+                />
 
                 {/* Pricing */}
                 <Box
@@ -393,149 +334,28 @@ export const ProductCardHorizontal = ({
                     }}
                 >
                     {hasDiscount && (
-                        <Box
-                            component="span"
-                            sx={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                minHeight: 23,
-                                px: 0.8,
-                                borderRadius: 0.75,
-                                bgcolor: '#e53935',
-                                color: '#fff',
-                                fontSize: '0.7rem',
-                                fontWeight: 800,
-                                whiteSpace: 'nowrap',
-                                boxShadow:
-                                    '0 2px 8px rgba(229,57,53,0.2)',
-                            }}
-                        >
-                            <CustomNumeralNumericFormat
-                                value={discountPercent}
-                                prefix="  - "
-                                suffix="%"
-                                dir="ltr"
-                            />
-                        </Box>
+                        <ProductDiscountBadge
+                            discountPercent={discountPercent}
+                            size="small"
+                        />
                     )}
 
                     {product.isNewArrival && (
-                        <Box
-                            className="new-arrival-badge"
-                            component="span"
-                            sx={{
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                minHeight: 23,
-                                px: 0.8,
-                                borderRadius: 0.75,
-                                bgcolor: 'success.main',
-                                color: 'success.contrastText',
-                                fontSize: '0.7rem',
-                                fontWeight: 700,
-                                whiteSpace: 'nowrap',
-                                opacity: 0,
-                                visibility: 'hidden',
-                                transform: 'translateY(-4px)',
-                                transition:
-                                    'opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease',
-
-                                '@media (max-width: 899.95px)': {
-                                    opacity: 1,
-                                    visibility: 'visible',
-                                    transform: 'translateY(0)',
-                                },
-
-                                '@media (hover: none), (pointer: coarse)': {
-                                    opacity: 1,
-                                    visibility: 'visible',
-                                    transform: 'translateY(0)',
-                                },
-                            }}
-                        >
-                            {dict.newArrival}
-                        </Box>
+                        <ProductNewArrivalBadge
+                            label={dict.newArrival}
+                            size="small"
+                        />
                     )}
                 </Box>
             )}
             {/* Product actions */}
-            <Box
-                className="action-buttons"
-                sx={{
-                    position: 'absolute',
-                    top: 8,
-                    right: isRtl ? 'auto' : 5,
-                    left: isRtl ? 5 : 'auto',
-                    zIndex: 4,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 0.5,
-
-                    opacity: { xs: 1, sm: 1, md: 0 },
-                    visibility: {
-                        xs: 'visible',
-                        sm: 'visible',
-                        md: 'hidden',
-                    },
-                    transform: {
-                        xs: 'none',
-                        sm: 'none',
-                        md: `translateX(${isRtl ? '-8px' : '8px'})`,
-                    },
-
-                    transition:
-                        'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
-
-                    '@media (hover: hover) and (pointer: fine)': {
-                        '&:hover': {
-                            opacity: 1,
-                            visibility: 'visible',
-                            transform: 'translateX(0)',
-                        },
-                    },
-
-                    '@media (hover: none), (pointer: coarse)': {
-                        opacity: 1,
-                        visibility: 'visible',
-                        transform: 'none',
-                    },
-                }}
-            >
-                {actions.map(({ label, Icon, onClick }) => (
-                    <Tooltip
-                        key={label}
-                        title={label}
-                        placement={isRtl ? 'right' : 'left'}
-                    >
-                        <IconButton
-                            size="small"
-                            aria-label={label}
-                            onClick={(event) => {
-                                event.preventDefault();
-                                event.stopPropagation();
-                                onClick?.(product);
-                            }}
-                            sx={{
-                                width: { xs: 30, sm: 30, md: 40 },
-                                height: { xs: 30, sm: 30, md: 40 },
-                                bgcolor: 'background.paper',
-                                color: 'text.primary',
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
-                                flexShrink: 0,
-
-                                '&:hover': {
-                                    bgcolor: 'text.primary',
-                                    color: 'background.paper',
-                                },
-                            }}
-                        >
-                            <Icon sx={{ fontSize: { xs: 17, sm: 17, md: 21 } }} />
-                        </IconButton>
-                    </Tooltip>
-                ))}
-            </Box>
+            <ProductActionButtons
+                actions={actions}
+                product={product}
+                isRtl={isRtl}
+                buttonSize="small"
+                placement="left"
+            />
         </Box>
     );
 };

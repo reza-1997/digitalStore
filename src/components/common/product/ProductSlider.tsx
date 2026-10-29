@@ -14,7 +14,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import type { Product, ProductCardDict } from '@/src/types';
-import { ProductCard } from '../common/ProductCard';
+import { ProductCard } from '@/src/components/common/product';
 
 interface ProductSliderProps {
     lang: 'fa' | 'en';

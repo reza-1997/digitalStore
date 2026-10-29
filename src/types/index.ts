@@ -185,3 +185,8 @@ export interface PromoBannerDict {
     startingAt: string;
     shopNow: string;
 }
+
+export interface SmartphoneBannerDict {
+    badge: string;
+    shopNow: string;
+}

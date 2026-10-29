@@ -112,5 +112,9 @@
         "gamingTitle": "High-Performance Gaming Mice",
         "startingAt": "Starting At",
         "shopNow": "SHOP NOW"
+    },
+    "smartphoneBanner": {
+        "badge": "BEST SELLING PRODUCTS THIS WEEK!",
+        "shopNow": "SHOP NOW"
     }
 }

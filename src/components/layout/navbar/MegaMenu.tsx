@@ -16,7 +16,7 @@ import type { Category, NavbarDict, Product, ProductCardDict } from '@/src/types
 import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { SubcategoryAccordionItem } from './SubcategoryAccordionItem';
 import { MegaMenuSkeleton } from './Skeleton/MegaMenuSkeleton';
-import { ProductCard } from '../../common/ProductCard';
+import { ProductCard } from '@/src/components/common/product';
 
 interface MegaMenuProps {
     open: boolean;
