@@ -241,13 +241,13 @@ export const Navbar = ({
                             <Typography
                                 component={Link}
                                 href={`/${lang}`}
-                                variant="h6"
                                 sx={{
                                     textDecoration: 'none',
                                     fontWeight: 800,
                                     letterSpacing: lang === 'fa' ? 0 : '-0.7px',
                                     whiteSpace: 'nowrap',
                                     color: navbarTextColor,
+                                    fontSize: { xs: '1rem', sm: '1.4rem', md: '1.1rem',lg: '1.8rem'}, 
                                 }}
                             >
                                 {dictNavbar.logo}

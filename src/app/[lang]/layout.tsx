@@ -19,7 +19,7 @@ const myFont = localFont({
 export const metadata: Metadata = {
     title: "DIGITALSTORE | Premium Digital Products Store",
     description:
-        "High-end modern digital gadgets inspired by Soundcore design philosophy.",
+        "High-end modern digital gadgets",
 };
 
 export function generateStaticParams() {

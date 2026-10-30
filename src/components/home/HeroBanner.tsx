@@ -175,11 +175,11 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                 },
 
                 '& .custom-swiper-button-prev': {
-                    left: { xs: 12, md: 28 },
+                    left: { xs: 7, md: 28 },
                 },
 
                 '& .custom-swiper-button-next': {
-                    right: { xs: 12, md: 28 },
+                    right: { xs: 7, md: 28 },
                 },
             }}
         >
@@ -196,7 +196,7 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                 }}
                 pagination={{ clickable: true }}
                 autoplay={{
-                    delay: 4000,
+                    delay: 5000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 }}
