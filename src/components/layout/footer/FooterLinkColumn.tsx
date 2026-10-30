@@ -25,6 +25,7 @@ const FooterLinkColumn = ({
                     fontWeight: 700,
                     mb: 2,
                     textAlign: isRtl ? 'right' : 'left',
+                    color: 'text.primary',
                 }}
             >
                 {title}

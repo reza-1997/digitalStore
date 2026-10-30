@@ -24,6 +24,7 @@ const FooterContact = ({ dict, isRtl }: FooterContactProps) => {
                     fontWeight: 700,
                     mb: 3,
                     textAlign: isRtl ? 'right' : 'left',
+                    color: 'text.primary',
                 }}
             >
                 {dict.title}
