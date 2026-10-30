@@ -3,7 +3,7 @@ import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 
 interface ProductRatingProps {
     rating: number;
-    reviewsCount: number;
+    reviewsCount?: number;
     isRtl: boolean;
     showRatingValue?: boolean;
     size?: 'small' | 'medium';
@@ -63,21 +63,23 @@ export const ProductRating = ({
                 </Typography>
             )}
 
-            <Typography
-                component="span"
-                sx={{
-                    fontSize: isSmall ? '0.72rem' : '0.8rem',
-                    color: 'text.secondary',
-                    fontVariantNumeric: 'tabular-nums',
-                    whiteSpace: 'nowrap',
-                }}
-            >
-                <CustomNumeralNumericFormat
-                    prefix="("
-                    suffix=")"
-                    value={reviewsCount}
-                />
-            </Typography>
+            {reviewsCount != null && (
+                <Typography
+                    component="span"
+                    sx={{
+                        fontSize: isSmall ? '0.72rem' : '0.8rem',
+                        color: 'text.secondary',
+                        fontVariantNumeric: 'tabular-nums',
+                        whiteSpace: 'nowrap',
+                    }}
+                >
+                    <CustomNumeralNumericFormat
+                        prefix="("
+                        suffix=")"
+                        value={reviewsCount}
+                    />
+                </Typography>
+            )}
         </Box>
     );
 };

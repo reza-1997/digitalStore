@@ -147,7 +147,7 @@ export const ProductSlider = ({
                     }}
                 >
                     {products.map((product) => (
-                        <SwiperSlide key={product.slug} style={{ height: 'auto', display: 'flex' }}>
+                        <SwiperSlide key={product.slug} style={{ display: 'flex' }}>
                             <ProductCard product={product} lang={lang} dict={dict} isLoading={isLoading} />
                         </SwiperSlide>
                     ))}

@@ -8,9 +8,12 @@ import { OverEarBanner } from '@/src/components/home/OverEarBanner';
 import { PromoBannersGrid } from '@/src/components/home/PromoBannersGrid';
 import { SmartphoneBanner } from '@/src/components/home/SmartphoneBanner';
 import { TopDiscountedProducts } from '@/src/components/home/TopDiscountedProducts';
+import { TestimonialSlider } from '@/src/components/common/testimonial';
+import { TESTIMONIALS } from '@/src/data/testimonials';
 import { getDictionary, hasLocale } from '@/src/lang/getDictionary';
 import { Box, Container } from '@mui/material';
 import { notFound } from 'next/navigation';
+import Footer from '@/src/components/layout/footer/Footer';
 
 const Home = async ({ params }: PageProps<'/[lang]'>) => {
     const { lang } = await params;
@@ -31,7 +34,9 @@ const Home = async ({ params }: PageProps<'/[lang]'>) => {
                 <PromoBannersGrid dict={dict.promoBanners} lang={lang} />
                 <TopDiscountedProducts dict={dict.productCard} lang={lang} />
                 <SmartphoneBanner dict={dict.smartphoneBanner} lang={lang} />
+                <TestimonialSlider dict={dict.testimonial} lang={lang} testimonials={TESTIMONIALS} />
             </Container>
+            <Footer dict={dict.footer} lang={lang} />
         </Box>
     );
 }

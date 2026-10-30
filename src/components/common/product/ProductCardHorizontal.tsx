@@ -1,4 +1,6 @@
- import { Product, ProductCardDict } from "@/src/types";
+"use client"
+
+import { Product, ProductCardDict } from "@/src/types";
 import { DiscountedProduct } from "../../home/TopDiscountedProducts";
 
 import { Box, Typography, useTheme } from "@mui/material";

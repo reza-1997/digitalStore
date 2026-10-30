@@ -115,5 +115,61 @@
     "smartphoneBanner": {
         "badge": "پرفروش‌ترین محصولات این هفته!",
         "shopNow": "خرید کنید"
+    },
+    "testimonial": {
+        "title": "نظرات مشتریان ما",
+        "purchased": "خریداری شده",
+        "on": "در تاریخ"
+    },
+    "footer": {
+        "newsletter": {
+            "title": "عضویت در خبرنامه",
+            "subtitle": "اولین کسی باشید که از محصولات جدید، پیشنهادات ویژه و تخفیف‌ها مطلع می‌شود.",
+            "emailPlaceholder": "آدرس ایمیل خود را وارد کنید",
+            "termsLabel": "با قوانین و شرایط موافقم",
+            "subscribeButton": "عضویت"
+        },
+        "information": {
+            "title": "اطلاعات ما",
+            "welcome": "به فروشگاه دیجیتال‌استور خوش آمدید - مقصد شما برای محصولات تکنولوژی پریمیوم.",
+            "appStore": "دانلود از اپ استور",
+            "googlePlay": "دانلود از گوگل پلی"
+        },
+        "products": {
+            "title": "محصولات",
+            "pricesDrop": "تخفیف‌ها",
+            "newProducts": "محصولات جدید",
+            "bestSellers": "پرفروش‌ترین‌ها",
+            "sitemap": "نقشه سایت",
+            "stores": "فروشگاه‌ها"
+        },
+        "company": {
+            "title": "شرکت ما",
+            "delivery": "ارسال",
+            "legalNotice": "اطلاعیه قانونی",
+            "terms": "قوانین و شرایط",
+            "securePayment": "پرداخت امن",
+            "contactUs": "تماس با ما",
+            "aboutUs": "درباره ما"
+        },
+        "account": {
+            "title": "حساب کاربری",
+            "orderTracking": "پیگیری سفارش",
+            "signIn": "ورود",
+            "createAccount": "ثبت نام",
+            "discount": "تخفیف",
+            "wishlist": "علاقه‌مندی‌ها"
+        },
+        "contact": {
+            "title": "تماس با ما",
+            "storeName": "فروشگاه دیجیتال‌استور",
+            "address": "خیابان تکنولوژی ۱۲۳، سیلیکون ولی، کالیفرنیا ۹۴۰۲۵",
+            "phone": "+۹۸ ۲۱ ۱۲۳۴۵۶۷۸",
+            "email": "support@digitalstore.com"
+        },
+        "social": {
+            "followUs": "ما را دنبال کنید",
+            "copyright": "تمامی حقوق محفوظ است © ۲۰۲۶ دیجیتال‌استور."
+        }
     }
 }

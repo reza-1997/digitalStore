@@ -116,5 +116,61 @@
     "smartphoneBanner": {
         "badge": "BEST SELLING PRODUCTS THIS WEEK!",
         "shopNow": "SHOP NOW"
+    },
+    "testimonial": {
+        "title": "What Our Customers Say",
+        "purchased": "Purchased",
+        "on": "on"
+    },
+    "footer": {
+        "newsletter": {
+            "title": "Sign Up & Subscribe To Our Newsletter",
+            "subtitle": "Be the first to know about new arrivals, exclusive offers, and promotions.",
+            "emailPlaceholder": "Enter your email address",
+            "termsLabel": "I agree to the terms and conditions",
+            "subscribeButton": "SUBSCRIBE"
+        },
+        "information": {
+            "title": "Our Information",
+            "welcome": "Welcome to DigitalStore - your one-stop destination for premium tech products.",
+            "appStore": "Download on App Store",
+            "googlePlay": "Get it on Google Play"
+        },
+        "products": {
+            "title": "Products",
+            "pricesDrop": "Prices Drop",
+            "newProducts": "New Products",
+            "bestSellers": "Best Sellers",
+            "sitemap": "Sitemap",
+            "stores": "Stores"
+        },
+        "company": {
+            "title": "Our Company",
+            "delivery": "Delivery",
+            "legalNotice": "Legal Notice",
+            "terms": "Terms & Conditions",
+            "securePayment": "Secure Payment",
+            "contactUs": "Contact Us",
+            "aboutUs": "About Us"
+        },
+        "account": {
+            "title": "Your Account",
+            "orderTracking": "Order Tracking",
+            "signIn": "Sign In",
+            "createAccount": "Create Account",
+            "discount": "Discount",
+            "wishlist": "Wishlist"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "storeName": "DigitalStore",
+            "address": "123 Tech Street, Silicon Valley, CA 94025",
+            "phone": "+1 (555) 123-4567",
+            "email": "support@digitalstore.com"
+        },
+        "social": {
+            "followUs": "Follow Us",
+            "copyright": "Copyright © 2026 DigitalStore. All Rights Reserved."
+        }
     }
 }

@@ -1,3 +1,6 @@
+"use client"
+
+
 import { useParams } from "next/navigation";
 import { NumberFormatBase, useNumericFormat } from "react-number-format";
 import type { NumericFormatProps } from "react-number-format";

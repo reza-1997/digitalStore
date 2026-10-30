@@ -190,3 +190,74 @@ export interface SmartphoneBannerDict {
     badge: string;
     shopNow: string;
 }
+
+export interface Testimonial {
+    id: string;
+    userName: string;
+    userNameFa: string;
+    userId: string;
+    review: string;
+    reviewFa: string;
+    productSlug: string;
+    rating: number;
+    purchaseDate: string;
+    purchaseDateFa: string;
+}
+
+export interface TestimonialDict {
+    title: string;
+    purchased: string;
+    on: string;
+}
+
+export interface FooterDict {
+    newsletter: {
+        title: string;
+        subtitle: string;
+        emailPlaceholder: string;
+        termsLabel: string;
+        subscribeButton: string;
+    };
+    information: {
+        title: string;
+        welcome: string;
+        appStore: string;
+        googlePlay: string;
+    };
+    products: {
+        title: string;
+        pricesDrop: string;
+        newProducts: string;
+        bestSellers: string;
+        sitemap: string;
+        stores: string;
+    };
+    company: {
+        title: string;
+        delivery: string;
+        legalNotice: string;
+        terms: string;
+        securePayment: string;
+        contactUs: string;
+        aboutUs: string;
+    };
+    account: {
+        title: string;
+        orderTracking: string;
+        signIn: string;
+        createAccount: string;
+        discount: string;
+        wishlist: string;
+    };
+    contact: {
+        title: string;
+        storeName: string;
+        address: string;
+        phone: string;
+        email: string;
+    };
+    social: {
+        followUs: string;
+        copyright: string;
+    };
+}

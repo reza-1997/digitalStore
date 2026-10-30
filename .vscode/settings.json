@@ -1,3 +1,4 @@
 {
-    "devin.implicitContext.enabled": true
+    "devin.implicitContext.enabled": false,
+    "devin.defaultMode": "accept-edits"
 }
