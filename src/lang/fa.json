@@ -171,5 +171,15 @@
             "followUs": "ما را دنبال کنید",
             "copyright": "تمامی حقوق محفوظ است © ۲۰۲۶ دیجیتال‌استور."
         }
+    },
+    "productsPage": {
+        "sortBy": "مرتب‌سازی بر اساس",
+        "productsCount": "محصول",
+        "filters": {
+            "availability": "موجودی",
+            "inStock": "موجود",
+            "outOfStock": "ناموجود",
+            "brand": "برند"
+        }
     }
 }

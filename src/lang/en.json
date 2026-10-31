@@ -172,5 +172,15 @@
             "followUs": "Follow Us",
             "copyright": "Copyright © 2026 DigitalStore. All Rights Reserved."
         }
+    },
+    "productsPage": {
+        "sortBy": "Sort by",
+        "productsCount": "products",
+        "filters": {
+            "availability": "Availability",
+            "inStock": "In stock",
+            "outOfStock": "Out of stock",
+            "brand": "Brand"
+        }
     }
 }

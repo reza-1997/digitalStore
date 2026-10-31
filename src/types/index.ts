@@ -261,3 +261,14 @@ export interface FooterDict {
         copyright: string;
     };
 }
+
+export interface ProductsPageDict {
+    sortBy: string;
+    productsCount: string;
+    filters: {
+        availability: string;
+        inStock: string;
+        outOfStock: string;
+        brand: string;
+    };
+}
