@@ -176,6 +176,7 @@
     "productsPage": {
         "sortBy": "Sort by",
         "productsCount": "products",
+        "noProductsFound": "No products match the selected filters.",
         "sortOptions": {
             "alphabetical": "Alphabetically, A-Z",
             "alphabeticalDesc": "Alphabetically, Z-A",

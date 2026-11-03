@@ -5,6 +5,7 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 
 import { CategoryHeroSlider } from './CategoryHeroSlider';
 import { ProductFilters } from './ProductFilters';
+import { ProductEmptyState } from './ProductEmptyState';
 import { ProductSortBy } from './ProductSortBy';
 import { ProductCard } from '@/src/components/common/product';
 
@@ -101,18 +102,25 @@ export const ProductsPage = ({
                             </Box>
 
                             {/* Products Grid */}
-                            <Grid container spacing={3}>
-                                {displayProducts.map((product) => (
-                                    <Grid key={product.slug} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
-                                        <ProductCard
-                                            product={product}
-                                            lang={lang}
-                                            dict={productCardDict}
-                                            isLoading={false}
-                                        />
-                                    </Grid>
-                                ))}
-                            </Grid>
+                            {displayProducts.length > 0 ? (
+                                <Grid container spacing={3}>
+                                    {displayProducts.map((product) => (
+                                        <Grid key={product.slug} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
+                                            <ProductCard
+                                                product={product}
+                                                lang={lang}
+                                                dict={productCardDict}
+                                                isLoading={false}
+                                            />
+                                        </Grid>
+                                    ))}
+                                </Grid>
+                            ) : (
+                                <ProductEmptyState
+                                    message={dict.noProductsFound}
+                                    isRtl={isRtl}
+                                />
+                            )}
                         </Grid>
                     </Grid>
                 </Container>

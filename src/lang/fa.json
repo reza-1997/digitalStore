@@ -175,6 +175,7 @@
     "productsPage": {
         "sortBy": "مرتب‌سازی بر اساس",
         "productsCount": "محصول",
+        "noProductsFound": "هیچ محصولی بر اساس فیلترهای انتخاب‌شده یافت نشد.",
         "sortOptions": {
             "alphabetical": "الفبایی (الف-ی)",
             "alphabeticalDesc": "الفبایی (ی-الف)",

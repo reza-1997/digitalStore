@@ -265,6 +265,7 @@ export interface FooterDict {
 export interface ProductsPageDict {
     sortBy: string;
     productsCount: string;
+    noProductsFound: string;
     sortOptions: {
         alphabetical: string;
         alphabeticalDesc: string;

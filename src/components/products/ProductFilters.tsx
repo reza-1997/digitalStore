@@ -10,13 +10,11 @@ import {
     Button,
     Tooltip,
     Chip,
-    Accordion,
-    AccordionSummary,
-    AccordionDetails,
 } from '@mui/material';
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close';
+
+import { FilterAccordion, FilterOptionList } from './ProductFilterControls';
 
 import type {
     ProductsPageDict,
@@ -354,41 +352,6 @@ export const ProductFilters = ({
         applyFilters(defaultFilters);
     };
 
-    // Handle accordion expansion
-    const handleAccordionChange =
-        (panel: string) =>
-            (_event: React.SyntheticEvent, isExpanded: boolean) => {
-                setExpandedPanel(isExpanded ? panel : false);
-            };
-
-    // Reusable accordion styles
-    const accordionSx = {
-        mb: 2,
-        boxShadow: 'none',
-        '&:before': {
-            display: 'none',
-        },
-    };
-
-    const summarySx = {
-        minHeight: 48,
-        '& .MuiAccordionSummary-content': {
-            margin: 0,
-        },
-    };
-
-    const renderFilterTitle = (title: string) => (
-        <Typography
-            variant="h6"
-            sx={{
-                fontWeight: 700,
-                color: 'text.primary',
-            }}
-        >
-            {title}
-        </Typography>
-    );
-
     // Reusable checkbox handler
     const toggleSelection = (
         value: string,
@@ -443,6 +406,11 @@ export const ProductFilters = ({
                                 size="small"
                                 color="primary"
                                 variant="outlined"
+                                sx={
+                                    isRtl
+                                        ? { '& .MuiChip-deleteIcon': { ml: 0.5 } }
+                                        : undefined
+                                }
                             />
                         ))}
                     </Box>
@@ -462,364 +430,212 @@ export const ProductFilters = ({
             )}
 
             {/* Availability */}
-            <Accordion
-                expanded={expandedPanel === 'availability'}
-                onChange={handleAccordionChange('availability')}
-                disableGutters
-                sx={accordionSx}
+            <FilterAccordion
+                panel="availability"
+                title={dict.filters.availability}
+                expandedPanel={expandedPanel}
+                setExpandedPanel={setExpandedPanel}
             >
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    sx={summarySx}
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 1,
+                    }}
                 >
-                    {renderFilterTitle(dict.filters.availability)}
-                </AccordionSummary>
-
-                <AccordionDetails sx={{ pt: 0 }}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: 1,
-                        }}
-                    >
-                        {(
-                            [
-                                ['inStock', dict.filters.inStock],
-                                ['outOfStock', dict.filters.outOfStock],
-                            ] as const
-                        ).map(([key, label]) => (
-                            <Box
-                                key={key}
-                                sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    flexDirection: isRtl ? 'row-reverse' : 'row',
-                                    justifyContent: isRtl ? 'flex-end' : 'flex-start',
-                                    gap: 1,
-                                }}
-                            >
-                                <Checkbox
-                                    checked={availability[key]}
-                                    onChange={(event) =>
-                                        setAvailability((previous) => ({
-                                            ...previous,
-                                            [key]: event.target.checked,
-                                        }))
-                                    }
-                                />
-
-                                <Typography
-                                    variant="body2"
-                                    sx={{
-                                        color: 'text.secondary',
-                                        cursor: 'pointer',
-                                        userSelect: 'none',
-                                    }}
-                                    onClick={() =>
-                                        setAvailability((previous) => ({
-                                            ...previous,
-                                            [key]: !previous[key],
-                                        }))
-                                    }
-                                >
-                                    {label}
-                                </Typography>
-                            </Box>
-                        ))}
-                    </Box>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Categories */}
-            <Accordion
-                expanded={expandedPanel === 'productType'}
-                onChange={handleAccordionChange('productType')}
-                disableGutters
-                sx={accordionSx}
-            >
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    sx={summarySx}
-                >
-                    {renderFilterTitle(dict.filters.productType)}
-                </AccordionSummary>
-
-                <AccordionDetails sx={{ pt: 0 }}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: 1.5,
-                        }}
-                    >
-                        {categoryCounts.map((category) => (
-                            <Box
-                                key={category.id}
-                                sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-between',
-                                    flexDirection: isRtl ? 'row-reverse' : 'row',
-                                    gap: 1,
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: 1,
-                                        flex: 1,
-                                    }}
-                                >
-                                    <Checkbox
-                                        checked={selectedCategories.includes(category.slug)}
-                                        onChange={() =>
-                                            toggleSelection(
-                                                category.slug,
-                                                selectedCategories,
-                                                setSelectedCategories
-                                            )
-                                        }
-                                    />
-
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: 'text.secondary',
-                                            cursor: 'pointer',
-                                            userSelect: 'none',
-                                        }}
-                                        onClick={() =>
-                                            toggleSelection(
-                                                category.slug,
-                                                selectedCategories,
-                                                setSelectedCategories
-                                            )
-                                        }
-                                    >
-                                        {category.name[lang]}
-                                    </Typography>
-                                </Box>
-
-                                <Typography
-                                    variant="body2"
-                                    sx={{ color: 'text.disabled' }}
-                                >
-                                    ({category.count})
-                                </Typography>
-                            </Box>
-                        ))}
-                    </Box>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Brands */}
-            <Accordion
-                expanded={expandedPanel === 'brand'}
-                onChange={handleAccordionChange('brand')}
-                disableGutters
-                sx={accordionSx}
-            >
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    sx={summarySx}
-                >
-                    {renderFilterTitle(dict.filters.brand)}
-                </AccordionSummary>
-
-                <AccordionDetails sx={{ pt: 0 }}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: 1.5,
-                        }}
-                    >
-                        {brandCounts.map((brand) => (
-                            <Box
-                                key={brand.slug}
-                                sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-between',
-                                    flexDirection: isRtl ? 'row-reverse' : 'row',
-                                    gap: 1,
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: 1,
-                                        flex: 1,
-                                    }}
-                                >
-                                    <Checkbox
-                                        checked={selectedBrands.includes(brand.slug)}
-                                        onChange={() =>
-                                            toggleSelection(
-                                                brand.slug,
-                                                selectedBrands,
-                                                setSelectedBrands
-                                            )
-                                        }
-                                    />
-
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            color: 'text.secondary',
-                                            cursor: 'pointer',
-                                            userSelect: 'none',
-                                        }}
-                                        onClick={() =>
-                                            toggleSelection(
-                                                brand.slug,
-                                                selectedBrands,
-                                                setSelectedBrands
-                                            )
-                                        }
-                                    >
-                                        {brand.name[lang]}
-                                    </Typography>
-                                </Box>
-
-                                <Typography
-                                    variant="body2"
-                                    sx={{ color: 'text.disabled' }}
-                                >
-                                    ({brand.count})
-                                </Typography>
-                            </Box>
-                        ))}
-                    </Box>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Colors */}
-            <Accordion
-                expanded={expandedPanel === 'colors'}
-                onChange={handleAccordionChange('colors')}
-                disableGutters
-                sx={accordionSx}
-            >
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    sx={summarySx}
-                >
-                    {renderFilterTitle(dict.filters.colors)}
-                </AccordionSummary>
-
-                <AccordionDetails sx={{ pt: 0 }}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            gap: 1.5,
-                        }}
-                    >
-                        {uniqueColors.map((color) => {
-                            const isSelected = selectedColors.includes(color.value);
-
-                            return (
-                                <Tooltip
-                                    key={color.value}
-                                    title={color.name}
-                                    arrow
-                                >
-                                    <Box
-                                        component="button"
-                                        type="button"
-                                        aria-label={color.name}
-                                        aria-pressed={isSelected}
-                                        onClick={() =>
-                                            toggleSelection(
-                                                color.value,
-                                                selectedColors,
-                                                setSelectedColors
-                                            )
-                                        }
-                                        sx={{
-                                            width: 32,
-                                            height: 32,
-                                            p: 0,
-                                            borderRadius: '50%',
-                                            backgroundColor: color.value,
-                                            border: '2px solid',
-                                            borderColor: isSelected
-                                                ? 'primary.main'
-                                                : 'grey.300',
-                                            outline: isSelected
-                                                ? '2px solid'
-                                                : 'none',
-                                            outlineColor: 'primary.main',
-                                            outlineOffset: 2,
-                                            cursor: 'pointer',
-                                            transition: 'transform 0.2s',
-                                            '&:hover': {
-                                                transform: 'scale(1.1)',
-                                            },
-                                        }}
-                                    />
-                                </Tooltip>
-                            );
-                        })}
-                    </Box>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Price Range */}
-            <Accordion
-                expanded={expandedPanel === 'priceRange'}
-                onChange={handleAccordionChange('priceRange')}
-                disableGutters
-                sx={accordionSx}
-            >
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    sx={summarySx}
-                >
-                    {renderFilterTitle(dict.filters.priceRange)}
-                </AccordionSummary>
-
-                <AccordionDetails sx={{ pt: 0 }}>
-                    <Box sx={{ px: 1 }}>
-                        <Slider
-                            value={priceRange}
-                            onChange={(_, value) =>
-                                setPriceRange(value as [number, number])
-                            }
-                            valueLabelDisplay="auto"
-                            min={0}
-                            max={maxPrice}
-                            step={1}
-                        />
-
+                    {(
+                        [
+                            ['inStock', dict.filters.inStock],
+                            ['outOfStock', dict.filters.outOfStock],
+                        ] as const
+                    ).map(([key, label]) => (
                         <Box
+                            key={key}
                             sx={{
                                 display: 'flex',
-                                justifyContent: 'space-between',
-                                mt: 1,
+                                alignItems: 'center',
+                                flexDirection: isRtl ? 'row-reverse' : 'row',
+                                justifyContent: isRtl ? 'flex-end' : 'flex-start',
+                                gap: 1,
                             }}
                         >
+                            <Checkbox
+                                checked={availability[key]}
+                                onChange={(event) =>
+                                    setAvailability((previous) => ({
+                                        ...previous,
+                                        [key]: event.target.checked,
+                                    }))
+                                }
+                            />
                             <Typography
                                 variant="body2"
-                                sx={{ color: 'text.secondary' }}
+                                sx={{
+                                    color: 'text.secondary',
+                                    cursor: 'pointer',
+                                    userSelect: 'none',
+                                }}
+                                onClick={() =>
+                                    setAvailability((previous) => ({
+                                        ...previous,
+                                        [key]: !previous[key],
+                                    }))
+                                }
                             >
-                                ${priceRange[0]}
-                            </Typography>
-
-                            <Typography
-                                variant="body2"
-                                sx={{ color: 'text.secondary' }}
-                            >
-                                ${priceRange[1]}
+                                {label}
                             </Typography>
                         </Box>
+                    ))}
+                </Box>
+            </FilterAccordion>
+
+            {/* Categories */}
+            <FilterAccordion
+                panel="productType"
+                title={dict.filters.productType}
+                expandedPanel={expandedPanel}
+                setExpandedPanel={setExpandedPanel}
+            >
+                <FilterOptionList
+                    isRtl={isRtl}
+                    options={categoryCounts.map((category) => ({
+                        key: category.id,
+                        label: category.name[lang],
+                        count: category.count,
+                        checked: selectedCategories.includes(category.slug),
+                        onToggle: () =>
+                            toggleSelection(
+                                category.slug,
+                                selectedCategories,
+                                setSelectedCategories
+                            ),
+                    }))}
+                />
+            </FilterAccordion>
+
+            {/* Brands */}
+            <FilterAccordion
+                panel="brand"
+                title={dict.filters.brand}
+                expandedPanel={expandedPanel}
+                setExpandedPanel={setExpandedPanel}
+            >
+                <FilterOptionList
+                    isRtl={isRtl}
+                    options={brandCounts.map((brand) => ({
+                        key: brand.slug,
+                        label: brand.name[lang],
+                        count: brand.count,
+                        checked: selectedBrands.includes(brand.slug),
+                        onToggle: () =>
+                            toggleSelection(
+                                brand.slug,
+                                selectedBrands,
+                                setSelectedBrands
+                            ),
+                    }))}
+                />
+            </FilterAccordion>
+
+            {/* Colors */}
+            <FilterAccordion
+                panel="colors"
+                title={dict.filters.colors}
+                expandedPanel={expandedPanel}
+                setExpandedPanel={setExpandedPanel}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: 1.5,
+                    }}
+                >
+                    {uniqueColors.map((color) => {
+                        const isSelected = selectedColors.includes(color.value);
+
+                        return (
+                            <Tooltip key={color.value} title={color.name} arrow>
+                                <Box
+                                    component="button"
+                                    type="button"
+                                    aria-label={color.name}
+                                    aria-pressed={isSelected}
+                                    onClick={() =>
+                                        toggleSelection(
+                                            color.value,
+                                            selectedColors,
+                                            setSelectedColors
+                                        )
+                                    }
+                                    sx={{
+                                        width: 32,
+                                        height: 32,
+                                        p: 0,
+                                        borderRadius: '50%',
+                                        backgroundColor: color.value,
+                                        border: '2px solid',
+                                        borderColor: isSelected
+                                            ? 'primary.main'
+                                            : 'grey.300',
+                                        outline: isSelected ? '2px solid' : 'none',
+                                        outlineColor: 'primary.main',
+                                        outlineOffset: 2,
+                                        cursor: 'pointer',
+                                        transition: 'transform 0.2s',
+                                        '&:hover': {
+                                            transform: 'scale(1.1)',
+                                        },
+                                    }}
+                                />
+                            </Tooltip>
+                        );
+                    })}
+                </Box>
+            </FilterAccordion>
+
+            {/* Price Range */}
+            <FilterAccordion
+                panel="priceRange"
+                title={dict.filters.priceRange}
+                expandedPanel={expandedPanel}
+                setExpandedPanel={setExpandedPanel}
+            >
+                <Box sx={{ px: 1 }}>
+                    <Slider
+                        value={priceRange}
+                        onChange={(_, value) =>
+                            setPriceRange(value as [number, number])
+                        }
+                        valueLabelDisplay="auto"
+                        min={0}
+                        max={maxPrice}
+                        step={1}
+                    />
+
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            mt: 1,
+                        }}
+                    >
+                        <Typography
+                            variant="body2"
+                            sx={{ color: 'text.secondary' }}
+                        >
+                            ${priceRange[0]}
+                        </Typography>
+
+                        <Typography
+                            variant="body2"
+                            sx={{ color: 'text.secondary' }}
+                        >
+                            ${priceRange[1]}
+                        </Typography>
                     </Box>
-                </AccordionDetails>
-            </Accordion>
+                </Box>
+            </FilterAccordion>
 
             {/* Apply Filters */}
             <Button
@@ -837,4 +653,3 @@ export const ProductFilters = ({
         </Box>
     );
 };
-
