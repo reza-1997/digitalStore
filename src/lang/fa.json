@@ -175,11 +175,25 @@
     "productsPage": {
         "sortBy": "مرتب‌سازی بر اساس",
         "productsCount": "محصول",
+        "sortOptions": {
+            "alphabetical": "الفبایی (الف-ی)",
+            "alphabeticalDesc": "الفبایی (ی-الف)",
+            "priceLow": "قیمت: کم به زیاد",
+            "priceHigh": "قیمت: زیاد به کم",
+            "popular": "محبوب‌ترین",
+            "highestDiscount": "بیشترین تخفیف"
+        },
         "filters": {
             "availability": "موجودی",
             "inStock": "موجود",
             "outOfStock": "ناموجود",
-            "brand": "برند"
+            "productType": "نوع محصول",
+            "brand": "برند",
+            "colors": "رنگ‌ها",
+            "priceRange": "محدوده قیمت",
+            "apply": "اعمال فیلترها",
+            "activeFilters": "فیلترهای فعال",
+            "removeAll": "حذف همه فیلترها"
         }
     }
 }

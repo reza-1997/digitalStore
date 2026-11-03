@@ -265,10 +265,24 @@ export interface FooterDict {
 export interface ProductsPageDict {
     sortBy: string;
     productsCount: string;
+    sortOptions: {
+        alphabetical: string;
+        alphabeticalDesc: string;
+        priceLow: string;
+        priceHigh: string;
+        popular: string;
+        highestDiscount: string;
+    };
     filters: {
         availability: string;
         inStock: string;
         outOfStock: string;
+        productType: string;
         brand: string;
+        colors: string;
+        priceRange: string;
+        apply: string;
+        activeFilters: string;
+        removeAll: string;
     };
 }

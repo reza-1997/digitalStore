@@ -176,11 +176,25 @@
     "productsPage": {
         "sortBy": "Sort by",
         "productsCount": "products",
+        "sortOptions": {
+            "alphabetical": "Alphabetically, A-Z",
+            "alphabeticalDesc": "Alphabetically, Z-A",
+            "priceLow": "Price: Low to High",
+            "priceHigh": "Price: High to Low",
+            "popular": "Most Popular",
+            "highestDiscount": "Highest Discount"
+        },
         "filters": {
             "availability": "Availability",
             "inStock": "In stock",
             "outOfStock": "Out of stock",
-            "brand": "Brand"
+            "productType": "Product Type",
+            "brand": "Brand",
+            "colors": "Colors",
+            "priceRange": "Price Range",
+            "apply": "Apply Filters",
+            "activeFilters": "Active Filters",
+            "removeAll": "Remove All Filters"
         }
     }
 }

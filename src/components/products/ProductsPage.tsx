@@ -1,18 +1,21 @@
 'use client';
 
-import { Box, Container, Typography, Select, MenuItem, Grid, FormControl, InputLabel } from '@mui/material';
+import { useState } from 'react';
+import { Box, Container, Typography, Grid } from '@mui/material';
 
 import { CategoryHeroSlider } from './CategoryHeroSlider';
 import { ProductFilters } from './ProductFilters';
+import { ProductSortBy } from './ProductSortBy';
 import { ProductCard } from '@/src/components/common/product';
 
-import type { Product, Category, ProductsPageDict, ProductCardDict } from '@/src/types';
+import type { Product, Category, Brand, ProductsPageDict, ProductCardDict } from '@/src/types';
 
 interface ProductsPageProps {
     lang: 'fa' | 'en';
     dict: ProductsPageDict;
     productCardDict: ProductCardDict;
     categories: Category[];
+    brands: Brand[];
     products: Product[];
 }
 
@@ -21,9 +24,23 @@ export const ProductsPage = ({
     dict,
     productCardDict,
     categories,
+    brands,
     products,
 }: ProductsPageProps) => {
     const isRtl = lang === 'fa';
+    const [filteredProducts, setFilteredProducts] = useState<Product[]>(products);
+    const [displayProducts, setDisplayProducts] = useState<Product[]>(products);
+
+    // Handle filter changes
+    const handleFilter = (filtered: Product[]) => {
+        setFilteredProducts(filtered);
+        setDisplayProducts(filtered);
+    };
+
+    // Handle sort changes (sort on filtered products)
+    const handleSort = (sorted: Product[]) => {
+        setDisplayProducts(sorted);
+    };
 
     return (
         <Box component="main" sx={{ width: '100%' }}>
@@ -42,7 +59,14 @@ export const ProductsPage = ({
                     <Grid container spacing={4}>
                         {/* Filters Sidebar */}
                         <Grid size={{ xs: 12, md: 3 }}>
-                            <ProductFilters lang={lang} dict={dict} />
+                            <ProductFilters
+                                lang={lang}
+                                dict={dict}
+                                categories={categories}
+                                brands={brands}
+                                products={products}
+                                onFilter={handleFilter}
+                            />
                         </Grid>
 
                         {/* Products Grid */}
@@ -65,47 +89,20 @@ export const ProductsPage = ({
                                         textAlign: isRtl ? 'right' : 'left',
                                     }}
                                 >
-                                    {products.length} {dict.productsCount}
+                                    {displayProducts.length} {dict.productsCount}
                                 </Typography>
 
-                                <FormControl
-                                    size="small"
-                                    sx={{
-                                        minWidth: 200,
-                                        ml: isRtl ? 'auto' : 0,
-                                        mr: isRtl ? 0 : 'auto',
-                                    }}
-                                >
-                                    <InputLabel>{dict.sortBy}</InputLabel>
-                                    <Select
-                                        label={dict.sortBy}
-                                        defaultValue="alphabetical"
-                                        sx={{
-                                            textAlign: isRtl ? 'right' : 'left',
-                                        }}
-                                    >
-                                        <MenuItem value="alphabetical">
-                                            {isRtl ? 'الفبایی (الف-ی)' : 'Alphabetically, A-Z'}
-                                        </MenuItem>
-                                        <MenuItem value="alphabetical-desc">
-                                            {isRtl ? 'الفبایی (ی-الف)' : 'Alphabetically, Z-A'}
-                                        </MenuItem>
-                                        <MenuItem value="price-low">
-                                            {isRtl ? 'قیمت: کم به زیاد' : 'Price: Low to High'}
-                                        </MenuItem>
-                                        <MenuItem value="price-high">
-                                            {isRtl ? 'قیمت: زیاد به کم' : 'Price: High to Low'}
-                                        </MenuItem>
-                                        <MenuItem value="newest">
-                                            {isRtl ? 'جدیدترین' : 'Newest'}
-                                        </MenuItem>
-                                    </Select>
-                                </FormControl>
+                                <ProductSortBy
+                                    lang={lang}
+                                    dict={dict}
+                                    products={filteredProducts}
+                                    onSort={handleSort}
+                                />
                             </Box>
 
                             {/* Products Grid */}
                             <Grid container spacing={3}>
-                                {products.map((product) => (
+                                {displayProducts.map((product) => (
                                     <Grid key={product.slug} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
                                         <ProductCard
                                             product={product}

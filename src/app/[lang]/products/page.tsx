@@ -1,5 +1,5 @@
 import { ProductsPage } from '@/src/components/products/ProductsPage';
-import { CATEGORIES } from '@/src/data/mockData';
+import { CATEGORIES, BRANDS } from '@/src/data/mockData';
 import { PRODUCTS } from '@/src/data/dataProducts';
 
 interface ProductsPageParams {
@@ -21,7 +21,9 @@ export default async function Page({ params }: ProductsPageParams) {
             dict={dict}
             productCardDict={productCardDict}
             categories={CATEGORIES}
+            brands={BRANDS}
             products={PRODUCTS}
         />
     );
 }
+
