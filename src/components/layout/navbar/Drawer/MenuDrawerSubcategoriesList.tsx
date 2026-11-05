@@ -15,6 +15,7 @@ import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
 import { SubcategoriesListSkeleton } from '../Skeleton/MenuDrawerSubcategoriesListSkeleton';
 import { BrandsList } from './MenuDrawerBrandsList';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 
 interface SubcategoriesListProps {
@@ -84,7 +85,10 @@ export function SubcategoriesList({
                             <Box sx={{ my: 1.5 }}>
                                 <Typography
                                     component={Link}
-                                    href={`/${lang}/category/${category.slug}/${sub.slug}`}
+                                    href={getProductListingHref(lang, {
+                                        category: category.slug,
+                                        subcategory: sub.slug,
+                                    })}
                                     onClick={onClose}
                                     variant="caption"
                                     color="primary"

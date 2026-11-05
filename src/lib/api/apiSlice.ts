@@ -8,6 +8,7 @@ import {
     Subcategory,
     Collection,
     Brand,
+    ColorOption,
 } from '@/src/types';
 
 import {
@@ -15,6 +16,7 @@ import {
     SUBCATEGORIES,
     COLLECTIONS,
     BRANDS,
+    COLORS,
 } from '@/src/data/mockData';
 import { PRODUCTS } from '@/src/data/dataProducts';
 
@@ -321,6 +323,13 @@ export const apiSlice = createApi({
             providesTags: ['Brand'],
         }),
 
+        getAllColors: builder.query<ColorOption[], void>({
+            async queryFn() {
+                await wait();
+                return { data: COLORS };
+            },
+        }),
+
         // getBrandsBySubcategorySlug: builder.query<Brand[], string>({
         //     async queryFn(subcategorySlug) {
         //         await wait();
@@ -426,5 +435,6 @@ export const {
     useGetAllCollectionsQuery,
     useSearchAllQuery,
     useGetAllBrandsQuery,
+    useGetAllColorsQuery,
     // useGetBrandsBySubcategorySlugQuery
 } = apiSlice;

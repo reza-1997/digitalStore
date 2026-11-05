@@ -17,6 +17,7 @@ import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { SubcategoryAccordionItem } from './SubcategoryAccordionItem';
 import { MegaMenuSkeleton } from './Skeleton/MegaMenuSkeleton';
 import { ProductCard } from '@/src/components/common/product';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface MegaMenuProps {
     open: boolean;
@@ -140,13 +141,19 @@ export const MegaMenu = ({
                         <Box sx={{ width: 380, maxHeight: '60vh', overflowY: 'auto', pr: 1 }}>
                             <Typography
                                 component={Link}
-                                href={`/${lang}/category/${category?.slug}`}
+                                href={getProductListingHref(lang, {
+                                    category: category?.slug,
+                                })}
                                 onMouseEnter={() => {
                                     setHoveredBrandProducts(null);
                                     setHoveredChangeLinkInPopover(null);
                                     setHoveredProductImage(category?.image?.[0] ?? null);
                                     setHoveredProductTitleOnImage(category?.name[lang] ?? null);
-                                    setHoveredChangeLinkInPopover(`/${lang}/category/${category?.slug}`);
+                                    setHoveredChangeLinkInPopover(
+                                        getProductListingHref(lang, {
+                                            category: category?.slug,
+                                        })
+                                    );
                                 }}
                                 variant="subtitle1"
                                 color="primary"
@@ -255,7 +262,12 @@ export const MegaMenu = ({
                                 /* Default Single Banner Preview */
                                 <Paper
                                     component={Link}
-                                    href={hoveredChangeLinkInPopover ?? `/${lang}/category/${category?.slug}`}
+                                    href={
+                                        hoveredChangeLinkInPopover ??
+                                        getProductListingHref(lang, {
+                                            category: category?.slug,
+                                        })
+                                    }
                                     elevation={0}
                                     sx={{
                                         position: 'relative',

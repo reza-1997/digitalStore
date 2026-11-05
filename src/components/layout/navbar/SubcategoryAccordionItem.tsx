@@ -20,6 +20,7 @@ import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import type { Category, NavbarDict, Subcategory, Brand, Product } from '@/src/types';
 import { BRANDS } from '@/src/data/mockData';
 import { SubcategoryAccordionSkeleton } from './Skeleton/SubcategoryAccordionSkeleton';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface SubcategoryAccordionItemProps {
     sub: Subcategory;
@@ -97,7 +98,12 @@ export const SubcategoryAccordionItem = ({
 
                     onBrandHover(sub.image ?? null);
                     onBrandTitleHover(sub.name[lang] ?? null);
-                    onLinkHover(`/${lang}/category/${category?.slug}/${sub.slug}`);
+                    onLinkHover(
+                        getProductListingHref(lang, {
+                            category: category?.slug,
+                            subcategory: sub.slug,
+                        })
+                    );
                     onSubcategoryCaptionHover(dict.category?.viewAll);
                 }}
             >
@@ -131,7 +137,11 @@ export const SubcategoryAccordionItem = ({
                         const brandName = brand.name[lang];
 
                         // Define link and products first before usage
-                        const brandViewAllLink = `/${lang}/category/${category?.slug}/${sub.slug}?brand=${brand.slug}`;
+                        const brandViewAllLink = getProductListingHref(lang, {
+                            category: category?.slug,
+                            subcategory: sub.slug,
+                            brand: brand.slug,
+                        });
 
                         const brandProducts = currentSubProducts.filter(
                             (product) =>

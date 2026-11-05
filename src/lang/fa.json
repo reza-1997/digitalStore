@@ -176,6 +176,8 @@
         "sortBy": "مرتب‌سازی بر اساس",
         "productsCount": "محصول",
         "noProductsFound": "هیچ محصولی بر اساس فیلترهای انتخاب‌شده یافت نشد.",
+        "productLoadError": "در دریافت اطلاعات محصولات خطایی رخ داد. لطفاً دوباره تلاش کنید.",
+        "retry": "تلاش دوباره",
         "sortOptions": {
             "alphabetical": "الفبایی (الف-ی)",
             "alphabeticalDesc": "الفبایی (ی-الف)",
@@ -189,6 +191,7 @@
             "inStock": "موجود",
             "outOfStock": "ناموجود",
             "productType": "نوع محصول",
+            "subcategories": "زیر‌دسته‌ها",
             "brand": "برند",
             "colors": "رنگ‌ها",
             "priceRange": "محدوده قیمت",

@@ -28,6 +28,7 @@ import MenuDrawer from './Drawer/MenuDrawerMain';
 import { NavCategoryItem } from './NavCategoryItem';
 import { NavbarActions } from './NavbarActions';
 import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface NavbarProps {
     lang: 'fa' | 'en';
@@ -98,7 +99,9 @@ export const Navbar = ({
         setAnchorEl(event.currentTarget);
         setActiveMenu(item);
         setHoveredCategoryCaptionOnImage(dictNavbar.category.viewAll);
-        setHoveredChangeLinkInPopover(`/${lang}/category/${item?.slug}`);
+        setHoveredChangeLinkInPopover(
+            getProductListingHref(lang, { category: item.slug })
+        );
     };
 
     /**

@@ -18,6 +18,7 @@ import 'swiper/css/navigation';
 
 import { useGetAllBrandsQuery } from '@/src/lib/api/apiSlice';
 import { getImageUrl } from '@/src/utils/imageUrl';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface BrandSliderProps {
     lang: 'fa' | 'en';
@@ -138,7 +139,9 @@ export const BrandSlider = ({ lang }: BrandSliderProps) => {
                     {brands.map((brand) => {
                         const brandName = brand.name[lang] || brand.name.en;
                         const brandLogo = getImageUrl(`${brand.slug}.svg`);
-                        const brandLink = `/${lang}/category/all?brand=${brand.slug}`;
+                        const brandLink = getProductListingHref(lang, {
+                            brand: brand.slug,
+                        });
 
                         return (
                             <SwiperSlide key={brand.slug}>

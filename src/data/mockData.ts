@@ -1,4 +1,4 @@
-import { Category, Subcategory, Collection, Brand } from "../types";
+import { Category, Subcategory, Collection, Brand, ColorOption } from "../types";
 
 
 
@@ -118,6 +118,7 @@ export const BRANDS: Brand[] = [
     { slug: 'samsung', name: { en: 'Samsung', fa: 'سامسونگ' } },
     { slug: 'apple', name: { en: 'Apple', fa: 'اپل' } },
     { slug: 'google', name: { en: 'Google', fa: 'گوگل' } },
+    { slug: 'baseus', name: { en: 'Baseus', fa: 'بیسوس' } },
     { slug: 'anker', name: { en: 'Anker', fa: 'انکر' } },
     { slug: 'ugreen', name: { en: 'UGREEN', fa: 'یوگرین' } },
     { slug: 'belkin', name: { en: 'Belkin', fa: 'بلکین' } },
@@ -126,6 +127,8 @@ export const BRANDS: Brand[] = [
     { slug: 'otterbox', name: { en: 'OtterBox', fa: 'آترباکس' } },
     { slug: 'zagg', name: { en: 'ZAGG', fa: 'زگ' } },
     { slug: 'garmin', name: { en: 'Garmin', fa: 'گارمین' } },
+    { slug: 'amazfit', name: { en: 'Amazfit', fa: 'امزفیت' } },
+    { slug: 'polar', name: { en: 'Polar', fa: 'پولار' } },
     { slug: 'xiaomi', name: { en: 'Xiaomi', fa: 'شیائومی' } },
     { slug: 'huawei', name: { en: 'Huawei', fa: 'هواوی' } },
     { slug: 'fitbit', name: { en: 'Fitbit', fa: 'فیت‌بیت' } },
@@ -159,6 +162,7 @@ export const BRANDS: Brand[] = [
     { slug: 'hori', name: { en: 'HORI', fa: 'هوری' } },
     { slug: 'venom', name: { en: 'Venom', fa: 'ونوم' } },
     { slug: 'tomtoc', name: { en: 'tomtoc', fa: 'تام‌تاک' } },
+    { slug: 'burga', name: { en: 'Burga', fa: 'برگا' } },
     { slug: 'skull-and-co', name: { en: 'Skull & Co.', fa: 'اسکال اند کو' } },
     { slug: 'dbrand', name: { en: 'dbrand', fa: 'دی‌برند' } },
     { slug: 'skinit', name: { en: 'Skinit', fa: 'اسکینیت' } },
@@ -170,7 +174,13 @@ export const BRANDS: Brand[] = [
     { slug: 'turtle-beach', name: { en: 'Turtle Beach', fa: 'تاتل بیچ' } }
 ];
 
-
-
+export const COLORS: ColorOption[] = [
+    { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black' },
+    { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white' },
+    { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green' },
+    { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple' },
+    { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray' },
+    { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue' },
+];
 
 

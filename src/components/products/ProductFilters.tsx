@@ -1,369 +1,63 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import {
     Box,
-    Typography,
-    Checkbox,
-    Slider,
     Button,
-    Tooltip,
+    Checkbox,
     Chip,
+    Slider,
+    Tooltip,
+    Typography,
 } from '@mui/material';
-
 import CloseIcon from '@mui/icons-material/Close';
 
-import { FilterAccordion, FilterOptionList } from './ProductFilterControls';
+import {
+    CategorySubcategoryFilterList,
+    FilterAccordion,
+    FilterOptionList,
+} from './ProductFilterControls';
+import { useProductFilters } from './hooks/useProductFilters';
 
-import type {
-    ProductsPageDict,
-    Product,
-    Category,
-    Brand,
-} from '@/src/types';
+import type { ColorOption, ProductsPageDict } from '@/src/types';
 
 interface ProductFiltersProps {
     lang: 'fa' | 'en';
     dict: ProductsPageDict;
-    categories: Category[];
-    brands: Brand[];
-    products: Product[];
-    onFilter: (filteredProducts: Product[]) => void;
-}
-
-interface AvailabilityFilter {
-    inStock: boolean;
-    outOfStock: boolean;
-}
-
-interface FilterState {
-    availability: AvailabilityFilter;
-    categories: string[];
-    brands: string[];
-    colors: string[];
-    priceRange: [number, number];
-}
-
-interface ActiveFilter {
-    label: string;
-    key: string;
-    type: 'availability' | 'category' | 'brand' | 'color' | 'price';
+    colors: ColorOption[];
+    filterState: ReturnType<typeof useProductFilters>;
 }
 
 export const ProductFilters = ({
     lang,
     dict,
-    categories,
-    brands,
-    products,
-    onFilter,
+    colors,
+    filterState,
 }: ProductFiltersProps) => {
     const isRtl = lang === 'fa';
-
-    // Calculate price boundaries
-    const maxPrice = useMemo(
-        () => Math.max(0, ...products.map((product) => product.price)) + 10,
-        [products]
-    );
-
-    // Filter states
-    const [availability, setAvailability] = useState<AvailabilityFilter>({
-        inStock: false,
-        outOfStock: false,
-    });
-
-    const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-    const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
-    const [selectedColors, setSelectedColors] = useState<string[]>([]);
-    const [priceRange, setPriceRange] = useState<[number, number]>([
-        0,
-        maxPrice,
-    ]);
-
+    const initialCategorySlug = filterState.filters.categories[0];
     const [expandedPanel, setExpandedPanel] = useState<string | false>(
-        ''
+        initialCategorySlug ? 'productType' : false
     );
-
-    // Keep price range valid when products change
-    useEffect(() => {
-        setPriceRange(([min, max]) => [
-            Math.min(min, maxPrice),
-            Math.min(max, maxPrice),
-        ]);
-    }, [maxPrice]);
-
-    // Extract unique product colors
-    const uniqueColors = useMemo(() => {
-        const colors = new Map<string, string>();
-
-        products.forEach((product) => {
-            product.colors.forEach((color) => {
-                if (!colors.has(color.value)) {
-                    colors.set(color.value, color.name[lang]);
-                }
-            });
-        });
-
-        return Array.from(colors, ([value, name]) => ({
-            value,
-            name,
-        }));
-    }, [products, lang]);
-
-    // Calculate category product counts
-    const categoryCounts = useMemo(
-        () =>
-            categories.map((category) => ({
-                ...category,
-                count: products.filter(
-                    (product) => product.categorySlug === category.slug
-                ).length,
-            })),
-        [categories, products]
-    );
-
-    // Calculate brand product counts
-    const brandCounts = useMemo(
-        () =>
-            brands.map((brand) => ({
-                ...brand,
-                count: products.filter(
-                    (product) => product.brand[lang] === brand.name[lang]
-                ).length,
-            })),
-        [brands, products, lang]
-    );
-
-    // Build the current filter state
-    const currentFilters: FilterState = {
-        availability,
-        categories: selectedCategories,
-        brands: selectedBrands,
-        colors: selectedColors,
-        priceRange,
-    };
-
-    // Apply filters to products
-    const getFilteredProducts = (filters: FilterState): Product[] => {
-        let filtered = [...products];
-
-        // Availability
-        if (filters.availability.inStock && !filters.availability.outOfStock) {
-            filtered = filtered.filter((product) => product.inStock);
-        } else if (
-            !filters.availability.inStock &&
-            filters.availability.outOfStock
-        ) {
-            filtered = filtered.filter((product) => !product.inStock);
-        }
-
-        // Categories
-        if (filters.categories.length > 0) {
-            filtered = filtered.filter((product) =>
-                filters.categories.includes(product.categorySlug)
-            );
-        }
-
-        // Brands
-        if (filters.brands.length > 0) {
-            const selectedBrandNames = brands
-                .filter((brand) => filters.brands.includes(brand.slug))
-                .map((brand) => brand.name[lang]);
-
-            filtered = filtered.filter((product) =>
-                selectedBrandNames.includes(product.brand[lang])
-            );
-        }
-
-        // Colors
-        if (filters.colors.length > 0) {
-            filtered = filtered.filter((product) =>
-                product.colors.some((color) =>
-                    filters.colors.includes(color.value)
-                )
-            );
-        }
-
-        // Price
-        filtered = filtered.filter((product) => {
-            const price = product.discountPrice ?? product.price;
-
-            return (
-                price >= filters.priceRange[0] &&
-                price <= filters.priceRange[1]
-            );
-        });
-
-        return filtered;
-    };
-
-    // Apply current filters
-    const applyFilters = (filters: FilterState = currentFilters) => {
-        onFilter(getFilteredProducts(filters));
-    };
-
-    // Build active filter chips
-    const activeFilters = useMemo<ActiveFilter[]>(() => {
-        const filters: ActiveFilter[] = [];
-
-        if (availability.inStock && !availability.outOfStock) {
-            filters.push({
-                label: dict.filters.inStock,
-                key: 'inStock',
-                type: 'availability',
-            });
-        } else if (!availability.inStock && availability.outOfStock) {
-            filters.push({
-                label: dict.filters.outOfStock,
-                key: 'outOfStock',
-                type: 'availability',
-            });
-        }
-
-        selectedCategories.forEach((slug) => {
-            const category = categories.find((item) => item.slug === slug);
-
-            if (category) {
-                filters.push({
-                    label: category.name[lang],
-                    key: slug,
-                    type: 'category',
-                });
-            }
-        });
-
-        selectedBrands.forEach((slug) => {
-            const brand = brands.find((item) => item.slug === slug);
-
-            if (brand) {
-                filters.push({
-                    label: brand.name[lang],
-                    key: slug,
-                    type: 'brand',
-                });
-            }
-        });
-
-        selectedColors.forEach((value) => {
-            const color = uniqueColors.find((item) => item.value === value);
-
-            if (color) {
-                filters.push({
-                    label: color.name,
-                    key: value,
-                    type: 'color',
-                });
-            }
-        });
-
-        if (priceRange[0] > 0 || priceRange[1] < maxPrice) {
-            filters.push({
-                label: `$${priceRange[0]} - $${priceRange[1]}`,
-                key: 'price',
-                type: 'price',
-            });
-        }
-
-        return filters;
-    }, [
-        availability,
-        selectedCategories,
-        selectedBrands,
-        selectedColors,
-        priceRange,
-        categories,
-        brands,
-        uniqueColors,
+    const [expandedCategorySlug, setExpandedCategorySlug] = useState<
+        string | false
+    >(initialCategorySlug ?? false);
+    const priceRangeHistoryPushed = useRef(false);
+    const {
+        filters,
         maxPrice,
-        dict,
-        lang,
-    ]);
-
-    // Remove an individual filter and apply the updated state
-    const removeFilter = (filter: ActiveFilter) => {
-        const nextFilters: FilterState = {
-            ...currentFilters,
-        };
-
-        switch (filter.type) {
-            case 'availability':
-                nextFilters.availability = {
-                    inStock: false,
-                    outOfStock: false,
-                };
-
-                setAvailability(nextFilters.availability);
-                break;
-
-            case 'category':
-                nextFilters.categories = selectedCategories.filter(
-                    (slug) => slug !== filter.key
-                );
-
-                setSelectedCategories(nextFilters.categories);
-                break;
-
-            case 'brand':
-                nextFilters.brands = selectedBrands.filter(
-                    (slug) => slug !== filter.key
-                );
-
-                setSelectedBrands(nextFilters.brands);
-                break;
-
-            case 'color':
-                nextFilters.colors = selectedColors.filter(
-                    (value) => value !== filter.key
-                );
-
-                setSelectedColors(nextFilters.colors);
-                break;
-
-            case 'price':
-                nextFilters.priceRange = [0, maxPrice];
-
-                setPriceRange(nextFilters.priceRange);
-                break;
-        }
-
-        applyFilters(nextFilters);
-    };
-
-    // Remove all filters and immediately show all products
-    const removeAllFilters = () => {
-        const defaultFilters: FilterState = {
-            availability: {
-                inStock: false,
-                outOfStock: false,
-            },
-            categories: [],
-            brands: [],
-            colors: [],
-            priceRange: [0, maxPrice],
-        };
-
-        setAvailability(defaultFilters.availability);
-        setSelectedCategories(defaultFilters.categories);
-        setSelectedBrands(defaultFilters.brands);
-        setSelectedColors(defaultFilters.colors);
-        setPriceRange(defaultFilters.priceRange);
-
-        applyFilters(defaultFilters);
-    };
-
-    // Reusable checkbox handler
-    const toggleSelection = (
-        value: string,
-        selected: string[],
-        setter: React.Dispatch<React.SetStateAction<string[]>>
-    ) => {
-        setter((previous) =>
-            previous.includes(value)
-                ? previous.filter((item) => item !== value)
-                : [...previous, value]
-        );
-    };
+        categoryCounts,
+        brandCounts,
+        activeFilters,
+        toggleCategory,
+        toggleBrand,
+        toggleColor,
+        toggleAvailability,
+        setPriceRange,
+        removeFilter,
+        removeAllFilters,
+    } = filterState;
 
     return (
         <Box
@@ -374,7 +68,6 @@ export const ProductFilters = ({
                 height: 'fit-content',
             }}
         >
-            {/* Active Filters */}
             {activeFilters.length > 0 && (
                 <Box sx={{ mb: 3 }}>
                     <Typography
@@ -429,7 +122,6 @@ export const ProductFilters = ({
                 </Box>
             )}
 
-            {/* Availability */}
             <FilterAccordion
                 panel="availability"
                 title={dict.filters.availability}
@@ -460,12 +152,9 @@ export const ProductFilters = ({
                             }}
                         >
                             <Checkbox
-                                checked={availability[key]}
+                                checked={filters.availability[key]}
                                 onChange={(event) =>
-                                    setAvailability((previous) => ({
-                                        ...previous,
-                                        [key]: event.target.checked,
-                                    }))
+                                    toggleAvailability(key, event.target.checked)
                                 }
                             />
                             <Typography
@@ -474,12 +163,16 @@ export const ProductFilters = ({
                                     color: 'text.secondary',
                                     cursor: 'pointer',
                                     userSelect: 'none',
+                                    transition: 'color 0.2s ease',
+                                    '&:hover': {
+                                        color: 'secondary.dark',
+                                    },
                                 }}
                                 onClick={() =>
-                                    setAvailability((previous) => ({
-                                        ...previous,
-                                        [key]: !previous[key],
-                                    }))
+                                    toggleAvailability(
+                                        key,
+                                        !filters.availability[key]
+                                    )
                                 }
                             >
                                 {label}
@@ -489,31 +182,28 @@ export const ProductFilters = ({
                 </Box>
             </FilterAccordion>
 
-            {/* Categories */}
             <FilterAccordion
                 panel="productType"
                 title={dict.filters.productType}
                 expandedPanel={expandedPanel}
                 setExpandedPanel={setExpandedPanel}
             >
-                <FilterOptionList
+                <CategorySubcategoryFilterList
                     isRtl={isRtl}
-                    options={categoryCounts.map((category) => ({
-                        key: category.id,
+                    subcategoriesLabel={dict.filters.subcategories}
+                    categories={categoryCounts.map((category) => ({
+                        key: category.slug,
                         label: category.name[lang],
                         count: category.count,
-                        checked: selectedCategories.includes(category.slug),
-                        onToggle: () =>
-                            toggleSelection(
-                                category.slug,
-                                selectedCategories,
-                                setSelectedCategories
-                            ),
+                        checked: filters.categories.includes(category.slug),
+                        onToggle: () => toggleCategory(category.slug),
+                        subcategories: category.subcategories,
                     }))}
+                    expandedCategory={expandedCategorySlug}
+                    setExpandedCategory={setExpandedCategorySlug}
                 />
             </FilterAccordion>
 
-            {/* Brands */}
             <FilterAccordion
                 panel="brand"
                 title={dict.filters.brand}
@@ -526,18 +216,12 @@ export const ProductFilters = ({
                         key: brand.slug,
                         label: brand.name[lang],
                         count: brand.count,
-                        checked: selectedBrands.includes(brand.slug),
-                        onToggle: () =>
-                            toggleSelection(
-                                brand.slug,
-                                selectedBrands,
-                                setSelectedBrands
-                            ),
+                        checked: filters.brands.includes(brand.slug),
+                        onToggle: () => toggleBrand(brand.slug),
                     }))}
                 />
             </FilterAccordion>
 
-            {/* Colors */}
             <FilterAccordion
                 panel="colors"
                 title={dict.filters.colors}
@@ -551,23 +235,18 @@ export const ProductFilters = ({
                         gap: 1.5,
                     }}
                 >
-                    {uniqueColors.map((color) => {
-                        const isSelected = selectedColors.includes(color.value);
+                    {colors.map((color) => {
+                        const isSelected = filters.colors.includes(color.slug);
+                        const colorName = color.name[lang];
 
                         return (
-                            <Tooltip key={color.value} title={color.name} arrow>
+                            <Tooltip key={color.slug} title={colorName} arrow>
                                 <Box
                                     component="button"
                                     type="button"
-                                    aria-label={color.name}
+                                    aria-label={colorName}
                                     aria-pressed={isSelected}
-                                    onClick={() =>
-                                        toggleSelection(
-                                            color.value,
-                                            selectedColors,
-                                            setSelectedColors
-                                        )
-                                    }
+                                    onClick={() => toggleColor(color.slug)}
                                     sx={{
                                         width: 32,
                                         height: 32,
@@ -594,7 +273,6 @@ export const ProductFilters = ({
                 </Box>
             </FilterAccordion>
 
-            {/* Price Range */}
             <FilterAccordion
                 panel="priceRange"
                 title={dict.filters.priceRange}
@@ -603,10 +281,19 @@ export const ProductFilters = ({
             >
                 <Box sx={{ px: 1 }}>
                     <Slider
-                        value={priceRange}
-                        onChange={(_, value) =>
-                            setPriceRange(value as [number, number])
-                        }
+                        value={filters.priceRange}
+                        onChange={(_, value) => {
+                            setPriceRange(
+                                value as [number, number],
+                                priceRangeHistoryPushed.current
+                                    ? 'replace'
+                                    : 'push'
+                            );
+                            priceRangeHistoryPushed.current = true;
+                        }}
+                        onChangeCommitted={() => {
+                            priceRangeHistoryPushed.current = false;
+                        }}
                         valueLabelDisplay="auto"
                         min={0}
                         max={maxPrice}
@@ -624,32 +311,17 @@ export const ProductFilters = ({
                             variant="body2"
                             sx={{ color: 'text.secondary' }}
                         >
-                            ${priceRange[0]}
+                            ${filters.priceRange[0]}
                         </Typography>
-
                         <Typography
                             variant="body2"
                             sx={{ color: 'text.secondary' }}
                         >
-                            ${priceRange[1]}
+                            ${filters.priceRange[1]}
                         </Typography>
                     </Box>
                 </Box>
             </FilterAccordion>
-
-            {/* Apply Filters */}
-            <Button
-                variant="contained"
-                fullWidth
-                onClick={() => applyFilters()}
-                sx={{
-                    textTransform: 'none',
-                    fontWeight: 600,
-                    mt: 2,
-                }}
-            >
-                {dict.filters.apply}
-            </Button>
         </Box>
     );
 };

@@ -15,6 +15,7 @@ import { ProductDiscountBadge } from './ProductDiscountBadge';
 import { ProductNewArrivalBadge } from './ProductNewArrivalBadge';
 import { ProductRating } from './ProductRating';
 import { ProductActionButtons } from './ProductActionButtons';
+import { getBrandSlug, getProductListingHref } from '@/src/utils/productLinks';
 
 
 interface ProductCardHorizontalProps {
@@ -67,9 +68,14 @@ export const ProductCardHorizontal = ({
 
     const productHref = `/${lang}/product/${product.slug}`;
 
-    const brandHref =
-        `/${lang}/category/${product.categorySlug}/` +
-        `${product.subcategorySlug}?brand=${encodeURIComponent(brandName)}`;
+    const brandHref = getProductListingHref(lang, {
+        category: product.categorySlug,
+        subcategory: product.subcategorySlug,
+        brand: getBrandSlug({
+            en: product.brand?.en || '',
+            fa: product.brand?.fa || '',
+        }),
+    });
 
     const actions = getProductCardActions(
         dict,

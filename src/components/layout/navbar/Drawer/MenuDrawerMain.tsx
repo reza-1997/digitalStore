@@ -32,6 +32,7 @@ import {
 
 import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
 import { SubcategoriesList } from './MenuDrawerSubcategoriesList';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 
 interface MenuDrawerProps {
@@ -243,7 +244,9 @@ export default function MenuDrawer({
                                         <Box sx={{ mb: 1.5, pl: 1 }}>
                                             <Typography
                                                 component={Link}
-                                                href={`/${lang}/category/${category.slug}`}
+                                                href={getProductListingHref(lang, {
+                                                    category: category.slug,
+                                                })}
                                                 onClick={onClose}
                                                 variant="body2"
                                                 color="primary"

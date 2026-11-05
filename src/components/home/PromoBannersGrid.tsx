@@ -8,6 +8,7 @@ import type { PromoBannerDict } from '@/src/types';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { getProductPricingSummary } from '@/src/utils/productCalculations';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface PromoBannersGridProps {
     lang: 'fa' | 'en';
@@ -28,8 +29,14 @@ export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
     const fitnessMetrics = getProductPricingSummary(fitnessProducts);
     const gamingMetrics = getProductPricingSummary(gamingProducts);
 
-    const fitnessHref = `/${lang}/category/watches/fitness-bands`;
-    const gamingHref = `/${lang}/category/pc/gaming-mice`;
+    const fitnessHref = getProductListingHref(lang, {
+        category: 'watches',
+        subcategory: 'fitness-bands',
+    });
+    const gamingHref = getProductListingHref(lang, {
+        category: 'pc',
+        subcategory: 'gaming-mice',
+    });
 
     // Hardcoded images without background
     const fitnessImage = getImageUrl('fitnessBandPromo.png');

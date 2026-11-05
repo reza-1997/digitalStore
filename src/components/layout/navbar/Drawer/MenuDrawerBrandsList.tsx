@@ -18,6 +18,7 @@ import { BRANDS } from '@/src/data/mockData';
 import type { Subcategory, Brand, NavbarDict, ProductCardDict } from '@/src/types';
 import { BrandsListSkeleton } from '../Skeleton/MenuDrawerBrandsListSkeleton';
 import { ProductCardHorizontal } from '@/src/components/common/product';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 
 
@@ -90,7 +91,11 @@ export function BrandsList({
                         product.brand?.en?.toLowerCase() === brand.slug.toLowerCase()
                 );
 
-                const brandViewMoreLink = `/${lang}/category/${categorySlug}/${sub.slug}?brand=${brand.slug}`;
+                const brandViewMoreLink = getProductListingHref(lang, {
+                    category: categorySlug,
+                    subcategory: sub.slug,
+                    brand: brand.slug,
+                });
 
                 return (
                     <Accordion

@@ -42,7 +42,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 12,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -108,7 +109,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 8,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -174,7 +176,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 15,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -208,7 +211,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 9,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -241,7 +245,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 7,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -274,7 +279,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 4,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -307,7 +313,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 11,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -373,7 +380,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 6,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 9 }
         ]
     },
     {
@@ -406,7 +414,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 25,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -506,7 +515,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 14,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -607,7 +617,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 5,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -673,7 +684,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 7,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -706,7 +718,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 5,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -773,7 +786,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 8,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -873,7 +887,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 11,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -973,7 +988,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 30,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -1006,7 +1022,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 17,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -1107,7 +1124,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 14,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -1140,7 +1158,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 11,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -1206,7 +1225,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 19,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -1339,7 +1359,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 11,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -1439,7 +1460,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 15,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -1506,7 +1528,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 10,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -1539,7 +1562,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 12,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -1706,7 +1730,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 21,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -1773,7 +1798,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 18,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -1806,7 +1832,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 16,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -1905,7 +1932,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 3,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -1939,7 +1967,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 8,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 9 }
         ]
     },
     {
@@ -1973,7 +2002,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 5,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -2140,7 +2170,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 35,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 9 }
         ]
     },
     {
@@ -2240,7 +2271,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 42,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -2274,7 +2306,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 16,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -2375,7 +2408,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 18,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -2441,7 +2475,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 22,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -2474,7 +2509,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 15,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -2507,7 +2543,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 19,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -2842,7 +2879,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 16,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -2941,7 +2979,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 14,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -3041,7 +3080,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 19,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -3074,7 +3114,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 14,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -3209,7 +3250,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 42,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -3276,7 +3318,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 28,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -3309,7 +3352,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 35,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -3441,7 +3485,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 30,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
         ]
     },
     {
@@ -3474,7 +3519,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 15,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 7 }
         ]
     },
     {
@@ -3508,7 +3554,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 18,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -3641,7 +3688,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 34,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -3809,7 +3857,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 31,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 6 }
         ]
     },
     {
@@ -4074,7 +4123,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 22,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -4140,7 +4190,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 16,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -4208,7 +4259,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 19,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -4241,7 +4293,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 26,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 9 }
         ]
     },
     {
@@ -4576,7 +4629,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 19,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -4708,7 +4762,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 11,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 9 }
         ]
     },
     {
@@ -4774,7 +4829,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 22,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 11 }
         ]
     },
     {
@@ -4873,7 +4929,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 12,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     },
     {
@@ -4907,7 +4964,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 15,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 5 }
         ]
     },
     {
@@ -4974,7 +5032,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 20,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 10 }
         ]
     },
     {
@@ -5007,7 +5066,8 @@ export const PRODUCTS: Product[] = [
         reviewsCount: 31,
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
-            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
+            { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
+            { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 }
         ]
     }
 ];

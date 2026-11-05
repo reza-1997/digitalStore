@@ -8,6 +8,7 @@ import type { OverEarBannerDict } from '@/src/types';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { getProductPricingSummary } from '@/src/utils/productCalculations';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface OverEarBannerProps {
     lang: 'fa' | 'en';
@@ -20,7 +21,9 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
 
     const bannerImage = getImageUrl('overEarBannerModel.jpg');
     const bannerImageInDark = getImageUrl('overEarBannerModelInDark.png');
-    const subcategoryHref = `/${lang}/category/headphones/over-ear-headphones`;
+    const subcategoryHref = getProductListingHref(lang, {
+        subcategory: 'over-ear-headphones',
+    });
 
     // Fetch products using the Product type
     const { data: products = [], isLoading } = useGetProductsBySubcategorySlugQuery('over-ear-headphones');

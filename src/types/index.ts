@@ -57,6 +57,12 @@ export interface ProductColor {
     stock: number;       // Stock inventory count specifically for this color
 }
 
+export interface ColorOption {
+    name: LocalizedText;
+    value: string;
+    slug: string;
+}
+
 export interface ProductSpecification {
     key: LocalizedText;
     value: LocalizedText;
@@ -266,6 +272,8 @@ export interface ProductsPageDict {
     sortBy: string;
     productsCount: string;
     noProductsFound: string;
+    productLoadError: string;
+    retry: string;
     sortOptions: {
         alphabetical: string;
         alphabeticalDesc: string;
@@ -279,6 +287,7 @@ export interface ProductsPageDict {
         inStock: string;
         outOfStock: string;
         productType: string;
+        subcategories: string;
         brand: string;
         colors: string;
         priceRange: string;

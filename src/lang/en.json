@@ -177,6 +177,8 @@
         "sortBy": "Sort by",
         "productsCount": "products",
         "noProductsFound": "No products match the selected filters.",
+        "productLoadError": "There was a problem loading product information. Please try again.",
+        "retry": "Try again",
         "sortOptions": {
             "alphabetical": "Alphabetically, A-Z",
             "alphabeticalDesc": "Alphabetically, Z-A",
@@ -190,6 +192,7 @@
             "inStock": "In stock",
             "outOfStock": "Out of stock",
             "productType": "Product Type",
+            "subcategories": "Subcategories",
             "brand": "Brand",
             "colors": "Colors",
             "priceRange": "Price Range",

@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import type { Category } from '@/src/types';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface CategoryHeroSliderProps {
     lang: 'fa' | 'en';
@@ -53,7 +54,9 @@ export const CategoryHeroSlider = ({ lang, categories }: CategoryHeroSliderProps
                 {categories.map((category) => (
                     <SwiperSlide key={category.id}>
                         <Link
-                            href={`/${lang}/products?category=${category.slug}`}
+                            href={getProductListingHref(lang, {
+                                category: category.slug,
+                            })}
                             style={{ textDecoration: 'none' }}
                         >
                             <Box

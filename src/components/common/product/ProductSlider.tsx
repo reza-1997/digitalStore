@@ -12,9 +12,10 @@ import { Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Product, ProductCardDict } from '@/src/types';
+import { ProductCard } from './ProductCard';
 
-import type { Product, ProductCardDict } from '@/src/types';
-import { ProductCard } from '@/src/components/common/product';
+
 
 interface ProductSliderProps {
     lang: 'fa' | 'en';
@@ -147,7 +148,7 @@ export const ProductSlider = ({
                     }}
                 >
                     {products.map((product) => (
-                        <SwiperSlide key={product.slug} style={{ display: 'flex' }}>
+                        <SwiperSlide key={product.slug} style={{ height: 'auto', display: 'flex' }}>
                             <ProductCard product={product} lang={lang} dict={dict} isLoading={isLoading} />
                         </SwiperSlide>
                     ))}

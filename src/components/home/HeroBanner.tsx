@@ -16,6 +16,7 @@ import 'swiper/css/pagination';
 
 import type { HeroBannerDict } from '@/src/types';
 import { useGetAllCategoriesQuery } from '@/src/lib/api/apiSlice';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface HeroBannerProps {
     lang: 'fa' | 'en';
@@ -311,7 +312,9 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                         <Box className="animated-hero-item" sx={{ animationDelay: '0.6s' }}>
                                             <Button
                                                 component={Link}
-                                                href={`/${lang}/category/${categorySlug}`}
+                                                href={getProductListingHref(lang, {
+                                                    category: categorySlug,
+                                                })}
                                                 variant="contained"
                                                 size="medium"
                                                 sx={{

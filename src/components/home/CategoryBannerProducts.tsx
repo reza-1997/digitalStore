@@ -8,6 +8,7 @@ import { useGetAllCategoriesQuery, useGetProductsByCategorySlugQuery } from '@/s
 import type { CategoryBannerProductsDict, Product, ProductCardDict } from '@/src/types';
 import { useMemo } from 'react';
 import { ProductCard } from '@/src/components/common/product';
+import { getProductListingHref } from '@/src/utils/productLinks';
 
 // Deterministic Fisher-Yates shuffle (mulberry32 PRNG seeded from a string hash)
 const seededShuffle = <T,>(items: T[], seedText: string): T[] => {
@@ -146,7 +147,7 @@ export const CategoryBannerProducts = ({
                     </Typography>
                     <Button
                         component={Link}
-                        href={`/${lang}/category/${categorySlug}`}
+                        href={getProductListingHref(lang, { category: categorySlug })}
                         variant="contained"
                         size="large"
                         sx={{
@@ -199,7 +200,7 @@ export const CategoryBannerProducts = ({
                 {/* See More Card */}
                 <Box
                     component={Link}
-                    href={`/${lang}/category/${categorySlug}`}
+                    href={getProductListingHref(lang, { category: categorySlug })}
                     sx={{
                         border: '1px solid',
                         borderColor: 'divider',
