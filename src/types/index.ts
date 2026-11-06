@@ -295,4 +295,8 @@ export interface ProductsPageDict {
         activeFilters: string;
         removeAll: string;
     };
+    breadcrumbs: {
+        home: string;
+        products: string;
+    };
 }

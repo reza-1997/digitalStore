@@ -198,6 +198,10 @@
             "apply": "اعمال فیلترها",
             "activeFilters": "فیلترهای فعال",
             "removeAll": "حذف همه فیلترها"
+        },
+        "breadcrumbs": {
+            "home": "خانه",
+            "products": "محصولات"
         }
     }
 }

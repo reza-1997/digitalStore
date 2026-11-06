@@ -117,7 +117,19 @@ export const ProductsPage = ({
 
             {isLoading ?
                 < CategoryHeroSliderSkeleton /> :
-                <CategoryHeroSlider lang={lang} categories={categories} />
+                <CategoryHeroSlider
+                    lang={lang}
+                    categories={categories}
+                    selectedCategorySlug={
+                        filterState.filters.categories.length === 1
+                            ? filterState.filters.categories[0]
+                            : undefined
+                    }
+                    breadcrumbs={[
+                        { label: dict.breadcrumbs.home, href: `/${lang}` },
+                        { label: dict.breadcrumbs.products },
+                    ]}
+                />
             }
             <Box
                 sx={{
