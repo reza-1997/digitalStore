@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Container } from '@mui/material';
+import { Box, Container, useMediaQuery, useTheme } from '@mui/material';
 import Link from 'next/link';
 
 import type { Category } from '@/src/types';
@@ -11,6 +11,7 @@ interface CategoryHeroSliderProps {
     lang: 'fa' | 'en';
     categories: Category[];
     selectedCategorySlug?: string;
+    selectedSubcategoryLabel?: string;
     breadcrumbs?: Array<{ label: string; href?: string }>;
 }
 
@@ -18,8 +19,13 @@ export const CategoryHeroSlider = ({
     lang,
     categories,
     selectedCategorySlug,
+    selectedSubcategoryLabel,
     breadcrumbs,
 }: CategoryHeroSliderProps) => {
+    const theme = useTheme();
+    const isBelowLg = useMediaQuery(theme.breakpoints.down('lg'), {
+        noSsr: true,
+    });
     const isRtl = lang === 'fa';
     const selectedCategory = categories.find(
         (category) => category.slug === selectedCategorySlug
@@ -35,7 +41,15 @@ export const CategoryHeroSlider = ({
                         ? { ...item, href: item.href ?? `/${lang}/products` }
                         : item
                 ),
-                { label: selectedCategory.name[lang] },
+                {
+                    label: selectedCategory.name[lang],
+                    href: getProductListingHref(lang, {
+                        category: selectedCategory.slug,
+                    }),
+                },
+                ...(selectedSubcategoryLabel
+                    ? [{ label: selectedSubcategoryLabel }]
+                    : []),
             ]
             : breadcrumbs;
 
@@ -101,40 +115,32 @@ export const CategoryHeroSlider = ({
                         width: '100%',
                     }}
                 >
-                    {visibleCategories.map((category, index) => (
-                        <Link
-                            key={category.id}
-                            href={getProductListingHref(lang, {
-                                category: category.slug,
-                            })}
-                            aria-label={category.name[lang]}
-                            className="category-hero-link"
-                            style={{
-                                textDecoration: 'none',
-                                flex: selectedCategory
-                                    ? 1
-                                    : index === 0 ||
-                                        index === visibleCategories.length - 1
-                                        ? 2
-                                        : 1.5,
-                                display: 'block',
-                                marginLeft:
-                                    !selectedCategory && index > 0 && !isRtl
-                                        ? '-90px'
-                                        : 0,
-                                marginRight:
-                                    !selectedCategory && index > 0 && isRtl
-                                        ? '-90px'
-                                        : 0,
-                            }}
-                        >
+                    {visibleCategories.map((category, index) => {
+                        const panelStyle = {
+                            flex: selectedCategory
+                                ? 1
+                                : index === 0 ||
+                                    index === visibleCategories.length - 1
+                                    ? 2
+                                    : 1.5,
+                            display: 'block' as const,
+                            marginLeft:
+                                !selectedCategory && index > 0 && !isRtl
+                                    ? '-90px'
+                                    : 0,
+                            marginRight:
+                                !selectedCategory && index > 0 && isRtl
+                                    ? '-90px'
+                                    : 0,
+                        };
+                        const panel = (
                             <Box
                                 sx={{
                                     position: 'relative',
                                     width: '100%',
                                     height: { xs: 250, md: 300 },
                                     overflow: 'hidden',
-                                    cursor: 'pointer',
+                                    cursor: isBelowLg ? 'default' : 'pointer',
                                     clipPath: selectedCategory
                                         ? 'none'
                                         : isRtl
@@ -190,7 +196,13 @@ export const CategoryHeroSlider = ({
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         color: 'common.white',
-                                        fontSize: { xs: '1.25rem', md: '2rem' },
+                                        fontSize: {
+                                            xs: '1.25rem',
+                                            md: '2rem',
+                                            lg: '1.35rem',
+                                            xl: '2rem',
+                                        },
+                                        pr: 5,
                                         fontWeight: 700,
                                         lineHeight: 1.3,
                                         zIndex: 2,
@@ -202,8 +214,26 @@ export const CategoryHeroSlider = ({
                                     {category.name[lang]}
                                 </Box>
                             </Box>
-                        </Link>
-                    ))}
+                        );
+
+                        return isBelowLg ? (
+                            <Box key={category.id} sx={panelStyle}>
+                                {panel}
+                            </Box>
+                        ) : (
+                            <Link
+                                key={category.id}
+                                href={getProductListingHref(lang, {
+                                    category: category.slug,
+                                })}
+                                aria-label={category.name[lang]}
+                                className="category-hero-link"
+                                style={panelStyle}
+                            >
+                                {panel}
+                            </Link>
+                        );
+                    })}
                 </Box>
 
                 <Box

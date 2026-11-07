@@ -27,6 +27,7 @@ interface ProductFiltersProps {
     dict: ProductsPageDict;
     colors: ColorOption[];
     filterState: ReturnType<typeof useProductFilters>;
+    inDrawer?: boolean;
 }
 
 export const ProductFilters = ({
@@ -34,6 +35,7 @@ export const ProductFilters = ({
     dict,
     colors,
     filterState,
+    inDrawer = false,
 }: ProductFiltersProps) => {
     const isRtl = lang === 'fa';
     const initialCategorySlug = filterState.filters.categories[0];
@@ -63,8 +65,8 @@ export const ProductFilters = ({
         <Box
             sx={{
                 p: 3,
-                backgroundColor: 'background.paper',
-                borderRadius: 2,
+                backgroundColor: inDrawer ? 'transparent' : 'background.paper',
+                borderRadius: inDrawer ? 0 : 2,
                 height: 'fit-content',
             }}
         >

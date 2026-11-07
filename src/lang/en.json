@@ -188,6 +188,7 @@
             "highestDiscount": "Highest Discount"
         },
         "filters": {
+            "title": "Filters",
             "availability": "Availability",
             "inStock": "In stock",
             "outOfStock": "Out of stock",

@@ -283,6 +283,7 @@ export interface ProductsPageDict {
         highestDiscount: string;
     };
     filters: {
+        title: string;
         availability: string;
         inStock: string;
         outOfStock: string;

@@ -1,4 +1,6 @@
 {
     "devin.implicitContext.enabled": true,
-    "devin.defaultMode": "accept-edits"
+    "devin.defaultMode": "accept-edits",
+    "devin.defaultModel": "swe-2-flash-medium",
+    "devin.defaultThoughtLevel": ""
 }

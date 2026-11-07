@@ -34,6 +34,7 @@ export const FilterAccordion = ({
             mb: 2,
             boxShadow: 'none',
             '&:before': { display: 'none' },
+            backgroundColor: 'background.default',
         }}
     >
         <AccordionSummary

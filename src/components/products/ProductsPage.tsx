@@ -1,10 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Box, Container, Typography, Grid } from '@mui/material';
+import { useState } from 'react';
+import {
+    Badge,
+    Box,
+    Button,
+    Container,
+    Grid,
+    Typography,
+} from '@mui/material';
+import FilterListIcon from '@mui/icons-material/FilterList';
 
 import { CategoryHeroSlider } from './CategoryHeroSlider';
 import { ProductFilters } from './ProductFilters';
+import { ProductFiltersDrawer } from './ProductFiltersDrawer';
 import { ProductEmptyState } from './ProductEmptyState';
 import { ProductFetchError } from './ProductFetchError';
 import { ProductsPageLoading } from './ProductsPageLoading';
@@ -32,6 +41,7 @@ interface ProductsPageProps {
 }
 
 const EMPTY_PRODUCTS: Product[] = [];
+const EMPTY_ARRAY: never[] = [];
 
 export const ProductsPage = ({
     lang,
@@ -46,10 +56,10 @@ export const ProductsPage = ({
     const colorsQuery = useGetAllColorsQuery();
 
     const products = productsQuery.data ?? EMPTY_PRODUCTS;
-    const categories = categoriesQuery.data ?? [];
-    const subcategories = subcategoriesQuery.data ?? [];
-    const brands = brandsQuery.data ?? [];
-    const colors = colorsQuery.data ?? [];
+    const categories = categoriesQuery.data ?? EMPTY_ARRAY;
+    const subcategories = subcategoriesQuery.data ?? EMPTY_ARRAY;
+    const brands = brandsQuery.data ?? EMPTY_ARRAY;
+    const colors = colorsQuery.data ?? EMPTY_ARRAY;
     const isLoading = [
         productsQuery.isLoading,
         categoriesQuery.isLoading,
@@ -75,11 +85,27 @@ export const ProductsPage = ({
         products,
     });
     const filteredProducts = filterState.filteredProducts;
+    const selectedCategorySlug =
+        filterState.filters.categories.length === 1
+            ? filterState.filters.categories[0]
+            : undefined;
+    const selectedSubcategories = selectedCategorySlug
+        ? subcategories.filter(
+              (subcategory) =>
+                  subcategory.categorySlug === selectedCategorySlug &&
+                  filterState.filters.subcategories.includes(subcategory.slug)
+          )
+        : [];
+    const selectedSubcategoryLabel =
+        selectedSubcategories.length === 1
+            ? selectedSubcategories[0].name[lang]
+            : undefined;
     const [displayProducts, setDisplayProducts] =
         useState<Product[]>(filteredProducts);
 
     // Pagination state
     const [page, setPage] = useState(1);
+    const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
     const itemsPerPage = 12; // Number of products per page
 
     // Calculate pagination
@@ -100,9 +126,12 @@ export const ProductsPage = ({
     };
 
     // Reset to first page when filters change
-    useEffect(() => {
+    const [prevFilteredProducts, setPrevFilteredProducts] =
+        useState(filteredProducts);
+    if (prevFilteredProducts !== filteredProducts) {
+        setPrevFilteredProducts(filteredProducts);
         setPage(1);
-    }, [filteredProducts]);
+    }
 
     const handleRetry = () => {
         void productsQuery.refetch();
@@ -120,11 +149,8 @@ export const ProductsPage = ({
                 <CategoryHeroSlider
                     lang={lang}
                     categories={categories}
-                    selectedCategorySlug={
-                        filterState.filters.categories.length === 1
-                            ? filterState.filters.categories[0]
-                            : undefined
-                    }
+                    selectedCategorySlug={selectedCategorySlug}
+                    selectedSubcategoryLabel={selectedSubcategoryLabel}
                     breadcrumbs={[
                         { label: dict.breadcrumbs.home, href: `/${lang}` },
                         { label: dict.breadcrumbs.products },
@@ -150,7 +176,10 @@ export const ProductsPage = ({
                         <ProductsPageLoading />
                     ) : (
                         <Grid container spacing={4}>
-                            <Grid size={{ xs: 12, md: 3 }}>
+                            <Grid
+                                size={{ xs: 12, lg: 3 }}
+                                sx={{ display: { xs: 'none', lg: 'block' } }}
+                            >
                                 <ProductFilters
                                     lang={lang}
                                     dict={dict}
@@ -159,7 +188,7 @@ export const ProductsPage = ({
                                 />
                             </Grid>
 
-                            <Grid size={{ xs: 12, md: 9 }}>
+                            <Grid size={{ xs: 12, lg: 9 }}>
                                 <Box
                                     sx={{
                                         display: 'flex',
@@ -170,16 +199,56 @@ export const ProductsPage = ({
                                         gap: 2,
                                     }}
                                 >
-                                    <Typography
-                                        variant="body1"
+                                    <Box
                                         sx={{
-                                            color: 'text.secondary',
-                                            textAlign: isRtl ? 'right' : 'left',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: 2,
+                                            flexWrap: 'wrap',
                                         }}
                                     >
-                                        {displayProducts.length}{' '}
-                                        {dict.productsCount}
-                                    </Typography>
+                                        <Badge
+                                            badgeContent={
+                                                filterState.activeFilters.length
+                                            }
+                                            color="primary"
+                                            invisible={
+                                                filterState.activeFilters
+                                                    .length === 0
+                                            }
+                                            sx={{
+                                                display: {
+                                                    xs: 'inline-flex',
+                                                    lg: 'none',
+                                                },
+                                            }}
+                                        >
+                                            <Button
+                                                variant="outlined"
+                                                size="small"
+                                                startIcon={<FilterListIcon />}
+                                                onClick={() =>
+                                                    setIsFilterDrawerOpen(true)
+                                                }
+                                                sx={{ textTransform: 'none' }}
+                                            >
+                                                {dict.filters.title}
+                                            </Button>
+                                        </Badge>
+
+                                        <Typography
+                                            variant="body1"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textAlign: isRtl
+                                                    ? 'right'
+                                                    : 'left',
+                                            }}
+                                        >
+                                            {displayProducts.length}{' '}
+                                            {dict.productsCount}
+                                        </Typography>
+                                    </Box>
 
                                     <ProductSortBy
                                         lang={lang}
@@ -231,6 +300,15 @@ export const ProductsPage = ({
                     )}
                 </Container>
             </Box>
+
+            <ProductFiltersDrawer
+                lang={lang}
+                dict={dict}
+                colors={colors}
+                filterState={filterState}
+                open={isFilterDrawerOpen}
+                onClose={() => setIsFilterDrawerOpen(false)}
+            />
         </Box>
     );
 };

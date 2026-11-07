@@ -1,7 +1,19 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { Box, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
+import {
+    Box,
+    Button,
+    FormControl,
+    InputLabel,
+    MenuItem,
+    Select,
+    Typography,
+} from '@mui/material';
+import SortIcon from '@mui/icons-material/Sort';
+
+import { ProductSortDrawer } from './ProductSortDrawer';
+import type { SortOption } from './ProductSortDrawer';
 
 import type { ProductsPageDict, Product } from '@/src/types';
 
@@ -15,11 +27,21 @@ interface ProductSortByProps {
 export const ProductSortBy = ({ lang, dict, products, onSort }: ProductSortByProps) => {
     const isRtl = lang === 'fa';
     const [sortBy, setSortBy] = useState('alphabetical');
+    const [isSortDrawerOpen, setIsSortDrawerOpen] = useState(false);
+
+    const sortOptions: SortOption[] = [
+        { value: 'alphabetical', label: dict.sortOptions.alphabetical },
+        { value: 'alphabeticalDesc', label: dict.sortOptions.alphabeticalDesc },
+        { value: 'priceLow', label: dict.sortOptions.priceLow },
+        { value: 'priceHigh', label: dict.sortOptions.priceHigh },
+        { value: 'popular', label: dict.sortOptions.popular },
+        { value: 'highestDiscount', label: dict.sortOptions.highestDiscount },
+    ];
 
     // Apply sort logic
     const applySort = useCallback(
         (sortValue: string, productList: Product[]) => {
-            let sorted = [...productList];
+            const sorted = [...productList];
 
             switch (sortValue) {
                 case 'alphabetical':
@@ -72,6 +94,10 @@ export const ProductSortBy = ({ lang, dict, products, onSort }: ProductSortByPro
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [products, sortBy]);
 
+    const currentSortLabel =
+        sortOptions.find((option) => option.value === sortBy)?.label ??
+        dict.sortBy;
+
     return (
         <Box
             sx={{
@@ -82,39 +108,74 @@ export const ProductSortBy = ({ lang, dict, products, onSort }: ProductSortByPro
                 flexWrap: 'wrap',
             }}
         >
-            <Typography
-                variant="body1"
+            {/* Desktop sort select */}
+            <Box
                 sx={{
-                    color: 'text.secondary',
-                    textAlign: isRtl ? 'right' : 'left',
+                    display: { xs: 'none', lg: 'flex' },
+                    alignItems: 'center',
+                    gap: 2,
                 }}
             >
-                {dict.sortBy}
-            </Typography>
-
-            <FormControl
-                size="small"
-                sx={{
-                    minWidth: 200,
-                }}
-            >
-                <InputLabel>{dict.sortBy}</InputLabel>
-                <Select
-                    label={dict.sortBy}
-                    value={sortBy}
-                    onChange={(e) => handleSortChange(e.target.value)}
+                <Typography
+                    variant="body1"
                     sx={{
+                        color: 'text.secondary',
                         textAlign: isRtl ? 'right' : 'left',
                     }}
                 >
-                    <MenuItem value="alphabetical">{dict.sortOptions.alphabetical}</MenuItem>
-                    <MenuItem value="alphabeticalDesc">{dict.sortOptions.alphabeticalDesc}</MenuItem>
-                    <MenuItem value="priceLow">{dict.sortOptions.priceLow}</MenuItem>
-                    <MenuItem value="priceHigh">{dict.sortOptions.priceHigh}</MenuItem>
-                    <MenuItem value="popular">{dict.sortOptions.popular}</MenuItem>
-                    <MenuItem value="highestDiscount">{dict.sortOptions.highestDiscount}</MenuItem>
-                </Select>
-            </FormControl>
+                    {dict.sortBy}
+                </Typography>
+
+                <FormControl
+                    size="small"
+                    sx={{
+                        minWidth: 200,
+                    }}
+                >
+                    <InputLabel>{dict.sortBy}</InputLabel>
+                    <Select
+                        label={dict.sortBy}
+                        value={sortBy}
+                        onChange={(e) => handleSortChange(e.target.value)}
+                        sx={{
+                            textAlign: isRtl ? 'right' : 'left',
+                        }}
+                    >
+                        {sortOptions.map((option) => (
+                            <MenuItem key={option.value} value={option.value}>
+                                {option.label}
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>
+            </Box>
+
+            {/* Mobile sort button */}
+            <Button
+                variant="outlined"
+                size="small"
+                startIcon={<SortIcon />}
+                onClick={() => setIsSortDrawerOpen(true)}
+                sx={{
+                    display: { xs: 'inline-flex', lg: 'none' },
+                    textTransform: 'none',
+                }}
+            >
+                {currentSortLabel}
+            </Button>
+
+            <ProductSortDrawer
+                open={isSortDrawerOpen}
+                onClose={() => setIsSortDrawerOpen(false)}
+                isRtl={isRtl}
+                title={dict.sortBy}
+                options={sortOptions}
+                value={sortBy}
+                onSelect={(value) => {
+                    handleSortChange(value);
+                    setIsSortDrawerOpen(false);
+                }}
+            />
         </Box>
     );
 };

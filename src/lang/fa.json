@@ -187,6 +187,7 @@
             "highestDiscount": "بیشترین تخفیف"
         },
         "filters": {
+            "title": "فیلترها",
             "availability": "موجودی",
             "inStock": "موجود",
             "outOfStock": "ناموجود",
