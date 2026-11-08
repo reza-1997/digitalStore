@@ -6,11 +6,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import { ProductFilters } from './ProductFilters';
 import { useProductFilters } from './hooks/useProductFilters';
 
-import type { ColorOption, ProductsPageDict } from '@/src/types';
+import type { ColorOption } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface ProductFiltersDrawerProps {
     lang: 'fa' | 'en';
-    dict: ProductsPageDict;
+    dict: Dictionary;
     colors: ColorOption[];
     filterState: ReturnType<typeof useProductFilters>;
     open: boolean;
@@ -19,12 +20,13 @@ interface ProductFiltersDrawerProps {
 
 export const ProductFiltersDrawer = ({
     lang,
-    dict,
+    dict: dictionary,
     colors,
     filterState,
     open,
     onClose,
 }: ProductFiltersDrawerProps) => {
+    const dict = dictionary.productsPage;
     const isRtl = lang === 'fa';
 
     return (
@@ -66,7 +68,7 @@ export const ProductFiltersDrawer = ({
             <Box sx={{ flex: 1, overflowY: 'auto' }}>
                 <ProductFilters
                     lang={lang}
-                    dict={dict}
+                    dict={dictionary}
                     colors={colors}
                     filterState={filterState}
                     inDrawer

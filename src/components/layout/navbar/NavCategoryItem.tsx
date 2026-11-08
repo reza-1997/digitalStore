@@ -2,12 +2,13 @@
 
 import { Box, Typography, IconButton } from '@mui/material';
 import { KeyboardArrowDown as ChevronDownIcon } from '@mui/icons-material';
-import type { Category, NavbarDict } from '@/src/types';
+import type { Category } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface NavCategoryItemProps {
     category: Category;
     lang: 'fa' | 'en';
-    dict: NavbarDict;
+    dict: Dictionary;
     isActive: boolean;
     isMenuOpen: boolean;
     onMouseEnter: (event: React.MouseEvent<HTMLElement>, category: Category) => void;
@@ -21,12 +22,13 @@ interface NavCategoryItemProps {
 export const NavCategoryItem = ({
     category,
     lang,
-    dict,
+    dict: dictionary,
     isActive,
     isMenuOpen,
     onMouseEnter,
     onMouseLeave,
 }: NavCategoryItemProps) => {
+    const dict = dictionary.navbar;
     return (
         <Box
             onMouseLeave={onMouseLeave}

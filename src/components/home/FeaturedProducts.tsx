@@ -1,20 +1,21 @@
 'use client';
 
 import { useGetFilteredProductsQuery } from '@/src/lib/api/apiSlice';
-import type { ProductCardDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { ProductSlider } from '@/src/components/common/product';
 
 
 interface FeaturedProductsSliderProps {
     lang: 'fa' | 'en';
-    dict: ProductCardDict;
+    dict: Dictionary;
 }
 
 /**
  * FeaturedProductsSlider Component
  * Uses the reusable ProductSlider to display featured products.
  */
-export const FeaturedProductsSlider = ({ lang, dict }: FeaturedProductsSliderProps) => {
+export const FeaturedProductsSlider = ({ lang, dict: dictionary }: FeaturedProductsSliderProps) => {
+    const dict = dictionary.productCard;
     // Fetch featured products using RTK Query
     const { data: products = [], isLoading, isError } = useGetFilteredProductsQuery({ isFeatured: true });
 
@@ -25,7 +26,7 @@ export const FeaturedProductsSlider = ({ lang, dict }: FeaturedProductsSliderPro
     return (
         <ProductSlider
             lang={lang}
-            dict={dict}
+            dict={dictionary}
             title={dict.featuredTitle}
             products={products}
             isLoading={isLoading}

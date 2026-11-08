@@ -4,8 +4,8 @@ import {
     VisibilityOutlined as QuickViewIcon,
     ShoppingBagOutlined as CartIcon,
 } from '@mui/icons-material';
-import type { ProductCardDict } from '@/src/types';
 import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 export interface ProductCardAction {
     label: string;
@@ -14,7 +14,7 @@ export interface ProductCardAction {
 }
 
 export const getProductCardActions = (
-    dict: ProductCardDict,
+    dict: Dictionary['productCard'],
     onToggleWishlist?: (product: Product) => void,
     onCompare?: (product: Product) => void,
     onQuickView?: (product: Product) => void,

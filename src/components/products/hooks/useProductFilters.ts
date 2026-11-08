@@ -4,12 +4,12 @@ import { useCallback, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import { getBrandSlug } from '@/src/utils/productLinks';
+import type { Dictionary } from '@/src/lang/dictionary';
 import type {
     Brand,
     Category,
     ColorOption,
     Product,
-    ProductsPageDict,
     Subcategory,
 } from '@/src/types';
 
@@ -41,7 +41,7 @@ export interface ActiveFilter {
 
 interface UseProductFiltersOptions {
     lang: 'fa' | 'en';
-    dict: ProductsPageDict;
+    dict: Dictionary['productsPage'];
     categories: Category[];
     subcategories: Subcategory[];
     brands: Brand[];

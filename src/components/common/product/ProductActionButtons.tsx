@@ -79,20 +79,27 @@ export const ProductActionButtons = ({
                             event.stopPropagation();
                             onClick?.(product);
                         }}
-                        sx={{
+                        sx={(theme) => ({
                             width: isSmall ? { xs: 30, sm: 30, md: 40 } : undefined,
                             height: isSmall ? { xs: 30, sm: 30, md: 40 } : undefined,
                             bgcolor: 'background.paper',
+                            backgroundImage: `linear-gradient(to bottom, ${theme.palette.text.primary}, ${theme.palette.text.primary})`,
+                            backgroundSize: '100% 0%',
+                            backgroundPosition: 'top',
+                            backgroundRepeat: 'no-repeat',
                             color: 'text.primary',
                             boxShadow: isSmall ? '0 2px 8px rgba(0,0,0,0.12)' : '0 3px 10px rgba(0,0,0,0.12)',
                             p: isSmall ? undefined : 1.2,
                             flexShrink: 0,
+                            transition:
+                                'background-size 700ms cubic-bezier(0.22, 1, 0.36, 1), background-color 600ms ease, color 600ms ease',
 
                             '&:hover': {
-                                bgcolor: 'text.primary',
+                                bgcolor: 'background.paper',
+                                backgroundSize: '100% 100%',
                                 color: 'background.paper',
                             },
-                        }}
+                        })}
                     >
                         <Icon
                             fontSize={isSmall ? undefined : 'small'}

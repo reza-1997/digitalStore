@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Box, Typography, Button, Container, useTheme, Skeleton } from '@mui/material';
 
 import { getImageUrl } from '@/src/utils/imageUrl';
-import type { OverEarBannerDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { getProductPricingSummary } from '@/src/utils/productCalculations';
@@ -12,10 +12,11 @@ import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface OverEarBannerProps {
     lang: 'fa' | 'en';
-    dict: OverEarBannerDict;
+    dict: Dictionary;
 }
 
-export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
+export const OverEarBanner = ({ lang, dict: dictionary }: OverEarBannerProps) => {
+    const dict = dictionary.overEarBanner;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 
@@ -98,7 +99,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                                 alignSelf: contentAlignment,
                                 direction: isRtl ? 'rtl' : 'ltr',
                                 textAlign: isRtl ? 'right' : 'left',
-                                bgcolor: theme.palette.secondary.main,
+                                bgcolor: theme.palette.secondary.light,
                                 color: '#fff',
                                 fontSize: { xs: '0.75rem', sm: '0.85rem' },
                                 fontWeight: 700,
@@ -185,7 +186,8 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                         sx={{
                             alignSelf: contentAlignment,
                             direction: isRtl ? 'rtl' : 'ltr',
-                            bgcolor: theme.palette.secondary.light,
+                            '--button-bg': theme.palette.secondary.main,
+                            '--button-hover-fill': theme.palette.primary.main,
                             color: '#ffff',
                             fontWeight: 700,
                             px: 4.5,
@@ -193,9 +195,7 @@ export const OverEarBanner = ({ lang, dict }: OverEarBannerProps) => {
                             borderRadius: 8,
                             fontSize: '1rem',
                             textTransform: 'none',
-                            transition: 'all 0.3s ease',
                             '&:hover': {
-                                bgcolor: theme.palette.primary.main,
                                 color: theme.palette.background.default,
                             },
                         }}

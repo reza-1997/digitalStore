@@ -30,7 +30,8 @@ import {
     ExpandMore as ExpandMoreIcon,
 } from '@mui/icons-material';
 
-import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
+import type { Category } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { SubcategoriesList } from './MenuDrawerSubcategoriesList';
 import { getProductListingHref } from '@/src/utils/productLinks';
 
@@ -39,7 +40,7 @@ interface MenuDrawerProps {
     open: boolean;
     lang: 'fa' | 'en';
     logo: string;
-    dict: NavbarDict;
+    dict: Dictionary;
     categories: Category[];
     cartCount: number;
     mode: 'light' | 'dark';
@@ -49,7 +50,6 @@ interface MenuDrawerProps {
     onSearch: () => void;
     onToggleTheme: () => void;
     onChangeLanguage: () => void;
-    dictProductCard: ProductCardDict
 
 }
 
@@ -58,7 +58,7 @@ export default function MenuDrawer({
     open,
     lang,
     logo,
-    dict,
+    dict: dictionary,
     categories,
     cartCount,
     mode,
@@ -67,9 +67,9 @@ export default function MenuDrawer({
     onClose,
     onSearch,
     onToggleTheme,
-    onChangeLanguage,
-    dictProductCard
+    onChangeLanguage
 }: MenuDrawerProps) {
+    const dict = dictionary.navbar;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 
@@ -271,9 +271,8 @@ export default function MenuDrawer({
                                             expandedBrandSlug={expandedBrandSlug}
                                             onBrandAccordionChange={handleBrandAccordionChange}
                                             onClose={onClose}
-                                            dict={dict}
+                                            dict={dictionary}
                                             theme={theme}
-                                            dictProductCard={dictProductCard}
                                         />
                                     </AccordionDetails>
                                 </Accordion>

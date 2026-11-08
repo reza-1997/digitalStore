@@ -8,6 +8,8 @@ import ThemeRegistry from "@/src/theme/ThemeRegistry";
 import Providers from "@/src/lib/store/StoreProvider";
 import { getDictionary, hasLocale } from "@/src/lang/getDictionary";
 import { Navbar } from "@/src/components/layout/navbar/Navbar";
+import Footer from "@/src/components/layout/footer/Footer";
+import { ScrollToTopButton } from "@/src/components/common";
 
 
 
@@ -49,8 +51,10 @@ export default async function RootLayout({
                 <Suspense>
                     <Providers>
                         <ThemeRegistry>
-                            <Navbar lang={lang} dictNavbar={dict.navbar} dictProductCard={dict.productCard} />
+                            <Navbar lang={lang} dict={dict} />
                             {children}
+                            <Footer dict={dict} lang={lang} />
+                            <ScrollToTopButton lang={lang} />
                         </ThemeRegistry>
                     </Providers>
                 </Suspense>

@@ -1,14 +1,15 @@
 
 import { Box, Typography } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface FooterContactProps {
-    dict: FooterDict['contact'];
+    dict: Dictionary;
     isRtl: boolean;
 }
 
-const FooterContact = ({ dict, isRtl }: FooterContactProps) => {
+const FooterContact = ({ dict: dictionary, isRtl }: FooterContactProps) => {
+    const dict = dictionary.footer.contact;
     const details = [
         { value: dict.storeName, strong: true },
         { value: dict.address },

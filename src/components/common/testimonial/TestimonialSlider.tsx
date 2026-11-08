@@ -13,12 +13,13 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import type { Testimonial, TestimonialDict } from '@/src/types';
+import type { Testimonial } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { TestimonialCard } from './TestimonialCard';
 
 interface TestimonialSliderProps {
     lang: 'fa' | 'en';
-    dict: TestimonialDict;
+    dict: Dictionary;
     testimonials: Testimonial[];
 }
 
@@ -28,9 +29,10 @@ interface TestimonialSliderProps {
  */
 export const TestimonialSlider = ({
     lang,
-    dict,
+    dict: dictionary,
     testimonials = [],
 }: TestimonialSliderProps) => {
+    const dict = dictionary.testimonial;
     const isRtl = lang === 'fa';
     const theme = useTheme();
     const [isHovered, setIsHovered] = useState(false);
@@ -143,7 +145,7 @@ export const TestimonialSlider = ({
                 >
                     {testimonials.map((testimonial) => (
                         <SwiperSlide key={testimonial.id} style={{ height: 'auto', display: 'flex' }}>
-                            <TestimonialCard testimonial={testimonial} lang={lang} dict={dict} />
+                            <TestimonialCard testimonial={testimonial} lang={lang} dict={dictionary} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

@@ -28,8 +28,7 @@ export default async function Page({ params }: ProductsPageParams) {
         >
             <ProductsPage
                 lang={lang}
-                dict={dictionary.productsPage}
-                productCardDict={dictionary.productCard}
+                dict={dictionary}
             />
         </Suspense>
     );

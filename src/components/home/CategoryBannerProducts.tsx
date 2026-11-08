@@ -5,7 +5,8 @@ import { Box, Typography, Container, Button, Skeleton, useTheme } from '@mui/mat
 import { ArrowForward as ArrowRightIcon, ArrowBack as ArrowLeftIcon } from '@mui/icons-material';
 
 import { useGetAllCategoriesQuery, useGetProductsByCategorySlugQuery } from '@/src/lib/api/apiSlice';
-import type { CategoryBannerProductsDict, Product, ProductCardDict } from '@/src/types';
+import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { useMemo } from 'react';
 import { ProductCard } from '@/src/components/common/product';
 import { getProductListingHref } from '@/src/utils/productLinks';
@@ -32,8 +33,7 @@ const seededShuffle = <T,>(items: T[], seedText: string): T[] => {
 
 interface CategoryBannerProductsProps {
     lang: 'fa' | 'en';
-    dict: CategoryBannerProductsDict;
-    dictProductCard: ProductCardDict;
+    dict: Dictionary;
     onToggleWishlist?: (product: Product) => void;
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
@@ -43,13 +43,13 @@ interface CategoryBannerProductsProps {
 
 export const CategoryBannerProducts = ({
     lang,
-    dict,
-    dictProductCard,
+    dict: dictionary,
     onToggleWishlist,
     onCompare,
     onQuickView,
     onAddToCart,
 }: CategoryBannerProductsProps) => {
+    const dict = dictionary.categoryBannerProducts;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 
@@ -151,7 +151,8 @@ export const CategoryBannerProducts = ({
                         variant="contained"
                         size="large"
                         sx={{
-                            bgcolor: '#fff',
+                            '--button-bg': '#fff',
+                            '--button-hover-fill': theme.palette.secondary.main,
                             color: '#000',
                             fontWeight: 700,
                             px: 4,
@@ -159,7 +160,6 @@ export const CategoryBannerProducts = ({
                             borderRadius: 8,
                             textTransform: 'none',
                             '&:hover': {
-                                bgcolor: 'secondary.main',
                                 color: '#fff',
                             },
                         }}
@@ -187,7 +187,7 @@ export const CategoryBannerProducts = ({
                         <ProductCard
                             product={product}
                             lang={lang}
-                            dict={dictProductCard}
+                            dict={dictionary}
                             isLoading={false}
                             onToggleWishlist={onToggleWishlist}
                             onCompare={onCompare}

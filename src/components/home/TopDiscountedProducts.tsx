@@ -22,14 +22,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { useGetAllProductsQuery } from '@/src/lib/api/apiSlice';
-import type { Product, ProductCardDict } from '@/src/types';
+import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { ProductCardHorizontal } from '@/src/components/common/product';
 
 
 
 interface TopDiscountedProductsProps {
     lang: 'fa' | 'en';
-    dict: ProductCardDict;
+    dict: Dictionary;
     onToggleWishlist?: (product: Product) => void;
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
@@ -42,13 +43,14 @@ export type DiscountedProduct = Product & {
 
 export const TopDiscountedProducts = ({
     lang,
-    dict,
+    dict: dictionary,
     onToggleWishlist,
     onCompare,
     onQuickView,
     onAddToCart,
 }: TopDiscountedProductsProps) => {
 
+    const dict = dictionary.productCard;
     const isRtl = lang === 'fa';
     const theme = useTheme();
     const [isHovered, setIsHovered] = useState(false);
@@ -92,7 +94,7 @@ export const TopDiscountedProducts = ({
 
     const cardProps = {
         lang,
-        dict,
+        dict: dictionary,
         onToggleWishlist,
         onCompare,
         onQuickView,

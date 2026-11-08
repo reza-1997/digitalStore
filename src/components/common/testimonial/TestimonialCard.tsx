@@ -1,21 +1,23 @@
 import Link from 'next/link';
 import { Box, Typography, Chip, useTheme } from '@mui/material';
 
-import type { Testimonial, TestimonialDict } from '@/src/types';
+import type { Testimonial } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { ProductRating } from '../product';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 
 interface TestimonialCardProps {
     testimonial: Testimonial;
     lang: 'fa' | 'en';
-    dict: TestimonialDict;
+    dict: Dictionary;
 }
 
 export const TestimonialCard = ({
     testimonial,
     lang,
-    dict,
+    dict: dictionary,
 }: TestimonialCardProps) => {
+    const dict = dictionary.testimonial;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 

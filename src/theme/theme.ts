@@ -73,31 +73,90 @@ export const getTheme = (mode: 'light' | 'dark') =>
             //     letterSpacing: '0.01em',
             // },
         },
-        // shape: {
-        //     borderRadius: 8, // انحنای استاندارد و مدرن محصولات EcoFlow
-        // },
-        // components: {
-        //     MuiButton: {
-        //         styleOverrides: {
-        //             root: {
-        //                 borderRadius: 8,
-        //                 padding: '10px 24px',
-        //                 boxShadow: 'none',
-        //                 '&:hover': {
-        //                     boxShadow: 'none',
-        //                 },
-        //             },
-        //         },
-        //     },
-        //     MuiCard: {
-        //         styleOverrides: {
-        //             root: {
-        //                 borderRadius: 12,
-        //                 boxShadow: mode === 'light'
-        //                     ? '0px 2px 12px rgba(0, 0, 0, 0.04)'
-        //                     : '0px 2px 12px rgba(0, 0, 0, 0.4)',
-        //             },
-        //         },
-        //     },
-        // },
+        components: {
+            MuiButton: {
+                styleOverrides: {
+                    root: ({ theme, ownerState }) => {
+                        if (ownerState.variant !== 'contained') {
+                            return {};
+                        }
+
+                        const colorKey =
+                            !ownerState.color ||
+                            ownerState.color === 'inherit'
+                                ? 'primary'
+                                : ownerState.color;
+                        const paletteEntry = (
+                            theme.palette as unknown as Record<
+                                string,
+                                { main: string; dark: string } | string
+                            >
+                        )[colorKey];
+
+                        if (
+                            !paletteEntry ||
+                            typeof paletteEntry !== 'object'
+                        ) {
+                            return {};
+                        }
+
+                        const { main, dark } = paletteEntry;
+                        const fill = dark ?? main;
+
+                        return {
+                            // Components may override these vars in `sx` to use
+                            // custom before/after hover colors — the theme only
+                            // provides the slide animation, not the colors.
+                            '--button-bg': main,
+                            '--button-hover-fill': fill,
+                            backgroundColor: 'var(--button-bg)',
+                            backgroundImage:
+                                'linear-gradient(to bottom, var(--button-hover-fill), var(--button-hover-fill))',
+                            backgroundSize: '100% 0%',
+                            backgroundPosition: 'top',
+                            backgroundRepeat: 'no-repeat',
+                            transition:
+                                'background-size 600ms cubic-bezier(0.22, 1, 0.36, 1), background-color 600ms ease',
+                            '&:hover, &:focus-visible': {
+                                backgroundColor: 'var(--button-bg)',
+                                backgroundSize: '100% 100%',
+                            },
+                            '&.Mui-disabled': {
+                                backgroundColor:
+                                    theme.palette.action.disabledBackground,
+                                backgroundImage: 'none',
+                            },
+                        };
+                    },
+                },
+            },
+            MuiIconButton: {
+                styleOverrides: {
+                    root: ({ theme }) => ({
+                        // Same slide mechanism as MuiButton — components may
+                        // override these vars in `sx` for custom hover colors.
+                        // Defaults preserve the stock look: transparent bg
+                        // with an action.hover fill on hover.
+                        '--button-bg': 'transparent',
+                        '--button-hover-fill': theme.palette.action.hover,
+                        backgroundColor: 'var(--button-bg)',
+                        backgroundImage:
+                            'linear-gradient(to bottom, var(--button-hover-fill), var(--button-hover-fill))',
+                        backgroundSize: '100% 0%',
+                        backgroundPosition: 'top',
+                        backgroundRepeat: 'no-repeat',
+                        transition:
+                            'background-size 600ms cubic-bezier(0.22, 1, 0.36, 1), background-color 600ms ease',
+                        '&:hover, &:focus-visible': {
+                            backgroundColor: 'var(--button-bg)',
+                            backgroundSize: '100% 100%',
+                        },
+                        '&.Mui-disabled': {
+                            backgroundImage: 'none',
+                        },
+                    }),
+                },
+            },
+        },
+     
     });

@@ -11,18 +11,19 @@ import {
 
 import ProductImage from '@/src/components/common/product/ProductImage';
 
-import type { SmartphoneBannerDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { getImageUrl } from '@/src/utils/imageUrl';
 
 interface SmartphoneBannerProps {
     lang: 'fa' | 'en';
-    dict: SmartphoneBannerDict;
+    dict: Dictionary;
 }
 
 export const SmartphoneBanner = ({
     lang,
-    dict,
+    dict: dictionary,
 }: SmartphoneBannerProps) => {
+    const dict = dictionary.smartphoneBanner;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 
@@ -185,8 +186,6 @@ export const SmartphoneBanner = ({
                             alignSelf: 'flex-start',
                             position: 'relative',
                             zIndex: 2,
-                            bgcolor: theme.palette.secondary.light,
-                            color: '#fff',
                             fontWeight: 700,
                             px: 2,
                             py: 0.7,
@@ -194,12 +193,6 @@ export const SmartphoneBanner = ({
                             fontSize: '0.7rem',
                             whiteSpace: 'nowrap',
                             textTransform: 'uppercase',
-                            boxShadow: 'none',
-                            '&:hover': {
-                                bgcolor: theme.palette.primary.main,
-                                color: theme.palette.background.default,
-                                boxShadow: 'none',
-                            },
                         }}
                     >
                         {dict.shopNow}
@@ -224,7 +217,8 @@ export const SmartphoneBanner = ({
                         href={`/${lang}/product/${productSlug}`}
                         variant="contained"
                         sx={{
-                            bgcolor: theme.palette.secondary.light,
+                            '--button-bg': theme.palette.secondary.main,
+                            '--button-hover-fill': theme.palette.primary.main,
                             color: '#fff',
                             fontWeight: 700,
                             px: { sm: 3, md: 4 },
@@ -233,12 +227,8 @@ export const SmartphoneBanner = ({
                             fontSize: { sm: '0.85rem', md: '0.9rem' },
                             whiteSpace: 'nowrap',
                             textTransform: 'uppercase',
-                            boxShadow: 'none',
-                            transition: 'background-color 0.2s ease',
                             '&:hover': {
-                                bgcolor: theme.palette.primary.main,
                                 color: theme.palette.background.default,
-                                boxShadow: 'none',
                             },
                         }}
                     >

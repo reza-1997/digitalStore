@@ -16,24 +16,26 @@ import {
 } from '@mui/material';
 
 import { Search as SearchIcon } from '@mui/icons-material';
-import { NavbarDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 
 interface SearchDialogProps {
     open: boolean;
     lang: 'fa' | 'en';
-    dict: NavbarDict['search'] & {
-        submitSearch: string;
-    };
+    dict: Dictionary;
     onClose: () => void;
 }
 
 export default function SearchDialog({
     open,
     lang,
-    dict,
+    dict: dictionary,
     onClose,
 }: SearchDialogProps) {
+    const dict = {
+        ...dictionary.navbar.search,
+        submitSearch: dictionary.navbar.aria.submitSearch,
+    };
     const router = useRouter();
     const [searchTerm, setSearchTerm] = useState('');
 

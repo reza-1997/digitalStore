@@ -12,7 +12,8 @@ import {
     useTheme,
 } from '@mui/material';
 
-import type { Category, NavbarDict, Product, ProductCardDict } from '@/src/types';
+import type { Category, Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { SubcategoryAccordionItem } from './SubcategoryAccordionItem';
 import { MegaMenuSkeleton } from './Skeleton/MegaMenuSkeleton';
@@ -21,8 +22,7 @@ import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface MegaMenuProps {
     open: boolean;
-    dict: NavbarDict;
-    dictProductCard: ProductCardDict;
+    dict: Dictionary;
     anchorEl: HTMLElement | null;
     category: Category | null;
     lang: 'fa' | 'en';
@@ -41,13 +41,13 @@ export const MegaMenu = ({
     lang,
     handleLeave,
     cancelClose,
-    dict,
+    dict: dictionary,
     setHoveredCategoryCaptionOnImage,
     hoveredCategoryCaptionOnImage,
     hoveredChangeLinkInPopover,
-    setHoveredChangeLinkInPopover,
-    dictProductCard
+    setHoveredChangeLinkInPopover
 }: MegaMenuProps) => {
+    const dict = dictionary.navbar;
 
     const { data: subCategories, isLoading: isSubCategoriesLoading } =
         useGetSubcategoriesByCategorySlugQuery(category?.slug || '', {
@@ -193,7 +193,7 @@ export const MegaMenu = ({
                                                 setHoveredCategoryCaptionOnImage
                                             }
                                             onBrandProductsHover={setHoveredBrandProducts}
-                                            dict={dict}
+                                            dict={dictionary}
                                         />
                                     );
                                 })}
@@ -251,7 +251,7 @@ export const MegaMenu = ({
                                     {hoveredBrandProducts.slice(0, 4).map((product) => {
                                         return (
 
-                                            <ProductCard key={product.slug} dict={dictProductCard}
+                                            <ProductCard key={product.slug} dict={dictionary}
                                                 isLoading={isSubCategoriesLoading}
                                                 lang={lang}
                                                 product={product} />

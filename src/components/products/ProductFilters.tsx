@@ -13,18 +13,17 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
-import {
-    CategorySubcategoryFilterList,
-    FilterAccordion,
-    FilterOptionList,
-} from './ProductFilterControls';
+import { FilterAccordion } from './FilterAccordion';
+import { CategorySubcategoryFilterList } from './CategorySubcategoryFilterList';
+import { FilterOptionList } from './FilterOptionList';
 import { useProductFilters } from './hooks/useProductFilters';
 
-import type { ColorOption, ProductsPageDict } from '@/src/types';
+import type { ColorOption } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface ProductFiltersProps {
     lang: 'fa' | 'en';
-    dict: ProductsPageDict;
+    dict: Dictionary;
     colors: ColorOption[];
     filterState: ReturnType<typeof useProductFilters>;
     inDrawer?: boolean;
@@ -32,11 +31,12 @@ interface ProductFiltersProps {
 
 export const ProductFilters = ({
     lang,
-    dict,
+    dict: dictionary,
     colors,
     filterState,
     inDrawer = false,
 }: ProductFiltersProps) => {
+    const dict = dictionary.productsPage;
     const isRtl = lang === 'fa';
     const initialCategorySlug = filterState.filters.categories[0];
     const [expandedPanel, setExpandedPanel] = useState<string | false>(

@@ -32,12 +32,12 @@ import {
     ProductCard,
 } from '@/src/components/common/product';
 
-import type { Product, ProductsPageDict, ProductCardDict } from '@/src/types';
+import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface ProductsPageProps {
     lang: 'fa' | 'en';
-    dict: ProductsPageDict;
-    productCardDict: ProductCardDict;
+    dict: Dictionary;
 }
 
 const EMPTY_PRODUCTS: Product[] = [];
@@ -45,9 +45,9 @@ const EMPTY_ARRAY: never[] = [];
 
 export const ProductsPage = ({
     lang,
-    dict,
-    productCardDict,
+    dict: dictionary,
 }: ProductsPageProps) => {
+    const dict = dictionary.productsPage;
     const isRtl = lang === 'fa';
     const productsQuery = useGetAllProductsQuery();
     const categoriesQuery = useGetAllCategoriesQuery();
@@ -182,7 +182,7 @@ export const ProductsPage = ({
                             >
                                 <ProductFilters
                                     lang={lang}
-                                    dict={dict}
+                                    dict={dictionary}
                                     colors={colors}
                                     filterState={filterState}
                                 />
@@ -252,7 +252,7 @@ export const ProductsPage = ({
 
                                     <ProductSortBy
                                         lang={lang}
-                                        dict={dict}
+                                        dict={dictionary}
                                         products={filteredProducts}
                                         onSort={handleSort}
                                     />
@@ -274,7 +274,7 @@ export const ProductsPage = ({
                                                     <ProductCard
                                                         product={product}
                                                         lang={lang}
-                                                        dict={productCardDict}
+                                                        dict={dictionary}
                                                         isLoading={false}
                                                     />
                                                 </Grid>
@@ -286,6 +286,7 @@ export const ProductsPage = ({
                                                 page={page}
                                                 count={totalPages}
                                                 onChange={handlePageChange}
+                                                lang={lang}
                                             />
                                         )}
                                     </>
@@ -303,7 +304,7 @@ export const ProductsPage = ({
 
             <ProductFiltersDrawer
                 lang={lang}
-                dict={dict}
+                dict={dictionary}
                 colors={colors}
                 filterState={filterState}
                 open={isFilterDrawerOpen}

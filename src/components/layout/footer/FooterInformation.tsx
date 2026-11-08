@@ -1,19 +1,21 @@
 
 import { Box, Typography } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 import AppDownloadLinks from './AppDownloadLinks';
 
 interface FooterInformationProps {
-    dict: FooterDict['information'];
+    dict: Dictionary;
     isRtl: boolean;
 }
 
 const FooterInformation = ({
-    dict,
+    dict: dictionary,
     isRtl,
-}: FooterInformationProps) => (
+}: FooterInformationProps) => {
+    const dict = dictionary.footer.information;
+    return (
     <Box>
         <Typography
             variant="h6"
@@ -45,6 +47,7 @@ const FooterInformation = ({
             googlePlay={dict.googlePlay}
         />
     </Box>
-);
+    );
+};
 
 export default FooterInformation;

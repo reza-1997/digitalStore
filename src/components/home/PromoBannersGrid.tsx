@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Box, Typography, Button, Container, useTheme, Skeleton } from '@mui/material';
 
 import { getImageUrl } from '@/src/utils/imageUrl';
-import type { PromoBannerDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { getProductPricingSummary } from '@/src/utils/productCalculations';
@@ -12,10 +12,11 @@ import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface PromoBannersGridProps {
     lang: 'fa' | 'en';
-    dict: PromoBannerDict;
+    dict: Dictionary;
 }
 
-export const PromoBannersGrid = ({ lang, dict }: PromoBannersGridProps) => {
+export const PromoBannersGrid = ({ lang, dict: dictionary }: PromoBannersGridProps) => {
+    const dict = dictionary.promoBanners;
     const isRtl = lang === 'fa';
     const theme = useTheme();
 

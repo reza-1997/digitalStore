@@ -10,14 +10,15 @@ import {
     SupportAgentOutlined as SupportIcon,
 } from '@mui/icons-material';
 
-import type { FeaturesBarDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface FeaturesBarProps {
     lang: 'fa' | 'en';
-    dict: FeaturesBarDict;
+    dict: Dictionary;
 }
 
-export const FeaturesBar = ({ lang, dict }: FeaturesBarProps) => {
+export const FeaturesBar = ({ lang, dict: dictionary }: FeaturesBarProps) => {
+    const dict = dictionary.featuresBar;
     const isRtl = lang === 'fa';
 
     const features = [

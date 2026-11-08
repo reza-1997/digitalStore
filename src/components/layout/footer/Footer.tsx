@@ -1,7 +1,7 @@
 
 import { Box } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 import NewsletterSection from './NewsletterSection';
 import FooterMainSection from './FooterMainSection';
@@ -9,26 +9,26 @@ import FooterBottom from './FooterBottom';
 
 interface FooterProps {
     lang: 'fa' | 'en';
-    dict: FooterDict;
+    dict: Dictionary;
 }
 
-const Footer = ({ lang, dict }: FooterProps) => {
+const Footer = ({ lang, dict: dictionary }: FooterProps) => {
     const isRtl = lang === 'fa';
 
     return (
         <Box component="footer" sx={{ width: '100%' }}>
             <NewsletterSection
-                dict={dict.newsletter}
+                dict={dictionary}
                 isRtl={isRtl}
             />
 
             <FooterMainSection
-                dict={dict}
+                dict={dictionary}
                 isRtl={isRtl}
             />
 
             <FooterBottom
-                dict={dict.social}
+                dict={dictionary}
                 isRtl={isRtl}
             />
         </Box>

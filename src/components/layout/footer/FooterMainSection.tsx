@@ -1,21 +1,22 @@
 
 import { Box, Container, Grid } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 import FooterInformation from './FooterInformation';
 import FooterLinkColumn from './FooterLinkColumn';
 import FooterContact from './FooterContact';
 
 interface FooterMainSectionProps {
-    dict: FooterDict;
+    dict: Dictionary;
     isRtl: boolean;
 }
 
 const FooterMainSection = ({
-    dict,
+    dict: dictionary,
     isRtl,
 }: FooterMainSectionProps) => {
+    const dict = dictionary.footer;
     const linkColumns = [
         {
             key: 'products',
@@ -59,7 +60,7 @@ const FooterMainSection = ({
                 <Grid container spacing={4}>
                     <Grid size={{ xs: 12, sm: 6, md: 2 }}>
                         <FooterInformation
-                            dict={dict.information}
+                            dict={dictionary}
                             isRtl={isRtl}
                         />
                     </Grid>
@@ -79,7 +80,7 @@ const FooterMainSection = ({
 
                     <Grid size={{ xs: 12, sm: 6, md: 4 }}>
                         <FooterContact
-                            dict={dict.contact}
+                            dict={dictionary}
                             isRtl={isRtl}
                         />
                     </Grid>

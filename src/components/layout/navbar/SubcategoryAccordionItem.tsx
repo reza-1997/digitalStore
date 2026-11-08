@@ -17,7 +17,8 @@ import {
 } from '@mui/icons-material';
 
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
-import type { Category, NavbarDict, Subcategory, Brand, Product } from '@/src/types';
+import type { Category, Subcategory, Brand, Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { BRANDS } from '@/src/data/mockData';
 import { SubcategoryAccordionSkeleton } from './Skeleton/SubcategoryAccordionSkeleton';
 import { getProductListingHref } from '@/src/utils/productLinks';
@@ -33,7 +34,7 @@ interface SubcategoryAccordionItemProps {
     onLinkHover: (link: string | null) => void;
     onSubcategoryCaptionHover: (title: string | null) => void;
     onBrandProductsHover: (products: Product[] | null) => void;
-    dict: NavbarDict;
+    dict: Dictionary;
 }
 
 export const SubcategoryAccordionItem = ({
@@ -47,8 +48,9 @@ export const SubcategoryAccordionItem = ({
     onLinkHover,
     onSubcategoryCaptionHover,
     onBrandProductsHover,
-    dict,
+    dict: dictionary,
 }: SubcategoryAccordionItemProps) => {
+    const dict = dictionary.navbar;
     const { data: currentSubProducts = [], isLoading: isProductsLoading } =
         useGetProductsBySubcategorySlugQuery(sub.slug, { skip: !sub.slug });
 

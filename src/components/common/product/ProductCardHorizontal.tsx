@@ -1,6 +1,7 @@
 "use client"
 
-import { Product, ProductCardDict } from "@/src/types";
+import { Product } from "@/src/types";
+import type { Dictionary } from "@/src/lang/dictionary";
 import { DiscountedProduct } from "../../home/TopDiscountedProducts";
 
 import { Box, Typography, useTheme } from "@mui/material";
@@ -21,7 +22,7 @@ import { getBrandSlug, getProductListingHref } from '@/src/utils/productLinks';
 interface ProductCardHorizontalProps {
     product: DiscountedProduct;
     lang: 'fa' | 'en';
-    dict: ProductCardDict;
+    dict: Dictionary;
     onToggleWishlist?: (product: Product) => void;
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
@@ -31,13 +32,14 @@ interface ProductCardHorizontalProps {
 export const ProductCardHorizontal = ({
     product,
     lang,
-    dict,
+    dict: dictionary,
     onToggleWishlist,
     onCompare,
     onQuickView,
     onAddToCart,
     isLoading
 }: ProductCardHorizontalProps) => {
+    const dict = dictionary.productCard;
     const theme = useTheme();
     const [isImageHovered, setIsImageHovered] = useState(false);
 

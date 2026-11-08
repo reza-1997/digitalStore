@@ -27,13 +27,13 @@ import MenuDrawer from './Drawer/MenuDrawerMain';
 
 import { NavCategoryItem } from './NavCategoryItem';
 import { NavbarActions } from './NavbarActions';
-import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
+import type { Category } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface NavbarProps {
     lang: 'fa' | 'en';
-    dictNavbar: NavbarDict;
-    dictProductCard: ProductCardDict,
+    dict: Dictionary;
     cartCount?: number;
 }
 
@@ -44,10 +44,10 @@ interface NavbarProps {
  */
 export const Navbar = ({
     lang,
-    dictNavbar,
+    dict,
     cartCount = 5,
-    dictProductCard
 }: NavbarProps) => {
+    const dictNavbar = dict.navbar;
     const router = useRouter();
     const pathname = usePathname();
     const theme = useTheme();
@@ -285,7 +285,7 @@ export const Navbar = ({
                                                     key={category.id}
                                                     category={category}
                                                     lang={lang}
-                                                    dict={dictNavbar}
+                                                    dict={dict}
                                                     isActive={isActive}
                                                     isMenuOpen={open}
                                                     onMouseEnter={handleEnter}
@@ -307,7 +307,7 @@ export const Navbar = ({
                         {/* Right Section: Quick Action Controls */}
                         <NavbarActions
                             lang={lang}
-                            dict={dictNavbar}
+                            dict={dict}
                             cartCount={cartCount}
                             mode={mode}
                             onSearchClick={() => setSearchOpen(true)}
@@ -323,10 +323,7 @@ export const Navbar = ({
             <SearchDialog
                 open={searchOpen}
                 lang={lang}
-                dict={{
-                    ...dictNavbar.search,
-                    submitSearch: dictNavbar.aria.submitSearch,
-                }}
+                dict={dict}
                 onClose={() => setSearchOpen(false)}
             />
 
@@ -335,7 +332,7 @@ export const Navbar = ({
                 open={menuDrawerOpen}
                 lang={lang}
                 logo={dictNavbar.logo}
-                dict={dictNavbar}
+                dict={dict}
                 categories={categories as Category[]}
                 cartCount={cartCount}
                 mode={mode}
@@ -344,7 +341,6 @@ export const Navbar = ({
                 onSearch={() => setSearchOpen(true)}
                 onToggleTheme={toggleTheme}
                 onChangeLanguage={handleLanguageChange}
-                dictProductCard={dictProductCard}
             />
 
             {/* Desktop Mega Menu Overlay Popover */}
@@ -355,8 +351,7 @@ export const Navbar = ({
                 lang={lang}
                 handleLeave={handleLeave}
                 cancelClose={cancelClose}
-                dict={dictNavbar}
-                dictProductCard={dictProductCard}
+                dict={dict}
                 hoveredCategoryCaptionOnImage={hoveredCategoryCaptionOnImage}
                 setHoveredCategoryCaptionOnImage={setHoveredCategoryCaptionOnImage}
                 hoveredChangeLinkInPopover={hoveredChangeLinkInPopover}

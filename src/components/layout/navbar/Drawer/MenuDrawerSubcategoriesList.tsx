@@ -12,7 +12,8 @@ import {
 import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
 
 import { useGetSubcategoriesByCategorySlugQuery } from '@/src/lib/api/apiSlice';
-import type { Category, NavbarDict, ProductCardDict } from '@/src/types';
+import type { Category } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { SubcategoriesListSkeleton } from '../Skeleton/MenuDrawerSubcategoriesListSkeleton';
 import { BrandsList } from './MenuDrawerBrandsList';
 import { getProductListingHref } from '@/src/utils/productLinks';
@@ -26,8 +27,7 @@ interface SubcategoriesListProps {
     expandedBrandSlug: string | null;
     onBrandAccordionChange: (brandSlug: string) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
     onClose: () => void;
-    dict: NavbarDict;
-    dictProductCard: ProductCardDict
+    dict: Dictionary;
     theme: Theme;
 }
 
@@ -40,10 +40,10 @@ export function SubcategoriesList({
     expandedBrandSlug,
     onBrandAccordionChange,
     onClose,
-    dict,
-    theme,
-    dictProductCard
+    dict: dictionary,
+    theme
 }: SubcategoriesListProps) {
+    const dict = dictionary.navbar;
     // Fetch subcategories for the selected category
     const { data: subcategories = [], isLoading: isSubCategoriesLoading } = useGetSubcategoriesByCategorySlugQuery(
         category.slug,
@@ -114,8 +114,7 @@ export function SubcategoriesList({
                                 onBrandAccordionChange={onBrandAccordionChange}
                                 onClose={onClose}
                                 theme={theme}
-                                dict={dict}
-                                dictProductCard={dictProductCard}
+                                dict={dictionary}
                             />
                         </AccordionDetails>
                     </Accordion>

@@ -11,11 +11,11 @@ import {
 } from '@mui/icons-material';
 
 import { LanguageSwitcher } from './LanguageSwitcher';
-import type { NavbarDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface NavbarActionsProps {
     lang: 'fa' | 'en';
-    dict: NavbarDict;
+    dict: Dictionary;
     cartCount: number;
     mode: 'light' | 'dark';
     onSearchClick: () => void;
@@ -30,7 +30,7 @@ interface NavbarActionsProps {
  */
 export const NavbarActions = ({
     lang,
-    dict,
+    dict: dictionary,
     cartCount,
     mode,
     onSearchClick,
@@ -38,6 +38,7 @@ export const NavbarActions = ({
     onLanguageChange,
     color
 }: NavbarActionsProps) => {
+    const dict = dictionary.navbar;
 
     const actionButtonSx = {
         borderRadius: 2,

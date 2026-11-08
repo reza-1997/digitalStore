@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Box, Typography, useTheme } from '@mui/material';
-import type { Product, ProductCardDict } from '@/src/types';
+import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
 import ProductImage from './ProductImage';
 import { ProductCardSkeleton } from './ProductCardSkeleton';
@@ -18,7 +19,7 @@ import { getBrandSlug, getProductListingHref } from '@/src/utils/productLinks';
 interface ProductCardProps {
     product: Product;
     lang: 'fa' | 'en';
-    dict: ProductCardDict;
+    dict: Dictionary;
     onToggleWishlist?: (product: Product) => void;
     onCompare?: (product: Product) => void;
     onQuickView?: (product: Product) => void;
@@ -29,13 +30,14 @@ interface ProductCardProps {
 export const ProductCard = ({
     product,
     lang,
-    dict,
+    dict: dictionary,
     onToggleWishlist,
     onCompare,
     onQuickView,
     onAddToCart,
     isLoading,
 }: ProductCardProps) => {
+    const dict = dictionary.productCard;
     const theme = useTheme();
     const isRtl = lang === 'fa';
 

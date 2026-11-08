@@ -14,20 +14,21 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import type { HeroBannerDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { useGetAllCategoriesQuery } from '@/src/lib/api/apiSlice';
 import { getProductListingHref } from '@/src/utils/productLinks';
 
 interface HeroBannerProps {
     lang: 'fa' | 'en';
-    dict: HeroBannerDict;
+    dict: Dictionary;
 }
 
 /**
  * HeroBanner Component
  * Full-width hero banner with horizontal slide transition and right-to-left text animations.
  */
-export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
+export const HeroBanner = ({ lang, dict: dictionary }: HeroBannerProps) => {
+    const dict = dictionary.heroBanner;
     const isRtl = lang === 'fa';
 
     const [isHovered, setIsHovered] = useState(false);
@@ -317,8 +318,10 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                 })}
                                                 variant="contained"
                                                 size="medium"
-                                                sx={{
-                                                    bgcolor: '#ffffff',
+                                                sx={(theme) => ({
+                                                    '--button-bg': '#ffffff',
+                                                    '--button-hover-fill':
+                                                        theme.palette.secondary.main,
                                                     color: '#000000',
                                                     fontWeight: 700,
                                                     px: 3.5,
@@ -328,11 +331,10 @@ export const HeroBanner = ({ lang, dict }: HeroBannerProps) => {
                                                     textTransform: 'none',
                                                     boxShadow: '0 4px 14px rgba(0,0,0,0.25)',
                                                     '&:hover': {
-                                                        bgcolor: 'secondary.main',
                                                         color: '#ffffff',
                                                         boxShadow: '0 6px 20px rgba(0,0,0,0.35)',
                                                     },
-                                                }}
+                                                })}
                                             >
                                                 {dict.shopNow}
                                             </Button>

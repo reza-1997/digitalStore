@@ -12,14 +12,15 @@ import { Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Product, ProductCardDict } from '@/src/types';
+import { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { ProductCard } from './ProductCard';
 
 
 
 interface ProductSliderProps {
     lang: 'fa' | 'en';
-    dict: ProductCardDict;
+    dict: Dictionary;
     title: string;
     products: Product[];
     isLoading?: boolean;
@@ -31,7 +32,7 @@ interface ProductSliderProps {
  */
 export const ProductSlider = ({
     lang,
-    dict,
+    dict: dictionary,
     title,
     products = [],
     isLoading = false,
@@ -149,7 +150,7 @@ export const ProductSlider = ({
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product.slug} style={{ height: 'auto', display: 'flex' }}>
-                            <ProductCard product={product} lang={lang} dict={dict} isLoading={isLoading} />
+                            <ProductCard product={product} lang={lang} dict={dictionary} isLoading={isLoading} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

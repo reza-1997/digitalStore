@@ -15,16 +15,18 @@ import SortIcon from '@mui/icons-material/Sort';
 import { ProductSortDrawer } from './ProductSortDrawer';
 import type { SortOption } from './ProductSortDrawer';
 
-import type { ProductsPageDict, Product } from '@/src/types';
+import type { Product } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 interface ProductSortByProps {
     lang: 'fa' | 'en';
-    dict: ProductsPageDict;
+    dict: Dictionary;
     products: Product[];
     onSort: (sortedProducts: Product[]) => void;
 }
 
-export const ProductSortBy = ({ lang, dict, products, onSort }: ProductSortByProps) => {
+export const ProductSortBy = ({ lang, dict: dictionary, products, onSort }: ProductSortByProps) => {
+    const dict = dictionary.productsPage;
     const isRtl = lang === 'fa';
     const [sortBy, setSortBy] = useState('alphabetical');
     const [isSortDrawerOpen, setIsSortDrawerOpen] = useState(false);

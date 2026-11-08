@@ -15,7 +15,8 @@ import { ExpandMore as ExpandMoreIcon } from '@mui/icons-material';
 
 import { useGetProductsBySubcategorySlugQuery } from '@/src/lib/api/apiSlice';
 import { BRANDS } from '@/src/data/mockData';
-import type { Subcategory, Brand, NavbarDict, ProductCardDict } from '@/src/types';
+import type { Subcategory, Brand } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 import { BrandsListSkeleton } from '../Skeleton/MenuDrawerBrandsListSkeleton';
 import { ProductCardHorizontal } from '@/src/components/common/product';
 import { getProductListingHref } from '@/src/utils/productLinks';
@@ -30,8 +31,7 @@ interface BrandsListProps {
     onBrandAccordionChange: (brandSlug: string) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
     onClose: () => void;
     theme: Theme;
-    dict: NavbarDict;
-    dictProductCard: ProductCardDict
+    dict: Dictionary;
 }
 
 // Component to render filtered brands and their top products inside subcategory accordion
@@ -43,9 +43,9 @@ export function BrandsList({
     onBrandAccordionChange,
     onClose,
     theme,
-    dict,
-    dictProductCard
+    dict: dictionary
 }: BrandsListProps) {
+    const dict = dictionary.navbar;
     // Fetch products belonging to the selected subcategory
     const { data: currentSubProducts = [], isLoading: isProductsLoading } = useGetProductsBySubcategorySlugQuery(
         sub.slug,
@@ -146,7 +146,7 @@ export function BrandsList({
                             <List disablePadding sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                                 {brandProducts.slice(0, 2).map((product) => {
                                     return (
-                                        <ProductCardHorizontal key={product.slug} dict={dictProductCard} lang={lang} product={product} isLoading={isProductsLoading} />
+                                        <ProductCardHorizontal key={product.slug} dict={dictionary} lang={lang} product={product} isLoading={isProductsLoading} />
                                     );
                                 })}
                             </List>

@@ -14,19 +14,20 @@ import {
     Grid,
 } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 import { NEWSLETTER_FIELD_SX } from './footer.constants';
 
 interface NewsletterSectionProps {
-    dict: FooterDict['newsletter'];
+    dict: Dictionary;
     isRtl: boolean;
 }
 
 const NewsletterSection = ({
-    dict,
+    dict: dictionary,
     isRtl,
 }: NewsletterSectionProps) => {
+    const dict = dictionary.footer.newsletter;
     const [email, setEmail] = useState('');
     const [termsAccepted, setTermsAccepted] = useState(false);
 

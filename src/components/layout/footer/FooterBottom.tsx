@@ -1,16 +1,17 @@
 
 import { Box, Container, Grid, Typography } from '@mui/material';
 
-import type { FooterDict } from '@/src/types';
+import type { Dictionary } from '@/src/lang/dictionary';
 
 import SocialLinks from './SocialLinks';
 
 interface FooterBottomProps {
-    dict: FooterDict['social'];
+    dict: Dictionary;
     isRtl: boolean;
 }
 
-const FooterBottom = ({ dict, isRtl }: FooterBottomProps) => {
+const FooterBottom = ({ dict: dictionary, isRtl }: FooterBottomProps) => {
+    const dict = dictionary.footer.social;
 
     return (
         <Box
