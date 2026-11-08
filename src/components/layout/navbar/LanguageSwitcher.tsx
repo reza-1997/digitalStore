@@ -35,8 +35,8 @@ export const LanguageSwitcher = ({
                     border: '1px solid',
                     borderColor: 'divider',
                     borderRadius: 5,
-                    gap: 1,
-                    px: { xs: 1, sm: 1.5 },
+                    gap: { xs: 0.5, sm: 1 },
+                    px: { xs: 0.5, sm: 1.5 },
                     ":hover": {
                         color: "secondary.main"
                     }

@@ -42,6 +42,7 @@ export const NavbarActions = ({
     const actionButtonSx = {
         borderRadius: 2,
         color: color,
+        ml: { xs: -0.5, sm: 0 },
         '&:hover': {
             backgroundColor: 'action.hover',
             color: "secondary.main"
@@ -53,7 +54,9 @@ export const NavbarActions = ({
             sx={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: { xs: 0.25, sm: 0.75 },
+                gap: { xs: 0, sm: 0.75 },
+                mr: lang === "fa" ? 0 : -1.5,
+                ml: lang === "fa" ? -1.5 : 0,
                 flexShrink: 0,
             }}
         >

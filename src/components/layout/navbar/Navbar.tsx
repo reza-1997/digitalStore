@@ -224,8 +224,10 @@ export const Navbar = ({
                             sx={{
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: { xs: 1.5, lg: 4 },
+                                gap: { xs: 0, lg: 4 },
                                 minWidth: 0,
+                                ml: lang === "fa" ? 0 : -2.5,
+                                mr: lang === "fa" ? -2.5 : 0,
                                 height: { xs: 68, md: 80 },
                             }}
                         >
@@ -250,7 +252,7 @@ export const Navbar = ({
                                     letterSpacing: lang === 'fa' ? 0 : '-0.7px',
                                     whiteSpace: 'nowrap',
                                     color: navbarTextColor,
-                                    fontSize: { xs: '1rem', sm: '1.4rem', md: '1.1rem',lg: '1.8rem'}, 
+                                    fontSize: { xs: '1rem', sm: '1.4rem', md: '1.1rem', lg: '1.8rem' },
                                 }}
                             >
                                 {dictNavbar.logo}
