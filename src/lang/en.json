@@ -205,5 +205,32 @@
             "home": "Home",
             "products": "Products"
         }
+    },
+    "productDetails": {
+        "description": "Description",
+        "specifications": "Specifications",
+        "color": "Color",
+        "quantity": "Quantity",
+        "addToCart": "Add to Cart",
+        "addedToCart": "Added to Cart",
+        "buyNow": "Buy Now",
+        "wishlist": "Add to Wishlist",
+        "compare": "Compare",
+        "inStock": "In Stock",
+        "outOfStock": "Out of Stock",
+        "onlyLeftInStock": "Only {count} left in stock",
+        "share": "Share this product",
+        "copyLink": "Copy link",
+        "linkCopied": "Link copied",
+        "benefits": {
+            "shipping": "Free Shipping",
+            "shippingDesc": "Free shipping on all orders",
+            "returns": "Easy Returns",
+            "returnsDesc": "30-day hassle-free returns",
+            "payment": "Secure Payment",
+            "paymentDesc": "100% protected checkout",
+            "support": "24/7 Support",
+            "supportDesc": "Dedicated support team"
+        }
     }
 }

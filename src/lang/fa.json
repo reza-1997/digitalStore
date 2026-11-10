@@ -205,5 +205,32 @@
             "home": "خانه",
             "products": "محصولات"
         }
+    },
+    "productDetails": {
+        "description": "توضیحات",
+        "specifications": "مشخصات",
+        "color": "رنگ",
+        "quantity": "تعداد",
+        "addToCart": "افزودن به سبد خرید",
+        "addedToCart": "به سبد خرید اضافه شد",
+        "buyNow": "خرید فوری",
+        "wishlist": "افزودن به علاقه‌مندی‌ها",
+        "compare": "مقایسه",
+        "inStock": "موجود در انبار",
+        "outOfStock": "ناموجود",
+        "onlyLeftInStock": "فقط {count} عدد باقی مانده",
+        "share": "اشتراک‌گذاری این محصول",
+        "copyLink": "کپی لینک",
+        "linkCopied": "لینک کپی شد",
+        "benefits": {
+            "shipping": "ارسال رایگان",
+            "shippingDesc": "ارسال رایگان برای همه سفارش‌ها",
+            "returns": "بازگشت آسان",
+            "returnsDesc": "بازگشت کالا تا ۳۰ روز",
+            "payment": "پرداخت امن",
+            "paymentDesc": "پرداخت کاملاً محافظت‌شده",
+            "support": "پشتیبانی ۲۴/۷",
+            "supportDesc": "تیم پشتیبانی اختصاصی"
+        }
     }
 }

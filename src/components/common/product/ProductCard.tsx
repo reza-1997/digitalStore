@@ -89,11 +89,13 @@ export const ProductCard = ({
                 width: '100%',
                 minWidth: 0,
                 height: '100%',
-                border: 1,
+                boxSizing: 'border-box',
+                // border: 1,
                 borderColor: 'divider',
                 borderRadius: 1,
                 overflow: 'hidden',
                 transition: 'box-shadow 0.3s ease',
+                bgcolor: 'background.paper',
 
                 '&:hover': {
                     boxShadow:
