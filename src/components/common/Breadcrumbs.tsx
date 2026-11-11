@@ -1,4 +1,10 @@
-import { Breadcrumbs as MuiBreadcrumbs, Typography, Link } from '@mui/material';
+import {
+    Breadcrumbs as MuiBreadcrumbs,
+    Typography,
+    Link,
+    type SxProps,
+    type Theme,
+} from '@mui/material';
 import NextLink from 'next/link';
 
 interface BreadcrumbItem {
@@ -9,9 +15,10 @@ interface BreadcrumbItem {
 interface BreadcrumbsProps {
     lang: 'fa' | 'en';
     items: BreadcrumbItem[];
+    sx?: SxProps<Theme>;
 }
 
-export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
+export const Breadcrumbs = ({ items, sx }: BreadcrumbsProps) => {
 
     return (
         <MuiBreadcrumbs
@@ -21,6 +28,7 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
                 '& .MuiBreadcrumbs-separator': {
                     color: 'common.white',
                 },
+                ...sx,
             }}
         >
             {items.map((item, index) => {

@@ -1,5 +1,5 @@
 {
-    "devin.implicitContext.enabled": false,
+    "devin.implicitContext.enabled": true,
     "devin.defaultMode": "plan",
     "devin.defaultModel": "gemini-3-7-flash-low",
     "devin.defaultThoughtLevel": ""

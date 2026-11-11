@@ -63,6 +63,7 @@ export const ProductDetailsSection = ({
                         activeIndex={activeImageIndex}
                         onSelect={handleImageSelect}
                         isRtl={isRtl}
+                        dict={dict}
                     />
                 </Box>
             </Grid>

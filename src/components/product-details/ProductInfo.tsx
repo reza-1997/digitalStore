@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Link from 'next/link';
 import {
     Box,
     Button,
@@ -8,7 +9,9 @@ import {
     Divider,
     Grid,
     IconButton,
+    Link as MuiLink,
     Stack,
+    Tooltip,
     Typography,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
@@ -18,9 +21,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TelegramIcon from '@mui/icons-material/Telegram';
 import XIcon from '@mui/icons-material/X';
 import CheckIcon from '@mui/icons-material/Check';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AssignmentReturnIcon from '@mui/icons-material/AssignmentReturn';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
@@ -31,6 +36,10 @@ import type { Product, ProductColor } from '@/src/types';
 import { ProductRating } from '@/src/components/common/product/ProductRating';
 import { useProductDiscount } from '@/src/components/common/product/hooks/useProductDiscount';
 import CustomNumeralNumericFormat from '@/src/utils/CustomNumeralNumericFormat';
+import {
+    getBrandSlug,
+    getProductListingHref,
+} from '@/src/utils/productLinks';
 
 interface ProductInfoProps {
     product: Product;
@@ -66,6 +75,9 @@ export const ProductInfo = ({
     const stock = selectedColor?.stock ?? product.stock;
     const isAvailable = product.inStock && stock > 0;
     const maxQuantity = Math.max(1, Math.min(stock, 99));
+    const brandHref = getProductListingHref(lang, {
+        brand: getBrandSlug(product.brand),
+    });
 
     const [quantity, setQuantity] = useState(1);
     const [addedToCart, setAddedToCart] = useState(false);
@@ -123,38 +135,59 @@ export const ProductInfo = ({
     const shareButtons = [
         { label: t.copyLink, icon: linkCopied ? CheckIcon : ContentCopyIcon, onClick: handleCopyLink },
         { label: 'Facebook', icon: FacebookIcon, onClick: () => {} },
-        { label: 'Telegram', icon: TelegramIcon, onClick: () => {} },
+        { label: 'Instagram', icon: InstagramIcon, onClick: () => {} },
         { label: 'X', icon: XIcon, onClick: () => {} },
+        { label: 'WhatsApp', icon: WhatsAppIcon, onClick: () => {} },
+        { label: 'Pinterest', icon: PinterestIcon, onClick: () => {} },
     ];
 
     return (
         <Stack spacing={{ xs: 2.5, md: 3 }} sx={{ minWidth: 0 }}>
-            {/* Brand */}
-            <Typography
-                variant="overline"
+            {/* Brand + Title */}
+            <Box
                 sx={{
-                    color: 'secondary.main',
-                    fontWeight: 700,
-                    letterSpacing: '0.14em',
-                    textTransform: 'uppercase',
-                    lineHeight: 1.4,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: { xs: 0.5, sm: 0.75 },
                 }}
             >
-                {product.brand[lang]}
-            </Typography>
+                <MuiLink
+                    component={Link}
+                    href={brandHref}
+                    underline="none"
+                    sx={{
+                        color: 'secondary.main',
+                        fontSize: '0.75rem',
+                        fontWeight: 700,
+                        letterSpacing: '0.14em',
+                        textTransform: 'uppercase',
+                        lineHeight: 1.4,
+                        width: 'fit-content',
+                        transition: 'color 200ms ease',
+                        '&:hover': { color: 'primary.main' },
+                        '&:focus-visible': {
+                            outline: '2px solid',
+                            outlineColor: 'primary.main',
+                            outlineOffset: 2,
+                            borderRadius: 0.5,
+                        },
+                    }}
+                >
+                    {product.brand[lang]}
+                </MuiLink>
 
-            {/* Title */}
-            <Typography
-                component="h1"
-                sx={{
-                    fontSize: { xs: '1.4rem', sm: '1.7rem', md: '2rem' },
-                    fontWeight: 700,
-                    lineHeight: 1.35,
-                    color: 'text.primary',
-                }}
-            >
-                {product.title[lang]}
-            </Typography>
+                <Typography
+                    component="h1"
+                    sx={{
+                        fontSize: { xs: '1.4rem', sm: '1.7rem', md: '2rem' },
+                        fontWeight: 700,
+                        lineHeight: 1.35,
+                        color: 'text.primary',
+                    }}
+                >
+                    {product.title[lang]}
+                </Typography>
+            </Box>
 
             {/* Price + Rating */}
             <Box
@@ -379,7 +412,7 @@ export const ProductInfo = ({
                     sx={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: 1.5,
+                        gap: { xs: 0.75, sm: 1 },
                         flexWrap: 'wrap',
                     }}
                 >
@@ -391,6 +424,7 @@ export const ProductInfo = ({
                             borderColor: 'divider',
                             borderRadius: 2,
                             overflow: 'hidden',
+                            flexShrink: 0,
                         }}
                     >
                         <IconButton
@@ -413,7 +447,6 @@ export const ProductInfo = ({
                             }}
                         >
                             <CustomNumeralNumericFormat
-                                {...PRICE_FORMAT}
                                 value={quantity}
                                 thousandSeparator={false}
                             />
@@ -432,7 +465,6 @@ export const ProductInfo = ({
                     <Button
                         variant="contained"
                         color="primary"
-                        size="large"
                         disabled={!isAvailable}
                         onClick={handleAddToCart}
                         startIcon={
@@ -440,59 +472,110 @@ export const ProductInfo = ({
                                 <CheckIcon />
                             ) : undefined
                         }
-                        sx={{ flex: 1, minWidth: 160 }}
+                        sx={{
+                            flex: '1 1 140px',
+                            minWidth: 0,
+                            height: { xs: 44, sm: 48 },
+                            borderRadius: 999,
+                            textTransform: 'uppercase',
+                            px: 2,
+                        }}
                     >
                         {addedToCart ? t.addedToCart : t.addToCart}
                     </Button>
 
-                    <Button
-                        variant="outlined"
-                        color="primary"
-                        size="large"
-                        disabled={!isAvailable}
-                        onClick={handleAddToCart}
-                        sx={{ flex: 1, minWidth: 140 }}
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            gap: 0.75,
+                            order: { xs: 3, sm: 0 },
+                            flexBasis: { xs: '100%', sm: 'auto' },
+                            justifyContent: { xs: 'flex-end', sm: 'flex-start' },
+                        }}
                     >
-                        {t.buyNow}
-                    </Button>
+                        <Tooltip
+                            title={dict.productCard.wishlist}
+                            placement={isRtl ? 'left' : 'right'}
+                        >
+                            <IconButton
+                                aria-label={dict.productCard.wishlist}
+                                onClick={() => setInWishlist((v) => !v)}
+                                sx={{
+                                    width: { xs: 44, sm: 48 },
+                                    height: { xs: 44, sm: 48 },
+                                    flexShrink: 0,
+                                    borderRadius: '50%',
+                                    border: 1,
+                                    borderColor: 'divider',
+                                    color: 'text.primary',
+                                    transition:
+                                        'border-color 200ms ease, color 200ms ease',
+                                    '&:hover': {
+                                        borderColor: 'primary.main',
+                                        color: 'primary.main',
+                                    },
+                                }}
+                            >
+                                {inWishlist ? (
+                                    <FavoriteIcon
+                                        color="error"
+                                        sx={{ fontSize: 22 }}
+                                    />
+                                ) : (
+                                    <FavoriteBorderIcon sx={{ fontSize: 22 }} />
+                                )}
+                            </IconButton>
+                        </Tooltip>
+                        <Tooltip
+                            title={dict.productCard.compare}
+                            placement={isRtl ? 'left' : 'right'}
+                        >
+                            <IconButton
+                                aria-label={dict.productCard.compare}
+                                onClick={() => setInCompare((v) => !v)}
+                                sx={{
+                                    width: { xs: 44, sm: 48 },
+                                    height: { xs: 44, sm: 48 },
+                                    flexShrink: 0,
+                                    borderRadius: '50%',
+                                    border: 1,
+                                    borderColor: 'divider',
+                                    color: 'text.primary',
+                                    transition:
+                                        'border-color 200ms ease, color 200ms ease',
+                                    '&:hover': {
+                                        borderColor: 'primary.main',
+                                        color: 'primary.main',
+                                    },
+                                }}
+                            >
+                                <CompareArrowsIcon
+                                    sx={{
+                                        fontSize: 22,
+                                        color: inCompare
+                                            ? 'primary.main'
+                                            : 'inherit',
+                                    }}
+                                />
+                            </IconButton>
+                        </Tooltip>
+                    </Box>
                 </Box>
-            </Box>
 
-            {/* Wishlist / Compare */}
-            <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                 <Button
                     variant="outlined"
-                    color="inherit"
-                    size="small"
-                    onClick={() => setInWishlist((v) => !v)}
-                    startIcon={
-                        inWishlist ? (
-                            <FavoriteIcon color="error" />
-                        ) : (
-                            <FavoriteBorderIcon />
-                        )
-                    }
-                    sx={{ textTransform: 'none' }}
+                    color="primary"
+                    disabled={!isAvailable}
+                    onClick={handleAddToCart}
+                    sx={{
+                        width: '100%',
+                        mt: 1.5,
+                        height: { xs: 44, sm: 48 },
+                        borderRadius: 999,
+                        textTransform: 'uppercase',
+                    }}
                 >
-                    {t.wishlist}
-                </Button>
-                <Button
-                    variant="outlined"
-                    color="inherit"
-                    size="small"
-                    onClick={() => setInCompare((v) => !v)}
-                    startIcon={
-                        <CompareArrowsIcon
-                            sx={{
-                                color: inCompare
-                                    ? 'primary.main'
-                                    : 'inherit',
-                            }}
-                        />
-                    }
-                    sx={{ textTransform: 'none' }}
-                >
-                    {t.compare}
+                    {t.buyNow}
                 </Button>
             </Box>
 

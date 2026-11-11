@@ -7,10 +7,8 @@ import { CATEGORIES, SUBCATEGORIES } from '@/src/data/mockData';
 import en from '@/src/lang/en.json';
 import fa from '@/src/lang/fa.json';
 import { getProductListingHref } from '@/src/utils/productLinks';
-import {
-    ProductCategoryHero,
-    ProductDetailsSection,
-} from '@/src/components/product-details';
+import { CategoryHero } from '@/src/components/common';
+import { ProductDetailsSection } from '@/src/components/product-details';
 
 interface ProductPageParams {
     params: Promise<{
@@ -85,10 +83,17 @@ async function ProductDetailsPage({ params }: ProductPageParams) {
 
     return (
         <Box sx={{ backgroundColor: 'background.default' }}>
-            <ProductCategoryHero
+            <CategoryHero
+                variant="static"
                 lang={lang}
                 image={heroImage}
                 breadcrumbs={breadcrumbs}
+                breadcrumbsSx={{
+                    '& .MuiTypography-root, & .MuiLink-root, & .MuiBreadcrumbs-separator':
+                    {
+                        fontSize: { xs: '0.85rem', sm: '1rem' },
+                    },
+                }}
             />
             <Container
                 maxWidth="xl"
