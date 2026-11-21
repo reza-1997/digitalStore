@@ -224,6 +224,25 @@
         "linkCopied": "لینک کپی شد",
         "viewFullscreen": "نمایش تمام‌صفحه",
         "closeViewer": "بستن",
+        "tabs": {
+            "introduction": "معرفی",
+            "details": "جزئیات",
+            "reviews": "نظرات"
+        },
+        "reviews": {
+            "title": "نظرات مشتریان",
+            "writeReview": "نوشتن نظر",
+            "yourRating": "امتیاز شما",
+            "namePlaceholder": "نام شما",
+            "reviewPlaceholder": "تجربه خود را از این محصول بنویسید",
+            "submitReview": "ثبت نظر",
+            "cancel": "انصراف",
+            "reviewSubmitted": "از شما سپاسگزاریم! نظر شما ثبت شد.",
+            "nameRequired": "لطفاً نام خود را وارد کنید.",
+            "reviewRequired": "لطفاً پیش از ثبت، متنی بنویسید.",
+            "ratingRequired": "لطفاً یک امتیاز انتخاب کنید.",
+            "noReviews": "هنوز نظری ثبت نشده است. اولین نفر باشید و تجربه خود را بنویسید."
+        },
         "benefits": {
             "shipping": "ارسال رایگان",
             "shippingDesc": "ارسال رایگان برای همه سفارش‌ها",

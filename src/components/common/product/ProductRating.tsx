@@ -29,6 +29,7 @@ export const ProductRating = ({
                 direction: isRtl ? 'rtl' : 'ltr',
                 mt: isSmall ? 0.25 : 0,
                 minWidth: 0,
+                lineHeight: 1,
             }}
         >
             <Rating
@@ -37,6 +38,9 @@ export const ProductRating = ({
                 readOnly
                 size={isSmall ? 'small' : 'small'}
                 sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    lineHeight: 1,
                     fontSize: isSmall
                         ? { xs: '0.85rem', sm: '0.80rem', md: '1rem' }
                         : '1.1rem',
@@ -56,6 +60,7 @@ export const ProductRating = ({
                         color: isSmall ? 'text.secondary' : 'text.primary',
                         fontVariantNumeric: 'tabular-nums',
                         whiteSpace: 'nowrap',
+                        lineHeight: 1,
                         mr: isSmall ? 0 : (isRtl ? 1.5 : 0),
                     }}
                 >
@@ -71,6 +76,7 @@ export const ProductRating = ({
                         color: 'text.secondary',
                         fontVariantNumeric: 'tabular-nums',
                         whiteSpace: 'nowrap',
+                        lineHeight: 1,
                     }}
                 >
                     <CustomNumeralNumericFormat

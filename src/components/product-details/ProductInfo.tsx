@@ -7,12 +7,12 @@ import {
     Button,
     Chip,
     Divider,
-    Grid,
     IconButton,
     Link as MuiLink,
     Stack,
     Tooltip,
     Typography,
+    useTheme,
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -67,6 +67,7 @@ export const ProductInfo = ({
 }: ProductInfoProps) => {
     const t = dict.productDetails;
     const isRtl = lang === 'fa';
+    const theme = useTheme();
     const { hasDiscount, finalPrice } = useProductDiscount(
         product.price,
         product.discountPrice
@@ -134,11 +135,11 @@ export const ProductInfo = ({
 
     const shareButtons = [
         { label: t.copyLink, icon: linkCopied ? CheckIcon : ContentCopyIcon, onClick: handleCopyLink },
-        { label: 'Facebook', icon: FacebookIcon, onClick: () => {} },
-        { label: 'Instagram', icon: InstagramIcon, onClick: () => {} },
-        { label: 'X', icon: XIcon, onClick: () => {} },
-        { label: 'WhatsApp', icon: WhatsAppIcon, onClick: () => {} },
-        { label: 'Pinterest', icon: PinterestIcon, onClick: () => {} },
+        { label: 'Facebook', icon: FacebookIcon, onClick: () => { } },
+        { label: 'Instagram', icon: InstagramIcon, onClick: () => { } },
+        { label: 'X', icon: XIcon, onClick: () => { } },
+        { label: 'WhatsApp', icon: WhatsAppIcon, onClick: () => { } },
+        { label: 'Pinterest', icon: PinterestIcon, onClick: () => { } },
     ];
 
     return (
@@ -157,7 +158,7 @@ export const ProductInfo = ({
                     underline="none"
                     sx={{
                         color: 'secondary.main',
-                        fontSize: '0.75rem',
+                        fontSize: isRtl ? '0.95rem' : '0.80rem',
                         fontWeight: 700,
                         letterSpacing: '0.14em',
                         textTransform: 'uppercase',
@@ -240,7 +241,7 @@ export const ProductInfo = ({
                                                 ((product.price -
                                                     finalPrice) /
                                                     product.price) *
-                                                    100
+                                                100
                                             )
                                         }
                                         suffix="%"
@@ -273,14 +274,13 @@ export const ProductInfo = ({
                 <Box>
                     <Typography
                         variant="subtitle2"
-                        sx={{ fontWeight: 700, mb: 0.75 }}
+                        sx={{ fontWeight: 700, mb: 0.75, color: 'text.primary' }}
                     >
                         {t.description}
                     </Typography>
                     <Typography
                         variant="body2"
-                        color="text.secondary"
-                        sx={{ lineHeight: 1.8 }}
+                        sx={{ lineHeight: 1.8, color: 'text.secondary' }}
                     >
                         {product.description[lang]}
                     </Typography>
@@ -292,7 +292,7 @@ export const ProductInfo = ({
                 <Box>
                     <Typography
                         variant="subtitle2"
-                        sx={{ fontWeight: 700, mb: 1 }}
+                        sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}
                     >
                         {t.color}
                         {selectedColor && (
@@ -347,13 +347,13 @@ export const ProductInfo = ({
                                         },
                                         '&::after': isSelected
                                             ? {
-                                                  content: '""',
-                                                  position: 'absolute',
-                                                  inset: -7,
-                                                  borderRadius: '50%',
-                                                  border: '1px solid',
-                                                  borderColor: 'primary.main',
-                                              }
+                                                content: '""',
+                                                position: 'absolute',
+                                                inset: -7,
+                                                borderRadius: '50%',
+                                                border: '1px solid',
+                                                borderColor: 'primary.main',
+                                            }
                                             : undefined,
                                     }}
                                 />
@@ -392,7 +392,10 @@ export const ProductInfo = ({
                     {isAvailable ? t.inStock : t.outOfStock}
                 </Typography>
                 {isAvailable && stock <= 10 && (
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography
+                        variant="body2"
+                        sx={{ color: 'text.secondary' }}
+                    >
                         ({t.onlyLeftInStock.replace('{count}', String(stock))})
                     </Typography>
                 )}
@@ -404,7 +407,7 @@ export const ProductInfo = ({
             <Box>
                 <Typography
                     variant="subtitle2"
-                    sx={{ fontWeight: 700, mb: 1 }}
+                    sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}
                 >
                     {t.quantity}
                 </Typography>
@@ -418,84 +421,101 @@ export const ProductInfo = ({
                 >
                     <Box
                         sx={{
-                            display: 'inline-flex',
+                            display: 'flex',
                             alignItems: 'center',
-                            border: 1,
-                            borderColor: 'divider',
-                            borderRadius: 2,
-                            overflow: 'hidden',
-                            flexShrink: 0,
+                            gap: { xs: 0.75, sm: 1 },
+                            flex: '1 1 204px',
+                            minWidth: 204,
                         }}
                     >
-                        <IconButton
-                            size="small"
-                            onClick={() => handleQuantity(-1)}
-                            disabled={quantity <= 1 || !isAvailable}
-                            aria-label="Decrease quantity"
-                            sx={{ borderRadius: 0 }}
-                        >
-                            <RemoveIcon fontSize="small" />
-                        </IconButton>
-                        <Typography
-                            component="span"
+                        <Box
                             sx={{
-                                minWidth: 40,
-                                textAlign: 'center',
-                                fontWeight: 600,
-                                fontVariantNumeric: 'tabular-nums',
-                                userSelect: 'none',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                border: 1,
+                                borderColor: 'divider',
+                                borderRadius: 2,
+                                overflow: 'hidden',
+                                flexShrink: 0,
                             }}
                         >
-                            <CustomNumeralNumericFormat
-                                value={quantity}
-                                thousandSeparator={false}
-                            />
-                        </Typography>
-                        <IconButton
-                            size="small"
-                            onClick={() => handleQuantity(1)}
-                            disabled={quantity >= maxQuantity || !isAvailable}
-                            aria-label="Increase quantity"
-                            sx={{ borderRadius: 0 }}
-                        >
-                            <AddIcon fontSize="small" />
-                        </IconButton>
-                    </Box>
+                            <IconButton
+                                size="small"
+                                onClick={() => handleQuantity(-1)}
+                                disabled={quantity <= 1 || !isAvailable}
+                                aria-label="Decrease quantity"
+                                sx={{ borderRadius: 0 }}
+                            >
+                                <RemoveIcon fontSize="small" />
+                            </IconButton>
+                            <Typography
+                                component="span"
+                                sx={{
+                                    minWidth: 40,
+                                    textAlign: 'center',
+                                    fontWeight: 600,
+                                    fontVariantNumeric: 'tabular-nums',
+                                    userSelect: 'none',
+                                }}
+                            >
+                                <CustomNumeralNumericFormat
+                                    value={quantity}
+                                    thousandSeparator={false}
+                                />
+                            </Typography>
+                            <IconButton
+                                size="small"
+                                onClick={() => handleQuantity(1)}
+                                disabled={quantity >= maxQuantity || !isAvailable}
+                                aria-label="Increase quantity"
+                                sx={{ borderRadius: 0 }}
+                            >
+                                <AddIcon fontSize="small" />
+                            </IconButton>
+                        </Box>
 
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        disabled={!isAvailable}
-                        onClick={handleAddToCart}
-                        startIcon={
-                            addedToCart ? (
-                                <CheckIcon />
-                            ) : undefined
-                        }
-                        sx={{
-                            flex: '1 1 140px',
-                            minWidth: 0,
-                            height: { xs: 44, sm: 48 },
-                            borderRadius: 999,
-                            textTransform: 'uppercase',
-                            px: 2,
-                        }}
-                    >
-                        {addedToCart ? t.addedToCart : t.addToCart}
-                    </Button>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            disabled={!isAvailable}
+                            onClick={handleAddToCart}
+                            startIcon={
+                                addedToCart ? (
+                                    <CheckIcon />
+                                ) : undefined
+                            }
+                            sx={{
+                                flex: '1 1 88px',
+                                minWidth: 88,
+                                height: { xs: 44, sm: 48 },
+                                borderRadius: 999,
+                                textTransform: 'uppercase',
+                                whiteSpace: 'nowrap',
+                                px: { xs: 0.75, sm: 2 },
+                                fontSize: { xs: '0.7rem', sm: '0.875rem' },
+                                '--button-hover-fill': theme.palette.secondary.dark,
+                                ":hover": {
+                                    color: '#ffff',
+                                    fontWeight: '900'
+                                }
+                            }}
+                        >
+                            {addedToCart ? t.addedToCart : t.addToCart}
+                        </Button>
+                    </Box>
 
                     <Box
                         sx={{
                             display: 'flex',
                             gap: 0.75,
-                            order: { xs: 3, sm: 0 },
-                            flexBasis: { xs: '100%', sm: 'auto' },
+                            flex: '0 0 auto',
                             justifyContent: { xs: 'flex-end', sm: 'flex-start' },
+                            ms: 'auto',
                         }}
                     >
                         <Tooltip
                             title={dict.productCard.wishlist}
-                            placement={isRtl ? 'left' : 'right'}
+                            placement='top-start'
                         >
                             <IconButton
                                 aria-label={dict.productCard.wishlist}
@@ -511,8 +531,8 @@ export const ProductInfo = ({
                                     transition:
                                         'border-color 200ms ease, color 200ms ease',
                                     '&:hover': {
-                                        borderColor: 'primary.main',
-                                        color: 'primary.main',
+                                        borderColor: 'secondary.main',
+                                        color: 'secondary.main',
                                     },
                                 }}
                             >
@@ -528,7 +548,7 @@ export const ProductInfo = ({
                         </Tooltip>
                         <Tooltip
                             title={dict.productCard.compare}
-                            placement={isRtl ? 'left' : 'right'}
+                            placement='top-start'
                         >
                             <IconButton
                                 aria-label={dict.productCard.compare}
@@ -544,8 +564,8 @@ export const ProductInfo = ({
                                     transition:
                                         'border-color 200ms ease, color 200ms ease',
                                     '&:hover': {
-                                        borderColor: 'primary.main',
-                                        color: 'primary.main',
+                                        borderColor: 'secondary.main',
+                                        color: 'secondary.main',
                                     },
                                 }}
                             >
@@ -563,8 +583,7 @@ export const ProductInfo = ({
                 </Box>
 
                 <Button
-                    variant="outlined"
-                    color="primary"
+                    variant="contained"
                     disabled={!isAvailable}
                     onClick={handleAddToCart}
                     sx={{
@@ -573,58 +592,18 @@ export const ProductInfo = ({
                         height: { xs: 44, sm: 48 },
                         borderRadius: 999,
                         textTransform: 'uppercase',
+                        '--button-hover-fill': theme.palette.secondary.dark,
+                        bgcolor: 'text.secondary',
+                        color: 'background.default',
+                        ":hover": {
+                            color: '#ffff',
+                            fontWeight: '900'
+                        }
                     }}
                 >
                     {t.buyNow}
                 </Button>
             </Box>
-
-            {/* Benefits */}
-            <Grid container spacing={1.5}>
-                {benefits.map(({ icon: Icon, title, desc }) => (
-                    <Grid key={title} size={{ xs: 6 }}>
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                gap: 1.25,
-                                alignItems: 'flex-start',
-                                p: 1.25,
-                                borderRadius: 2,
-                                border: 1,
-                                borderColor: 'divider',
-                                height: '100%',
-                            }}
-                        >
-                            <Icon
-                                sx={{
-                                    color: 'secondary.main',
-                                    fontSize: 22,
-                                    mt: '2px',
-                                }}
-                            />
-                            <Box sx={{ minWidth: 0 }}>
-                                <Typography
-                                    variant="caption"
-                                    sx={{
-                                        display: 'block',
-                                        fontWeight: 700,
-                                        lineHeight: 1.4,
-                                    }}
-                                >
-                                    {title}
-                                </Typography>
-                                <Typography
-                                    variant="caption"
-                                    color="text.secondary"
-                                    sx={{ lineHeight: 1.5 }}
-                                >
-                                    {desc}
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Grid>
-                ))}
-            </Grid>
 
             {/* Share */}
             <Box
@@ -637,8 +616,7 @@ export const ProductInfo = ({
             >
                 <Typography
                     variant="caption"
-                    color="text.secondary"
-                    sx={{ fontWeight: 600, me: 1 }}
+                    sx={{ fontWeight: 600, me: 1, color: 'text.secondary' }}
                 >
                     {t.share}
                 </Typography>
@@ -663,55 +641,51 @@ export const ProductInfo = ({
                 ))}
             </Box>
 
-            {/* Specifications */}
-            {product.specifications.length > 0 && (
-                <>
-                    <Divider />
-                    <Box>
-                        <Typography
-                            variant="subtitle2"
-                            sx={{ fontWeight: 700, mb: 1 }}
-                        >
-                            {t.specifications}
-                        </Typography>
-                        <Box
-                            component="dl"
-                            sx={{ m: 0, display: 'grid', gap: 0.75 }}
-                        >
-                            {product.specifications.map((spec, index) => (
-                                <Box
-                                    key={index}
-                                    sx={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        gap: 2,
-                                        py: 0.5,
-                                    }}
-                                >
-                                    <Typography
-                                        component="dt"
-                                        variant="body2"
-                                        color="text.secondary"
-                                    >
-                                        {spec.key[lang]}
-                                    </Typography>
-                                    <Typography
-                                        component="dd"
-                                        variant="body2"
-                                        sx={{
-                                            m: 0,
-                                            fontWeight: 500,
-                                            textAlign: 'end',
-                                        }}
-                                    >
-                                        {spec.value[lang]}
-                                    </Typography>
-                                </Box>
-                            ))}
+            {/* Benefits */}
+            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                {benefits.map(({ icon: Icon, title, desc }, index) => (
+                    <Box
+                        key={title}
+                        sx={{
+                            display: 'flex',
+                            gap: 1.5,
+                            alignItems: 'flex-start',
+                            py: index === 0 ? 0 : 1.5,
+                        }}
+                    >
+                        <Icon
+                            sx={{
+                                color: 'secondary.main',
+                                fontSize: 26,
+                                mt: '2px',
+                            }}
+                        />
+                        <Box sx={{ minWidth: 0 }}>
+                            <Typography
+                                variant="body2"
+                                sx={{
+                                    fontWeight: 700,
+                                    color: 'text.primary',
+                                    lineHeight: 1.4,
+                                }}
+                            >
+                                {title}
+                            </Typography>
+                            <Typography
+                                variant="caption"
+                                sx={{
+                                    display: 'block',
+                                    color: 'text.secondary',
+                                    lineHeight: 1.6,
+                                    mt: 0.25,
+                                }}
+                            >
+                                {desc}
+                            </Typography>
                         </Box>
                     </Box>
-                </>
-            )}
+                ))}
+            </Box>
         </Stack>
     );
 };

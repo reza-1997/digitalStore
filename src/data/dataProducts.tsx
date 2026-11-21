@@ -25,6 +25,12 @@ export const PRODUCTS: Product[] = [
         images: [
             'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=800&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=800&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
             'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=800&auto=format&fit=crop'
         ],
         categorySlug: 'mobile',
@@ -44,7 +50,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Samsung Galaxy S25 Ultra is where Samsung shows its experience. smooth everyday performance covers the scenarios users care about most, and each one has been tuned for streaming, photography, and everyday productivity rather than treated as a checkbox. Underneath, 6.9-inch Dynamic AMOLED 2X display; 200 MP main camera; Galaxy AI provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and fast charging and 5G connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های سامسونگ گلکسی S25 اولترا جایی است که تجربه سامسونگ را نشان می‌دهد. عملکرد روان در کارهای روزمره سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای پخش ویدیو، عکاسی و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، نمایشگر Dynamic AMOLED 2X با اندازه ۶.۹ اینچ؛ دوربین اصلی ۲۰۰ مگاپیکسل؛ Galaxy AI فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و شارژ سریع و اتصال 5G بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Value, and the Final Verdict',
+                        fa: 'عملکرد، ارزش خرید و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Samsung Galaxy S25 Ultra, the verdict is clear: this is a product that understands its job and does it reliably. a vivid OLED display translates into measurable advantages during streaming, photography, and everyday productivity, while 6.9-inch Dynamic AMOLED 2X display; 200 MP main camera; Galaxy AI ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Samsung optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Samsung Galaxy S25 Ultra is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از سامسونگ گلکسی S25 اولترا، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. نمایشگر OLED با جزئیات بالا در حین پخش ویدیو، عکاسی و کارهای روزمره مزایای واقعی به همراه دارد و نمایشگر Dynamic AMOLED 2X با اندازه ۶.۹ اینچ؛ دوربین اصلی ۲۰۰ مگاپیکسل؛ Galaxy AI ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سامسونگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، سامسونگ گلکسی S25 اولترا یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Display and Design Worth Noticing',
+                        fa: 'نمایشگری و طراحی که ارزش توجه دارد',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Samsung Galaxy S25 Ultra, the Samsung design philosophy is obvious: a versatile multi-lens camera system is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized streaming, photography, and everyday productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as fast charging and 5G connectivity show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Samsung Galaxy S25 Ultra does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه سامسونگ گلکسی S25 اولترا را در دست می‌گیرید، فلسفه طراحی سامسونگ کاملاً مشخص است: سیستم دوربین چندگانه و همه‌کاره در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح پخش ویدیو، عکاسی و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند شارژ سریع و اتصال 5G نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، سامسونگ گلکسی S25 اولترا فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-1-2',
@@ -77,7 +120,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Samsung Galaxy S25+ is where Samsung shows its experience. smooth everyday performance covers the scenarios users care about most, and each one has been tuned for streaming, photography, and everyday productivity rather than treated as a checkbox. Underneath, 6.7-inch Dynamic AMOLED 2X display; Snapdragon 8 Elite for Galaxy provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and fast charging and 5G connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های سامسونگ گلکسی S25 پلاس جایی است که تجربه سامسونگ را نشان می‌دهد. عملکرد روان در کارهای روزمره سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای پخش ویدیو، عکاسی و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، نمایشگر Dynamic AMOLED 2X با اندازه ۶.۷ اینچ؛ Snapdragon 8 Elite for Galaxy فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و شارژ سریع و اتصال 5G بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Value, and the Final Verdict',
+                        fa: 'عملکرد، ارزش خرید و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Samsung Galaxy S25+, the verdict is clear: this is a product that understands its job and does it reliably. a vivid OLED display translates into measurable advantages during streaming, photography, and everyday productivity, while 6.7-inch Dynamic AMOLED 2X display; Snapdragon 8 Elite for Galaxy ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Samsung optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Samsung Galaxy S25+ is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از سامسونگ گلکسی S25 پلاس، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. نمایشگر OLED با جزئیات بالا در حین پخش ویدیو، عکاسی و کارهای روزمره مزایای واقعی به همراه دارد و نمایشگر Dynamic AMOLED 2X با اندازه ۶.۷ اینچ؛ Snapdragon 8 Elite for Galaxy ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سامسونگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، سامسونگ گلکسی S25 پلاس یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1533228876829-65c94e7b5025?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-1-3',
@@ -111,7 +180,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'A Display and Design Worth Noticing',
+                        fa: 'نمایشگری و طراحی که ارزش توجه دارد',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Samsung Galaxy A56 5G, the Samsung design philosophy is obvious: a versatile multi-lens camera system is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized streaming, photography, and everyday productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as fast charging and 5G connectivity show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Samsung Galaxy A56 5G does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه سامسونگ گلکسی A56 5G را در دست می‌گیرید، فلسفه طراحی سامسونگ کاملاً مشخص است: سیستم دوربین چندگانه و همه‌کاره در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح پخش ویدیو، عکاسی و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند شارژ سریع و اتصال 5G نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، سامسونگ گلکسی A56 5G فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Samsung Galaxy A56 5G proves that its headline features translate into real-world convenience. all-day battery life means that streaming, photography, and everyday productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 6.7-inch Super AMOLED display; 5G connectivity — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast charging and 5G connectivity handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Samsung Galaxy A56 5G leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، سامسونگ گلکسی A56 5G ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. باتری با عمر تمام‌روز یعنی پخش ویدیو، عکاسی و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — نمایشگر Super AMOLED با اندازه ۶.۷ اینچ؛ اتصال 5G — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و شارژ سریع و اتصال 5G جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، سامسونگ گلکسی A56 5G روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-1-4',
@@ -144,7 +239,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Apple iPhone 16 Pro proves that its headline features translate into real-world convenience. all-day battery life means that streaming, photography, and everyday productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — A18 Pro chip; Pro camera system; 6.3-inch Super Retina XDR display — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast charging and 5G connectivity handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Apple iPhone 16 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، اپل آیفون 16 پرو ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. باتری با عمر تمام‌روز یعنی پخش ویدیو، عکاسی و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — تراشه A18 Pro؛ سیستم دوربین Pro؛ نمایشگر Super Retina XDR با اندازه ۶.۳ اینچ — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و شارژ سریع و اتصال 5G جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، اپل آیفون 16 پرو روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Value, and the Final Verdict',
+                        fa: 'عملکرد، ارزش خرید و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Apple iPhone 16 Pro worth your money? For most buyers, the answer is yes. a versatile multi-lens camera system delivers on its promises in everyday scenarios, A18 Pro chip; Pro camera system; 6.3-inch Super Retina XDR display provides dependable performance under load, and fast charging and 5G connectivity rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Apple iPhone 16 Pro holds its own on the things people notice — comfort during streaming, photography, and everyday productivity, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Apple iPhone 16 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا اپل آیفون 16 پرو ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سیستم دوربین چندگانه و همه‌کاره در سناریوهای روزمره به وعده‌هایش عمل می‌کند، تراشه A18 Pro؛ سیستم دوربین Pro؛ نمایشگر Super Retina XDR با اندازه ۶.۳ اینچ عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و شارژ سریع و اتصال 5G با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، اپل آیفون 16 پرو در چیزهایی که مردم متوجه می‌شوند — راحتی در حین پخش ویدیو، عکاسی و کارهای روزمره، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، اپل آیفون 16 پرو شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1530319067432-f2a729c03db5?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Display and Design Worth Noticing',
+                        fa: 'نمایشگری و طراحی که ارزش توجه دارد',
+                    },
+                    content: {
+                        en: 'The Apple iPhone 16 Pro from Apple makes a strong first impression, pairing a vivid OLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the premium glass and metal construction gives the product a confident stance on a desk or in a hand, while fast charging and 5G connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for streaming, photography, and everyday productivity, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple iPhone 16 Pro presents itself as a product worth owning.',
+                        fa: 'محصول اپل آیفون 16 پرو از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر OLED با جزئیات بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: ساختار شیشه‌ای و فلزی پریمیوم به محصول وقار و استحکام می‌بخشد و شارژ سریع و اتصال 5G هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای پخش ویدیو، عکاسی و کارهای روزمره بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، اپل آیفون 16 پرو حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-1-5',
@@ -178,7 +310,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'A Display and Design Worth Noticing',
+                        fa: 'نمایشگری و طراحی که ارزش توجه دارد',
+                    },
+                    content: {
+                        en: 'The Apple iPhone 16 from Apple makes a strong first impression, pairing a vivid OLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the premium glass and metal construction gives the product a confident stance on a desk or in a hand, while fast charging and 5G connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for streaming, photography, and everyday productivity, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple iPhone 16 presents itself as a product worth owning.',
+                        fa: 'محصول اپل آیفون 16 از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر OLED با جزئیات بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: ساختار شیشه‌ای و فلزی پریمیوم به محصول وقار و استحکام می‌بخشد و شارژ سریع و اتصال 5G هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای پخش ویدیو، عکاسی و کارهای روزمره بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، اپل آیفون 16 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Apple iPhone 16 is where Apple shows its experience. smooth everyday performance covers the scenarios users care about most, and each one has been tuned for streaming, photography, and everyday productivity rather than treated as a checkbox. Underneath, A18 chip; 48 MP Fusion camera; Super Retina XDR display provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and fast charging and 5G connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اپل آیفون 16 جایی است که تجربه اپل را نشان می‌دهد. عملکرد روان در کارهای روزمره سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای پخش ویدیو، عکاسی و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، تراشه A18؛ دوربین Fusion با وضوح ۴۸ مگاپیکسل؛ نمایشگر Super Retina XDR فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و شارژ سریع و اتصال 5G بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-1-6',
@@ -213,7 +371,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Camera, Battery, and Everyday Performance',
+                        fa: 'دوربین، باتری و عملکرد روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Google Pixel 9 Pro proves that its headline features translate into real-world convenience. all-day battery life means that streaming, photography, and everyday productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Google Tensor G4; Pro camera system; OLED display — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast charging and 5G connectivity handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Google Pixel 9 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، گوگل پیکسل 9 پرو ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. باتری با عمر تمام‌روز یعنی پخش ویدیو، عکاسی و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — Google Tensor G4؛ سیستم دوربین Pro؛ نمایشگر OLED — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و شارژ سریع و اتصال 5G جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، گوگل پیکسل 9 پرو روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Value, and the Final Verdict',
+                        fa: 'عملکرد، ارزش خرید و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Google Pixel 9 Pro worth your money? For most buyers, the answer is yes. a versatile multi-lens camera system delivers on its promises in everyday scenarios, Google Tensor G4; Pro camera system; OLED display provides dependable performance under load, and fast charging and 5G connectivity rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Google Pixel 9 Pro holds its own on the things people notice — comfort during streaming, photography, and everyday productivity, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Google Pixel 9 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا گوگل پیکسل 9 پرو ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سیستم دوربین چندگانه و همه‌کاره در سناریوهای روزمره به وعده‌هایش عمل می‌کند، Google Tensor G4؛ سیستم دوربین Pro؛ نمایشگر OLED عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و شارژ سریع و اتصال 5G با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، گوگل پیکسل 9 پرو در چیزهایی که مردم متوجه می‌شوند — راحتی در حین پخش ویدیو، عکاسی و کارهای روزمره، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، گوگل پیکسل 9 پرو شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-1',
@@ -247,7 +431,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'The feature set of the Anker 735 Charger (Nano II 65W) is where Anker shows its experience. rapid power delivery covers the scenarios users care about most, and each one has been tuned for charging phones, tablets, and laptops anywhere rather than treated as a checkbox. Underneath, 65W max; 2 USB-C ports and 1 USB-A port; GaN II provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and foldable pins and wide voltage support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های شارژر Anker 735 (Nano II 65W) جایی است که تجربه انکر را نشان می‌دهد. تحویل توان سریع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شارژ گوشی، تبلت و لپ‌تاپ در هر جا بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، حداکثر ۶۵ وات؛ دو درگاه USB-C و یک USB-A؛ فناوری GaN II فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Safety, and Everyday Reliability',
+                        fa: 'سرعت، ایمنی و پایداری روزمره',
+                    },
+                    content: {
+                        en: 'After extended time with the Anker 735 Charger (Nano II 65W), the verdict is clear: this is a product that understands its job and does it reliably. GaN fast charging translates into measurable advantages during charging phones, tablets, and laptops anywhere, while 65W max; 2 USB-C ports and 1 USB-A port; GaN II ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Anker optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Anker 735 Charger (Nano II 65W) is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از شارژر Anker 735 (Nano II 65W)، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع با فناوری GaN در حین شارژ گوشی، تبلت و لپ‌تاپ در هر جا مزایای واقعی به همراه دارد و حداکثر ۶۵ وات؛ دو درگاه USB-C و یک USB-A؛ فناوری GaN II ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: انکر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، شارژر Anker 735 (Nano II 65W) یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1619681077755-901c0e86b866?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Compact Charging, Big Output',
+                        fa: 'شارژ فشرده با توان بالا',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Anker 735 Charger (Nano II 65W), the Anker design philosophy is obvious: a compact wall-plug footprint is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging phones, tablets, and laptops anywhere when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as foldable pins and wide voltage support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Anker 735 Charger (Nano II 65W) does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه شارژر Anker 735 (Nano II 65W) را در دست می‌گیرید، فلسفه طراحی انکر کاملاً مشخص است: طراحی کوچک و جمع‌وجور در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ گوشی، تبلت و لپ‌تاپ در هر جا را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پین‌های تاشو و پشتیبانی از ولتاژهای مختلف نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، شارژر Anker 735 (Nano II 65W) فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-2',
@@ -281,7 +502,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'The feature set of the Anker Nano 3 30W (511) is where Anker shows its experience. rapid power delivery covers the scenarios users care about most, and each one has been tuned for charging phones, tablets, and laptops anywhere rather than treated as a checkbox. Underneath, 30W USB-C fast charging; compact wall charger provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and foldable pins and wide voltage support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های شارژر Anker Nano 3 سی وات جایی است که تجربه انکر را نشان می‌دهد. تحویل توان سریع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شارژ گوشی، تبلت و لپ‌تاپ در هر جا بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، شارژ سریع USB-C با توان ۳۰ وات؛ شارژر دیواری جمع‌وجور فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Safety, and Everyday Reliability',
+                        fa: 'سرعت، ایمنی و پایداری روزمره',
+                    },
+                    content: {
+                        en: 'After extended time with the Anker Nano 3 30W (511), the verdict is clear: this is a product that understands its job and does it reliably. GaN fast charging translates into measurable advantages during charging phones, tablets, and laptops anywhere, while 30W USB-C fast charging; compact wall charger ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Anker optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Anker Nano 3 30W (511) is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از شارژر Anker Nano 3 سی وات، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع با فناوری GaN در حین شارژ گوشی، تبلت و لپ‌تاپ در هر جا مزایای واقعی به همراه دارد و شارژ سریع USB-C با توان ۳۰ وات؛ شارژر دیواری جمع‌وجور ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: انکر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، شارژر Anker Nano 3 سی وات یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1619681077755-901c0e86b866?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-3',
@@ -315,7 +562,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Compact Charging, Big Output',
+                        fa: 'شارژ فشرده با توان بالا',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Anker Prime 100W GaN Wall Charger, the Anker design philosophy is obvious: a compact wall-plug footprint is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging phones, tablets, and laptops anywhere when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as foldable pins and wide voltage support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Anker Prime 100W GaN Wall Charger does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه شارژر دیواری Anker Prime صد وات را در دست می‌گیرید، فلسفه طراحی انکر کاملاً مشخص است: طراحی کوچک و جمع‌وجور در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ گوشی، تبلت و لپ‌تاپ در هر جا را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پین‌های تاشو و پشتیبانی از ولتاژهای مختلف نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، شارژر دیواری Anker Prime صد وات فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'Day to day, the Anker Prime 100W GaN Wall Charger proves that its headline features translate into real-world convenience. multi-device output means that charging phones, tablets, and laptops anywhere becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 100W GaN charging; multi-device USB-C charging — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with foldable pins and wide voltage support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Anker Prime 100W GaN Wall Charger leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، شارژر دیواری Anker Prime صد وات ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. خروجی چند دستگاهه یعنی شارژ گوشی، تبلت و لپ‌تاپ در هر جا به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — شارژ GaN با توان ۱۰۰ وات؛ شارژ چند دستگاه از طریق USB-C — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، شارژر دیواری Anker Prime صد وات روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-4',
@@ -348,7 +621,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'The feature set of the UGREEN Nexode 65W USB-C Charger is where UGREEN shows its experience. rapid power delivery covers the scenarios users care about most, and each one has been tuned for charging phones, tablets, and laptops anywhere rather than treated as a checkbox. Underneath, 65W USB-C PD fast charger; compact GaN design provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and foldable pins and wide voltage support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های شارژر UGREEN Nexode 65W جایی است که تجربه یوگرین را نشان می‌دهد. تحویل توان سریع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شارژ گوشی، تبلت و لپ‌تاپ در هر جا بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، شارژر سریع USB-C PD با توان ۶۵ وات؛ طراحی جمع‌وجور GaN فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Safety, and Everyday Reliability',
+                        fa: 'سرعت، ایمنی و پایداری روزمره',
+                    },
+                    content: {
+                        en: 'After extended time with the UGREEN Nexode 65W USB-C Charger, the verdict is clear: this is a product that understands its job and does it reliably. GaN fast charging translates into measurable advantages during charging phones, tablets, and laptops anywhere, while 65W USB-C PD fast charger; compact GaN design ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — UGREEN optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the UGREEN Nexode 65W USB-C Charger is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از شارژر UGREEN Nexode 65W، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع با فناوری GaN در حین شارژ گوشی، تبلت و لپ‌تاپ در هر جا مزایای واقعی به همراه دارد و شارژر سریع USB-C PD با توان ۶۵ وات؛ طراحی جمع‌وجور GaN ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: یوگرین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، شارژر UGREEN Nexode 65W یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1619681077755-901c0e86b866?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Compact Charging, Big Output',
+                        fa: 'شارژ فشرده با توان بالا',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the UGREEN Nexode 65W USB-C Charger, the UGREEN design philosophy is obvious: a compact wall-plug footprint is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging phones, tablets, and laptops anywhere when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as foldable pins and wide voltage support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the UGREEN Nexode 65W USB-C Charger does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه شارژر UGREEN Nexode 65W را در دست می‌گیرید، فلسفه طراحی یوگرین کاملاً مشخص است: طراحی کوچک و جمع‌وجور در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ گوشی، تبلت و لپ‌تاپ در هر جا را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پین‌های تاشو و پشتیبانی از ولتاژهای مختلف نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، شارژر UGREEN Nexode 65W فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-5',
@@ -382,7 +692,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 9 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Compact Charging, Big Output',
+                        fa: 'شارژ فشرده با توان بالا',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Belkin BoostCharge Pro 65W Dual USB-C GaN Wall Charger, the Belkin design philosophy is obvious: a compact wall-plug footprint is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging phones, tablets, and laptops anywhere when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as foldable pins and wide voltage support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Belkin BoostCharge Pro 65W Dual USB-C GaN Wall Charger does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه شارژر Belkin BoostCharge Pro 65W را در دست می‌گیرید، فلسفه طراحی بلکین کاملاً مشخص است: طراحی کوچک و جمع‌وجور در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ گوشی، تبلت و لپ‌تاپ در هر جا را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پین‌های تاشو و پشتیبانی از ولتاژهای مختلف نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، شارژر Belkin BoostCharge Pro 65W فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'Day to day, the Belkin BoostCharge Pro 65W Dual USB-C GaN Wall Charger proves that its headline features translate into real-world convenience. multi-device output means that charging phones, tablets, and laptops anywhere becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Dual USB-C ports; up to 65W total output — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with foldable pins and wide voltage support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Belkin BoostCharge Pro 65W Dual USB-C GaN Wall Charger leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، شارژر Belkin BoostCharge Pro 65W ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. خروجی چند دستگاهه یعنی شارژ گوشی، تبلت و لپ‌تاپ در هر جا به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — دو درگاه USB-C؛ توان خروجی مجموع تا ۶۵ وات — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، شارژر Belkin BoostCharge Pro 65W روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-2-6',
@@ -416,7 +752,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Compact Charging, Big Output',
+                        fa: 'شارژ فشرده با توان بالا',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Samsung 45W Power Adapter (EP-T4511), the Samsung design philosophy is obvious: a compact wall-plug footprint is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging phones, tablets, and laptops anywhere when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as foldable pins and wide voltage support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Samsung 45W Power Adapter (EP-T4511) does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه آداپتور ۴۵ وات سامسونگ را در دست می‌گیرید، فلسفه طراحی سامسونگ کاملاً مشخص است: طراحی کوچک و جمع‌وجور در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ گوشی، تبلت و لپ‌تاپ در هر جا را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پین‌های تاشو و پشتیبانی از ولتاژهای مختلف نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، آداپتور ۴۵ وات سامسونگ فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'GaN Technology and Multi-Device Charging',
+                        fa: 'فناوری GaN و شارژ چند دستگاه',
+                    },
+                    content: {
+                        en: 'Day to day, the Samsung 45W Power Adapter (EP-T4511) proves that its headline features translate into real-world convenience. multi-device output means that charging phones, tablets, and laptops anywhere becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C Super Fast Charging 2.0; 45W output — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with foldable pins and wide voltage support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Samsung 45W Power Adapter (EP-T4511) leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، آداپتور ۴۵ وات سامسونگ ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. خروجی چند دستگاهه یعنی شارژ گوشی، تبلت و لپ‌تاپ در هر جا به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — شارژ سریع USB-C Super Fast Charging 2.0؛ خروجی ۴۵ وات — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پین‌های تاشو و پشتیبانی از ولتاژهای مختلف جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، آداپتور ۴۵ وات سامسونگ روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-1',
@@ -449,7 +811,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Portability, Performance, and Verdict',
+                        fa: 'قابلیت حمل، عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Anker 737 Power Bank (PowerCore 24K) worth your money? For most buyers, the answer is yes. fast USB-C output delivers on its promises in everyday scenarios, 24,000mAh capacity; up to 140W USB-C output provides dependable performance under load, and multiple ports and smart charging protocols rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker 737 Power Bank (PowerCore 24K) holds its own on the things people notice — comfort during keeping devices powered on the move, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker 737 Power Bank (PowerCore 24K) earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پاوربانک Anker 737 (PowerCore 24K) ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. خروجی سریع USB-C در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ظرفیت ۲۴۰۰۰ میلی‌آمپر ساعت؛ خروجی USB-C تا ۱۴۰ وات عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و چند درگاه و پروتکل‌های هوشمند شارژ با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پاوربانک Anker 737 (PowerCore 24K) در چیزهایی که مردم متوجه می‌شوند — راحتی در حین زنده نگه‌داشتن دستگاه‌ها در مسیر، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پاوربانک Anker 737 (PowerCore 24K) شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Capacity You Can Count On',
+                        fa: 'ظرفیتی که می‌توانید روی آن حساب کنید',
+                    },
+                    content: {
+                        en: 'The Anker 737 Power Bank (PowerCore 24K) from Anker makes a strong first impression, pairing high-capacity cells with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the a rugged shell with clear capacity indicators gives the product a confident stance on a desk or in a hand, while multiple ports and smart charging protocols adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping devices powered on the move, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker 737 Power Bank (PowerCore 24K) presents itself as a product worth owning.',
+                        fa: 'محصول پاوربانک Anker 737 (PowerCore 24K) از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سلول‌های پرظرفیت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه مقاوم با نمایشگر ظرفیت شفاف به محصول وقار و استحکام می‌بخشد و چند درگاه و پروتکل‌های هوشمند شارژ هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پاوربانک Anker 737 (PowerCore 24K) حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fast Charging On the Go',
+                        fa: 'شارژ سریع در هر مکان',
+                    },
+                    content: {
+                        en: 'The feature set of the Anker 737 Power Bank (PowerCore 24K) is where Anker shows its experience. a pocket-friendly size covers the scenarios users care about most, and each one has been tuned for keeping devices powered on the move rather than treated as a checkbox. Underneath, 24,000mAh capacity; up to 140W USB-C output provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple ports and smart charging protocols quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های پاوربانک Anker 737 (PowerCore 24K) جایی است که تجربه انکر را نشان می‌دهد. ابعاد مناسب جیب سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، ظرفیت ۲۴۰۰۰ میلی‌آمپر ساعت؛ خروجی USB-C تا ۱۴۰ وات فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و چند درگاه و پروتکل‌های هوشمند شارژ بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-2',
@@ -482,7 +881,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Portability, Performance, and Verdict',
+                        fa: 'قابلیت حمل، عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Anker Power Bank 20K 30W worth your money? For most buyers, the answer is yes. fast USB-C output delivers on its promises in everyday scenarios, 20,000mAh capacity; 30W USB-C output provides dependable performance under load, and multiple ports and smart charging protocols rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker Power Bank 20K 30W holds its own on the things people notice — comfort during keeping devices powered on the move, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker Power Bank 20K 30W earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پاوربانک Anker 20K 30W ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. خروجی سریع USB-C در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ظرفیت ۲۰۰۰۰ میلی‌آمپر ساعت؛ خروجی USB-C سی وات عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و چند درگاه و پروتکل‌های هوشمند شارژ با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پاوربانک Anker 20K 30W در چیزهایی که مردم متوجه می‌شوند — راحتی در حین زنده نگه‌داشتن دستگاه‌ها در مسیر، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پاوربانک Anker 20K 30W شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Capacity You Can Count On',
+                        fa: 'ظرفیتی که می‌توانید روی آن حساب کنید',
+                    },
+                    content: {
+                        en: 'The Anker Power Bank 20K 30W from Anker makes a strong first impression, pairing high-capacity cells with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the a rugged shell with clear capacity indicators gives the product a confident stance on a desk or in a hand, while multiple ports and smart charging protocols adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping devices powered on the move, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker Power Bank 20K 30W presents itself as a product worth owning.',
+                        fa: 'محصول پاوربانک Anker 20K 30W از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سلول‌های پرظرفیت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه مقاوم با نمایشگر ظرفیت شفاف به محصول وقار و استحکام می‌بخشد و چند درگاه و پروتکل‌های هوشمند شارژ هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پاوربانک Anker 20K 30W حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-3',
@@ -517,7 +942,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Capacity You Can Count On',
+                        fa: 'ظرفیتی که می‌توانید روی آن حساب کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Anker Nano Power Bank 10K 30W, the Anker design philosophy is obvious: fast USB-C output is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping devices powered on the move when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multiple ports and smart charging protocols show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Anker Nano Power Bank 10K 30W does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پاوربانک Anker Nano 10K 30W را در دست می‌گیرید، فلسفه طراحی انکر کاملاً مشخص است: خروجی سریع USB-C در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح زنده نگه‌داشتن دستگاه‌ها در مسیر را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند چند درگاه و پروتکل‌های هوشمند شارژ نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پاوربانک Anker Nano 10K 30W فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fast Charging On the Go',
+                        fa: 'شارژ سریع در هر مکان',
+                    },
+                    content: {
+                        en: 'Day to day, the Anker Nano Power Bank 10K 30W proves that its headline features translate into real-world convenience. pass-through charging means that keeping devices powered on the move becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 10,000mAh capacity; 30W USB-C charging — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multiple ports and smart charging protocols handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Anker Nano Power Bank 10K 30W leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پاوربانک Anker Nano 10K 30W ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. پشتیبانی از شارژ عبوری یعنی زنده نگه‌داشتن دستگاه‌ها در مسیر به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ظرفیت ۱۰۰۰۰ میلی‌آمپر ساعت؛ شارژ USB-C سی وات — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و چند درگاه و پروتکل‌های هوشمند شارژ جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پاوربانک Anker Nano 10K 30W روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-4',
@@ -550,7 +1001,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fast Charging On the Go',
+                        fa: 'شارژ سریع در هر مکان',
+                    },
+                    content: {
+                        en: 'The feature set of the Baseus Blade HD 100W Power Bank is where Baseus shows its experience. a pocket-friendly size covers the scenarios users care about most, and each one has been tuned for keeping devices powered on the move rather than treated as a checkbox. Underneath, 20,000mAh class; up to 100W USB-C output (model-dependent) provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple ports and smart charging protocols quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های پاوربانک Baseus Blade HD 100W جایی است که تجربه بیسوس را نشان می‌دهد. ابعاد مناسب جیب سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، رده ظرفیت ۲۰۰۰۰ میلی‌آمپر ساعت؛ خروجی USB-C تا ۱۰۰ وات (بسته به مدل) فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و چند درگاه و پروتکل‌های هوشمند شارژ بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Portability, Performance, and Verdict',
+                        fa: 'قابلیت حمل، عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Baseus Blade HD 100W Power Bank, the verdict is clear: this is a product that understands its job and does it reliably. high-capacity cells translates into measurable advantages during keeping devices powered on the move, while 20,000mAh class; up to 100W USB-C output (model-dependent) ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Baseus optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Baseus Blade HD 100W Power Bank is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از پاوربانک Baseus Blade HD 100W، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سلول‌های پرظرفیت در حین زنده نگه‌داشتن دستگاه‌ها در مسیر مزایای واقعی به همراه دارد و رده ظرفیت ۲۰۰۰۰ میلی‌آمپر ساعت؛ خروجی USB-C تا ۱۰۰ وات (بسته به مدل) ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: بیسوس این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، پاوربانک Baseus Blade HD 100W یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Capacity You Can Count On',
+                        fa: 'ظرفیتی که می‌توانید روی آن حساب کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Baseus Blade HD 100W Power Bank, the Baseus design philosophy is obvious: fast USB-C output is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping devices powered on the move when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multiple ports and smart charging protocols show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Baseus Blade HD 100W Power Bank does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پاوربانک Baseus Blade HD 100W را در دست می‌گیرید، فلسفه طراحی بیسوس کاملاً مشخص است: خروجی سریع USB-C در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح زنده نگه‌داشتن دستگاه‌ها در مسیر را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند چند درگاه و پروتکل‌های هوشمند شارژ نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پاوربانک Baseus Blade HD 100W فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-5',
@@ -584,7 +1072,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fast Charging On the Go',
+                        fa: 'شارژ سریع در هر مکان',
+                    },
+                    content: {
+                        en: 'Day to day, the UGREEN Nexode Power Bank 20000mAh 130W proves that its headline features translate into real-world convenience. pass-through charging means that keeping devices powered on the move becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 20,000mAh capacity; high-output USB-C charging — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multiple ports and smart charging protocols handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the UGREEN Nexode Power Bank 20000mAh 130W leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پاوربانک UGREEN Nexode 20000mAh 130W ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. پشتیبانی از شارژ عبوری یعنی زنده نگه‌داشتن دستگاه‌ها در مسیر به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ظرفیت ۲۰۰۰۰ میلی‌آمپر ساعت؛ شارژ USB-C پرتوان — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و چند درگاه و پروتکل‌های هوشمند شارژ جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پاوربانک UGREEN Nexode 20000mAh 130W روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Portability, Performance, and Verdict',
+                        fa: 'قابلیت حمل، عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the UGREEN Nexode Power Bank 20000mAh 130W worth your money? For most buyers, the answer is yes. fast USB-C output delivers on its promises in everyday scenarios, 20,000mAh capacity; high-output USB-C charging provides dependable performance under load, and multiple ports and smart charging protocols rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the UGREEN Nexode Power Bank 20000mAh 130W holds its own on the things people notice — comfort during keeping devices powered on the move, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the UGREEN Nexode Power Bank 20000mAh 130W earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پاوربانک UGREEN Nexode 20000mAh 130W ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. خروجی سریع USB-C در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ظرفیت ۲۰۰۰۰ میلی‌آمپر ساعت؛ شارژ USB-C پرتوان عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و چند درگاه و پروتکل‌های هوشمند شارژ با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پاوربانک UGREEN Nexode 20000mAh 130W در چیزهایی که مردم متوجه می‌شوند — راحتی در حین زنده نگه‌داشتن دستگاه‌ها در مسیر، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پاوربانک UGREEN Nexode 20000mAh 130W شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-3-6',
@@ -619,7 +1133,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Capacity You Can Count On',
+                        fa: 'ظرفیتی که می‌توانید روی آن حساب کنید',
+                    },
+                    content: {
+                        en: 'The Belkin BoostCharge 10K USB-C Power Bank from Belkin makes a strong first impression, pairing high-capacity cells with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the a rugged shell with clear capacity indicators gives the product a confident stance on a desk or in a hand, while multiple ports and smart charging protocols adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping devices powered on the move, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Belkin BoostCharge 10K USB-C Power Bank presents itself as a product worth owning.',
+                        fa: 'محصول پاوربانک Belkin BoostCharge 10K از برند بلکین با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سلول‌های پرظرفیت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه مقاوم با نمایشگر ظرفیت شفاف به محصول وقار و استحکام می‌بخشد و چند درگاه و پروتکل‌های هوشمند شارژ هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پاوربانک Belkin BoostCharge 10K حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1609592424104-16d55427d057?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fast Charging On the Go',
+                        fa: 'شارژ سریع در هر مکان',
+                    },
+                    content: {
+                        en: 'The feature set of the Belkin BoostCharge 10K USB-C Power Bank is where Belkin shows its experience. a pocket-friendly size covers the scenarios users care about most, and each one has been tuned for keeping devices powered on the move rather than treated as a checkbox. Underneath, 10,000mAh capacity; USB-C charging provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple ports and smart charging protocols quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های پاوربانک Belkin BoostCharge 10K جایی است که تجربه بلکین را نشان می‌دهد. ابعاد مناسب جیب سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای زنده نگه‌داشتن دستگاه‌ها در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، ظرفیت ۱۰۰۰۰ میلی‌آمپر ساعت؛ شارژ USB-C فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و چند درگاه و پروتکل‌های هوشمند شارژ بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595949139467-6a45749f7cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-1',
@@ -652,7 +1192,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Spigen Ultra Hybrid for iPhone 16 Pro proves that its headline features translate into real-world convenience. precise cutouts means that carrying a phone every single day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Clear hybrid case; model-specific cutouts and button covers — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with easy installation and a precise fit handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Spigen Ultra Hybrid for iPhone 16 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، قاب Spigen Ultra Hybrid برای iPhone 16 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. برش‌های دقیق یعنی حمل روزانه گوشی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — قاب هیبریدی شفاف؛ برش‌ها و پوشش دکمه متناسب با مدل — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و نصب آسان و تناسب دقیق جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، قاب Spigen Ultra Hybrid برای iPhone 16 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Durability, Style, and Final Thoughts',
+                        fa: 'دوام، سبک و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Spigen Ultra Hybrid for iPhone 16 Pro worth your money? For most buyers, the answer is yes. raised-edge screen protection delivers on its promises in everyday scenarios, Clear hybrid case; model-specific cutouts and button covers provides dependable performance under load, and easy installation and a precise fit rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Spigen Ultra Hybrid for iPhone 16 Pro holds its own on the things people notice — comfort during carrying a phone every single day, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Spigen Ultra Hybrid for iPhone 16 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا قاب Spigen Ultra Hybrid برای iPhone 16 Pro ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. لبه برجسته برای محافظت صفحه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، قاب هیبریدی شفاف؛ برش‌ها و پوشش دکمه متناسب با مدل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نصب آسان و تناسب دقیق با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، قاب Spigen Ultra Hybrid برای iPhone 16 Pro در چیزهایی که مردم متوجه می‌شوند — راحتی در حین حمل روزانه گوشی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، قاب Spigen Ultra Hybrid برای iPhone 16 Pro شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575695342320-d2d2d2f9b73f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection Without the Bulk',
+                        fa: 'محافظت بدون حجم اضافی',
+                    },
+                    content: {
+                        en: 'The Spigen Ultra Hybrid for iPhone 16 Pro from Spigen makes a strong first impression, pairing shock-absorbent cushioning with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dual-layer materials that balance grip and protection gives the product a confident stance on a desk or in a hand, while easy installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for carrying a phone every single day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Spigen Ultra Hybrid for iPhone 16 Pro presents itself as a product worth owning.',
+                        fa: 'محصول قاب Spigen Ultra Hybrid برای iPhone 16 Pro از برند اسپیگن با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. ضربه‌گیری و محافظت لایه‌ای در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: متریال‌های دولایه متعادل‌کننده چسبندگی و محافظت به محصول وقار و استحکام می‌بخشد و نصب آسان و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حمل روزانه گوشی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، قاب Spigen Ultra Hybrid برای iPhone 16 Pro حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-2',
@@ -686,7 +1263,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection Without the Bulk',
+                        fa: 'محافظت بدون حجم اضافی',
+                    },
+                    content: {
+                        en: 'The Spigen Tough Armor for iPhone 16 from Spigen makes a strong first impression, pairing shock-absorbent cushioning with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dual-layer materials that balance grip and protection gives the product a confident stance on a desk or in a hand, while easy installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for carrying a phone every single day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Spigen Tough Armor for iPhone 16 presents itself as a product worth owning.',
+                        fa: 'محصول قاب Spigen Tough Armor برای iPhone 16 از برند اسپیگن با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. ضربه‌گیری و محافظت لایه‌ای در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: متریال‌های دولایه متعادل‌کننده چسبندگی و محافظت به محصول وقار و استحکام می‌بخشد و نصب آسان و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حمل روزانه گوشی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، قاب Spigen Tough Armor برای iPhone 16 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Spigen Tough Armor for iPhone 16 is where Spigen shows its experience. a slim, lightweight profile covers the scenarios users care about most, and each one has been tuned for carrying a phone every single day rather than treated as a checkbox. Underneath, Dual-layer protective case; model-specific fit provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and easy installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های قاب Spigen Tough Armor برای iPhone 16 جایی است که تجربه اسپیگن را نشان می‌دهد. پروفایل باریک و سبک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای حمل روزانه گوشی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، قاب محافظ دولایه؛ متناسب با مدل دستگاه فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب آسان و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-3',
@@ -720,7 +1323,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the ESR Classic Hybrid Case for iPhone 16 Pro is where ESR shows its experience. a slim, lightweight profile covers the scenarios users care about most, and each one has been tuned for carrying a phone every single day rather than treated as a checkbox. Underneath, Clear hybrid protection; MagSafe versions available provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and easy installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های قاب ESR Classic Hybrid برای iPhone 16 Pro جایی است که تجربه ای‌اس‌آر را نشان می‌دهد. پروفایل باریک و سبک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای حمل روزانه گوشی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، محافظت هیبریدی شفاف؛ نسخه‌های سازگار با MagSafe موجودند فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب آسان و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Durability, Style, and Final Thoughts',
+                        fa: 'دوام، سبک و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the ESR Classic Hybrid Case for iPhone 16 Pro, the verdict is clear: this is a product that understands its job and does it reliably. shock-absorbent cushioning translates into measurable advantages during carrying a phone every single day, while Clear hybrid protection; MagSafe versions available ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — ESR optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the ESR Classic Hybrid Case for iPhone 16 Pro is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از قاب ESR Classic Hybrid برای iPhone 16 Pro، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. ضربه‌گیری و محافظت لایه‌ای در حین حمل روزانه گوشی مزایای واقعی به همراه دارد و محافظت هیبریدی شفاف؛ نسخه‌های سازگار با MagSafe موجودند ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ای‌اس‌آر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، قاب ESR Classic Hybrid برای iPhone 16 Pro یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575695342320-d2d2d2f9b73f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-4',
@@ -754,7 +1383,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the OtterBox Commuter Series for iPhone 16 proves that its headline features translate into real-world convenience. precise cutouts means that carrying a phone every single day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Protective multi-layer case designed for iPhone 16 — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with easy installation and a precise fit handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the OtterBox Commuter Series for iPhone 16 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، قاب OtterBox Commuter برای iPhone 16 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. برش‌های دقیق یعنی حمل روزانه گوشی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — قاب محافظ چندلایه مخصوص iPhone 16 — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و نصب آسان و تناسب دقیق جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، قاب OtterBox Commuter برای iPhone 16 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Durability, Style, and Final Thoughts',
+                        fa: 'دوام، سبک و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the OtterBox Commuter Series for iPhone 16 worth your money? For most buyers, the answer is yes. raised-edge screen protection delivers on its promises in everyday scenarios, Protective multi-layer case designed for iPhone 16 provides dependable performance under load, and easy installation and a precise fit rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the OtterBox Commuter Series for iPhone 16 holds its own on the things people notice — comfort during carrying a phone every single day, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the OtterBox Commuter Series for iPhone 16 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا قاب OtterBox Commuter برای iPhone 16 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. لبه برجسته برای محافظت صفحه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، قاب محافظ چندلایه مخصوص iPhone 16 عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نصب آسان و تناسب دقیق با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، قاب OtterBox Commuter برای iPhone 16 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین حمل روزانه گوشی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، قاب OtterBox Commuter برای iPhone 16 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575695342320-d2d2d2f9b73f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection Without the Bulk',
+                        fa: 'محافظت بدون حجم اضافی',
+                    },
+                    content: {
+                        en: 'The OtterBox Commuter Series for iPhone 16 from OtterBox makes a strong first impression, pairing shock-absorbent cushioning with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dual-layer materials that balance grip and protection gives the product a confident stance on a desk or in a hand, while easy installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for carrying a phone every single day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the OtterBox Commuter Series for iPhone 16 presents itself as a product worth owning.',
+                        fa: 'محصول قاب OtterBox Commuter برای iPhone 16 از برند آترباکس با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. ضربه‌گیری و محافظت لایه‌ای در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: متریال‌های دولایه متعادل‌کننده چسبندگی و محافظت به محصول وقار و استحکام می‌بخشد و نصب آسان و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حمل روزانه گوشی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، قاب OtterBox Commuter برای iPhone 16 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-5',
@@ -788,7 +1454,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection Without the Bulk',
+                        fa: 'محافظت بدون حجم اضافی',
+                    },
+                    content: {
+                        en: 'The Belkin ScreenForce TemperedGlass for iPhone from Belkin makes a strong first impression, pairing shock-absorbent cushioning with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dual-layer materials that balance grip and protection gives the product a confident stance on a desk or in a hand, while easy installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for carrying a phone every single day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Belkin ScreenForce TemperedGlass for iPhone presents itself as a product worth owning.',
+                        fa: 'محصول محافظ صفحه Belkin ScreenForce از برند بلکین با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. ضربه‌گیری و محافظت لایه‌ای در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: متریال‌های دولایه متعادل‌کننده چسبندگی و محافظت به محصول وقار و استحکام می‌بخشد و نصب آسان و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حمل روزانه گوشی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، محافظ صفحه Belkin ScreenForce حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Belkin ScreenForce TemperedGlass for iPhone is where Belkin shows its experience. a slim, lightweight profile covers the scenarios users care about most, and each one has been tuned for carrying a phone every single day rather than treated as a checkbox. Underneath, Tempered-glass screen protection; device fit depends on exact version provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and easy installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های محافظ صفحه Belkin ScreenForce جایی است که تجربه بلکین را نشان می‌دهد. پروفایل باریک و سبک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای حمل روزانه گوشی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، محافظ صفحه شیشه حرارت‌دیده؛ سازگاری وابسته به نسخه دقیق دستگاه فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب آسان و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-4-6',
@@ -821,7 +1513,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1601593346740-92561df0e7b2?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Feel, and Everyday Defense',
+                        fa: 'تناسب، حس کار و دفاع روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the ZAGG InvisibleShield Glass Elite for iPhone is where ZAGG shows its experience. a slim, lightweight profile covers the scenarios users care about most, and each one has been tuned for carrying a phone every single day rather than treated as a checkbox. Underneath, Tempered-glass screen protector; select exact phone model provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and easy installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های محافظ صفحه ZAGG InvisibleShield Glass Elite جایی است که تجربه زگ را نشان می‌دهد. پروفایل باریک و سبک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای حمل روزانه گوشی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، محافظ صفحه شیشه حرارت‌دیده؛ انتخاب بر اساس مدل دقیق گوشی فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب آسان و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Durability, Style, and Final Thoughts',
+                        fa: 'دوام، سبک و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the ZAGG InvisibleShield Glass Elite for iPhone, the verdict is clear: this is a product that understands its job and does it reliably. shock-absorbent cushioning translates into measurable advantages during carrying a phone every single day, while Tempered-glass screen protector; select exact phone model ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — ZAGG optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the ZAGG InvisibleShield Glass Elite for iPhone is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از محافظ صفحه ZAGG InvisibleShield Glass Elite، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. ضربه‌گیری و محافظت لایه‌ای در حین حمل روزانه گوشی مزایای واقعی به همراه دارد و محافظ صفحه شیشه حرارت‌دیده؛ انتخاب بر اساس مدل دقیق گوشی ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: زگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، محافظ صفحه ZAGG InvisibleShield Glass Elite یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575695342320-d2d2d2f9b73f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-1',
@@ -855,7 +1573,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Speed, Strength, and Device Compatibility',
+                        fa: 'سرعت، استحکام و سازگاری دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'Day to day, the Anker Bio-Braided USB-C to USB-C Cable 240W proves that its headline features translate into real-world convenience. stable data transfer means that charging and syncing devices all day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C to USB-C; up to 240W power delivery on compatible devices — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across USB-C, Lightning, and 3.5mm devices handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Anker Bio-Braided USB-C to USB-C Cable 240W leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کابل Anker Bio-Braided USB-C به USB-C 240W ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. انتقال داده پایدار یعنی شارژ و همگام‌سازی دستگاه‌ها در طول روز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — USB-C به USB-C؛ پشتیبانی تا ۲۴۰ وات روی دستگاه‌های سازگار — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کابل Anker Bio-Braided USB-C به USB-C 240W روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Wiring Essentials and the Verdict',
+                        fa: 'کابل‌های ضروری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Anker Bio-Braided USB-C to USB-C Cable 240W worth your money? For most buyers, the answer is yes. high-wattage power delivery delivers on its promises in everyday scenarios, USB-C to USB-C; up to 240W power delivery on compatible devices provides dependable performance under load, and compatibility across USB-C, Lightning, and 3.5mm devices rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker Bio-Braided USB-C to USB-C Cable 240W holds its own on the things people notice — comfort during charging and syncing devices all day, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker Bio-Braided USB-C to USB-C Cable 240W earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کابل Anker Bio-Braided USB-C به USB-C 240W ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تحویل توان بالا در سناریوهای روزمره به وعده‌هایش عمل می‌کند، USB-C به USB-C؛ پشتیبانی تا ۲۴۰ وات روی دستگاه‌های سازگار عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کابل Anker Bio-Braided USB-C به USB-C 240W در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ و همگام‌سازی دستگاه‌ها در طول روز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کابل Anker Bio-Braided USB-C به USB-C 240W شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'The Anker Bio-Braided USB-C to USB-C Cable 240W from Anker makes a strong first impression, pairing a durable braided jacket with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the flexible insulation with reinforced strain relief gives the product a confident stance on a desk or in a hand, while compatibility across USB-C, Lightning, and 3.5mm devices adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for charging and syncing devices all day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker Bio-Braided USB-C to USB-C Cable 240W presents itself as a product worth owning.',
+                        fa: 'محصول کابل Anker Bio-Braided USB-C به USB-C 240W از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. روکش بافته‌شده بادوام در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: عایق انعطاف‌پذیر با تقویت‌کننده فشار به محصول وقار و استحکام می‌بخشد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ و همگام‌سازی دستگاه‌ها در طول روز بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کابل Anker Bio-Braided USB-C به USB-C 240W حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-2',
@@ -889,7 +1644,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Wiring Essentials and the Verdict',
+                        fa: 'کابل‌های ضروری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Anker PowerLine III USB-C to Lightning Cable worth your money? For most buyers, the answer is yes. high-wattage power delivery delivers on its promises in everyday scenarios, USB-C to Lightning cable for compatible Apple devices provides dependable performance under load, and compatibility across USB-C, Lightning, and 3.5mm devices rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker PowerLine III USB-C to Lightning Cable holds its own on the things people notice — comfort during charging and syncing devices all day, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker PowerLine III USB-C to Lightning Cable earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کابل Anker PowerLine III USB-C به Lightning ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تحویل توان بالا در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کابل USB-C به Lightning برای دستگاه‌های سازگار اپل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کابل Anker PowerLine III USB-C به Lightning در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ و همگام‌سازی دستگاه‌ها در طول روز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کابل Anker PowerLine III USB-C به Lightning شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'The Anker PowerLine III USB-C to Lightning Cable from Anker makes a strong first impression, pairing a durable braided jacket with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the flexible insulation with reinforced strain relief gives the product a confident stance on a desk or in a hand, while compatibility across USB-C, Lightning, and 3.5mm devices adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for charging and syncing devices all day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker PowerLine III USB-C to Lightning Cable presents itself as a product worth owning.',
+                        fa: 'محصول کابل Anker PowerLine III USB-C به Lightning از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. روکش بافته‌شده بادوام در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: عایق انعطاف‌پذیر با تقویت‌کننده فشار به محصول وقار و استحکام می‌بخشد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ و همگام‌سازی دستگاه‌ها در طول روز بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کابل Anker PowerLine III USB-C به Lightning حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-3',
@@ -923,7 +1704,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the UGREEN USB-C to USB-C 100W Cable, the UGREEN design philosophy is obvious: high-wattage power delivery is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging and syncing devices all day when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as compatibility across USB-C, Lightning, and 3.5mm devices show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the UGREEN USB-C to USB-C 100W Cable does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کابل UGREEN USB-C به USB-C صد وات را در دست می‌گیرید، فلسفه طراحی یوگرین کاملاً مشخص است: تحویل توان بالا در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ و همگام‌سازی دستگاه‌ها در طول روز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کابل UGREEN USB-C به USB-C صد وات فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Strength, and Device Compatibility',
+                        fa: 'سرعت، استحکام و سازگاری دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'Day to day, the UGREEN USB-C to USB-C 100W Cable proves that its headline features translate into real-world convenience. stable data transfer means that charging and syncing devices all day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C charging cable; up to 100W on compatible chargers — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across USB-C, Lightning, and 3.5mm devices handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the UGREEN USB-C to USB-C 100W Cable leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کابل UGREEN USB-C به USB-C صد وات ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. انتقال داده پایدار یعنی شارژ و همگام‌سازی دستگاه‌ها در طول روز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کابل شارژ USB-C؛ تا ۱۰۰ وات با شارژر سازگار — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کابل UGREEN USB-C به USB-C صد وات روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-4',
@@ -956,7 +1763,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Speed, Strength, and Device Compatibility',
+                        fa: 'سرعت، استحکام و سازگاری دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'Day to day, the Belkin BoostCharge USB-C to USB-C Cable 100W proves that its headline features translate into real-world convenience. stable data transfer means that charging and syncing devices all day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C to USB-C; supports up to 100W charging — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across USB-C, Lightning, and 3.5mm devices handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Belkin BoostCharge USB-C to USB-C Cable 100W leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کابل Belkin BoostCharge USB-C 100W ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. انتقال داده پایدار یعنی شارژ و همگام‌سازی دستگاه‌ها در طول روز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — USB-C به USB-C؛ پشتیبانی از شارژ تا ۱۰۰ وات — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کابل Belkin BoostCharge USB-C 100W روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Wiring Essentials and the Verdict',
+                        fa: 'کابل‌های ضروری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Belkin BoostCharge USB-C to USB-C Cable 100W worth your money? For most buyers, the answer is yes. high-wattage power delivery delivers on its promises in everyday scenarios, USB-C to USB-C; supports up to 100W charging provides dependable performance under load, and compatibility across USB-C, Lightning, and 3.5mm devices rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Belkin BoostCharge USB-C to USB-C Cable 100W holds its own on the things people notice — comfort during charging and syncing devices all day, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Belkin BoostCharge USB-C to USB-C Cable 100W earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کابل Belkin BoostCharge USB-C 100W ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تحویل توان بالا در سناریوهای روزمره به وعده‌هایش عمل می‌کند، USB-C به USB-C؛ پشتیبانی از شارژ تا ۱۰۰ وات عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کابل Belkin BoostCharge USB-C 100W در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ و همگام‌سازی دستگاه‌ها در طول روز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کابل Belkin BoostCharge USB-C 100W شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'The Belkin BoostCharge USB-C to USB-C Cable 100W from Belkin makes a strong first impression, pairing a durable braided jacket with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the flexible insulation with reinforced strain relief gives the product a confident stance on a desk or in a hand, while compatibility across USB-C, Lightning, and 3.5mm devices adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for charging and syncing devices all day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Belkin BoostCharge USB-C to USB-C Cable 100W presents itself as a product worth owning.',
+                        fa: 'محصول کابل Belkin BoostCharge USB-C 100W از برند بلکین با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. روکش بافته‌شده بادوام در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: عایق انعطاف‌پذیر با تقویت‌کننده فشار به محصول وقار و استحکام می‌بخشد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ و همگام‌سازی دستگاه‌ها در طول روز بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کابل Belkin BoostCharge USB-C 100W حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-5',
@@ -990,7 +1834,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'The Apple USB-C to Lightning Cable from Apple makes a strong first impression, pairing a durable braided jacket with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the flexible insulation with reinforced strain relief gives the product a confident stance on a desk or in a hand, while compatibility across USB-C, Lightning, and 3.5mm devices adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for charging and syncing devices all day, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple USB-C to Lightning Cable presents itself as a product worth owning.',
+                        fa: 'محصول کابل اپل USB-C به Lightning از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. روکش بافته‌شده بادوام در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: عایق انعطاف‌پذیر با تقویت‌کننده فشار به محصول وقار و استحکام می‌بخشد و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ و همگام‌سازی دستگاه‌ها در طول روز بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کابل اپل USB-C به Lightning حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Strength, and Device Compatibility',
+                        fa: 'سرعت، استحکام و سازگاری دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'The feature set of the Apple USB-C to Lightning Cable is where Apple shows its experience. reinforced connectors covers the scenarios users care about most, and each one has been tuned for charging and syncing devices all day rather than treated as a checkbox. Underneath, USB-C to Lightning charging and data cable provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and compatibility across USB-C, Lightning, and 3.5mm devices quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های کابل اپل USB-C به Lightning جایی است که تجربه اپل را نشان می‌دهد. اتصال‌دهنده‌های تقویت‌شده سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شارژ و همگام‌سازی دستگاه‌ها در طول روز بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، کابل شارژ و انتقال داده USB-C به Lightning فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-m-5-6',
@@ -1024,7 +1894,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Built to Last, Priced to Enjoy',
+                        fa: 'ساختاری بادوام با قیمتی خوشایند',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Samsung USB-C to USB-C Cable 5A, the Samsung design philosophy is obvious: high-wattage power delivery is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized charging and syncing devices all day when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as compatibility across USB-C, Lightning, and 3.5mm devices show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Samsung USB-C to USB-C Cable 5A does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کابل سامسونگ USB-C به USB-C پنج آمپر را در دست می‌گیرید، فلسفه طراحی سامسونگ کاملاً مشخص است: تحویل توان بالا در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ و همگام‌سازی دستگاه‌ها در طول روز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کابل سامسونگ USB-C به USB-C پنج آمپر فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Strength, and Device Compatibility',
+                        fa: 'سرعت، استحکام و سازگاری دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'Day to day, the Samsung USB-C to USB-C Cable 5A proves that its headline features translate into real-world convenience. stable data transfer means that charging and syncing devices all day becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C cable supporting compatible Samsung fast charging — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across USB-C, Lightning, and 3.5mm devices handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Samsung USB-C to USB-C Cable 5A leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کابل سامسونگ USB-C به USB-C پنج آمپر ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. انتقال داده پایدار یعنی شارژ و همگام‌سازی دستگاه‌ها در طول روز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کابل USB-C با پشتیبانی از شارژ سریع سازگار سامسونگ — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با دستگاه‌های USB-C، Lightning و 3.5 میلی‌متری جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کابل سامسونگ USB-C به USB-C پنج آمپر روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-1',
@@ -1058,7 +1954,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'The Apple Watch Series 10 from Apple makes a strong first impression, pairing an always-on AMOLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the scratch-resistant glass over a sturdy case gives the product a confident stance on a desk or in a hand, while water resistance and quick-release bands adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for workouts, notifications, and quick replies, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple Watch Series 10 presents itself as a product worth owning.',
+                        fa: 'محصول اپل واچ سری ۱۰ از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر AMOLED همیشه‌روشن در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: شیشه مقاوم در برابر خش روی بدنه محکم به محصول وقار و استحکام می‌بخشد و مقاومت در برابر آب و بندهای تعویض‌پذیر هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، اپل واچ سری ۱۰ حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Health Tracking, Notifications, and Battery',
+                        fa: 'ردیابی سلامت، اعلان‌ها و باتری',
+                    },
+                    content: {
+                        en: 'The feature set of the Apple Watch Series 10 is where Apple shows its experience. premium case materials covers the scenarios users care about most, and each one has been tuned for workouts, notifications, and quick replies rather than treated as a checkbox. Underneath, Thinnest Apple Watch design; wide-angle OLED display; advanced health sensors provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and water resistance and quick-release bands quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اپل واچ سری ۱۰ جایی است که تجربه اپل را نشان می‌دهد. متریال‌های پریمیوم سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، باریک‌ترین طراحی اپل واچ؛ نمایشگر OLED زاویه دید وسیع؛ سنسورهای سلامت پیشرفته فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و مقاومت در برابر آب و بندهای تعویض‌پذیر بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Style, and Is It Worth It?',
+                        fa: 'عملکرد، سبک و آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Apple Watch Series 10, the verdict is clear: this is a product that understands its job and does it reliably. an always-on AMOLED display translates into measurable advantages during workouts, notifications, and quick replies, while Thinnest Apple Watch design; wide-angle OLED display; advanced health sensors ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Apple optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Apple Watch Series 10 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اپل واچ سری ۱۰، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. نمایشگر AMOLED همیشه‌روشن در حین تمرین، اعلان‌ها و پاسخ‌های سریع مزایای واقعی به همراه دارد و باریک‌ترین طراحی اپل واچ؛ نمایشگر OLED زاویه دید وسیع؛ سنسورهای سلامت پیشرفته ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اپل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اپل واچ سری ۱۰ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-2',
@@ -1092,7 +2025,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance, Style, and Is It Worth It?',
+                        fa: 'عملکرد، سبک و آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Apple Watch Ultra 2, the verdict is clear: this is a product that understands its job and does it reliably. an always-on AMOLED display translates into measurable advantages during workouts, notifications, and quick replies, while Rugged titanium case; extremely bright display; dual-frequency GPS ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Apple optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Apple Watch Ultra 2 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اپل واچ اولترا ۲، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. نمایشگر AMOLED همیشه‌روشن در حین تمرین، اعلان‌ها و پاسخ‌های سریع مزایای واقعی به همراه دارد و بدنه مقاوم تیتانیومی؛ نمایشگر فوق‌العاده روشن؛ GPS دوفرکانس ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اپل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اپل واچ اولترا ۲ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Apple Watch Ultra 2, the Apple design philosophy is obvious: advanced health and fitness tracking is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized workouts, notifications, and quick replies when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as water resistance and quick-release bands show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Apple Watch Ultra 2 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه اپل واچ اولترا ۲ را در دست می‌گیرید، فلسفه طراحی اپل کاملاً مشخص است: ردیابی پیشرفته سلامت و تناسب‌اندام در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح تمرین، اعلان‌ها و پاسخ‌های سریع را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند مقاومت در برابر آب و بندهای تعویض‌پذیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، اپل واچ اولترا ۲ فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-3',
@@ -1126,7 +2085,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance, Style, and Is It Worth It?',
+                        fa: 'عملکرد، سبک و آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'Is the Samsung Galaxy Watch 7 worth your money? For most buyers, the answer is yes. advanced health and fitness tracking delivers on its promises in everyday scenarios, BioActive Sensor; dual-frequency GPS; Wear OS powered by Samsung provides dependable performance under load, and water resistance and quick-release bands rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Samsung Galaxy Watch 7 holds its own on the things people notice — comfort during workouts, notifications, and quick replies, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Samsung Galaxy Watch 7 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا سامسونگ گلکسی واچ ۷ ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. ردیابی پیشرفته سلامت و تناسب‌اندام در سناریوهای روزمره به وعده‌هایش عمل می‌کند، سنسور BioActive؛ GPS دوفرکانس؛ سیستم‌عامل Wear OS با بهینه‌سازی سامسونگ عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و مقاومت در برابر آب و بندهای تعویض‌پذیر با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، سامسونگ گلکسی واچ ۷ در چیزهایی که مردم متوجه می‌شوند — راحتی در حین تمرین، اعلان‌ها و پاسخ‌های سریع، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، سامسونگ گلکسی واچ ۷ شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'The Samsung Galaxy Watch 7 from Samsung makes a strong first impression, pairing an always-on AMOLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the scratch-resistant glass over a sturdy case gives the product a confident stance on a desk or in a hand, while water resistance and quick-release bands adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for workouts, notifications, and quick replies, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Samsung Galaxy Watch 7 presents itself as a product worth owning.',
+                        fa: 'محصول سامسونگ گلکسی واچ ۷ از برند سامسونگ با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر AMOLED همیشه‌روشن در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: شیشه مقاوم در برابر خش روی بدنه محکم به محصول وقار و استحکام می‌بخشد و مقاومت در برابر آب و بندهای تعویض‌پذیر هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، سامسونگ گلکسی واچ ۷ حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-4',
@@ -1160,7 +2145,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Health Tracking, Notifications, and Battery',
+                        fa: 'ردیابی سلامت، اعلان‌ها و باتری',
+                    },
+                    content: {
+                        en: 'Day to day, the Samsung Galaxy Watch Ultra proves that its headline features translate into real-world convenience. multi-day battery life means that workouts, notifications, and quick replies becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Titanium cushion design; 10 ATM water resistance; multi-sport endurance tracking — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with water resistance and quick-release bands handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Samsung Galaxy Watch Ultra leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، سامسونگ گلکسی واچ اولترا ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. باتری چندروزه یعنی تمرین، اعلان‌ها و پاسخ‌های سریع به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — طراحی بالشتکی تیتانیومی؛ مقاومت در برابر آب تا فشار 10 ATM؛ ردیابی استقامت چندورزشی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و مقاومت در برابر آب و بندهای تعویض‌پذیر جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، سامسونگ گلکسی واچ اولترا روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance, Style, and Is It Worth It?',
+                        fa: 'عملکرد، سبک و آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'Is the Samsung Galaxy Watch Ultra worth your money? For most buyers, the answer is yes. advanced health and fitness tracking delivers on its promises in everyday scenarios, Titanium cushion design; 10 ATM water resistance; multi-sport endurance tracking provides dependable performance under load, and water resistance and quick-release bands rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Samsung Galaxy Watch Ultra holds its own on the things people notice — comfort during workouts, notifications, and quick replies, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Samsung Galaxy Watch Ultra earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا سامسونگ گلکسی واچ اولترا ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. ردیابی پیشرفته سلامت و تناسب‌اندام در سناریوهای روزمره به وعده‌هایش عمل می‌کند، طراحی بالشتکی تیتانیومی؛ مقاومت در برابر آب تا فشار 10 ATM؛ ردیابی استقامت چندورزشی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و مقاومت در برابر آب و بندهای تعویض‌پذیر با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، سامسونگ گلکسی واچ اولترا در چیزهایی که مردم متوجه می‌شوند — راحتی در حین تمرین، اعلان‌ها و پاسخ‌های سریع، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، سامسونگ گلکسی واچ اولترا شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'The Samsung Galaxy Watch Ultra from Samsung makes a strong first impression, pairing an always-on AMOLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the scratch-resistant glass over a sturdy case gives the product a confident stance on a desk or in a hand, while water resistance and quick-release bands adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for workouts, notifications, and quick replies, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Samsung Galaxy Watch Ultra presents itself as a product worth owning.',
+                        fa: 'محصول سامسونگ گلکسی واچ اولترا از برند سامسونگ با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر AMOLED همیشه‌روشن در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: شیشه مقاوم در برابر خش روی بدنه محکم به محصول وقار و استحکام می‌بخشد و مقاومت در برابر آب و بندهای تعویض‌پذیر هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، سامسونگ گلکسی واچ اولترا حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-5',
@@ -1193,7 +2215,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance, Style, and Is It Worth It?',
+                        fa: 'عملکرد، سبک و آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Garmin Fenix 8, the verdict is clear: this is a product that understands its job and does it reliably. an always-on AMOLED display translates into measurable advantages during workouts, notifications, and quick replies, while AMOLED or Solar charging display options; advanced training metrics; built-in speaker/mic ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Garmin optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Garmin Fenix 8 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از ساعت گارمین Fenix 8، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. نمایشگر AMOLED همیشه‌روشن در حین تمرین، اعلان‌ها و پاسخ‌های سریع مزایای واقعی به همراه دارد و گزینه‌های نمایشگر AMOLED یا شارژ خورشیدی؛ معیارهای تمرینی پیشرفته؛ بلندگو و میکروفون داخلی ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: گارمین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، ساعت گارمین Fenix 8 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Garmin Fenix 8, the Garmin design philosophy is obvious: advanced health and fitness tracking is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized workouts, notifications, and quick replies when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as water resistance and quick-release bands show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Garmin Fenix 8 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ساعت گارمین Fenix 8 را در دست می‌گیرید، فلسفه طراحی گارمین کاملاً مشخص است: ردیابی پیشرفته سلامت و تناسب‌اندام در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح تمرین، اعلان‌ها و پاسخ‌های سریع را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند مقاومت در برابر آب و بندهای تعویض‌پذیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ساعت گارمین Fenix 8 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-1-6',
@@ -1227,7 +2275,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'A Wrist Companion That Works Hard',
+                        fa: 'همراهی مچی که سخت کار می‌کند',
+                    },
+                    content: {
+                        en: 'The Garmin Forerunner 965 from Garmin makes a strong first impression, pairing an always-on AMOLED display with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the scratch-resistant glass over a sturdy case gives the product a confident stance on a desk or in a hand, while water resistance and quick-release bands adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for workouts, notifications, and quick replies, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Garmin Forerunner 965 presents itself as a product worth owning.',
+                        fa: 'محصول ساعت گارمین Forerunner 965 از برند گارمین با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. نمایشگر AMOLED همیشه‌روشن در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: شیشه مقاوم در برابر خش روی بدنه محکم به محصول وقار و استحکام می‌بخشد و مقاومت در برابر آب و بندهای تعویض‌پذیر هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ساعت گارمین Forerunner 965 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Health Tracking, Notifications, and Battery',
+                        fa: 'ردیابی سلامت، اعلان‌ها و باتری',
+                    },
+                    content: {
+                        en: 'The feature set of the Garmin Forerunner 965 is where Garmin shows its experience. premium case materials covers the scenarios users care about most, and each one has been tuned for workouts, notifications, and quick replies rather than treated as a checkbox. Underneath, AMOLED touchscreen display; titanium bezel; advanced running dynamics and mapping provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and water resistance and quick-release bands quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ساعت گارمین Forerunner 965 جایی است که تجربه گارمین را نشان می‌دهد. متریال‌های پریمیوم سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای تمرین، اعلان‌ها و پاسخ‌های سریع بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، نمایشگر لمسی AMOLED؛ قاب تیتانیومی؛ دینامیک پیشرفته دویدن و نقشه‌برداری فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و مقاومت در برابر آب و بندهای تعویض‌پذیر بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-1',
@@ -1260,7 +2334,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sensors, Sleep, and Workout Insights',
+                        fa: 'سنسورها، خواب و بینش تمرینی',
+                    },
+                    content: {
+                        en: 'Day to day, the Fitbit Charge 6 proves that its headline features translate into real-world convenience. a lightweight comfortable fit means that tracking steps, workouts, and recovery becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Google built-in features; advanced heart rate tracking; built-in GPS — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with guided breathing and smart reminders handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Fitbit Charge 6 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. تناسب سبک و راحت یعنی ردیابی قدم‌ها، تمرین‌ها و بازیابی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — امکانات یکپارچه گوگل؛ ردیابی پیشرفته ضربان قلب؛ GPS داخلی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و تنفس هدایت‌شده و یادآورهای هوشمند جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Battery Life, Value, and Verdict',
+                        fa: 'شارژدهی، ارزش و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Fitbit Charge 6 worth your money? For most buyers, the answer is yes. sleep and stress tracking delivers on its promises in everyday scenarios, Google built-in features; advanced heart rate tracking; built-in GPS provides dependable performance under load, and guided breathing and smart reminders rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Fitbit Charge 6 holds its own on the things people notice — comfort during tracking steps, workouts, and recovery, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Fitbit Charge 6 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. ردیابی خواب و استرس در سناریوهای روزمره به وعده‌هایش عمل می‌کند، امکانات یکپارچه گوگل؛ ردیابی پیشرفته ضربان قلب؛ GPS داخلی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و تنفس هدایت‌شده و یادآورهای هوشمند با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین ردیابی قدم‌ها، تمرین‌ها و بازیابی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Lightweight Tracking for Every Day',
+                        fa: 'ردیابی سبک‌وزن برای هر روز',
+                    },
+                    content: {
+                        en: 'The Fitbit Charge 6 from Fitbit makes a strong first impression, pairing all-day heart-rate monitoring with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the soft straps with a slim display module gives the product a confident stance on a desk or in a hand, while guided breathing and smart reminders adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for tracking steps, workouts, and recovery, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Fitbit Charge 6 presents itself as a product worth owning.',
+                        fa: 'محصول مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 از برند فیت‌بیت با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پایش ضربان قلب تمام‌روز در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بندهای نرم با ماژول نمایشگر باریک به محصول وقار و استحکام می‌بخشد و تنفس هدایت‌شده و یادآورهای هوشمند هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مچ‌بند تناسب‌اندام فیت‌بیت Charge 6 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-2',
@@ -1293,7 +2404,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sensors, Sleep, and Workout Insights',
+                        fa: 'سنسورها، خواب و بینش تمرینی',
+                    },
+                    content: {
+                        en: 'The feature set of the Xiaomi Smart Band 9 is where Xiaomi shows its experience. long battery endurance covers the scenarios users care about most, and each one has been tuned for tracking steps, workouts, and recovery rather than treated as a checkbox. Underneath, Bright AMOLED display; metal body finish; multi-day battery life provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and guided breathing and smart reminders quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مچ‌بند هوشمند شیائومی Smart Band 9 جایی است که تجربه شیائومی را نشان می‌دهد. باتری با دوام طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، نمایشگر روشن AMOLED؛ فریم فلزی بدنه؛ شارژدهی چندروزه باتری فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنفس هدایت‌شده و یادآورهای هوشمند بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Battery Life, Value, and Verdict',
+                        fa: 'شارژدهی، ارزش و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Xiaomi Smart Band 9, the verdict is clear: this is a product that understands its job and does it reliably. all-day heart-rate monitoring translates into measurable advantages during tracking steps, workouts, and recovery, while Bright AMOLED display; metal body finish; multi-day battery life ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Xiaomi optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Xiaomi Smart Band 9 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مچ‌بند هوشمند شیائومی Smart Band 9، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پایش ضربان قلب تمام‌روز در حین ردیابی قدم‌ها، تمرین‌ها و بازیابی مزایای واقعی به همراه دارد و نمایشگر روشن AMOLED؛ فریم فلزی بدنه؛ شارژدهی چندروزه باتری ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: شیائومی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مچ‌بند هوشمند شیائومی Smart Band 9 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-3',
@@ -1326,7 +2463,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Lightweight Tracking for Every Day',
+                        fa: 'ردیابی سبک‌وزن برای هر روز',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Huawei Band 9, the Huawei design philosophy is obvious: sleep and stress tracking is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized tracking steps, workouts, and recovery when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as guided breathing and smart reminders show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Huawei Band 9 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مچ‌بند هوشمند هواوی Band 9 را در دست می‌گیرید، فلسفه طراحی هواوی کاملاً مشخص است: ردیابی خواب و استرس در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح ردیابی قدم‌ها، تمرین‌ها و بازیابی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند تنفس هدایت‌شده و یادآورهای هوشمند نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مچ‌بند هوشمند هواوی Band 9 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensors, Sleep, and Workout Insights',
+                        fa: 'سنسورها، خواب و بینش تمرینی',
+                    },
+                    content: {
+                        en: 'Day to day, the Huawei Band 9 proves that its headline features translate into real-world convenience. a lightweight comfortable fit means that tracking steps, workouts, and recovery becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — AMOLED display; TruSleep science-based sleep tracking; lightweight design — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with guided breathing and smart reminders handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Huawei Band 9 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مچ‌بند هوشمند هواوی Band 9 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. تناسب سبک و راحت یعنی ردیابی قدم‌ها، تمرین‌ها و بازیابی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — نمایشگر AMOLED؛ ردیابی خواب علمی TruSleep؛ طراحی سبک‌وزن — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و تنفس هدایت‌شده و یادآورهای هوشمند جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مچ‌بند هوشمند هواوی Band 9 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-4',
@@ -1361,7 +2524,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Lightweight Tracking for Every Day',
+                        fa: 'ردیابی سبک‌وزن برای هر روز',
+                    },
+                    content: {
+                        en: 'The Amazfit Band 7 from Amazfit makes a strong first impression, pairing all-day heart-rate monitoring with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the soft straps with a slim display module gives the product a confident stance on a desk or in a hand, while guided breathing and smart reminders adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for tracking steps, workouts, and recovery, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Amazfit Band 7 presents itself as a product worth owning.',
+                        fa: 'محصول مچ‌بند امزفیت Band 7 از برند امزفیت با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پایش ضربان قلب تمام‌روز در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بندهای نرم با ماژول نمایشگر باریک به محصول وقار و استحکام می‌بخشد و تنفس هدایت‌شده و یادآورهای هوشمند هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مچ‌بند امزفیت Band 7 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensors, Sleep, and Workout Insights',
+                        fa: 'سنسورها، خواب و بینش تمرینی',
+                    },
+                    content: {
+                        en: 'The feature set of the Amazfit Band 7 is where Amazfit shows its experience. long battery endurance covers the scenarios users care about most, and each one has been tuned for tracking steps, workouts, and recovery rather than treated as a checkbox. Underneath, Large AMOLED display; 18-day battery life; 24h health monitoring provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and guided breathing and smart reminders quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مچ‌بند امزفیت Band 7 جایی است که تجربه امزفیت را نشان می‌دهد. باتری با دوام طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، نمایشگر بزرگ AMOLED؛ شارژدهی ۱۸ روزه باتری؛ پایش ۲۴ ساعته سلامت فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنفس هدایت‌شده و یادآورهای هوشمند بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Battery Life, Value, and Verdict',
+                        fa: 'شارژدهی، ارزش و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Amazfit Band 7, the verdict is clear: this is a product that understands its job and does it reliably. all-day heart-rate monitoring translates into measurable advantages during tracking steps, workouts, and recovery, while Large AMOLED display; 18-day battery life; 24h health monitoring ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Amazfit optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Amazfit Band 7 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مچ‌بند امزفیت Band 7، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پایش ضربان قلب تمام‌روز در حین ردیابی قدم‌ها، تمرین‌ها و بازیابی مزایای واقعی به همراه دارد و نمایشگر بزرگ AMOLED؛ شارژدهی ۱۸ روزه باتری؛ پایش ۲۴ ساعته سلامت ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: امزفیت این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مچ‌بند امزفیت Band 7 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-5',
@@ -1394,7 +2594,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Battery Life, Value, and Verdict',
+                        fa: 'شارژدهی، ارزش و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Garmin vivosmart 5, the verdict is clear: this is a product that understands its job and does it reliably. all-day heart-rate monitoring translates into measurable advantages during tracking steps, workouts, and recovery, while Easy-to-use fitness tracker; sleep score; heart rate and Body Battery monitoring ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Garmin optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Garmin vivosmart 5 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مچ‌بند گارمین vivosmart 5، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پایش ضربان قلب تمام‌روز در حین ردیابی قدم‌ها، تمرین‌ها و بازیابی مزایای واقعی به همراه دارد و ردیاب تناسب‌اندام آسان‌کاربر؛ امتیاز خواب؛ پایش ضربان قلب و انرژی بدن (Body Battery) ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: گارمین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مچ‌بند گارمین vivosmart 5 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Lightweight Tracking for Every Day',
+                        fa: 'ردیابی سبک‌وزن برای هر روز',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Garmin vivosmart 5, the Garmin design philosophy is obvious: sleep and stress tracking is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized tracking steps, workouts, and recovery when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as guided breathing and smart reminders show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Garmin vivosmart 5 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مچ‌بند گارمین vivosmart 5 را در دست می‌گیرید، فلسفه طراحی گارمین کاملاً مشخص است: ردیابی خواب و استرس در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح ردیابی قدم‌ها، تمرین‌ها و بازیابی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند تنفس هدایت‌شده و یادآورهای هوشمند نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مچ‌بند گارمین vivosmart 5 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-2-6',
@@ -1428,7 +2654,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Lightweight Tracking for Every Day',
+                        fa: 'ردیابی سبک‌وزن برای هر روز',
+                    },
+                    content: {
+                        en: 'The Polar Ignite 3 Fitness Tracker from Polar makes a strong first impression, pairing all-day heart-rate monitoring with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the soft straps with a slim display module gives the product a confident stance on a desk or in a hand, while guided breathing and smart reminders adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for tracking steps, workouts, and recovery, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Polar Ignite 3 Fitness Tracker presents itself as a product worth owning.',
+                        fa: 'محصول ردیاب تناسب‌اندام پولار Ignite 3 از برند پولار با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پایش ضربان قلب تمام‌روز در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بندهای نرم با ماژول نمایشگر باریک به محصول وقار و استحکام می‌بخشد و تنفس هدایت‌شده و یادآورهای هوشمند هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ردیاب تناسب‌اندام پولار Ignite 3 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensors, Sleep, and Workout Insights',
+                        fa: 'سنسورها، خواب و بینش تمرینی',
+                    },
+                    content: {
+                        en: 'The feature set of the Polar Ignite 3 Fitness Tracker is where Polar shows its experience. long battery endurance covers the scenarios users care about most, and each one has been tuned for tracking steps, workouts, and recovery rather than treated as a checkbox. Underneath, AMOLED touchscreen; dual-frequency GPS; Sleep Plus Stages guidance provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and guided breathing and smart reminders quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ردیاب تناسب‌اندام پولار Ignite 3 جایی است که تجربه پولار را نشان می‌دهد. باتری با دوام طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای ردیابی قدم‌ها، تمرین‌ها و بازیابی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، صفحه نمایش لمسی AMOLED؛ GPS دوفرکانس؛ راهنمای جامع مراحل خواب Sleep Plus Stages فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنفس هدایت‌شده و یادآورهای هوشمند بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-1',
@@ -1462,7 +2714,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Quality, Compatibility, and Verdict',
+                        fa: 'کیفیت، سازگاری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Apple Watch Alpine Loop worth your money? For most buyers, the answer is yes. quick-release spring bars delivers on its promises in everyday scenarios, High-strength continuous weave; G-hook titanium fastener provides dependable performance under load, and compatibility across common watch case sizes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Apple Watch Alpine Loop holds its own on the things people notice — comfort during personalizing a smartwatch, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Apple Watch Alpine Loop earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا بند اپل واچ مدل Alpine Loop ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. اتصال سریع و آسان در سناریوهای روزمره به وعده‌هایش عمل می‌کند، بافت پیوسته با استحکام بالا؛ قلاب G شکل تیتانیومی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سازگاری با اندازه‌های رایج قاب ساعت با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، بند اپل واچ مدل Alpine Loop در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شخصی‌سازی ساعت هوشمند، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، بند اپل واچ مدل Alpine Loop شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Comfort and Style for Your Watch',
+                        fa: 'راحتی و سبک برای ساعت شما',
+                    },
+                    content: {
+                        en: 'The Apple Watch Alpine Loop from Apple makes a strong first impression, pairing premium woven or fluoroelastomer materials with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the clean stitching and reinforced hardware gives the product a confident stance on a desk or in a hand, while compatibility across common watch case sizes adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for personalizing a smartwatch, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple Watch Alpine Loop presents itself as a product worth owning.',
+                        fa: 'محصول بند اپل واچ مدل Alpine Loop از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. متریال‌های باکیفیت بافته‌شده در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دوخت تمیز و سخت‌افزار تقویت‌شده به محصول وقار و استحکام می‌بخشد و سازگاری با اندازه‌های رایج قاب ساعت هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، بند اپل واچ مدل Alpine Loop حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Apple Watch Alpine Loop is where Apple shows its experience. durable metal hardware covers the scenarios users care about most, and each one has been tuned for personalizing a smartwatch rather than treated as a checkbox. Underneath, High-strength continuous weave; G-hook titanium fastener provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and compatibility across common watch case sizes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های بند اپل واچ مدل Alpine Loop جایی است که تجربه اپل را نشان می‌دهد. سخت‌افزار فلزی بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، بافت پیوسته با استحکام بالا؛ قلاب G شکل تیتانیومی فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سازگاری با اندازه‌های رایج قاب ساعت بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-2',
@@ -1496,7 +2785,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Comfort and Style for Your Watch',
+                        fa: 'راحتی و سبک برای ساعت شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Apple Watch Ocean Band, the Apple design philosophy is obvious: quick-release spring bars is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized personalizing a smartwatch when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as compatibility across common watch case sizes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Apple Watch Ocean Band does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه بند اپل واچ مدل Ocean Band را در دست می‌گیرید، فلسفه طراحی اپل کاملاً مشخص است: اتصال سریع و آسان در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شخصی‌سازی ساعت هوشمند را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سازگاری با اندازه‌های رایج قاب ساعت نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، بند اپل واچ مدل Ocean Band فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Apple Watch Ocean Band proves that its headline features translate into real-world convenience. an adjustable secure fit means that personalizing a smartwatch becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Molded elastomer with tubular geometry; corrosion-resistant titanium buckle — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across common watch case sizes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Apple Watch Ocean Band leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، بند اپل واچ مدل Ocean Band ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. تناسب قابل تنظیم یعنی شخصی‌سازی ساعت هوشمند به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — الاستومر قالب‌گیری شده با هندسه لوله‌ای؛ سگک مقاوم در برابر خوردگی تیتانیومی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با اندازه‌های رایج قاب ساعت جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، بند اپل واچ مدل Ocean Band روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-3',
@@ -1530,7 +2845,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Samsung Galaxy Watch Fabric Band is where Samsung shows its experience. durable metal hardware covers the scenarios users care about most, and each one has been tuned for personalizing a smartwatch rather than treated as a checkbox. Underneath, Lightweight breathable fabric; quick-release spring bar mechanism provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and compatibility across common watch case sizes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های بند پارچه‌ای گلکسی واچ سامسونگ جایی است که تجربه سامسونگ را نشان می‌دهد. سخت‌افزار فلزی بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، پارچه سبک و تنفس‌پذیر؛ مکانیزم فنری اتصال سریع فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سازگاری با اندازه‌های رایج قاب ساعت بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Quality, Compatibility, and Verdict',
+                        fa: 'کیفیت، سازگاری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Samsung Galaxy Watch Fabric Band, the verdict is clear: this is a product that understands its job and does it reliably. premium woven or fluoroelastomer materials translates into measurable advantages during personalizing a smartwatch, while Lightweight breathable fabric; quick-release spring bar mechanism ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Samsung optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Samsung Galaxy Watch Fabric Band is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از بند پارچه‌ای گلکسی واچ سامسونگ، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. متریال‌های باکیفیت بافته‌شده در حین شخصی‌سازی ساعت هوشمند مزایای واقعی به همراه دارد و پارچه سبک و تنفس‌پذیر؛ مکانیزم فنری اتصال سریع ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سامسونگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، بند پارچه‌ای گلکسی واچ سامسونگ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-4',
@@ -1564,7 +2905,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Comfort and Style for Your Watch',
+                        fa: 'راحتی و سبک برای ساعت شما',
+                    },
+                    content: {
+                        en: 'The Spigen Rugged Armor Pro for Galaxy Watch from Spigen makes a strong first impression, pairing premium woven or fluoroelastomer materials with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the clean stitching and reinforced hardware gives the product a confident stance on a desk or in a hand, while compatibility across common watch case sizes adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for personalizing a smartwatch, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Spigen Rugged Armor Pro for Galaxy Watch presents itself as a product worth owning.',
+                        fa: 'محصول بند و قاب محافظ Spigen Rugged Armor Pro از برند اسپیگن با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. متریال‌های باکیفیت بافته‌شده در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دوخت تمیز و سخت‌افزار تقویت‌شده به محصول وقار و استحکام می‌بخشد و سازگاری با اندازه‌های رایج قاب ساعت هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، بند و قاب محافظ Spigen Rugged Armor Pro حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Spigen Rugged Armor Pro for Galaxy Watch is where Spigen shows its experience. durable metal hardware covers the scenarios users care about most, and each one has been tuned for personalizing a smartwatch rather than treated as a checkbox. Underneath, All-in-one band and case cover; matte finish with carbon fiber accents provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and compatibility across common watch case sizes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های بند و قاب محافظ Spigen Rugged Armor Pro جایی است که تجربه اسپیگن را نشان می‌دهد. سخت‌افزار فلزی بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، بند و کاور محافظ یکپارچه؛ پوشش مات با جزئیات فیبر کربن فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سازگاری با اندازه‌های رایج قاب ساعت بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Quality, Compatibility, and Verdict',
+                        fa: 'کیفیت، سازگاری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Spigen Rugged Armor Pro for Galaxy Watch, the verdict is clear: this is a product that understands its job and does it reliably. premium woven or fluoroelastomer materials translates into measurable advantages during personalizing a smartwatch, while All-in-one band and case cover; matte finish with carbon fiber accents ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Spigen optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Spigen Rugged Armor Pro for Galaxy Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از بند و قاب محافظ Spigen Rugged Armor Pro، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. متریال‌های باکیفیت بافته‌شده در حین شخصی‌سازی ساعت هوشمند مزایای واقعی به همراه دارد و بند و کاور محافظ یکپارچه؛ پوشش مات با جزئیات فیبر کربن ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اسپیگن این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، بند و قاب محافظ Spigen Rugged Armor Pro یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-5',
@@ -1597,7 +2975,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Nomad Sport Band for Apple Watch is where Nomad shows its experience. durable metal hardware covers the scenarios users care about most, and each one has been tuned for personalizing a smartwatch rather than treated as a checkbox. Underneath, FKM fluoroelastomer rubber; lightweight and ventilation channels provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and compatibility across common watch case sizes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های بند ورزشی Nomad برای اپل واچ جایی است که تجربه نوماد را نشان می‌دهد. سخت‌افزار فلزی بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی ساعت هوشمند بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، لاستیک فلوئوروالاستومر FKM؛ سبک‌وزن با کانال‌های تهویه هوا فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سازگاری با اندازه‌های رایج قاب ساعت بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Quality, Compatibility, and Verdict',
+                        fa: 'کیفیت، سازگاری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Nomad Sport Band for Apple Watch, the verdict is clear: this is a product that understands its job and does it reliably. premium woven or fluoroelastomer materials translates into measurable advantages during personalizing a smartwatch, while FKM fluoroelastomer rubber; lightweight and ventilation channels ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Nomad optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Nomad Sport Band for Apple Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از بند ورزشی Nomad برای اپل واچ، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. متریال‌های باکیفیت بافته‌شده در حین شخصی‌سازی ساعت هوشمند مزایای واقعی به همراه دارد و لاستیک فلوئوروالاستومر FKM؛ سبک‌وزن با کانال‌های تهویه هوا ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: نوماد این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، بند ورزشی Nomad برای اپل واچ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-3-6',
@@ -1630,7 +3034,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Materials, Fit, and Everyday Wear',
+                        fa: 'مواد، تناسب و استفاده روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Burga Designer Watch Strap proves that its headline features translate into real-world convenience. an adjustable secure fit means that personalizing a smartwatch becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Fashion-forward patterned strap; durable stainless steel hardware — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with compatibility across common watch case sizes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Burga Designer Watch Strap leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، بند طراحى‌شده Burga برای ساعت هوشمند ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. تناسب قابل تنظیم یعنی شخصی‌سازی ساعت هوشمند به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — بند با طرح‌های فانتزی و مد روز؛ قطعات استیل ضدزنگ با دوام بالا — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سازگاری با اندازه‌های رایج قاب ساعت جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، بند طراحى‌شده Burga برای ساعت هوشمند روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Quality, Compatibility, and Verdict',
+                        fa: 'کیفیت، سازگاری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Burga Designer Watch Strap worth your money? For most buyers, the answer is yes. quick-release spring bars delivers on its promises in everyday scenarios, Fashion-forward patterned strap; durable stainless steel hardware provides dependable performance under load, and compatibility across common watch case sizes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Burga Designer Watch Strap holds its own on the things people notice — comfort during personalizing a smartwatch, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Burga Designer Watch Strap earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا بند طراحى‌شده Burga برای ساعت هوشمند ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. اتصال سریع و آسان در سناریوهای روزمره به وعده‌هایش عمل می‌کند، بند با طرح‌های فانتزی و مد روز؛ قطعات استیل ضدزنگ با دوام بالا عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سازگاری با اندازه‌های رایج قاب ساعت با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، بند طراحى‌شده Burga برای ساعت هوشمند در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شخصی‌سازی ساعت هوشمند، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، بند طراحى‌شده Burga برای ساعت هوشمند شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-1',
@@ -1663,7 +3093,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Set It Down and Forget It',
+                        fa: 'بگذارید و فراموشش کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Belkin BoostCharge Pro 3-in-1 Wireless Charger, the Belkin design philosophy is obvious: automatic device alignment is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized overnight charging without cables when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as fast-charge support for watches and earbuds show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Belkin BoostCharge Pro 3-in-1 Wireless Charger does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره را در دست می‌گیرید، فلسفه طراحی بلکین کاملاً مشخص است: تراز خودکار دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ شبانه بدون کابل را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی از شارژ سریع ساعت و ایرباد نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Magnetic Alignment and Fast Charging',
+                        fa: 'تراز مغناطیسی و شارژ سریع',
+                    },
+                    content: {
+                        en: 'Day to day, the Belkin BoostCharge Pro 3-in-1 Wireless Charger proves that its headline features translate into real-world convenience. multi-device convenience means that overnight charging without cables becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — MagSafe fast wireless charging for iPhone, Apple Watch, and AirPods — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast-charge support for watches and earbuds handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Belkin BoostCharge Pro 3-in-1 Wireless Charger leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. راحتی شارژ چند دستگاه یعنی شارژ شبانه بدون کابل به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — شارژ بی‌سیم سریع MagSafe برای آیفون، اپل واچ و ایرپادز — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پشتیبانی از شارژ سریع ساعت و ایرباد جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Convenience, Speed, and Final Thoughts',
+                        fa: 'راحتی، سرعت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Belkin BoostCharge Pro 3-in-1 Wireless Charger worth your money? For most buyers, the answer is yes. automatic device alignment delivers on its promises in everyday scenarios, MagSafe fast wireless charging for iPhone, Apple Watch, and AirPods provides dependable performance under load, and fast-charge support for watches and earbuds rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Belkin BoostCharge Pro 3-in-1 Wireless Charger holds its own on the things people notice — comfort during overnight charging without cables, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Belkin BoostCharge Pro 3-in-1 Wireless Charger earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تراز خودکار دستگاه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، شارژ بی‌سیم سریع MagSafe برای آیفون، اپل واچ و ایرپادز عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی از شارژ سریع ساعت و ایرباد با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ شبانه بدون کابل، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پایه شارژ بی‌سیم Belkin BoostCharge Pro سه کاره شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-2',
@@ -1697,7 +3164,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Magnetic Alignment and Fast Charging',
+                        fa: 'تراز مغناطیسی و شارژ سریع',
+                    },
+                    content: {
+                        en: 'The feature set of the Samsung Galaxy Watch Wireless Charger is where Samsung shows its experience. a compact desk-friendly footprint covers the scenarios users care about most, and each one has been tuned for overnight charging without cables rather than treated as a checkbox. Underneath, Magnetic puck design; USB-C connection; fast wireless charging support provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and fast-charge support for watches and earbuds quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های شارژر بی‌سیم گلکسی واچ سامسونگ جایی است که تجربه سامسونگ را نشان می‌دهد. طراحی جمع‌وجور مناسب میز سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شارژ شبانه بدون کابل بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، طراحی مگنتی دایره‌ای؛ اتصال USB-C؛ پشتیبانی از شارژ بی‌سیم سریع فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پشتیبانی از شارژ سریع ساعت و ایرباد بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Convenience, Speed, and Final Thoughts',
+                        fa: 'راحتی، سرعت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Samsung Galaxy Watch Wireless Charger, the verdict is clear: this is a product that understands its job and does it reliably. fast magnetic wireless charging translates into measurable advantages during overnight charging without cables, while Magnetic puck design; USB-C connection; fast wireless charging support ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Samsung optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Samsung Galaxy Watch Wireless Charger is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از شارژر بی‌سیم گلکسی واچ سامسونگ، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ بی‌سیم سریع و مغناطیسی در حین شارژ شبانه بدون کابل مزایای واقعی به همراه دارد و طراحی مگنتی دایره‌ای؛ اتصال USB-C؛ پشتیبانی از شارژ بی‌سیم سریع ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سامسونگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، شارژر بی‌سیم گلکسی واچ سامسونگ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-3',
@@ -1732,7 +3225,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Convenience, Speed, and Final Thoughts',
+                        fa: 'راحتی، سرعت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Anker 3-in-1 Cube with MagSafe worth your money? For most buyers, the answer is yes. automatic device alignment delivers on its promises in everyday scenarios, Ultra-compact foldable design; official MagSafe charging module; Apple Watch fast charging provides dependable performance under load, and fast-charge support for watches and earbuds rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker 3-in-1 Cube with MagSafe holds its own on the things people notice — comfort during overnight charging without cables, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker 3-in-1 Cube with MagSafe earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پایه شارژ مکعبی Anker سه کاره با MagSafe ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تراز خودکار دستگاه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، طراحی تاشو فوق‌العاده جمع‌وجور؛ ماژول شارژ رسمی MagSafe؛ شارژ سریع اپل واچ عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی از شارژ سریع ساعت و ایرباد با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پایه شارژ مکعبی Anker سه کاره با MagSafe در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ شبانه بدون کابل، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پایه شارژ مکعبی Anker سه کاره با MagSafe شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Set It Down and Forget It',
+                        fa: 'بگذارید و فراموشش کنید',
+                    },
+                    content: {
+                        en: 'The Anker 3-in-1 Cube with MagSafe from Anker makes a strong first impression, pairing fast magnetic wireless charging with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the weighted bases and soft-touch surfaces gives the product a confident stance on a desk or in a hand, while fast-charge support for watches and earbuds adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for overnight charging without cables, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker 3-in-1 Cube with MagSafe presents itself as a product worth owning.',
+                        fa: 'محصول پایه شارژ مکعبی Anker سه کاره با MagSafe از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. شارژ بی‌سیم سریع و مغناطیسی در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: پایه‌های وزین و سطوح نرم به محصول وقار و استحکام می‌بخشد و پشتیبانی از شارژ سریع ساعت و ایرباد هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ شبانه بدون کابل بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پایه شارژ مکعبی Anker سه کاره با MagSafe حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-4',
@@ -1766,7 +3285,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Convenience, Speed, and Final Thoughts',
+                        fa: 'راحتی، سرعت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Satechi USB-C Magnetic Charging Dock for Apple Watch, the verdict is clear: this is a product that understands its job and does it reliably. fast magnetic wireless charging translates into measurable advantages during overnight charging without cables, while Direct USB-C port connection; portable design for travel or desks ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Satechi optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Satechi USB-C Magnetic Charging Dock for Apple Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از پایه شارژ مگنتی Satechi USB-C برای اپل واچ، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ بی‌سیم سریع و مغناطیسی در حین شارژ شبانه بدون کابل مزایای واقعی به همراه دارد و اتصال مستقیم به درگاه USB-C؛ طراحی قابل حمل مناسب سفر یا میز کار ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ساتچی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، پایه شارژ مگنتی Satechi USB-C برای اپل واچ یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Set It Down and Forget It',
+                        fa: 'بگذارید و فراموشش کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Satechi USB-C Magnetic Charging Dock for Apple Watch, the Satechi design philosophy is obvious: automatic device alignment is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized overnight charging without cables when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as fast-charge support for watches and earbuds show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Satechi USB-C Magnetic Charging Dock for Apple Watch does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پایه شارژ مگنتی Satechi USB-C برای اپل واچ را در دست می‌گیرید، فلسفه طراحی ساتچی کاملاً مشخص است: تراز خودکار دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ شبانه بدون کابل را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی از شارژ سریع ساعت و ایرباد نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پایه شارژ مگنتی Satechi USB-C برای اپل واچ فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Magnetic Alignment and Fast Charging',
+                        fa: 'تراز مغناطیسی و شارژ سریع',
+                    },
+                    content: {
+                        en: 'Day to day, the Satechi USB-C Magnetic Charging Dock for Apple Watch proves that its headline features translate into real-world convenience. multi-device convenience means that overnight charging without cables becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Direct USB-C port connection; portable design for travel or desks — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast-charge support for watches and earbuds handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Satechi USB-C Magnetic Charging Dock for Apple Watch leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پایه شارژ مگنتی Satechi USB-C برای اپل واچ ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. راحتی شارژ چند دستگاه یعنی شارژ شبانه بدون کابل به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — اتصال مستقیم به درگاه USB-C؛ طراحی قابل حمل مناسب سفر یا میز کار — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پشتیبانی از شارژ سریع ساعت و ایرباد جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پایه شارژ مگنتی Satechi USB-C برای اپل واچ روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-5',
@@ -1800,7 +3356,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Convenience, Speed, and Final Thoughts',
+                        fa: 'راحتی، سرعت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Elago W3 Stand for Apple Watch worth your money? For most buyers, the answer is yes. automatic device alignment delivers on its promises in everyday scenarios, Retro Macintosh computer design; soft silicone material to prevent scratches provides dependable performance under load, and fast-charge support for watches and earbuds rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Elago W3 Stand for Apple Watch holds its own on the things people notice — comfort during overnight charging without cables, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Elago W3 Stand for Apple Watch earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پایه رومیزی ساعت الگو مدل W3 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تراز خودکار دستگاه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، طراحی کلاسیک کامپیوتر مکینتاش؛ جنس سیلیکونی نرم جهت جلوگیری از خط و خش عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی از شارژ سریع ساعت و ایرباد با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پایه رومیزی ساعت الگو مدل W3 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شارژ شبانه بدون کابل، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پایه رومیزی ساعت الگو مدل W3 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Set It Down and Forget It',
+                        fa: 'بگذارید و فراموشش کنید',
+                    },
+                    content: {
+                        en: 'The Elago W3 Stand for Apple Watch from Elago makes a strong first impression, pairing fast magnetic wireless charging with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the weighted bases and soft-touch surfaces gives the product a confident stance on a desk or in a hand, while fast-charge support for watches and earbuds adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for overnight charging without cables, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Elago W3 Stand for Apple Watch presents itself as a product worth owning.',
+                        fa: 'محصول پایه رومیزی ساعت الگو مدل W3 از برند الگو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. شارژ بی‌سیم سریع و مغناطیسی در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: پایه‌های وزین و سطوح نرم به محصول وقار و استحکام می‌بخشد و پشتیبانی از شارژ سریع ساعت و ایرباد هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شارژ شبانه بدون کابل بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پایه رومیزی ساعت الگو مدل W3 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-4-6',
@@ -1834,7 +3416,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Set It Down and Forget It',
+                        fa: 'بگذارید و فراموشش کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Nomad Base One Max 3-in-1, the Nomad design philosophy is obvious: automatic device alignment is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized overnight charging without cables when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as fast-charge support for watches and earbuds show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Nomad Base One Max 3-in-1 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پایه شارژ Nomad Base One Max سه کاره را در دست می‌گیرید، فلسفه طراحی نوماد کاملاً مشخص است: تراز خودکار دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شارژ شبانه بدون کابل را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی از شارژ سریع ساعت و ایرباد نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پایه شارژ Nomad Base One Max سه کاره فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Magnetic Alignment and Fast Charging',
+                        fa: 'تراز مغناطیسی و شارژ سریع',
+                    },
+                    content: {
+                        en: 'Day to day, the Nomad Base One Max 3-in-1 proves that its headline features translate into real-world convenience. multi-device convenience means that overnight charging without cables becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Official MFi MagSafe charging; solid metal and glass chassis design — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with fast-charge support for watches and earbuds handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Nomad Base One Max 3-in-1 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پایه شارژ Nomad Base One Max سه کاره ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. راحتی شارژ چند دستگاه یعنی شارژ شبانه بدون کابل به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — شارژر رسمی تاییدشده MFi MagSafe؛ بدنه فلزی سنگین و پنل شیشه‌ای — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پشتیبانی از شارژ سریع ساعت و ایرباد جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پایه شارژ Nomad Base One Max سه کاره روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-1',
@@ -1867,7 +3475,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Performs',
+                        fa: 'محافظتی که کار می‌کند',
+                    },
+                    content: {
+                        en: 'After extended time with the Spigen Thin Fit Case for Apple Watch, the verdict is clear: this is a product that understands its job and does it reliably. full screen and case coverage translates into measurable advantages during protecting a smartwatch during workouts and daily wear, while Slim protective case; exact fit depends on watch case size ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Spigen optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Spigen Thin Fit Case for Apple Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از قاب محافظ Spigen Thin Fit برای Apple Watch، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پوشش کامل صفحه و بدنه در حین محافظت از ساعت در تمرین و استفاده روزمره مزایای واقعی به همراه دارد و قاب محافظ باریک؛ تناسب دقیق وابسته به سایز قاب ساعت ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اسپیگن این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، قاب محافظ Spigen Thin Fit برای Apple Watch یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Guard Your Watch in Style',
+                        fa: 'از ساعت خود با سبک محافظت کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Spigen Thin Fit Case for Apple Watch, the Spigen design philosophy is obvious: a precise model-specific fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized protecting a smartwatch during workouts and daily wear when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as bubble-free installation and a precise fit show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Spigen Thin Fit Case for Apple Watch does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه قاب محافظ Spigen Thin Fit برای Apple Watch را در دست می‌گیرید، فلسفه طراحی اسپیگن کاملاً مشخص است: تناسب دقیق با مدل ساعت در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح محافظت از ساعت در تمرین و استفاده روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند نصب بدون حباب و تناسب دقیق نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، قاب محافظ Spigen Thin Fit برای Apple Watch فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Coverage, Fit, and Peace of Mind',
+                        fa: 'پوشش، تناسب و خیال راحت',
+                    },
+                    content: {
+                        en: 'Day to day, the Spigen Thin Fit Case for Apple Watch proves that its headline features translate into real-world convenience. durable impact-resistant materials means that protecting a smartwatch during workouts and daily wear becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Slim protective case; exact fit depends on watch case size — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with bubble-free installation and a precise fit handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Spigen Thin Fit Case for Apple Watch leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، قاب محافظ Spigen Thin Fit برای Apple Watch ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های مقاوم در برابر ضربه یعنی محافظت از ساعت در تمرین و استفاده روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — قاب محافظ باریک؛ تناسب دقیق وابسته به سایز قاب ساعت — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و نصب بدون حباب و تناسب دقیق جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، قاب محافظ Spigen Thin Fit برای Apple Watch روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-2',
@@ -1900,7 +3545,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Coverage, Fit, and Peace of Mind',
+                        fa: 'پوشش، تناسب و خیال راحت',
+                    },
+                    content: {
+                        en: 'Day to day, the Spigen Rugged Armor Pro for Apple Watch proves that its headline features translate into real-world convenience. durable impact-resistant materials means that protecting a smartwatch during workouts and daily wear becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Protective case-and-band design for compatible sizes — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with bubble-free installation and a precise fit handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Spigen Rugged Armor Pro for Apple Watch leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، قاب Spigen Rugged Armor Pro برای Apple Watch ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های مقاوم در برابر ضربه یعنی محافظت از ساعت در تمرین و استفاده روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — طراحی قاب و بند محافظ برای سایزهای سازگار — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و نصب بدون حباب و تناسب دقیق جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، قاب Spigen Rugged Armor Pro برای Apple Watch روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection That Performs',
+                        fa: 'محافظتی که کار می‌کند',
+                    },
+                    content: {
+                        en: 'Is the Spigen Rugged Armor Pro for Apple Watch worth your money? For most buyers, the answer is yes. a precise model-specific fit delivers on its promises in everyday scenarios, Protective case-and-band design for compatible sizes provides dependable performance under load, and bubble-free installation and a precise fit rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Spigen Rugged Armor Pro for Apple Watch holds its own on the things people notice — comfort during protecting a smartwatch during workouts and daily wear, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Spigen Rugged Armor Pro for Apple Watch earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا قاب Spigen Rugged Armor Pro برای Apple Watch ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب دقیق با مدل ساعت در سناریوهای روزمره به وعده‌هایش عمل می‌کند، طراحی قاب و بند محافظ برای سایزهای سازگار عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نصب بدون حباب و تناسب دقیق با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، قاب Spigen Rugged Armor Pro برای Apple Watch در چیزهایی که مردم متوجه می‌شوند — راحتی در حین محافظت از ساعت در تمرین و استفاده روزمره، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، قاب Spigen Rugged Armor Pro برای Apple Watch شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-3',
@@ -1934,7 +3605,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Performs',
+                        fa: 'محافظتی که کار می‌کند',
+                    },
+                    content: {
+                        en: 'After extended time with the Ringke Slim Case for Apple Watch, the verdict is clear: this is a product that understands its job and does it reliably. full screen and case coverage translates into measurable advantages during protecting a smartwatch during workouts and daily wear, while Slim snap-on watch case; select exact size ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Ringke optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Ringke Slim Case for Apple Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از قاب Ringke Slim برای Apple Watch، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پوشش کامل صفحه و بدنه در حین محافظت از ساعت در تمرین و استفاده روزمره مزایای واقعی به همراه دارد و قاب باریک کلیپسی ساعت؛ انتخاب سایز دقیق ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: رینگکی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، قاب Ringke Slim برای Apple Watch یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Guard Your Watch in Style',
+                        fa: 'از ساعت خود با سبک محافظت کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Ringke Slim Case for Apple Watch, the Ringke design philosophy is obvious: a precise model-specific fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized protecting a smartwatch during workouts and daily wear when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as bubble-free installation and a precise fit show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Ringke Slim Case for Apple Watch does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه قاب Ringke Slim برای Apple Watch را در دست می‌گیرید، فلسفه طراحی رینگکی کاملاً مشخص است: تناسب دقیق با مدل ساعت در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح محافظت از ساعت در تمرین و استفاده روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند نصب بدون حباب و تناسب دقیق نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، قاب Ringke Slim برای Apple Watch فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-4',
@@ -1969,7 +3666,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 9 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Performs',
+                        fa: 'محافظتی که کار می‌کند',
+                    },
+                    content: {
+                        en: 'Is the ESR Armorite Screen Protector for Apple Watch worth your money? For most buyers, the answer is yes. a precise model-specific fit delivers on its promises in everyday scenarios, Tempered-glass screen protection for specified watch size provides dependable performance under load, and bubble-free installation and a precise fit rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the ESR Armorite Screen Protector for Apple Watch holds its own on the things people notice — comfort during protecting a smartwatch during workouts and daily wear, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the ESR Armorite Screen Protector for Apple Watch earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا محافظ صفحه ESR Armorite برای Apple Watch ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب دقیق با مدل ساعت در سناریوهای روزمره به وعده‌هایش عمل می‌کند، محافظ صفحه شیشه حرارت‌دیده برای سایز مشخص ساعت عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نصب بدون حباب و تناسب دقیق با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، محافظ صفحه ESR Armorite برای Apple Watch در چیزهایی که مردم متوجه می‌شوند — راحتی در حین محافظت از ساعت در تمرین و استفاده روزمره، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، محافظ صفحه ESR Armorite برای Apple Watch شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Guard Your Watch in Style',
+                        fa: 'از ساعت خود با سبک محافظت کنید',
+                    },
+                    content: {
+                        en: 'The ESR Armorite Screen Protector for Apple Watch from ESR makes a strong first impression, pairing full screen and case coverage with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the clear or colored shells with secure closure gives the product a confident stance on a desk or in a hand, while bubble-free installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for protecting a smartwatch during workouts and daily wear, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the ESR Armorite Screen Protector for Apple Watch presents itself as a product worth owning.',
+                        fa: 'محصول محافظ صفحه ESR Armorite برای Apple Watch از برند ای‌اس‌آر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پوشش کامل صفحه و بدنه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه شفاف یا رنگی با بستن محکم به محصول وقار و استحکام می‌بخشد و نصب بدون حباب و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای محافظت از ساعت در تمرین و استفاده روزمره بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، محافظ صفحه ESR Armorite برای Apple Watch حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Coverage, Fit, and Peace of Mind',
+                        fa: 'پوشش، تناسب و خیال راحت',
+                    },
+                    content: {
+                        en: 'The feature set of the ESR Armorite Screen Protector for Apple Watch is where ESR shows its experience. a low-profile finish covers the scenarios users care about most, and each one has been tuned for protecting a smartwatch during workouts and daily wear rather than treated as a checkbox. Underneath, Tempered-glass screen protection for specified watch size provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and bubble-free installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های محافظ صفحه ESR Armorite برای Apple Watch جایی است که تجربه ای‌اس‌آر را نشان می‌دهد. پرداخت کم‌حجم سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای محافظت از ساعت در تمرین و استفاده روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، محافظ صفحه شیشه حرارت‌دیده برای سایز مشخص ساعت فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب بدون حباب و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-5',
@@ -2004,7 +3738,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Performs',
+                        fa: 'محافظتی که کار می‌کند',
+                    },
+                    content: {
+                        en: 'After extended time with the ZAGG InvisibleShield Glass Elite for Apple Watch, the verdict is clear: this is a product that understands its job and does it reliably. full screen and case coverage translates into measurable advantages during protecting a smartwatch during workouts and daily wear, while Screen protection; check exact watch generation and size ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — ZAGG optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the ZAGG InvisibleShield Glass Elite for Apple Watch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از محافظ ZAGG Glass Elite برای Apple Watch، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پوشش کامل صفحه و بدنه در حین محافظت از ساعت در تمرین و استفاده روزمره مزایای واقعی به همراه دارد و محافظ صفحه؛ بررسی نسل و اندازه دقیق ساعت ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: زگ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، محافظ ZAGG Glass Elite برای Apple Watch یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Guard Your Watch in Style',
+                        fa: 'از ساعت خود با سبک محافظت کنید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the ZAGG InvisibleShield Glass Elite for Apple Watch, the ZAGG design philosophy is obvious: a precise model-specific fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized protecting a smartwatch during workouts and daily wear when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as bubble-free installation and a precise fit show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the ZAGG InvisibleShield Glass Elite for Apple Watch does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه محافظ ZAGG Glass Elite برای Apple Watch را در دست می‌گیرید، فلسفه طراحی زگ کاملاً مشخص است: تناسب دقیق با مدل ساعت در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح محافظت از ساعت در تمرین و استفاده روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند نصب بدون حباب و تناسب دقیق نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، محافظ ZAGG Glass Elite برای Apple Watch فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-w-5-6',
@@ -2038,7 +3798,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Guard Your Watch in Style',
+                        fa: 'از ساعت خود با سبک محافظت کنید',
+                    },
+                    content: {
+                        en: 'The OtterBox Exo Edge Case for Apple Watch from OtterBox makes a strong first impression, pairing full screen and case coverage with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the clear or colored shells with secure closure gives the product a confident stance on a desk or in a hand, while bubble-free installation and a precise fit adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for protecting a smartwatch during workouts and daily wear, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the OtterBox Exo Edge Case for Apple Watch presents itself as a product worth owning.',
+                        fa: 'محصول قاب OtterBox Exo Edge برای Apple Watch از برند آترباکس با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پوشش کامل صفحه و بدنه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه شفاف یا رنگی با بستن محکم به محصول وقار و استحکام می‌بخشد و نصب بدون حباب و تناسب دقیق هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای محافظت از ساعت در تمرین و استفاده روزمره بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، قاب OtterBox Exo Edge برای Apple Watch حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Coverage, Fit, and Peace of Mind',
+                        fa: 'پوشش، تناسب و خیال راحت',
+                    },
+                    content: {
+                        en: 'The feature set of the OtterBox Exo Edge Case for Apple Watch is where OtterBox shows its experience. a low-profile finish covers the scenarios users care about most, and each one has been tuned for protecting a smartwatch during workouts and daily wear rather than treated as a checkbox. Underneath, Protective watch case; compatibility varies by model provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and bubble-free installation and a precise fit quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های قاب OtterBox Exo Edge برای Apple Watch جایی است که تجربه آترباکس را نشان می‌دهد. پرداخت کم‌حجم سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای محافظت از ساعت در تمرین و استفاده روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، قاب محافظ ساعت؛ سازگاری وابسته به مدل فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نصب بدون حباب و تناسب دقیق بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-1',
@@ -2071,7 +3857,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sound That Follows You',
+                        fa: 'صدایی که همراه شماست',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Sony WF-1000XM5, the Sony design philosophy is obvious: a secure comfortable fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized commutes, calls, and focused listening when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as touch controls, wireless charging, and low-latency modes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Sony WF-1000XM5 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ایربادز Sony WF-1000XM5 را در دست می‌گیرید، فلسفه طراحی سونی کاملاً مشخص است: تناسب راحت و محکم در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح رفت‌وآمد، تماس‌ها و شنیدن متمرکز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ایربادز Sony WF-1000XM5 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Noise Cancellation, Fit, and Battery Life',
+                        fa: 'حذف نویز، تناسب و شارژدهی',
+                    },
+                    content: {
+                        en: 'Day to day, the Sony WF-1000XM5 proves that its headline features translate into real-world convenience. clear call quality means that commutes, calls, and focused listening becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — True wireless earbuds with noise cancelling and high-resolution audio support — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with touch controls, wireless charging, and low-latency modes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Sony WF-1000XM5 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ایربادز Sony WF-1000XM5 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. کیفیت صدای واضح در تماس یعنی رفت‌وآمد، تماس‌ها و شنیدن متمرکز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ایربادز کاملاً بی‌سیم با حذف نویز و پشتیبانی از صدای با وضوح بالا — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ایربادز Sony WF-1000XM5 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Listening Experience and Verdict',
+                        fa: 'تجربه شنیداری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Sony WF-1000XM5 worth your money? For most buyers, the answer is yes. a secure comfortable fit delivers on its promises in everyday scenarios, True wireless earbuds with noise cancelling and high-resolution audio support provides dependable performance under load, and touch controls, wireless charging, and low-latency modes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sony WF-1000XM5 holds its own on the things people notice — comfort during commutes, calls, and focused listening, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sony WF-1000XM5 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا ایربادز Sony WF-1000XM5 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب راحت و محکم در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ایربادز کاملاً بی‌سیم با حذف نویز و پشتیبانی از صدای با وضوح بالا عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، ایربادز Sony WF-1000XM5 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین رفت‌وآمد، تماس‌ها و شنیدن متمرکز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، ایربادز Sony WF-1000XM5 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-2',
@@ -2105,7 +3928,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Noise Cancellation, Fit, and Battery Life',
+                        fa: 'حذف نویز، تناسب و شارژدهی',
+                    },
+                    content: {
+                        en: 'Day to day, the Sony WF-C700N proves that its headline features translate into real-world convenience. clear call quality means that commutes, calls, and focused listening becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — True wireless earbuds with noise cancelling — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with touch controls, wireless charging, and low-latency modes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Sony WF-C700N leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ایربادز Sony WF-C700N ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. کیفیت صدای واضح در تماس یعنی رفت‌وآمد، تماس‌ها و شنیدن متمرکز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ایربادز کاملاً بی‌سیم با حذف نویز — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ایربادز Sony WF-C700N روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Listening Experience and Verdict',
+                        fa: 'تجربه شنیداری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Sony WF-C700N worth your money? For most buyers, the answer is yes. a secure comfortable fit delivers on its promises in everyday scenarios, True wireless earbuds with noise cancelling provides dependable performance under load, and touch controls, wireless charging, and low-latency modes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sony WF-C700N holds its own on the things people notice — comfort during commutes, calls, and focused listening, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sony WF-C700N earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا ایربادز Sony WF-C700N ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب راحت و محکم در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ایربادز کاملاً بی‌سیم با حذف نویز عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، ایربادز Sony WF-C700N در چیزهایی که مردم متوجه می‌شوند — راحتی در حین رفت‌وآمد، تماس‌ها و شنیدن متمرکز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، ایربادز Sony WF-C700N شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-3',
@@ -2138,7 +3987,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sound That Follows You',
+                        fa: 'صدایی که همراه شماست',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Samsung Galaxy Buds3 Pro, the Samsung design philosophy is obvious: a secure comfortable fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized commutes, calls, and focused listening when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as touch controls, wireless charging, and low-latency modes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Samsung Galaxy Buds3 Pro does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه سامسونگ Galaxy Buds3 Pro را در دست می‌گیرید، فلسفه طراحی سامسونگ کاملاً مشخص است: تناسب راحت و محکم در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح رفت‌وآمد، تماس‌ها و شنیدن متمرکز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، سامسونگ Galaxy Buds3 Pro فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Noise Cancellation, Fit, and Battery Life',
+                        fa: 'حذف نویز، تناسب و شارژدهی',
+                    },
+                    content: {
+                        en: 'Day to day, the Samsung Galaxy Buds3 Pro proves that its headline features translate into real-world convenience. clear call quality means that commutes, calls, and focused listening becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — True wireless earbuds with adaptive noise control — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with touch controls, wireless charging, and low-latency modes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Samsung Galaxy Buds3 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، سامسونگ Galaxy Buds3 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. کیفیت صدای واضح در تماس یعنی رفت‌وآمد، تماس‌ها و شنیدن متمرکز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ایربادز کاملاً بی‌سیم با کنترل تطبیقی نویز — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، سامسونگ Galaxy Buds3 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-4',
@@ -2172,7 +4047,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 9 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Noise Cancellation, Fit, and Battery Life',
+                        fa: 'حذف نویز، تناسب و شارژدهی',
+                    },
+                    content: {
+                        en: 'The feature set of the Apple AirPods Pro (2nd generation) with MagSafe USB-C Case is where Apple shows its experience. all-day battery life covers the scenarios users care about most, and each one has been tuned for commutes, calls, and focused listening rather than treated as a checkbox. Underneath, Active Noise Cancellation; Transparency mode; USB-C case provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and touch controls, wireless charging, and low-latency modes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اپل AirPods Pro نسل دوم با کیس USB-C جایی است که تجربه اپل را نشان می‌دهد. باتری تمام‌روز سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای رفت‌وآمد، تماس‌ها و شنیدن متمرکز بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، حذف نویز فعال؛ حالت شفافیت؛ کیس USB-C فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Listening Experience and Verdict',
+                        fa: 'تجربه شنیداری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Apple AirPods Pro (2nd generation) with MagSafe USB-C Case, the verdict is clear: this is a product that understands its job and does it reliably. active noise cancellation translates into measurable advantages during commutes, calls, and focused listening, while Active Noise Cancellation; Transparency mode; USB-C case ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Apple optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Apple AirPods Pro (2nd generation) with MagSafe USB-C Case is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اپل AirPods Pro نسل دوم با کیس USB-C، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. حذف نویز فعال در حین رفت‌وآمد، تماس‌ها و شنیدن متمرکز مزایای واقعی به همراه دارد و حذف نویز فعال؛ حالت شفافیت؛ کیس USB-C ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اپل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اپل AirPods Pro نسل دوم با کیس USB-C یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sound That Follows You',
+                        fa: 'صدایی که همراه شماست',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Apple AirPods Pro (2nd generation) with MagSafe USB-C Case, the Apple design philosophy is obvious: a secure comfortable fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized commutes, calls, and focused listening when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as touch controls, wireless charging, and low-latency modes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Apple AirPods Pro (2nd generation) with MagSafe USB-C Case does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه اپل AirPods Pro نسل دوم با کیس USB-C را در دست می‌گیرید، فلسفه طراحی اپل کاملاً مشخص است: تناسب راحت و محکم در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح رفت‌وآمد، تماس‌ها و شنیدن متمرکز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، اپل AirPods Pro نسل دوم با کیس USB-C فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-5',
@@ -2206,7 +4118,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Listening Experience and Verdict',
+                        fa: 'تجربه شنیداری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Google Pixel Buds Pro 2, the verdict is clear: this is a product that understands its job and does it reliably. active noise cancellation translates into measurable advantages during commutes, calls, and focused listening, while True wireless earbuds with active noise cancellation ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Google optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Google Pixel Buds Pro 2 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از گوگل Pixel Buds Pro 2، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. حذف نویز فعال در حین رفت‌وآمد، تماس‌ها و شنیدن متمرکز مزایای واقعی به همراه دارد و ایربادز کاملاً بی‌سیم با حذف نویز فعال ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: گوگل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، گوگل Pixel Buds Pro 2 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sound That Follows You',
+                        fa: 'صدایی که همراه شماست',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Google Pixel Buds Pro 2, the Google design philosophy is obvious: a secure comfortable fit is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized commutes, calls, and focused listening when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as touch controls, wireless charging, and low-latency modes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Google Pixel Buds Pro 2 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه گوگل Pixel Buds Pro 2 را در دست می‌گیرید، فلسفه طراحی گوگل کاملاً مشخص است: تناسب راحت و محکم در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح رفت‌وآمد، تماس‌ها و شنیدن متمرکز را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، گوگل Pixel Buds Pro 2 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-1-6',
@@ -2239,7 +4177,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Noise Cancellation, Fit, and Battery Life',
+                        fa: 'حذف نویز، تناسب و شارژدهی',
+                    },
+                    content: {
+                        en: 'Day to day, the Jabra Elite 8 Active Gen 2 proves that its headline features translate into real-world convenience. clear call quality means that commutes, calls, and focused listening becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Rugged true wireless earbuds; active noise cancellation — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with touch controls, wireless charging, and low-latency modes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Jabra Elite 8 Active Gen 2 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ایربادز Jabra Elite 8 Active Gen 2 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. کیفیت صدای واضح در تماس یعنی رفت‌وآمد، تماس‌ها و شنیدن متمرکز به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ایربادز مقاوم کاملاً بی‌سیم؛ حذف نویز فعال — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ایربادز Jabra Elite 8 Active Gen 2 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Listening Experience and Verdict',
+                        fa: 'تجربه شنیداری و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Jabra Elite 8 Active Gen 2 worth your money? For most buyers, the answer is yes. a secure comfortable fit delivers on its promises in everyday scenarios, Rugged true wireless earbuds; active noise cancellation provides dependable performance under load, and touch controls, wireless charging, and low-latency modes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Jabra Elite 8 Active Gen 2 holds its own on the things people notice — comfort during commutes, calls, and focused listening, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Jabra Elite 8 Active Gen 2 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا ایربادز Jabra Elite 8 Active Gen 2 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب راحت و محکم در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ایربادز مقاوم کاملاً بی‌سیم؛ حذف نویز فعال عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و کنترل لمسی، شارژ بی‌سیم و حالت کم‌تأخیر با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، ایربادز Jabra Elite 8 Active Gen 2 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین رفت‌وآمد، تماس‌ها و شنیدن متمرکز، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، ایربادز Jabra Elite 8 Active Gen 2 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-1',
@@ -2273,7 +4237,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sound, Comfort, and Smart Features',
+                        fa: 'صدا، راحتی و قابلیت‌های هوشمند',
+                    },
+                    content: {
+                        en: 'The feature set of the Sony WH-1000XM5 is where Sony shows its experience. a foldable travel-friendly design covers the scenarios users care about most, and each one has been tuned for long listening sessions at home or on the move rather than treated as a checkbox. Underneath, Wireless over-ear headphones with active noise cancellation provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multipoint pairing and intuitive onboard controls quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدفون Sony WH-1000XM5 جایی است که تجربه سونی را نشان می‌دهد. طراحی تاشو برای سفر سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای جلسات طولانی شنیدن در خانه یا در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدفون بی‌سیم دورگوشی با حذف نویز فعال فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth the Premium?',
+                        fa: 'آیا ارزش قیمت بالا را دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Sony WH-1000XM5, the verdict is clear: this is a product that understands its job and does it reliably. over-ear comfort translates into measurable advantages during long listening sessions at home or on the move, while Wireless over-ear headphones with active noise cancellation ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Sony optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Sony WH-1000XM5 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدفون Sony WH-1000XM5، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. راحتی کامل دورگوش در حین جلسات طولانی شنیدن در خانه یا در مسیر مزایای واقعی به همراه دارد و هدفون بی‌سیم دورگوشی با حذف نویز فعال ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سونی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدفون Sony WH-1000XM5 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Immersion in Every Note',
+                        fa: 'غرق شدن در هر نت',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Sony WH-1000XM5, the Sony design philosophy is obvious: rich detailed sound is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized long listening sessions at home or on the move when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multipoint pairing and intuitive onboard controls show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Sony WH-1000XM5 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدفون Sony WH-1000XM5 را در دست می‌گیرید، فلسفه طراحی سونی کاملاً مشخص است: صدای غنی و جزئیات‌دار در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح جلسات طولانی شنیدن در خانه یا در مسیر را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدفون Sony WH-1000XM5 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-2',
@@ -2308,7 +4309,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sound, Comfort, and Smart Features',
+                        fa: 'صدا، راحتی و قابلیت‌های هوشمند',
+                    },
+                    content: {
+                        en: 'Day to day, the Sony WH-CH520 proves that its headline features translate into real-world convenience. effective noise isolation means that long listening sessions at home or on the move becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Wireless on-ear headphones; long battery life — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multipoint pairing and intuitive onboard controls handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Sony WH-CH520 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، هدفون Sony WH-CH520 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ایزولاسیون مؤثر نویز یعنی جلسات طولانی شنیدن در خانه یا در مسیر به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — هدفون بی‌سیم روی‌گوش؛ شارژدهی طولانی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، هدفون Sony WH-CH520 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth the Premium?',
+                        fa: 'آیا ارزش قیمت بالا را دارد؟',
+                    },
+                    content: {
+                        en: 'Is the Sony WH-CH520 worth your money? For most buyers, the answer is yes. rich detailed sound delivers on its promises in everyday scenarios, Wireless on-ear headphones; long battery life provides dependable performance under load, and multipoint pairing and intuitive onboard controls rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sony WH-CH520 holds its own on the things people notice — comfort during long listening sessions at home or on the move, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sony WH-CH520 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدفون Sony WH-CH520 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای غنی و جزئیات‌دار در سناریوهای روزمره به وعده‌هایش عمل می‌کند، هدفون بی‌سیم روی‌گوش؛ شارژدهی طولانی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدفون Sony WH-CH520 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین جلسات طولانی شنیدن در خانه یا در مسیر، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدفون Sony WH-CH520 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-3',
@@ -2342,7 +4369,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sound, Comfort, and Smart Features',
+                        fa: 'صدا، راحتی و قابلیت‌های هوشمند',
+                    },
+                    content: {
+                        en: 'The feature set of the Bose QuietComfort Ultra Headphones is where Bose shows its experience. a foldable travel-friendly design covers the scenarios users care about most, and each one has been tuned for long listening sessions at home or on the move rather than treated as a checkbox. Underneath, Over-ear headphones with noise cancellation and immersive audio provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multipoint pairing and intuitive onboard controls quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدفون Bose QuietComfort Ultra جایی است که تجربه بوز را نشان می‌دهد. طراحی تاشو برای سفر سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای جلسات طولانی شنیدن در خانه یا در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدفون دورگوشی با حذف نویز و صدای فراگیر فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth the Premium?',
+                        fa: 'آیا ارزش قیمت بالا را دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Bose QuietComfort Ultra Headphones, the verdict is clear: this is a product that understands its job and does it reliably. over-ear comfort translates into measurable advantages during long listening sessions at home or on the move, while Over-ear headphones with noise cancellation and immersive audio ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Bose optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Bose QuietComfort Ultra Headphones is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدفون Bose QuietComfort Ultra، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. راحتی کامل دورگوش در حین جلسات طولانی شنیدن در خانه یا در مسیر مزایای واقعی به همراه دارد و هدفون دورگوشی با حذف نویز و صدای فراگیر ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: بوز این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدفون Bose QuietComfort Ultra یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-4',
@@ -2375,7 +4428,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Worth the Premium?',
+                        fa: 'آیا ارزش قیمت بالا را دارد؟',
+                    },
+                    content: {
+                        en: 'Is the Sennheiser Momentum 4 Wireless worth your money? For most buyers, the answer is yes. rich detailed sound delivers on its promises in everyday scenarios, Wireless over-ear headphones with adaptive noise cancellation provides dependable performance under load, and multipoint pairing and intuitive onboard controls rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sennheiser Momentum 4 Wireless holds its own on the things people notice — comfort during long listening sessions at home or on the move, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sennheiser Momentum 4 Wireless earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدفون Sennheiser Momentum 4 Wireless ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای غنی و جزئیات‌دار در سناریوهای روزمره به وعده‌هایش عمل می‌کند، هدفون بی‌سیم دورگوشی با حذف نویز تطبیقی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدفون Sennheiser Momentum 4 Wireless در چیزهایی که مردم متوجه می‌شوند — راحتی در حین جلسات طولانی شنیدن در خانه یا در مسیر، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدفون Sennheiser Momentum 4 Wireless شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Immersion in Every Note',
+                        fa: 'غرق شدن در هر نت',
+                    },
+                    content: {
+                        en: 'The Sennheiser Momentum 4 Wireless from Sennheiser makes a strong first impression, pairing over-ear comfort with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the plush ear cushions and adjustable headbands gives the product a confident stance on a desk or in a hand, while multipoint pairing and intuitive onboard controls adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for long listening sessions at home or on the move, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Sennheiser Momentum 4 Wireless presents itself as a product worth owning.',
+                        fa: 'محصول هدفون Sennheiser Momentum 4 Wireless از برند سنهایزر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. راحتی کامل دورگوش در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: کوسن‌های نرم و بندهای قابل تنظیم به محصول وقار و استحکام می‌بخشد و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای جلسات طولانی شنیدن در خانه یا در مسیر بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، هدفون Sennheiser Momentum 4 Wireless حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sound, Comfort, and Smart Features',
+                        fa: 'صدا، راحتی و قابلیت‌های هوشمند',
+                    },
+                    content: {
+                        en: 'The feature set of the Sennheiser Momentum 4 Wireless is where Sennheiser shows its experience. a foldable travel-friendly design covers the scenarios users care about most, and each one has been tuned for long listening sessions at home or on the move rather than treated as a checkbox. Underneath, Wireless over-ear headphones with adaptive noise cancellation provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multipoint pairing and intuitive onboard controls quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدفون Sennheiser Momentum 4 Wireless جایی است که تجربه سنهایزر را نشان می‌دهد. طراحی تاشو برای سفر سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای جلسات طولانی شنیدن در خانه یا در مسیر بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدفون بی‌سیم دورگوشی با حذف نویز تطبیقی فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-5',
@@ -2410,7 +4500,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Immersion in Every Note',
+                        fa: 'غرق شدن در هر نت',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Apple AirPods Max (USB-C), the Apple design philosophy is obvious: rich detailed sound is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized long listening sessions at home or on the move when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multipoint pairing and intuitive onboard controls show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Apple AirPods Max (USB-C) does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه اپل AirPods Max USB-C را در دست می‌گیرید، فلسفه طراحی اپل کاملاً مشخص است: صدای غنی و جزئیات‌دار در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح جلسات طولانی شنیدن در خانه یا در مسیر را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، اپل AirPods Max USB-C فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sound, Comfort, and Smart Features',
+                        fa: 'صدا، راحتی و قابلیت‌های هوشمند',
+                    },
+                    content: {
+                        en: 'Day to day, the Apple AirPods Max (USB-C) proves that its headline features translate into real-world convenience. effective noise isolation means that long listening sessions at home or on the move becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Over-ear headphones with active noise cancellation and spatial audio — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multipoint pairing and intuitive onboard controls handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Apple AirPods Max (USB-C) leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، اپل AirPods Max USB-C ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ایزولاسیون مؤثر نویز یعنی جلسات طولانی شنیدن در خانه یا در مسیر به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — هدفون دورگوشی با حذف نویز فعال و صدای فضایی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، اپل AirPods Max USB-C روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-2-6',
@@ -2443,7 +4559,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Worth the Premium?',
+                        fa: 'آیا ارزش قیمت بالا را دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the soundcore Space One, the verdict is clear: this is a product that understands its job and does it reliably. over-ear comfort translates into measurable advantages during long listening sessions at home or on the move, while Wireless over-ear headphones with adaptive noise cancelling ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — soundcore optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the soundcore Space One is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدفون soundcore Space One، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. راحتی کامل دورگوش در حین جلسات طولانی شنیدن در خانه یا در مسیر مزایای واقعی به همراه دارد و هدفون بی‌سیم دورگوشی با حذف نویز تطبیقی ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ساندکور این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدفون soundcore Space One یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Immersion in Every Note',
+                        fa: 'غرق شدن در هر نت',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the soundcore Space One, the soundcore design philosophy is obvious: rich detailed sound is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized long listening sessions at home or on the move when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multipoint pairing and intuitive onboard controls show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the soundcore Space One does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدفون soundcore Space One را در دست می‌گیرید، فلسفه طراحی ساندکور کاملاً مشخص است: صدای غنی و جزئیات‌دار در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح جلسات طولانی شنیدن در خانه یا در مسیر را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند جفت‌شدن چند دستگاهی و کنترل‌های onboard ساده نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدفون soundcore Space One فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-1',
@@ -2477,7 +4619,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'Day to day, the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset proves that its headline features translate into real-world convenience. a comfortable long-wear fit means that competitive gaming and streaming becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — LIGHTSPEED wireless; LIGHTSYNC RGB; Blue VO!CE microphone technology — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with customizable EQ and platform-specific connectors handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، هدست گیمینگ Logitech G G733 LIGHTSPEED ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. فرم راحت برای استفاده طولانی یعنی بازی رقابتی و استریم به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — اتصال بی‌سیم LIGHTSPEED؛ نورپردازی LIGHTSYNC RGB؛ فناوری میکروفون Blue VO!CE — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، هدست گیمینگ Logitech G G733 LIGHTSPEED روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset worth your money? For most buyers, the answer is yes. immersive surround sound delivers on its promises in everyday scenarios, LIGHTSPEED wireless; LIGHTSYNC RGB; Blue VO!CE microphone technology provides dependable performance under load, and customizable EQ and platform-specific connectors rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset holds its own on the things people notice — comfort during competitive gaming and streaming, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدست گیمینگ Logitech G G733 LIGHTSPEED ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای فراگیر جذاب در سناریوهای روزمره به وعده‌هایش عمل می‌کند، اتصال بی‌سیم LIGHTSPEED؛ نورپردازی LIGHTSYNC RGB؛ فناوری میکروفون Blue VO!CE عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدست گیمینگ Logitech G G733 LIGHTSPEED در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی رقابتی و استریم، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدست گیمینگ Logitech G G733 LIGHTSPEED شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Built for the Grind',
+                        fa: 'ساخته‌شده برای جلسات طولانی',
+                    },
+                    content: {
+                        en: 'The Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset from Logitech G makes a strong first impression, pairing low-latency wireless audio with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the lightweight frames with breathable cushions gives the product a confident stance on a desk or in a hand, while customizable EQ and platform-specific connectors adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for competitive gaming and streaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Logitech G G733 LIGHTSPEED Wireless RGB Gaming Headset presents itself as a product worth owning.',
+                        fa: 'محصول هدست گیمینگ Logitech G G733 LIGHTSPEED از برند لاجیتک جی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. اتصال بی‌سیم کم‌تأخیر در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: فریم سبک با کوسن‌های تنفس‌پذیر به محصول وقار و استحکام می‌بخشد و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی رقابتی و استریم بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، هدست گیمینگ Logitech G G733 LIGHTSPEED حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-2',
@@ -2511,7 +4690,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Built for the Grind',
+                        fa: 'ساخته‌شده برای جلسات طولانی',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the SteelSeries Arctis Nova 7 Wireless, the SteelSeries design philosophy is obvious: immersive surround sound is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized competitive gaming and streaming when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as customizable EQ and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the SteelSeries Arctis Nova 7 Wireless does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست SteelSeries Arctis Nova 7 Wireless را در دست می‌گیرید، فلسفه طراحی استیل‌سیریز کاملاً مشخص است: صدای فراگیر جذاب در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی رقابتی و استریم را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست SteelSeries Arctis Nova 7 Wireless فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'Day to day, the SteelSeries Arctis Nova 7 Wireless proves that its headline features translate into real-world convenience. a comfortable long-wear fit means that competitive gaming and streaming becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Wireless gaming headset with simultaneous 2.4GHz and Bluetooth — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with customizable EQ and platform-specific connectors handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the SteelSeries Arctis Nova 7 Wireless leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، هدست SteelSeries Arctis Nova 7 Wireless ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. فرم راحت برای استفاده طولانی یعنی بازی رقابتی و استریم به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — هدست گیمینگ بی‌سیم با ۲.۴ گیگاهرتز و بلوتوث هم‌زمان — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، هدست SteelSeries Arctis Nova 7 Wireless روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-3',
@@ -2545,7 +4750,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'Day to day, the Razer BlackShark V2 Pro proves that its headline features translate into real-world convenience. a comfortable long-wear fit means that competitive gaming and streaming becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Wireless esports headset; detachable microphone — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with customizable EQ and platform-specific connectors handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Razer BlackShark V2 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، هدست Razer BlackShark V2 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. فرم راحت برای استفاده طولانی یعنی بازی رقابتی و استریم به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — هدست بی‌سیم ورزش‌های الکترونیکی؛ میکروفون جداشدنی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، هدست Razer BlackShark V2 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Razer BlackShark V2 Pro worth your money? For most buyers, the answer is yes. immersive surround sound delivers on its promises in everyday scenarios, Wireless esports headset; detachable microphone provides dependable performance under load, and customizable EQ and platform-specific connectors rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Razer BlackShark V2 Pro holds its own on the things people notice — comfort during competitive gaming and streaming, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Razer BlackShark V2 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدست Razer BlackShark V2 Pro ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای فراگیر جذاب در سناریوهای روزمره به وعده‌هایش عمل می‌کند، هدست بی‌سیم ورزش‌های الکترونیکی؛ میکروفون جداشدنی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدست Razer BlackShark V2 Pro در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی رقابتی و استریم، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدست Razer BlackShark V2 Pro شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-4',
@@ -2578,7 +4809,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'The feature set of the HyperX Cloud III Wireless is where HyperX shows its experience. a clear detachable microphone covers the scenarios users care about most, and each one has been tuned for competitive gaming and streaming rather than treated as a checkbox. Underneath, Wireless gaming headset; DTS Headphone:X spatial audio support provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and customizable EQ and platform-specific connectors quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدست HyperX Cloud III Wireless جایی است که تجربه هایپرایکس را نشان می‌دهد. میکروفون شفاف و جداشدنی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی رقابتی و استریم بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدست گیمینگ بی‌سیم؛ پشتیبانی از صدای فضایی DTS Headphone:X فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the HyperX Cloud III Wireless, the verdict is clear: this is a product that understands its job and does it reliably. low-latency wireless audio translates into measurable advantages during competitive gaming and streaming, while Wireless gaming headset; DTS Headphone:X spatial audio support ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — HyperX optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the HyperX Cloud III Wireless is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست HyperX Cloud III Wireless، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. اتصال بی‌سیم کم‌تأخیر در حین بازی رقابتی و استریم مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم؛ پشتیبانی از صدای فضایی DTS Headphone:X ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: هایپرایکس این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست HyperX Cloud III Wireless یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Built for the Grind',
+                        fa: 'ساخته‌شده برای جلسات طولانی',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the HyperX Cloud III Wireless, the HyperX design philosophy is obvious: immersive surround sound is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized competitive gaming and streaming when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as customizable EQ and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the HyperX Cloud III Wireless does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست HyperX Cloud III Wireless را در دست می‌گیرید، فلسفه طراحی هایپرایکس کاملاً مشخص است: صدای فراگیر جذاب در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی رقابتی و استریم را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست HyperX Cloud III Wireless فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-5',
@@ -2612,7 +4880,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'The feature set of the Sony INZONE H5 is where Sony shows its experience. a clear detachable microphone covers the scenarios users care about most, and each one has been tuned for competitive gaming and streaming rather than treated as a checkbox. Underneath, Wireless gaming headset with 360 Spatial Sound for Gaming provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and customizable EQ and platform-specific connectors quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدست گیمینگ Sony INZONE H5 جایی است که تجربه سونی را نشان می‌دهد. میکروفون شفاف و جداشدنی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی رقابتی و استریم بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدست گیمینگ بی‌سیم با صدای فضایی ۳۶۰ درجه برای بازی فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Sony INZONE H5, the verdict is clear: this is a product that understands its job and does it reliably. low-latency wireless audio translates into measurable advantages during competitive gaming and streaming, while Wireless gaming headset with 360 Spatial Sound for Gaming ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Sony optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Sony INZONE H5 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست گیمینگ Sony INZONE H5، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. اتصال بی‌سیم کم‌تأخیر در حین بازی رقابتی و استریم مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم با صدای فضایی ۳۶۰ درجه برای بازی ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سونی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست گیمینگ Sony INZONE H5 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-3-6',
@@ -2646,7 +4940,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Audio, Mic, and Competitive Edge',
+                        fa: 'صدا، میکروفون و برتری رقابتی',
+                    },
+                    content: {
+                        en: 'The feature set of the Corsair HS80 MAX Wireless is where Corsair shows its experience. a clear detachable microphone covers the scenarios users care about most, and each one has been tuned for competitive gaming and streaming rather than treated as a checkbox. Underneath, Wireless gaming headset with Dolby Atmos support provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and customizable EQ and platform-specific connectors quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدست Corsair HS80 MAX Wireless جایی است که تجربه کورسیر را نشان می‌دهد. میکروفون شفاف و جداشدنی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی رقابتی و استریم بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدست گیمینگ بی‌سیم با پشتیبانی از Dolby Atmos فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و EQ قابل تنظیم و کانکتورهای مخصوص پلتفرم بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Corsair HS80 MAX Wireless, the verdict is clear: this is a product that understands its job and does it reliably. low-latency wireless audio translates into measurable advantages during competitive gaming and streaming, while Wireless gaming headset with Dolby Atmos support ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Corsair optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Corsair HS80 MAX Wireless is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست Corsair HS80 MAX Wireless، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. اتصال بی‌سیم کم‌تأخیر در حین بازی رقابتی و استریم مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم با پشتیبانی از Dolby Atmos ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: کورسیر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست Corsair HS80 MAX Wireless یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-1',
@@ -2679,7 +4999,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Small Adapter, Serious Utility',
+                        fa: 'مبدل کوچک با کاربرد جدی',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Apple USB-C to 3.5 mm Headphone Jack Adapter, the Apple design philosophy is obvious: wide device compatibility is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized adding audio or charging ports to modern devices when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as driver-level audio support where available show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Apple USB-C to 3.5 mm Headphone Jack Adapter does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری را در دست می‌گیرید، فلسفه طراحی اپل کاملاً مشخص است: سازگاری گسترده با دستگاه‌ها در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی سطح درایور در صورت وجود نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Compatibility and Audio Quality',
+                        fa: 'سازگاری و کیفیت صدا',
+                    },
+                    content: {
+                        en: 'Day to day, the Apple USB-C to 3.5 mm Headphone Jack Adapter proves that its headline features translate into real-world convenience. clean audio output means that adding audio or charging ports to modern devices becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C audio adapter for compatible devices — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with driver-level audio support where available handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Apple USB-C to 3.5 mm Headphone Jack Adapter leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. خروجی صوتی تمیز یعنی افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — مبدل صوتی USB-C برای دستگاه‌های سازگار — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پشتیبانی سطح درایور در صورت وجود جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'Is the Apple USB-C to 3.5 mm Headphone Jack Adapter worth your money? For most buyers, the answer is yes. wide device compatibility delivers on its promises in everyday scenarios, USB-C audio adapter for compatible devices provides dependable performance under load, and driver-level audio support where available rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Apple USB-C to 3.5 mm Headphone Jack Adapter holds its own on the things people notice — comfort during adding audio or charging ports to modern devices, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Apple USB-C to 3.5 mm Headphone Jack Adapter earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سازگاری گسترده با دستگاه‌ها در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مبدل صوتی USB-C برای دستگاه‌های سازگار عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی سطح درایور در صورت وجود با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری در چیزهایی که مردم متوجه می‌شوند — راحتی در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مبدل اپل USB-C به جک هدفون ۳.۵ میلی‌متری شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-2',
@@ -2712,7 +5069,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'Is the Apple Lightning to 3.5 mm Headphone Jack Adapter worth your money? For most buyers, the answer is yes. wide device compatibility delivers on its promises in everyday scenarios, Lightning audio adapter for compatible Apple devices provides dependable performance under load, and driver-level audio support where available rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Apple Lightning to 3.5 mm Headphone Jack Adapter holds its own on the things people notice — comfort during adding audio or charging ports to modern devices, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Apple Lightning to 3.5 mm Headphone Jack Adapter earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مبدل اپل Lightning به جک هدفون ۳.۵ میلی‌متری ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سازگاری گسترده با دستگاه‌ها در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مبدل صوتی Lightning برای دستگاه‌های سازگار اپل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی سطح درایور در صورت وجود با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مبدل اپل Lightning به جک هدفون ۳.۵ میلی‌متری در چیزهایی که مردم متوجه می‌شوند — راحتی در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مبدل اپل Lightning به جک هدفون ۳.۵ میلی‌متری شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Small Adapter, Serious Utility',
+                        fa: 'مبدل کوچک با کاربرد جدی',
+                    },
+                    content: {
+                        en: 'The Apple Lightning to 3.5 mm Headphone Jack Adapter from Apple makes a strong first impression, pairing a compact plug-and-play design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the small housings that survive daily bag carry gives the product a confident stance on a desk or in a hand, while driver-level audio support where available adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for adding audio or charging ports to modern devices, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Apple Lightning to 3.5 mm Headphone Jack Adapter presents itself as a product worth owning.',
+                        fa: 'محصول مبدل اپل Lightning به جک هدفون ۳.۵ میلی‌متری از برند اپل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. طراحی کوچک و آماده‌به‌کار در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه‌های کوچک مقاوم برای حمل روزانه به محصول وقار و استحکام می‌بخشد و پشتیبانی سطح درایور در صورت وجود هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مبدل اپل Lightning به جک هدفون ۳.۵ میلی‌متری حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-3',
@@ -2745,7 +5128,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'After extended time with the UGREEN USB-C to 3.5mm Audio Adapter, the verdict is clear: this is a product that understands its job and does it reliably. a compact plug-and-play design translates into measurable advantages during adding audio or charging ports to modern devices, while USB-C audio adapter; compatibility depends on device DAC support ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — UGREEN optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the UGREEN USB-C to 3.5mm Audio Adapter is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مبدل صوتی UGREEN USB-C به ۳.۵ میلی‌متر، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. طراحی کوچک و آماده‌به‌کار در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن مزایای واقعی به همراه دارد و مبدل صوتی USB-C؛ سازگاری به پشتیبانی DAC دستگاه بستگی دارد ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: یوگرین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مبدل صوتی UGREEN USB-C به ۳.۵ میلی‌متر یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Small Adapter, Serious Utility',
+                        fa: 'مبدل کوچک با کاربرد جدی',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the UGREEN USB-C to 3.5mm Audio Adapter, the UGREEN design philosophy is obvious: wide device compatibility is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized adding audio or charging ports to modern devices when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as driver-level audio support where available show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the UGREEN USB-C to 3.5mm Audio Adapter does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مبدل صوتی UGREEN USB-C به ۳.۵ میلی‌متر را در دست می‌گیرید، فلسفه طراحی یوگرین کاملاً مشخص است: سازگاری گسترده با دستگاه‌ها در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی سطح درایور در صورت وجود نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مبدل صوتی UGREEN USB-C به ۳.۵ میلی‌متر فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-4',
@@ -2779,7 +5188,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Compatibility and Audio Quality',
+                        fa: 'سازگاری و کیفیت صدا',
+                    },
+                    content: {
+                        en: 'The feature set of the Belkin USB-C to 3.5mm Audio Adapter is where Belkin shows its experience. durable connectors covers the scenarios users care about most, and each one has been tuned for adding audio or charging ports to modern devices rather than treated as a checkbox. Underneath, USB-C to 3.5mm audio adapter for compatible devices provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and driver-level audio support where available quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مبدل صوتی Belkin USB-C به ۳.۵ میلی‌متر جایی است که تجربه بلکین را نشان می‌دهد. اتصال‌دهنده‌های بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، مبدل صوتی USB-C به ۳.۵ میلی‌متر برای دستگاه‌های سازگار فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پشتیبانی سطح درایور در صورت وجود بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Belkin USB-C to 3.5mm Audio Adapter, the verdict is clear: this is a product that understands its job and does it reliably. a compact plug-and-play design translates into measurable advantages during adding audio or charging ports to modern devices, while USB-C to 3.5mm audio adapter for compatible devices ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Belkin optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Belkin USB-C to 3.5mm Audio Adapter is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مبدل صوتی Belkin USB-C به ۳.۵ میلی‌متر، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. طراحی کوچک و آماده‌به‌کار در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن مزایای واقعی به همراه دارد و مبدل صوتی USB-C به ۳.۵ میلی‌متر برای دستگاه‌های سازگار ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: بلکین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مبدل صوتی Belkin USB-C به ۳.۵ میلی‌متر یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Small Adapter, Serious Utility',
+                        fa: 'مبدل کوچک با کاربرد جدی',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Belkin USB-C to 3.5mm Audio Adapter, the Belkin design philosophy is obvious: wide device compatibility is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized adding audio or charging ports to modern devices when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as driver-level audio support where available show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Belkin USB-C to 3.5mm Audio Adapter does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مبدل صوتی Belkin USB-C به ۳.۵ میلی‌متر را در دست می‌گیرید، فلسفه طراحی بلکین کاملاً مشخص است: سازگاری گسترده با دستگاه‌ها در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پشتیبانی سطح درایور در صورت وجود نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مبدل صوتی Belkin USB-C به ۳.۵ میلی‌متر فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-5',
@@ -2813,7 +5259,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Compatibility and Audio Quality',
+                        fa: 'سازگاری و کیفیت صدا',
+                    },
+                    content: {
+                        en: 'Day to day, the Creative Sound Blaster Play! 3 proves that its headline features translate into real-world convenience. clean audio output means that adding audio or charging ports to modern devices becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB audio adapter with headphone and microphone connections — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with driver-level audio support where available handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Creative Sound Blaster Play! 3 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کارت صدای Creative Sound Blaster Play! 3 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. خروجی صوتی تمیز یعنی افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — مبدل صدای USB با اتصال هدفون و میکروفون — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پشتیبانی سطح درایور در صورت وجود جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کارت صدای Creative Sound Blaster Play! 3 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'Is the Creative Sound Blaster Play! 3 worth your money? For most buyers, the answer is yes. wide device compatibility delivers on its promises in everyday scenarios, USB audio adapter with headphone and microphone connections provides dependable performance under load, and driver-level audio support where available rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Creative Sound Blaster Play! 3 holds its own on the things people notice — comfort during adding audio or charging ports to modern devices, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Creative Sound Blaster Play! 3 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کارت صدای Creative Sound Blaster Play! 3 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سازگاری گسترده با دستگاه‌ها در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مبدل صدای USB با اتصال هدفون و میکروفون عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی سطح درایور در صورت وجود با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کارت صدای Creative Sound Blaster Play! 3 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کارت صدای Creative Sound Blaster Play! 3 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-4-6',
@@ -2847,7 +5319,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Does It Deliver?',
+                        fa: 'آیا پاسخ‌گو است؟',
+                    },
+                    content: {
+                        en: 'Is the FiiO KA11 USB DAC and Headphone Amplifier worth your money? For most buyers, the answer is yes. wide device compatibility delivers on its promises in everyday scenarios, Compact USB DAC/headphone amplifier; connector version varies provides dependable performance under load, and driver-level audio support where available rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the FiiO KA11 USB DAC and Headphone Amplifier holds its own on the things people notice — comfort during adding audio or charging ports to modern devices, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the FiiO KA11 USB DAC and Headphone Amplifier earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مبدل DAC و آمپلی‌فایر هدفون FiiO KA11 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. سازگاری گسترده با دستگاه‌ها در سناریوهای روزمره به وعده‌هایش عمل می‌کند، DAC و آمپلی‌فایر هدفون USB جمع‌وجور؛ نوع کانکتور وابسته به نسخه عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پشتیبانی سطح درایور در صورت وجود با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مبدل DAC و آمپلی‌فایر هدفون FiiO KA11 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مبدل DAC و آمپلی‌فایر هدفون FiiO KA11 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Small Adapter, Serious Utility',
+                        fa: 'مبدل کوچک با کاربرد جدی',
+                    },
+                    content: {
+                        en: 'The FiiO KA11 USB DAC and Headphone Amplifier from FiiO makes a strong first impression, pairing a compact plug-and-play design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the small housings that survive daily bag carry gives the product a confident stance on a desk or in a hand, while driver-level audio support where available adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for adding audio or charging ports to modern devices, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the FiiO KA11 USB DAC and Headphone Amplifier presents itself as a product worth owning.',
+                        fa: 'محصول مبدل DAC و آمپلی‌فایر هدفون FiiO KA11 از برند فییو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. طراحی کوچک و آماده‌به‌کار در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه‌های کوچک مقاوم برای حمل روزانه به محصول وقار و استحکام می‌بخشد و پشتیبانی سطح درایور در صورت وجود هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای افزودن درگاه صوتی یا شارژ به دستگاه‌های مدرن بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مبدل DAC و آمپلی‌فایر هدفون FiiO KA11 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-1',
@@ -2881,7 +5379,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'The Spigen Urban Fit Case for AirPods Pro 2 from Spigen makes a strong first impression, pairing a protective rigid or soft shell with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the padded interiors and secure closures gives the product a confident stance on a desk or in a hand, while carabiners, keychains, and compact profiles adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping earbuds safe in a bag or pocket, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Spigen Urban Fit Case for AirPods Pro 2 presents itself as a product worth owning.',
+                        fa: 'محصول کاور Spigen Urban Fit برای AirPods Pro 2 از برند اسپیگن با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. بدنه محافظ سخت یا نرم در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: داخلی بالشی‌دار و بسته‌شدن محکم به محصول وقار و استحکام می‌بخشد و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حفظ امنیت ایرباد در کیف یا جیب بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کاور Spigen Urban Fit برای AirPods Pro 2 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Design, Security, and Everyday Carry',
+                        fa: 'طراحی، امنیت و حمل روزمره',
+                    },
+                    content: {
+                        en: 'The feature set of the Spigen Urban Fit Case for AirPods Pro 2 is where Spigen shows its experience. easy carrying covers the scenarios users care about most, and each one has been tuned for keeping earbuds safe in a bag or pocket rather than treated as a checkbox. Underneath, Protective fabric-style case made for AirPods Pro 2 charging case provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and carabiners, keychains, and compact profiles quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های کاور Spigen Urban Fit برای AirPods Pro 2 جایی است که تجربه اسپیگن را نشان می‌دهد. حمل و نقل آسان سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای حفظ امنیت ایرباد در کیف یا جیب بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، کاور محافظ با ظاهر پارچه‌ای مخصوص کیس AirPods Pro 2 فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth Buying?',
+                        fa: 'آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Spigen Urban Fit Case for AirPods Pro 2, the verdict is clear: this is a product that understands its job and does it reliably. a protective rigid or soft shell translates into measurable advantages during keeping earbuds safe in a bag or pocket, while Protective fabric-style case made for AirPods Pro 2 charging case ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Spigen optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Spigen Urban Fit Case for AirPods Pro 2 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کاور Spigen Urban Fit برای AirPods Pro 2، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. بدنه محافظ سخت یا نرم در حین حفظ امنیت ایرباد در کیف یا جیب مزایای واقعی به همراه دارد و کاور محافظ با ظاهر پارچه‌ای مخصوص کیس AirPods Pro 2 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اسپیگن این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کاور Spigen Urban Fit برای AirPods Pro 2 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-2',
@@ -2914,7 +5449,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Worth Buying?',
+                        fa: 'آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'Is the Spigen Tough Armor Case for AirPods Pro 2 worth your money? For most buyers, the answer is yes. a snug fit for charging cases delivers on its promises in everyday scenarios, Protective case with carabiner; model-specific fit provides dependable performance under load, and carabiners, keychains, and compact profiles rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Spigen Tough Armor Case for AirPods Pro 2 holds its own on the things people notice — comfort during keeping earbuds safe in a bag or pocket, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Spigen Tough Armor Case for AirPods Pro 2 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کاور Spigen Tough Armor برای AirPods Pro 2 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تناسب دقیق با کیس شارژ در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کاور محافظ همراه کارابین؛ متناسب با مدل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کاور Spigen Tough Armor برای AirPods Pro 2 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین حفظ امنیت ایرباد در کیف یا جیب، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کاور Spigen Tough Armor برای AirPods Pro 2 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'The Spigen Tough Armor Case for AirPods Pro 2 from Spigen makes a strong first impression, pairing a protective rigid or soft shell with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the padded interiors and secure closures gives the product a confident stance on a desk or in a hand, while carabiners, keychains, and compact profiles adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping earbuds safe in a bag or pocket, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Spigen Tough Armor Case for AirPods Pro 2 presents itself as a product worth owning.',
+                        fa: 'محصول کاور Spigen Tough Armor برای AirPods Pro 2 از برند اسپیگن با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. بدنه محافظ سخت یا نرم در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: داخلی بالشی‌دار و بسته‌شدن محکم به محصول وقار و استحکام می‌بخشد و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای حفظ امنیت ایرباد در کیف یا جیب بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کاور Spigen Tough Armor برای AirPods Pro 2 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-3',
@@ -2947,7 +5508,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the ESR Cyber Armor Tough Case for AirPods Pro 2, the ESR design philosophy is obvious: a snug fit for charging cases is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping earbuds safe in a bag or pocket when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as carabiners, keychains, and compact profiles show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the ESR Cyber Armor Tough Case for AirPods Pro 2 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کاور ESR Cyber Armor برای AirPods Pro 2 را در دست می‌گیرید، فلسفه طراحی ای‌اس‌آر کاملاً مشخص است: تناسب دقیق با کیس شارژ در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح حفظ امنیت ایرباد در کیف یا جیب را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کاور ESR Cyber Armor برای AirPods Pro 2 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Design, Security, and Everyday Carry',
+                        fa: 'طراحی، امنیت و حمل روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the ESR Cyber Armor Tough Case for AirPods Pro 2 proves that its headline features translate into real-world convenience. durable materials means that keeping earbuds safe in a bag or pocket becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Protective case for AirPods Pro 2; check charging compatibility — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with carabiners, keychains, and compact profiles handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the ESR Cyber Armor Tough Case for AirPods Pro 2 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کاور ESR Cyber Armor برای AirPods Pro 2 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام یعنی حفظ امنیت ایرباد در کیف یا جیب به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کاور محافظ AirPods Pro 2؛ بررسی سازگاری شارژ ضروری است — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کاور ESR Cyber Armor برای AirPods Pro 2 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-4',
@@ -2981,7 +5568,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Worth Buying?',
+                        fa: 'آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the ESR Classic Hybrid Case for AirPods 3, the verdict is clear: this is a product that understands its job and does it reliably. a protective rigid or soft shell translates into measurable advantages during keeping earbuds safe in a bag or pocket, while Clear protective case for AirPods 3 charging case ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — ESR optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the ESR Classic Hybrid Case for AirPods 3 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کاور ESR Classic Hybrid برای AirPods 3، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. بدنه محافظ سخت یا نرم در حین حفظ امنیت ایرباد در کیف یا جیب مزایای واقعی به همراه دارد و کاور محافظ شفاف برای کیس شارژ AirPods 3 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ای‌اس‌آر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کاور ESR Classic Hybrid برای AirPods 3 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the ESR Classic Hybrid Case for AirPods 3, the ESR design philosophy is obvious: a snug fit for charging cases is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping earbuds safe in a bag or pocket when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as carabiners, keychains, and compact profiles show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the ESR Classic Hybrid Case for AirPods 3 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کاور ESR Classic Hybrid برای AirPods 3 را در دست می‌گیرید، فلسفه طراحی ای‌اس‌آر کاملاً مشخص است: تناسب دقیق با کیس شارژ در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح حفظ امنیت ایرباد در کیف یا جیب را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کاور ESR Classic Hybrid برای AirPods 3 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Design, Security, and Everyday Carry',
+                        fa: 'طراحی، امنیت و حمل روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the ESR Classic Hybrid Case for AirPods 3 proves that its headline features translate into real-world convenience. durable materials means that keeping earbuds safe in a bag or pocket becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Clear protective case for AirPods 3 charging case — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with carabiners, keychains, and compact profiles handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the ESR Classic Hybrid Case for AirPods 3 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کاور ESR Classic Hybrid برای AirPods 3 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام یعنی حفظ امنیت ایرباد در کیف یا جیب به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کاور محافظ شفاف برای کیس شارژ AirPods 3 — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کاور ESR Classic Hybrid برای AirPods 3 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-5',
@@ -3014,7 +5638,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Catalyst Waterproof Case for AirPods Pro, the Catalyst design philosophy is obvious: a snug fit for charging cases is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping earbuds safe in a bag or pocket when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as carabiners, keychains, and compact profiles show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Catalyst Waterproof Case for AirPods Pro does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کاور ضدآب Catalyst برای AirPods Pro را در دست می‌گیرید، فلسفه طراحی کاتالیست کاملاً مشخص است: تناسب دقیق با کیس شارژ در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح حفظ امنیت ایرباد در کیف یا جیب را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کاور ضدآب Catalyst برای AirPods Pro فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Design, Security, and Everyday Carry',
+                        fa: 'طراحی، امنیت و حمل روزمره',
+                    },
+                    content: {
+                        en: 'Day to day, the Catalyst Waterproof Case for AirPods Pro proves that its headline features translate into real-world convenience. durable materials means that keeping earbuds safe in a bag or pocket becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Protective waterproof case; confirm exact generation — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with carabiners, keychains, and compact profiles handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Catalyst Waterproof Case for AirPods Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کاور ضدآب Catalyst برای AirPods Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام یعنی حفظ امنیت ایرباد در کیف یا جیب به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کاور محافظ ضدآب؛ تأیید نسل دقیق ضروری است — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کاور ضدآب Catalyst برای AirPods Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-e-5-6',
@@ -3047,7 +5697,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Worth Buying?',
+                        fa: 'آیا ارزش خرید دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the elago Basic Case for AirPods Pro 2, the verdict is clear: this is a product that understands its job and does it reliably. a protective rigid or soft shell translates into measurable advantages during keeping earbuds safe in a bag or pocket, while Silicone protective case designed for AirPods Pro 2 ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — elago optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the elago Basic Case for AirPods Pro 2 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کاور elago Basic برای AirPods Pro 2، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. بدنه محافظ سخت یا نرم در حین حفظ امنیت ایرباد در کیف یا جیب مزایای واقعی به همراه دارد و کاور محافظ سیلیکونی مخصوص AirPods Pro 2 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: الگو این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کاور elago Basic برای AirPods Pro 2 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Protection That Fits Your Pocket',
+                        fa: 'محافظتی که در جیب شما جا می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the elago Basic Case for AirPods Pro 2, the elago design philosophy is obvious: a snug fit for charging cases is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping earbuds safe in a bag or pocket when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as carabiners, keychains, and compact profiles show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the elago Basic Case for AirPods Pro 2 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کاور elago Basic برای AirPods Pro 2 را در دست می‌گیرید، فلسفه طراحی الگو کاملاً مشخص است: تناسب دقیق با کیس شارژ در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح حفظ امنیت ایرباد در کیف یا جیب را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند کارتابین، جاکلیدی و پروفایل‌های جمع‌وجور نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کاور elago Basic برای AirPods Pro 2 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-1',
@@ -3082,7 +5758,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Type Like You Mean It',
+                        fa: 'تایپ کنید انگار منظورتان همین است',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Logitech MX Mechanical Mini, the Logitech design philosophy is obvious: customizable RGB lighting is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized gaming and long typing sessions when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as hot-swappable switches and macro support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Logitech MX Mechanical Mini does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیبورد مکانیکی Logitech MX Mechanical Mini را در دست می‌گیرید، فلسفه طراحی لاجیتک کاملاً مشخص است: نورپردازی قابل سفارشی‌سازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی و جلسات طولانی تایپ را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سوییچ‌های hot-swap و پشتیبانی ماکرو نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیبورد مکانیکی Logitech MX Mechanical Mini فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Switches, Lighting, and Build Quality',
+                        fa: 'سوییچ‌ها، نورپردازی و کیفیت ساخت',
+                    },
+                    content: {
+                        en: 'Day to day, the Logitech MX Mechanical Mini proves that its headline features translate into real-world convenience. a solid premium build means that gaming and long typing sessions becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Compact wireless mechanical keyboard; tactile, clicky or linear switch options by version — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with hot-swappable switches and macro support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Logitech MX Mechanical Mini leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیبورد مکانیکی Logitech MX Mechanical Mini ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار محکم و پریمیوم یعنی بازی و جلسات طولانی تایپ به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیبورد مکانیکی بی‌سیم جمع‌وجور؛ انواع سوئیچ بسته به نسخه — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سوییچ‌های hot-swap و پشتیبانی ماکرو جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیبورد مکانیکی Logitech MX Mechanical Mini روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Logitech MX Mechanical Mini worth your money? For most buyers, the answer is yes. customizable RGB lighting delivers on its promises in everyday scenarios, Compact wireless mechanical keyboard; tactile, clicky or linear switch options by version provides dependable performance under load, and hot-swappable switches and macro support rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Logitech MX Mechanical Mini holds its own on the things people notice — comfort during gaming and long typing sessions, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Logitech MX Mechanical Mini earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کیبورد مکانیکی Logitech MX Mechanical Mini ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. نورپردازی قابل سفارشی‌سازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کیبورد مکانیکی بی‌سیم جمع‌وجور؛ انواع سوئیچ بسته به نسخه عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سوییچ‌های hot-swap و پشتیبانی ماکرو با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کیبورد مکانیکی Logitech MX Mechanical Mini در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی و جلسات طولانی تایپ، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کیبورد مکانیکی Logitech MX Mechanical Mini شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-2',
@@ -3116,7 +5829,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Switches, Lighting, and Build Quality',
+                        fa: 'سوییچ‌ها، نورپردازی و کیفیت ساخت',
+                    },
+                    content: {
+                        en: 'Day to day, the Logitech G G413 TKL SE proves that its headline features translate into real-world convenience. a solid premium build means that gaming and long typing sessions becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Tenkeyless mechanical gaming keyboard; tactile switches — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with hot-swappable switches and macro support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Logitech G G413 TKL SE leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیبورد Logitech G G413 TKL SE ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار محکم و پریمیوم یعنی بازی و جلسات طولانی تایپ به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیبورد مکانیکی گیمینگ بدون بخش اعداد؛ سوئیچ‌های لمسی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سوییچ‌های hot-swap و پشتیبانی ماکرو جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیبورد Logitech G G413 TKL SE روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Logitech G G413 TKL SE worth your money? For most buyers, the answer is yes. customizable RGB lighting delivers on its promises in everyday scenarios, Tenkeyless mechanical gaming keyboard; tactile switches provides dependable performance under load, and hot-swappable switches and macro support rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Logitech G G413 TKL SE holds its own on the things people notice — comfort during gaming and long typing sessions, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Logitech G G413 TKL SE earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کیبورد Logitech G G413 TKL SE ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. نورپردازی قابل سفارشی‌سازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کیبورد مکانیکی گیمینگ بدون بخش اعداد؛ سوئیچ‌های لمسی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سوییچ‌های hot-swap و پشتیبانی ماکرو با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کیبورد Logitech G G413 TKL SE در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی و جلسات طولانی تایپ، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کیبورد Logitech G G413 TKL SE شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-3',
@@ -3150,7 +5889,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Type Like You Mean It',
+                        fa: 'تایپ کنید انگار منظورتان همین است',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Keychron K2 Pro, the Keychron design philosophy is obvious: customizable RGB lighting is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized gaming and long typing sessions when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as hot-swappable switches and macro support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Keychron K2 Pro does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیبورد مکانیکی Keychron K2 Pro را در دست می‌گیرید، فلسفه طراحی کیکرون کاملاً مشخص است: نورپردازی قابل سفارشی‌سازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی و جلسات طولانی تایپ را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سوییچ‌های hot-swap و پشتیبانی ماکرو نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیبورد مکانیکی Keychron K2 Pro فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Switches, Lighting, and Build Quality',
+                        fa: 'سوییچ‌ها، نورپردازی و کیفیت ساخت',
+                    },
+                    content: {
+                        en: 'Day to day, the Keychron K2 Pro proves that its headline features translate into real-world convenience. a solid premium build means that gaming and long typing sessions becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 75% wireless mechanical keyboard; QMK/VIA support — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with hot-swappable switches and macro support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Keychron K2 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیبورد مکانیکی Keychron K2 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار محکم و پریمیوم یعنی بازی و جلسات طولانی تایپ به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیبورد مکانیکی بی‌سیم ۷۵ درصد؛ پشتیبانی QMK/VIA — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سوییچ‌های hot-swap و پشتیبانی ماکرو جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیبورد مکانیکی Keychron K2 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-4',
@@ -3184,7 +5949,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Type Like You Mean It',
+                        fa: 'تایپ کنید انگار منظورتان همین است',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Keychron K8 Pro, the Keychron design philosophy is obvious: customizable RGB lighting is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized gaming and long typing sessions when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as hot-swappable switches and macro support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Keychron K8 Pro does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیبورد مکانیکی Keychron K8 Pro را در دست می‌گیرید، فلسفه طراحی کیکرون کاملاً مشخص است: نورپردازی قابل سفارشی‌سازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی و جلسات طولانی تایپ را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سوییچ‌های hot-swap و پشتیبانی ماکرو نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیبورد مکانیکی Keychron K8 Pro فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Switches, Lighting, and Build Quality',
+                        fa: 'سوییچ‌ها، نورپردازی و کیفیت ساخت',
+                    },
+                    content: {
+                        en: 'Day to day, the Keychron K8 Pro proves that its headline features translate into real-world convenience. a solid premium build means that gaming and long typing sessions becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Tenkeyless wireless mechanical keyboard; hot-swappable versions available — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with hot-swappable switches and macro support handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Keychron K8 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیبورد مکانیکی Keychron K8 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار محکم و پریمیوم یعنی بازی و جلسات طولانی تایپ به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیبورد مکانیکی بی‌سیم TKL؛ نسخه‌های قابل تعویض سوئیچ موجودند — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و سوییچ‌های hot-swap و پشتیبانی ماکرو جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیبورد مکانیکی Keychron K8 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Keychron K8 Pro worth your money? For most buyers, the answer is yes. customizable RGB lighting delivers on its promises in everyday scenarios, Tenkeyless wireless mechanical keyboard; hot-swappable versions available provides dependable performance under load, and hot-swappable switches and macro support rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Keychron K8 Pro holds its own on the things people notice — comfort during gaming and long typing sessions, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Keychron K8 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کیبورد مکانیکی Keychron K8 Pro ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. نورپردازی قابل سفارشی‌سازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کیبورد مکانیکی بی‌سیم TKL؛ نسخه‌های قابل تعویض سوئیچ موجودند عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و سوییچ‌های hot-swap و پشتیبانی ماکرو با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کیبورد مکانیکی Keychron K8 Pro در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی و جلسات طولانی تایپ، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کیبورد مکانیکی Keychron K8 Pro شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-5',
@@ -3217,7 +6019,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Corsair K70 RGB PRO, the verdict is clear: this is a product that understands its job and does it reliably. tactile mechanical switches translates into measurable advantages during gaming and long typing sessions, while Full-size mechanical gaming keyboard with per-key RGB ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Corsair optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Corsair K70 RGB PRO is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کیبورد مکانیکی Corsair K70 RGB PRO، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سوییچ‌های مکانیکی لمس‌دار در حین بازی و جلسات طولانی تایپ مزایای واقعی به همراه دارد و کیبورد مکانیکی فول‌سایز گیمینگ با RGB مجزای هر کلید ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: کورسیر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کیبورد مکانیکی Corsair K70 RGB PRO یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1595225476474-87563907a212?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Type Like You Mean It',
+                        fa: 'تایپ کنید انگار منظورتان همین است',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Corsair K70 RGB PRO, the Corsair design philosophy is obvious: customizable RGB lighting is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized gaming and long typing sessions when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as hot-swappable switches and macro support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Corsair K70 RGB PRO does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیبورد مکانیکی Corsair K70 RGB PRO را در دست می‌گیرید، فلسفه طراحی کورسیر کاملاً مشخص است: نورپردازی قابل سفارشی‌سازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی و جلسات طولانی تایپ را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند سوییچ‌های hot-swap و پشتیبانی ماکرو نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیبورد مکانیکی Corsair K70 RGB PRO فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-1-6',
@@ -3252,7 +6080,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Type Like You Mean It',
+                        fa: 'تایپ کنید انگار منظورتان همین است',
+                    },
+                    content: {
+                        en: 'The Razer BlackWidow V4 75% from Razer makes a strong first impression, pairing tactile mechanical switches with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the gasket-mounted plates and quality keycaps gives the product a confident stance on a desk or in a hand, while hot-swappable switches and macro support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for gaming and long typing sessions, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Razer BlackWidow V4 75% presents itself as a product worth owning.',
+                        fa: 'محصول کیبورد Razer BlackWidow V4 75% از برند ریزر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سوییچ‌های مکانیکی لمس‌دار در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: پلیت‌های gasket-mounted و کلیدهای باکیفیت به محصول وقار و استحکام می‌بخشد و سوییچ‌های hot-swap و پشتیبانی ماکرو هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی و جلسات طولانی تایپ بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کیبورد Razer BlackWidow V4 75% حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Switches, Lighting, and Build Quality',
+                        fa: 'سوییچ‌ها، نورپردازی و کیفیت ساخت',
+                    },
+                    content: {
+                        en: 'The feature set of the Razer BlackWidow V4 75% is where Razer shows its experience. comfortable typing feel covers the scenarios users care about most, and each one has been tuned for gaming and long typing sessions rather than treated as a checkbox. Underneath, 75% mechanical gaming keyboard; hot-swappable design provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and hot-swappable switches and macro support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های کیبورد Razer BlackWidow V4 75% جایی است که تجربه ریزر را نشان می‌دهد. حس تایپ راحت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی و جلسات طولانی تایپ بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، کیبورد مکانیکی گیمینگ ۷۵ درصد؛ طراحی قابل تعویض سوئیچ فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و سوییچ‌های hot-swap و پشتیبانی ماکرو بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-1',
@@ -3286,7 +6140,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'The feature set of the Logitech G PRO X SUPERLIGHT 2 is where Logitech G shows its experience. lightweight agility covers the scenarios users care about most, and each one has been tuned for fast-paced gaming and productivity rather than treated as a checkbox. Underneath, LIGHTFORCE hybrid switches; HERO 2 sensor; lightweight wireless design provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and programmable profiles and onboard memory quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس Logitech G PRO X SUPERLIGHT 2 جایی است که تجربه لاجیتک جی را نشان می‌دهد. وزن سبک و چابک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی سریع و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، سوئیچ‌های هیبریدی LIGHTFORCE؛ حسگر HERO 2؛ طراحی بی‌سیم سبک فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Accuracy, and Verdict',
+                        fa: 'سرعت، دقت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Logitech G PRO X SUPERLIGHT 2, the verdict is clear: this is a product that understands its job and does it reliably. a precise high-DPI sensor translates into measurable advantages during fast-paced gaming and productivity, while LIGHTFORCE hybrid switches; HERO 2 sensor; lightweight wireless design ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Logitech G optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Logitech G PRO X SUPERLIGHT 2 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از ماوس Logitech G PRO X SUPERLIGHT 2، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سنسور دقیق و حساس در حین بازی سریع و کارهای روزمره مزایای واقعی به همراه دارد و سوئیچ‌های هیبریدی LIGHTFORCE؛ حسگر HERO 2؛ طراحی بی‌سیم سبک ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: لاجیتک جی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، ماوس Logitech G PRO X SUPERLIGHT 2 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Precision in Your Palm',
+                        fa: 'دقت در کف دست شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Logitech G PRO X SUPERLIGHT 2, the Logitech G design philosophy is obvious: an ergonomic shape is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized fast-paced gaming and productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as programmable profiles and onboard memory show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Logitech G PRO X SUPERLIGHT 2 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ماوس Logitech G PRO X SUPERLIGHT 2 را در دست می‌گیرید، فلسفه طراحی لاجیتک جی کاملاً مشخص است: فرم ارگونومیک در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی سریع و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ماوس Logitech G PRO X SUPERLIGHT 2 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-2',
@@ -3320,7 +6211,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Precision in Your Palm',
+                        fa: 'دقت در کف دست شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Logitech G G502 X LIGHTSPEED, the Logitech G design philosophy is obvious: an ergonomic shape is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized fast-paced gaming and productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as programmable profiles and onboard memory show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Logitech G G502 X LIGHTSPEED does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ماوس Logitech G G502 X LIGHTSPEED را در دست می‌گیرید، فلسفه طراحی لاجیتک جی کاملاً مشخص است: فرم ارگونومیک در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی سریع و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ماوس Logitech G G502 X LIGHTSPEED فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'Day to day, the Logitech G G502 X LIGHTSPEED proves that its headline features translate into real-world convenience. customizable buttons means that fast-paced gaming and productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Wireless gaming mouse with LIGHTFORCE switches and HERO 25K sensor — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with programmable profiles and onboard memory handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Logitech G G502 X LIGHTSPEED leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ماوس Logitech G G502 X LIGHTSPEED ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. دکمه‌های قابل سفارشی‌سازی یعنی بازی سریع و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ماوس گیمینگ بی‌سیم با سوئیچ LIGHTFORCE و حسگر HERO 25K — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ماوس Logitech G G502 X LIGHTSPEED روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-3',
@@ -3354,7 +6271,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Precision in Your Palm',
+                        fa: 'دقت در کف دست شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Razer DeathAdder V3 Pro, the Razer design philosophy is obvious: an ergonomic shape is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized fast-paced gaming and productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as programmable profiles and onboard memory show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Razer DeathAdder V3 Pro does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ماوس Razer DeathAdder V3 Pro را در دست می‌گیرید، فلسفه طراحی ریزر کاملاً مشخص است: فرم ارگونومیک در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی سریع و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ماوس Razer DeathAdder V3 Pro فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'Day to day, the Razer DeathAdder V3 Pro proves that its headline features translate into real-world convenience. customizable buttons means that fast-paced gaming and productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Ergonomic wireless esports mouse; Focus Pro optical sensor — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with programmable profiles and onboard memory handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Razer DeathAdder V3 Pro leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ماوس Razer DeathAdder V3 Pro ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. دکمه‌های قابل سفارشی‌سازی یعنی بازی سریع و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ماوس ارگونومیک بی‌سیم esports؛ حسگر اپتیکال Focus Pro — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ماوس Razer DeathAdder V3 Pro روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-4',
@@ -3387,7 +6330,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Speed, Accuracy, and Verdict',
+                        fa: 'سرعت، دقت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Razer Viper V3 Pro worth your money? For most buyers, the answer is yes. an ergonomic shape delivers on its promises in everyday scenarios, Symmetrical wireless esports mouse; Focus Pro sensor provides dependable performance under load, and programmable profiles and onboard memory rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Razer Viper V3 Pro holds its own on the things people notice — comfort during fast-paced gaming and productivity, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Razer Viper V3 Pro earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا ماوس Razer Viper V3 Pro ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. فرم ارگونومیک در سناریوهای روزمره به وعده‌هایش عمل می‌کند، ماوس متقارن بی‌سیم esports؛ حسگر Focus Pro عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، ماوس Razer Viper V3 Pro در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی سریع و کارهای روزمره، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، ماوس Razer Viper V3 Pro شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Precision in Your Palm',
+                        fa: 'دقت در کف دست شما',
+                    },
+                    content: {
+                        en: 'The Razer Viper V3 Pro from Razer makes a strong first impression, pairing a precise high-DPI sensor with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the matte coatings and smooth PTFE feet gives the product a confident stance on a desk or in a hand, while programmable profiles and onboard memory adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for fast-paced gaming and productivity, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Razer Viper V3 Pro presents itself as a product worth owning.',
+                        fa: 'محصول ماوس Razer Viper V3 Pro از برند ریزر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سنسور دقیق و حساس در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: پوشش مات و پایه‌های PTFE صاف به محصول وقار و استحکام می‌بخشد و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی سریع و کارهای روزمره بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ماوس Razer Viper V3 Pro حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'The feature set of the Razer Viper V3 Pro is where Razer shows its experience. lightweight agility covers the scenarios users care about most, and each one has been tuned for fast-paced gaming and productivity rather than treated as a checkbox. Underneath, Symmetrical wireless esports mouse; Focus Pro sensor provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and programmable profiles and onboard memory quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس Razer Viper V3 Pro جایی است که تجربه ریزر را نشان می‌دهد. وزن سبک و چابک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی سریع و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، ماوس متقارن بی‌سیم esports؛ حسگر Focus Pro فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-5',
@@ -3420,7 +6400,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Precision in Your Palm',
+                        fa: 'دقت در کف دست شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the SteelSeries Aerox 3 Wireless, the SteelSeries design philosophy is obvious: an ergonomic shape is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized fast-paced gaming and productivity when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as programmable profiles and onboard memory show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the SteelSeries Aerox 3 Wireless does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ماوس SteelSeries Aerox 3 Wireless را در دست می‌گیرید، فلسفه طراحی استیل‌سیریز کاملاً مشخص است: فرم ارگونومیک در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی سریع و کارهای روزمره را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ماوس SteelSeries Aerox 3 Wireless فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'Day to day, the SteelSeries Aerox 3 Wireless proves that its headline features translate into real-world convenience. customizable buttons means that fast-paced gaming and productivity becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Lightweight wireless gaming mouse; AquaBarrier protection — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with programmable profiles and onboard memory handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the SteelSeries Aerox 3 Wireless leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ماوس SteelSeries Aerox 3 Wireless ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. دکمه‌های قابل سفارشی‌سازی یعنی بازی سریع و کارهای روزمره به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — ماوس گیمینگ بی‌سیم سبک؛ محافظت AquaBarrier — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ماوس SteelSeries Aerox 3 Wireless روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-2-6',
@@ -3453,7 +6459,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Sensor, Shape, and Customization',
+                        fa: 'سنسور، فرم و سفارشی‌سازی',
+                    },
+                    content: {
+                        en: 'The feature set of the Corsair M75 AIR Wireless is where Corsair shows its experience. lightweight agility covers the scenarios users care about most, and each one has been tuned for fast-paced gaming and productivity rather than treated as a checkbox. Underneath, Lightweight wireless gaming mouse; symmetrical shape provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and programmable profiles and onboard memory quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس Corsair M75 AIR Wireless جایی است که تجربه کورسیر را نشان می‌دهد. وزن سبک و چابک سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی سریع و کارهای روزمره بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، ماوس گیمینگ بی‌سیم سبک؛ فرم متقارن فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پروفایل‌های قابل برنامه‌ریزی و حافظه داخلی بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Speed, Accuracy, and Verdict',
+                        fa: 'سرعت، دقت و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Corsair M75 AIR Wireless, the verdict is clear: this is a product that understands its job and does it reliably. a precise high-DPI sensor translates into measurable advantages during fast-paced gaming and productivity, while Lightweight wireless gaming mouse; symmetrical shape ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Corsair optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Corsair M75 AIR Wireless is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از ماوس Corsair M75 AIR Wireless، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سنسور دقیق و حساس در حین بازی سریع و کارهای روزمره مزایای واقعی به همراه دارد و ماوس گیمینگ بی‌سیم سبک؛ فرم متقارن ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: کورسیر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، ماوس Corsair M75 AIR Wireless یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-1',
@@ -3487,7 +6519,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'The Surface Your Mouse Deserves',
+                        fa: 'سطحی که ماوس شما لایقش است',
+                    },
+                    content: {
+                        en: 'The SteelSeries QcK Large from SteelSeries makes a strong first impression, pairing a smooth consistent glide with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dense fabrics that resist wear gives the product a confident stance on a desk or in a hand, while multiple sizes for desks and XXL gaming setups adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for pairing with any mouse for gaming or work, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the SteelSeries QcK Large presents itself as a product worth owning.',
+                        fa: 'محصول ماوس‌پد SteelSeries QcK Large از برند استیل‌سیریز با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سطح لغزشی یکنواخت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بافت‌های متراکم مقاوم در برابر سایش به محصول وقار و استحکام می‌بخشد و اندازه‌های مختلف برای میز و ست‌های بازی XXL هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ماوس‌پد SteelSeries QcK Large حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'The feature set of the SteelSeries QcK Large is where SteelSeries shows its experience. ample space for movement covers the scenarios users care about most, and each one has been tuned for pairing with any mouse for gaming or work rather than treated as a checkbox. Underneath, Micro-woven cloth surface; non-slip rubber base provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple sizes for desks and XXL gaming setups quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس‌پد SteelSeries QcK Large جایی است که تجربه استیل‌سیریز را نشان می‌دهد. فضای کافی برای حرکت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، سطح پارچه‌ای میکروبافته؛ پایه لاستیکی ضدلغزش فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و اندازه‌های مختلف برای میز و ست‌های بازی XXL بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the SteelSeries QcK Large, the verdict is clear: this is a product that understands its job and does it reliably. a smooth consistent glide translates into measurable advantages during pairing with any mouse for gaming or work, while Micro-woven cloth surface; non-slip rubber base ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — SteelSeries optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the SteelSeries QcK Large is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از ماوس‌پد SteelSeries QcK Large، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سطح لغزشی یکنواخت در حین همراهی با هر ماوسی برای بازی یا کار مزایای واقعی به همراه دارد و سطح پارچه‌ای میکروبافته؛ پایه لاستیکی ضدلغزش ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: استیل‌سیریز این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، ماوس‌پد SteelSeries QcK Large یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-2',
@@ -3521,7 +6590,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 7 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'The Surface Your Mouse Deserves',
+                        fa: 'سطحی که ماوس شما لایقش است',
+                    },
+                    content: {
+                        en: 'The SteelSeries QcK Heavy Large from SteelSeries makes a strong first impression, pairing a smooth consistent glide with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dense fabrics that resist wear gives the product a confident stance on a desk or in a hand, while multiple sizes for desks and XXL gaming setups adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for pairing with any mouse for gaming or work, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the SteelSeries QcK Heavy Large presents itself as a product worth owning.',
+                        fa: 'محصول ماوس‌پد SteelSeries QcK Heavy Large از برند استیل‌سیریز با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سطح لغزشی یکنواخت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بافت‌های متراکم مقاوم در برابر سایش به محصول وقار و استحکام می‌بخشد و اندازه‌های مختلف برای میز و ست‌های بازی XXL هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ماوس‌پد SteelSeries QcK Heavy Large حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'The feature set of the SteelSeries QcK Heavy Large is where SteelSeries shows its experience. ample space for movement covers the scenarios users care about most, and each one has been tuned for pairing with any mouse for gaming or work rather than treated as a checkbox. Underneath, Thick cloth gaming surface; non-slip rubber base provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple sizes for desks and XXL gaming setups quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس‌پد SteelSeries QcK Heavy Large جایی است که تجربه استیل‌سیریز را نشان می‌دهد. فضای کافی برای حرکت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، سطح پارچه‌ای ضخیم گیمینگ؛ پایه لاستیکی ضدلغزش فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و اندازه‌های مختلف برای میز و ست‌های بازی XXL بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-3',
@@ -3556,7 +6651,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'Day to day, the Logitech G G640 Large Cloth Gaming Mouse Pad proves that its headline features translate into real-world convenience. durable stitched edges means that pairing with any mouse for gaming or work becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Cloth surface tuned for low-DPI gaming; rubber base — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multiple sizes for desks and XXL gaming setups handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Logitech G G640 Large Cloth Gaming Mouse Pad leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ماوس‌پد Logitech G G640 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. لبه‌های دوخته‌شده بادوام یعنی همراهی با هر ماوسی برای بازی یا کار به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — سطح پارچه‌ای مناسب بازی با DPI پایین؛ پایه لاستیکی — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و اندازه‌های مختلف برای میز و ست‌های بازی XXL جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ماوس‌پد Logitech G G640 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Logitech G G640 Large Cloth Gaming Mouse Pad worth your money? For most buyers, the answer is yes. a non-slip rubber base delivers on its promises in everyday scenarios, Cloth surface tuned for low-DPI gaming; rubber base provides dependable performance under load, and multiple sizes for desks and XXL gaming setups rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Logitech G G640 Large Cloth Gaming Mouse Pad holds its own on the things people notice — comfort during pairing with any mouse for gaming or work, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Logitech G G640 Large Cloth Gaming Mouse Pad earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا ماوس‌پد Logitech G G640 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. پایه لاستیکی ضدلغزش در سناریوهای روزمره به وعده‌هایش عمل می‌کند، سطح پارچه‌ای مناسب بازی با DPI پایین؛ پایه لاستیکی عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و اندازه‌های مختلف برای میز و ست‌های بازی XXL با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، ماوس‌پد Logitech G G640 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین همراهی با هر ماوسی برای بازی یا کار، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، ماوس‌پد Logitech G G640 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-4',
@@ -3589,7 +6710,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'The Surface Your Mouse Deserves',
+                        fa: 'سطحی که ماوس شما لایقش است',
+                    },
+                    content: {
+                        en: 'The Razer Gigantus V2 Large from Razer makes a strong first impression, pairing a smooth consistent glide with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dense fabrics that resist wear gives the product a confident stance on a desk or in a hand, while multiple sizes for desks and XXL gaming setups adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for pairing with any mouse for gaming or work, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Razer Gigantus V2 Large presents itself as a product worth owning.',
+                        fa: 'محصول ماوس‌پد Razer Gigantus V2 Large از برند ریزر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سطح لغزشی یکنواخت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بافت‌های متراکم مقاوم در برابر سایش به محصول وقار و استحکام می‌بخشد و اندازه‌های مختلف برای میز و ست‌های بازی XXL هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، ماوس‌پد Razer Gigantus V2 Large حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'The feature set of the Razer Gigantus V2 Large is where Razer shows its experience. ample space for movement covers the scenarios users care about most, and each one has been tuned for pairing with any mouse for gaming or work rather than treated as a checkbox. Underneath, Textured cloth surface; anti-slip base provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple sizes for desks and XXL gaming setups quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های ماوس‌پد Razer Gigantus V2 Large جایی است که تجربه ریزر را نشان می‌دهد. فضای کافی برای حرکت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، سطح پارچه‌ای بافت‌دار؛ پایه ضدلغزش فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و اندازه‌های مختلف برای میز و ست‌های بازی XXL بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Razer Gigantus V2 Large, the verdict is clear: this is a product that understands its job and does it reliably. a smooth consistent glide translates into measurable advantages during pairing with any mouse for gaming or work, while Textured cloth surface; anti-slip base ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Razer optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Razer Gigantus V2 Large is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از ماوس‌پد Razer Gigantus V2 Large، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سطح لغزشی یکنواخت در حین همراهی با هر ماوسی برای بازی یا کار مزایای واقعی به همراه دارد و سطح پارچه‌ای بافت‌دار؛ پایه ضدلغزش ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ریزر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، ماوس‌پد Razer Gigantus V2 Large یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-5',
@@ -3622,7 +6780,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'The Surface Your Mouse Deserves',
+                        fa: 'سطحی که ماوس شما لایقش است',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Corsair MM300 PRO Extended, the Corsair design philosophy is obvious: a non-slip rubber base is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized pairing with any mouse for gaming or work when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multiple sizes for desks and XXL gaming setups show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Corsair MM300 PRO Extended does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه ماوس‌پد Corsair MM300 PRO Extended را در دست می‌گیرید، فلسفه طراحی کورسیر کاملاً مشخص است: پایه لاستیکی ضدلغزش در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح همراهی با هر ماوسی برای بازی یا کار را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند اندازه‌های مختلف برای میز و ست‌های بازی XXL نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، ماوس‌پد Corsair MM300 PRO Extended فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'Day to day, the Corsair MM300 PRO Extended proves that its headline features translate into real-world convenience. durable stitched edges means that pairing with any mouse for gaming or work becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Extended cloth surface with spill-resistant coating — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multiple sizes for desks and XXL gaming setups handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Corsair MM300 PRO Extended leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، ماوس‌پد Corsair MM300 PRO Extended ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. لبه‌های دوخته‌شده بادوام یعنی همراهی با هر ماوسی برای بازی یا کار به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — سطح پارچه‌ای گسترده با پوشش مقاوم در برابر ریختن مایعات — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و اندازه‌های مختلف برای میز و ست‌های بازی XXL جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، ماوس‌پد Corsair MM300 PRO Extended روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-3-6',
@@ -3656,7 +6840,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'The Surface Your Mouse Deserves',
+                        fa: 'سطحی که ماوس شما لایقش است',
+                    },
+                    content: {
+                        en: 'The Logitech G POWERPLAY Wireless Charging System from Logitech G makes a strong first impression, pairing a smooth consistent glide with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the dense fabrics that resist wear gives the product a confident stance on a desk or in a hand, while multiple sizes for desks and XXL gaming setups adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for pairing with any mouse for gaming or work, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Logitech G POWERPLAY Wireless Charging System presents itself as a product worth owning.',
+                        fa: 'محصول سیستم شارژ بی‌سیم Logitech G POWERPLAY از برند لاجیتک جی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سطح لغزشی یکنواخت در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بافت‌های متراکم مقاوم در برابر سایش به محصول وقار و استحکام می‌بخشد و اندازه‌های مختلف برای میز و ست‌های بازی XXL هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، سیستم شارژ بی‌سیم Logitech G POWERPLAY حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Glide, Control, and Durability',
+                        fa: 'لغزش، کنترل و دوام',
+                    },
+                    content: {
+                        en: 'The feature set of the Logitech G POWERPLAY Wireless Charging System is where Logitech G shows its experience. ample space for movement covers the scenarios users care about most, and each one has been tuned for pairing with any mouse for gaming or work rather than treated as a checkbox. Underneath, Mouse pad system providing wireless charging for compatible Logitech mice provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multiple sizes for desks and XXL gaming setups quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های سیستم شارژ بی‌سیم Logitech G POWERPLAY جایی است که تجربه لاجیتک جی را نشان می‌دهد. فضای کافی برای حرکت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای همراهی با هر ماوسی برای بازی یا کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، سیستم ماوس‌پد با شارژ بی‌سیم برای ماوس‌های سازگار Logitech فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و اندازه‌های مختلف برای میز و ست‌های بازی XXL بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-1',
@@ -3690,7 +6900,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Dell UltraSharp U2723QE, the verdict is clear: this is a product that understands its job and does it reliably. a sharp high-resolution panel translates into measurable advantages during work, editing, and entertainment, while 27-inch 4K UHD monitor; IPS Black technology; USB-C hub ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Dell optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Dell UltraSharp U2723QE is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از مانیتور Dell UltraSharp U2723QE، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. پنل نمایشگر با وضوح بالا در حین کار، ویرایش و سرگرمی مزایای واقعی به همراه دارد و مانیتور ۲۷ اینچ 4K UHD؛ فناوری IPS Black؛ هاب USB-C ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: دل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، مانیتور Dell UltraSharp U2723QE یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Dell UltraSharp U2723QE, the Dell design philosophy is obvious: accurate color reproduction is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized work, editing, and entertainment when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as high refresh rates, HDR, and modern connectivity show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Dell UltraSharp U2723QE does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مانیتور Dell UltraSharp U2723QE را در دست می‌گیرید، فلسفه طراحی دل کاملاً مشخص است: دقت رنگ مناسب در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح کار، ویرایش و سرگرمی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مانیتور Dell UltraSharp U2723QE فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Display Quality, Ergonomics, and Color',
+                        fa: 'کیفیت نمایشگر، ارگونومی و رنگ',
+                    },
+                    content: {
+                        en: 'Day to day, the Dell UltraSharp U2723QE proves that its headline features translate into real-world convenience. an adjustable ergonomic stand means that work, editing, and entertainment becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — 27-inch 4K UHD monitor; IPS Black technology; USB-C hub — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with high refresh rates, HDR, and modern connectivity handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Dell UltraSharp U2723QE leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مانیتور Dell UltraSharp U2723QE ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. پایه قابل تنظیم ارگونومیک یعنی کار، ویرایش و سرگرمی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — مانیتور ۲۷ اینچ 4K UHD؛ فناوری IPS Black؛ هاب USB-C — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مانیتور Dell UltraSharp U2723QE روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-2',
@@ -3723,7 +6970,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'The LG 27GP850-B UltraGear from LG makes a strong first impression, pairing a sharp high-resolution panel with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin bezels and sturdy bases gives the product a confident stance on a desk or in a hand, while high refresh rates, HDR, and modern connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for work, editing, and entertainment, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the LG 27GP850-B UltraGear presents itself as a product worth owning.',
+                        fa: 'محصول مانیتور LG 27GP850-B UltraGear از برند ال‌جی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پنل نمایشگر با وضوح بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: حاشیه‌های باریک و پایه‌های محکم به محصول وقار و استحکام می‌بخشد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای کار، ویرایش و سرگرمی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مانیتور LG 27GP850-B UltraGear حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Display Quality, Ergonomics, and Color',
+                        fa: 'کیفیت نمایشگر، ارگونومی و رنگ',
+                    },
+                    content: {
+                        en: 'The feature set of the LG 27GP850-B UltraGear is where LG shows its experience. wide viewing angles covers the scenarios users care about most, and each one has been tuned for work, editing, and entertainment rather than treated as a checkbox. Underneath, 27-inch QHD gaming monitor; Nano IPS; high refresh rate provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and high refresh rates, HDR, and modern connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مانیتور LG 27GP850-B UltraGear جایی است که تجربه ال‌جی را نشان می‌دهد. زاویه دید وسیع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای کار، ویرایش و سرگرمی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، مانیتور گیمینگ ۲۷ اینچ QHD؛ Nano IPS؛ نرخ نوسازی بالا فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-3',
@@ -3757,7 +7030,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Samsung Odyssey G5 27-inch worth your money? For most buyers, the answer is yes. accurate color reproduction delivers on its promises in everyday scenarios, QHD gaming monitor; high refresh rate (spec varies by model code) provides dependable performance under load, and high refresh rates, HDR, and modern connectivity rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Samsung Odyssey G5 27-inch holds its own on the things people notice — comfort during work, editing, and entertainment, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Samsung Odyssey G5 27-inch earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مانیتور Samsung Odyssey G5 27 اینچ ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. دقت رنگ مناسب در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مانیتور گیمینگ QHD؛ نرخ نوسازی بالا (مشخصات وابسته به کد مدل) عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مانیتور Samsung Odyssey G5 27 اینچ در چیزهایی که مردم متوجه می‌شوند — راحتی در حین کار، ویرایش و سرگرمی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مانیتور Samsung Odyssey G5 27 اینچ شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'The Samsung Odyssey G5 27-inch from Samsung makes a strong first impression, pairing a sharp high-resolution panel with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin bezels and sturdy bases gives the product a confident stance on a desk or in a hand, while high refresh rates, HDR, and modern connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for work, editing, and entertainment, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Samsung Odyssey G5 27-inch presents itself as a product worth owning.',
+                        fa: 'محصول مانیتور Samsung Odyssey G5 27 اینچ از برند سامسونگ با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پنل نمایشگر با وضوح بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: حاشیه‌های باریک و پایه‌های محکم به محصول وقار و استحکام می‌بخشد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای کار، ویرایش و سرگرمی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مانیتور Samsung Odyssey G5 27 اینچ حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-4',
@@ -3791,7 +7090,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the ASUS TUF Gaming VG27AQ1A worth your money? For most buyers, the answer is yes. accurate color reproduction delivers on its promises in everyday scenarios, 27-inch QHD gaming monitor; Adaptive-Sync provides dependable performance under load, and high refresh rates, HDR, and modern connectivity rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the ASUS TUF Gaming VG27AQ1A holds its own on the things people notice — comfort during work, editing, and entertainment, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the ASUS TUF Gaming VG27AQ1A earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مانیتور ASUS TUF Gaming VG27AQ1A ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. دقت رنگ مناسب در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مانیتور گیمینگ ۲۷ اینچ QHD؛ Adaptive-Sync عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مانیتور ASUS TUF Gaming VG27AQ1A در چیزهایی که مردم متوجه می‌شوند — راحتی در حین کار، ویرایش و سرگرمی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مانیتور ASUS TUF Gaming VG27AQ1A شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'The ASUS TUF Gaming VG27AQ1A from ASUS makes a strong first impression, pairing a sharp high-resolution panel with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin bezels and sturdy bases gives the product a confident stance on a desk or in a hand, while high refresh rates, HDR, and modern connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for work, editing, and entertainment, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the ASUS TUF Gaming VG27AQ1A presents itself as a product worth owning.',
+                        fa: 'محصول مانیتور ASUS TUF Gaming VG27AQ1A از برند ایسوس با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پنل نمایشگر با وضوح بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: حاشیه‌های باریک و پایه‌های محکم به محصول وقار و استحکام می‌بخشد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای کار، ویرایش و سرگرمی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مانیتور ASUS TUF Gaming VG27AQ1A حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Display Quality, Ergonomics, and Color',
+                        fa: 'کیفیت نمایشگر، ارگونومی و رنگ',
+                    },
+                    content: {
+                        en: 'The feature set of the ASUS TUF Gaming VG27AQ1A is where ASUS shows its experience. wide viewing angles covers the scenarios users care about most, and each one has been tuned for work, editing, and entertainment rather than treated as a checkbox. Underneath, 27-inch QHD gaming monitor; Adaptive-Sync provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and high refresh rates, HDR, and modern connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مانیتور ASUS TUF Gaming VG27AQ1A جایی است که تجربه ایسوس را نشان می‌دهد. زاویه دید وسیع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای کار، ویرایش و سرگرمی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، مانیتور گیمینگ ۲۷ اینچ QHD؛ Adaptive-Sync فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-5',
@@ -3825,7 +7161,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'The BenQ GW2790Q from BenQ makes a strong first impression, pairing a sharp high-resolution panel with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin bezels and sturdy bases gives the product a confident stance on a desk or in a hand, while high refresh rates, HDR, and modern connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for work, editing, and entertainment, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the BenQ GW2790Q presents itself as a product worth owning.',
+                        fa: 'محصول مانیتور BenQ GW2790Q از برند بنکیو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پنل نمایشگر با وضوح بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: حاشیه‌های باریک و پایه‌های محکم به محصول وقار و استحکام می‌بخشد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای کار، ویرایش و سرگرمی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مانیتور BenQ GW2790Q حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Display Quality, Ergonomics, and Color',
+                        fa: 'کیفیت نمایشگر، ارگونومی و رنگ',
+                    },
+                    content: {
+                        en: 'The feature set of the BenQ GW2790Q is where BenQ shows its experience. wide viewing angles covers the scenarios users care about most, and each one has been tuned for work, editing, and entertainment rather than treated as a checkbox. Underneath, 27-inch QHD monitor for home and office use provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and high refresh rates, HDR, and modern connectivity quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های مانیتور BenQ GW2790Q جایی است که تجربه بنکیو را نشان می‌دهد. زاویه دید وسیع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای کار، ویرایش و سرگرمی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، مانیتور ۲۷ اینچ QHD برای خانه و محل کار فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-4-6',
@@ -3859,7 +7221,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=400&auto=format&fit=crop', stock: 6 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the AOC Q27G3XMN worth your money? For most buyers, the answer is yes. accurate color reproduction delivers on its promises in everyday scenarios, 27-inch QHD gaming monitor; Mini-LED backlight provides dependable performance under load, and high refresh rates, HDR, and modern connectivity rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the AOC Q27G3XMN holds its own on the things people notice — comfort during work, editing, and entertainment, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the AOC Q27G3XMN earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مانیتور AOC Q27G3XMN ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. دقت رنگ مناسب در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مانیتور گیمینگ ۲۷ اینچ QHD؛ نور پس‌زمینه Mini-LED عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مانیتور AOC Q27G3XMN در چیزهایی که مردم متوجه می‌شوند — راحتی در حین کار، ویرایش و سرگرمی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مانیتور AOC Q27G3XMN شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'See Everything in Detail',
+                        fa: 'همه‌چیز را با جزئیات ببینید',
+                    },
+                    content: {
+                        en: 'The AOC Q27G3XMN from AOC makes a strong first impression, pairing a sharp high-resolution panel with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin bezels and sturdy bases gives the product a confident stance on a desk or in a hand, while high refresh rates, HDR, and modern connectivity adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for work, editing, and entertainment, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the AOC Q27G3XMN presents itself as a product worth owning.',
+                        fa: 'محصول مانیتور AOC Q27G3XMN از برند ای‌او‌سی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. پنل نمایشگر با وضوح بالا در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: حاشیه‌های باریک و پایه‌های محکم به محصول وقار و استحکام می‌بخشد و نرخ تازه‌سازی بالا، HDR و اتصال‌های مدرن هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای کار، ویرایش و سرگرمی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، مانیتور AOC Q27G3XMN حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-1',
@@ -3892,7 +7280,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'Day to day, the Anker Prime Docking Station (14-in-1) proves that its headline features translate into real-world convenience. a compact aluminum build means that connecting monitors, drives, and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Multi-port desktop docking station; exact port configuration varies by model — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with USB-C, HDMI, Ethernet, and SD card options handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Anker Prime Docking Station (14-in-1) leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، داک Anker Prime 14-in-1 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار آلومینیومی جمع‌وجور یعنی اتصال مانیتور، درایو و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — داک رومیزی چندپورته؛ چینش دقیق درگاه‌ها وابسته به مدل — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و گزینه‌های USB-C، HDMI، اترنت و کارت SD جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، داک Anker Prime 14-in-1 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Is It a Must-Have?',
+                        fa: 'آیا ضروری است؟',
+                    },
+                    content: {
+                        en: 'Is the Anker Prime Docking Station (14-in-1) worth your money? For most buyers, the answer is yes. fast data and video output delivers on its promises in everyday scenarios, Multi-port desktop docking station; exact port configuration varies by model provides dependable performance under load, and USB-C, HDMI, Ethernet, and SD card options rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Anker Prime Docking Station (14-in-1) holds its own on the things people notice — comfort during connecting monitors, drives, and accessories, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Anker Prime Docking Station (14-in-1) earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا داک Anker Prime 14-in-1 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. خروجی سریع داده و تصویر در سناریوهای روزمره به وعده‌هایش عمل می‌کند، داک رومیزی چندپورته؛ چینش دقیق درگاه‌ها وابسته به مدل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و گزینه‌های USB-C، HDMI، اترنت و کارت SD با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، داک Anker Prime 14-in-1 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین اتصال مانیتور، درایو و لوازم جانبی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، داک Anker Prime 14-in-1 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Expand Your Setup',
+                        fa: 'گسترش تنظیمات شما',
+                    },
+                    content: {
+                        en: 'The Anker Prime Docking Station (14-in-1) from Anker makes a strong first impression, pairing multi-port expansion with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thermal-conscious housings in aluminum gives the product a confident stance on a desk or in a hand, while USB-C, HDMI, Ethernet, and SD card options adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for connecting monitors, drives, and accessories, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Anker Prime Docking Station (14-in-1) presents itself as a product worth owning.',
+                        fa: 'محصول داک Anker Prime 14-in-1 از برند انکر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. گسترش چند درگاه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه‌های آلومینیومی با مدیریت حرارت به محصول وقار و استحکام می‌بخشد و گزینه‌های USB-C، HDMI، اترنت و کارت SD هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای اتصال مانیتور، درایو و لوازم جانبی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، داک Anker Prime 14-in-1 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-2',
@@ -3925,7 +7350,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'The feature set of the Anker 555 USB-C Hub (8-in-1) is where Anker shows its experience. broad device compatibility covers the scenarios users care about most, and each one has been tuned for connecting monitors, drives, and accessories rather than treated as a checkbox. Underneath, USB-C hub with HDMI, Ethernet and card-reader connectivity (model-dependent) provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and USB-C, HDMI, Ethernet, and SD card options quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هاب Anker 555 USB-C هشت‌کاره جایی است که تجربه انکر را نشان می‌دهد. سازگاری گسترده سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای اتصال مانیتور، درایو و لوازم جانبی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هاب USB-C با HDMI، اترنت و کارت‌خوان (بسته به مدل) فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و گزینه‌های USB-C، HDMI، اترنت و کارت SD بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Is It a Must-Have?',
+                        fa: 'آیا ضروری است؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Anker 555 USB-C Hub (8-in-1), the verdict is clear: this is a product that understands its job and does it reliably. multi-port expansion translates into measurable advantages during connecting monitors, drives, and accessories, while USB-C hub with HDMI, Ethernet and card-reader connectivity (model-dependent) ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Anker optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Anker 555 USB-C Hub (8-in-1) is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هاب Anker 555 USB-C هشت‌کاره، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. گسترش چند درگاه در حین اتصال مانیتور، درایو و لوازم جانبی مزایای واقعی به همراه دارد و هاب USB-C با HDMI، اترنت و کارت‌خوان (بسته به مدل) ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: انکر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هاب Anker 555 USB-C هشت‌کاره یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-3',
@@ -3958,7 +7409,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Expand Your Setup',
+                        fa: 'گسترش تنظیمات شما',
+                    },
+                    content: {
+                        en: 'The UGREEN Revodok Pro 109 USB-C Docking Station from UGREEN makes a strong first impression, pairing multi-port expansion with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thermal-conscious housings in aluminum gives the product a confident stance on a desk or in a hand, while USB-C, HDMI, Ethernet, and SD card options adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for connecting monitors, drives, and accessories, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the UGREEN Revodok Pro 109 USB-C Docking Station presents itself as a product worth owning.',
+                        fa: 'محصول داک UGREEN Revodok Pro 109 از برند یوگرین با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. گسترش چند درگاه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بدنه‌های آلومینیومی با مدیریت حرارت به محصول وقار و استحکام می‌بخشد و گزینه‌های USB-C، HDMI، اترنت و کارت SD هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای اتصال مانیتور، درایو و لوازم جانبی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، داک UGREEN Revodok Pro 109 حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'The feature set of the UGREEN Revodok Pro 109 USB-C Docking Station is where UGREEN shows its experience. broad device compatibility covers the scenarios users care about most, and each one has been tuned for connecting monitors, drives, and accessories rather than treated as a checkbox. Underneath, USB-C docking station with multi-display and peripheral connections provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and USB-C, HDMI, Ethernet, and SD card options quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های داک UGREEN Revodok Pro 109 جایی است که تجربه یوگرین را نشان می‌دهد. سازگاری گسترده سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای اتصال مانیتور، درایو و لوازم جانبی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، داک USB-C با اتصال نمایشگرهای متعدد و تجهیزات جانبی فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و گزینه‌های USB-C، HDMI، اترنت و کارت SD بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-4',
@@ -3991,7 +7468,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'The feature set of the CalDigit TS4 Thunderbolt Station 4 is where CalDigit shows its experience. broad device compatibility covers the scenarios users care about most, and each one has been tuned for connecting monitors, drives, and accessories rather than treated as a checkbox. Underneath, Thunderbolt 4 dock with extensive downstream ports provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and USB-C, HDMI, Ethernet, and SD card options quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های داک CalDigit TS4 Thunderbolt 4 جایی است که تجربه کالدجیت را نشان می‌دهد. سازگاری گسترده سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای اتصال مانیتور، درایو و لوازم جانبی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، داک Thunderbolt 4 با درگاه‌های متعدد فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و گزینه‌های USB-C، HDMI، اترنت و کارت SD بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Is It a Must-Have?',
+                        fa: 'آیا ضروری است؟',
+                    },
+                    content: {
+                        en: 'After extended time with the CalDigit TS4 Thunderbolt Station 4, the verdict is clear: this is a product that understands its job and does it reliably. multi-port expansion translates into measurable advantages during connecting monitors, drives, and accessories, while Thunderbolt 4 dock with extensive downstream ports ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — CalDigit optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the CalDigit TS4 Thunderbolt Station 4 is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از داک CalDigit TS4 Thunderbolt 4، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. گسترش چند درگاه در حین اتصال مانیتور، درایو و لوازم جانبی مزایای واقعی به همراه دارد و داک Thunderbolt 4 با درگاه‌های متعدد ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: کالدجیت این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، داک CalDigit TS4 Thunderbolt 4 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Expand Your Setup',
+                        fa: 'گسترش تنظیمات شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the CalDigit TS4 Thunderbolt Station 4, the CalDigit design philosophy is obvious: fast data and video output is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized connecting monitors, drives, and accessories when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as USB-C, HDMI, Ethernet, and SD card options show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the CalDigit TS4 Thunderbolt Station 4 does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه داک CalDigit TS4 Thunderbolt 4 را در دست می‌گیرید، فلسفه طراحی کالدجیت کاملاً مشخص است: خروجی سریع داده و تصویر در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح اتصال مانیتور، درایو و لوازم جانبی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند گزینه‌های USB-C، HDMI، اترنت و کارت SD نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، داک CalDigit TS4 Thunderbolt 4 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-5',
@@ -4024,7 +7538,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Expand Your Setup',
+                        fa: 'گسترش تنظیمات شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Belkin Connect USB-C 6-in-1 Multiport Adapter, the Belkin design philosophy is obvious: fast data and video output is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized connecting monitors, drives, and accessories when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as USB-C, HDMI, Ethernet, and SD card options show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Belkin Connect USB-C 6-in-1 Multiport Adapter does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه مبدل چندپورته Belkin Connect شش‌کاره را در دست می‌گیرید، فلسفه طراحی بلکین کاملاً مشخص است: خروجی سریع داده و تصویر در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح اتصال مانیتور، درایو و لوازم جانبی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند گزینه‌های USB-C، HDMI، اترنت و کارت SD نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، مبدل چندپورته Belkin Connect شش‌کاره فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'Day to day, the Belkin Connect USB-C 6-in-1 Multiport Adapter proves that its headline features translate into real-world convenience. a compact aluminum build means that connecting monitors, drives, and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C multiport adapter; display and USB expansion — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with USB-C, HDMI, Ethernet, and SD card options handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Belkin Connect USB-C 6-in-1 Multiport Adapter leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مبدل چندپورته Belkin Connect شش‌کاره ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار آلومینیومی جمع‌وجور یعنی اتصال مانیتور، درایو و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — مبدل چندپورته USB-C؛ توسعه درگاه‌های نمایشگر و USB — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و گزینه‌های USB-C، HDMI، اترنت و کارت SD جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مبدل چندپورته Belkin Connect شش‌کاره روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-p-5-6',
@@ -4058,7 +7598,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Ports, Speed, and Connectivity',
+                        fa: 'درگاه‌ها، سرعت و اتصال',
+                    },
+                    content: {
+                        en: 'Day to day, the Satechi USB-C Multiport Adapter 8K with Ethernet V3 proves that its headline features translate into real-world convenience. a compact aluminum build means that connecting monitors, drives, and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — USB-C adapter with Ethernet and display output (host compatibility varies) — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with USB-C, HDMI, Ethernet, and SD card options handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Satechi USB-C Multiport Adapter 8K with Ethernet V3 leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، مبدل Satechi USB-C Multiport Adapter 8K ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. ساختار آلومینیومی جمع‌وجور یعنی اتصال مانیتور، درایو و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — مبدل USB-C با اترنت و خروجی نمایشگر (سازگاری وابسته به میزبان) — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و گزینه‌های USB-C، HDMI، اترنت و کارت SD جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، مبدل Satechi USB-C Multiport Adapter 8K روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Is It a Must-Have?',
+                        fa: 'آیا ضروری است؟',
+                    },
+                    content: {
+                        en: 'Is the Satechi USB-C Multiport Adapter 8K with Ethernet V3 worth your money? For most buyers, the answer is yes. fast data and video output delivers on its promises in everyday scenarios, USB-C adapter with Ethernet and display output (host compatibility varies) provides dependable performance under load, and USB-C, HDMI, Ethernet, and SD card options rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Satechi USB-C Multiport Adapter 8K with Ethernet V3 holds its own on the things people notice — comfort during connecting monitors, drives, and accessories, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Satechi USB-C Multiport Adapter 8K with Ethernet V3 earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا مبدل Satechi USB-C Multiport Adapter 8K ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. خروجی سریع داده و تصویر در سناریوهای روزمره به وعده‌هایش عمل می‌کند، مبدل USB-C با اترنت و خروجی نمایشگر (سازگاری وابسته به میزبان) عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و گزینه‌های USB-C، HDMI، اترنت و کارت SD با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، مبدل Satechi USB-C Multiport Adapter 8K در چیزهایی که مردم متوجه می‌شوند — راحتی در حین اتصال مانیتور، درایو و لوازم جانبی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، مبدل Satechi USB-C Multiport Adapter 8K شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-1',
@@ -4091,7 +7657,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'The Sony DualSense Wireless Controller from Sony makes a strong first impression, pairing ergonomic grip design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the textured grips and quality triggers gives the product a confident stance on a desk or in a hand, while custom button mapping and headset support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console and PC gaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Sony DualSense Wireless Controller presents itself as a product worth owning.',
+                        fa: 'محصول دسته بی‌سیم Sony DualSense از برند سونی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. فرم ارگونومیک در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دسته‌های بافت‌دار و تریگرهای باکیفیت به محصول وقار و استحکام می‌بخشد و تنظیم دکمه‌ها و پشتیبانی از هدست هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسول و PC بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، دسته بی‌سیم Sony DualSense حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ergonomics, Connectivity, and Feel',
+                        fa: 'ارگونومی، اتصال و حس کار',
+                    },
+                    content: {
+                        en: 'The feature set of the Sony DualSense Wireless Controller is where Sony shows its experience. long battery life covers the scenarios users care about most, and each one has been tuned for console and PC gaming rather than treated as a checkbox. Underneath, Wireless controller with haptic feedback and adaptive triggers for PS5 provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and custom button mapping and headset support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های دسته بی‌سیم Sony DualSense جایی است که تجربه سونی را نشان می‌دهد. باتری طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی کنسول و PC بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، دسته بی‌سیم با بازخورد لمسی و تریگرهای تطبیقی برای PS5 فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنظیم دکمه‌ها و پشتیبانی از هدست بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Sony DualSense Wireless Controller, the verdict is clear: this is a product that understands its job and does it reliably. ergonomic grip design translates into measurable advantages during console and PC gaming, while Wireless controller with haptic feedback and adaptive triggers for PS5 ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Sony optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Sony DualSense Wireless Controller is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از دسته بی‌سیم Sony DualSense، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. فرم ارگونومیک در حین بازی کنسول و PC مزایای واقعی به همراه دارد و دسته بی‌سیم با بازخورد لمسی و تریگرهای تطبیقی برای PS5 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سونی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، دسته بی‌سیم Sony DualSense یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-2',
@@ -4125,7 +7728,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Sony DualSense Edge Wireless Controller, the verdict is clear: this is a product that understands its job and does it reliably. ergonomic grip design translates into measurable advantages during console and PC gaming, while Customizable controls; replaceable stick modules; PS5 compatible ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Sony optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Sony DualSense Edge Wireless Controller is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از دسته بی‌سیم Sony DualSense Edge، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. فرم ارگونومیک در حین بازی کنسول و PC مزایای واقعی به همراه دارد و کنترل‌های قابل تنظیم؛ ماژول‌های قابل تعویض استیک؛ سازگار با PS5 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سونی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، دسته بی‌سیم Sony DualSense Edge یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Sony DualSense Edge Wireless Controller, the Sony design philosophy is obvious: responsive analog controls is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized console and PC gaming when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as custom button mapping and headset support show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Sony DualSense Edge Wireless Controller does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه دسته بی‌سیم Sony DualSense Edge را در دست می‌گیرید، فلسفه طراحی سونی کاملاً مشخص است: کنترل‌های آنالوگ پاسخ‌گو در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی کنسول و PC را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند تنظیم دکمه‌ها و پشتیبانی از هدست نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، دسته بی‌سیم Sony DualSense Edge فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-3',
@@ -4158,7 +7787,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'The Microsoft Xbox Wireless Controller from Microsoft makes a strong first impression, pairing ergonomic grip design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the textured grips and quality triggers gives the product a confident stance on a desk or in a hand, while custom button mapping and headset support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console and PC gaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Microsoft Xbox Wireless Controller presents itself as a product worth owning.',
+                        fa: 'محصول دسته بی‌سیم Xbox از برند مایکروسافت با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. فرم ارگونومیک در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دسته‌های بافت‌دار و تریگرهای باکیفیت به محصول وقار و استحکام می‌بخشد و تنظیم دکمه‌ها و پشتیبانی از هدست هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسول و PC بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، دسته بی‌سیم Xbox حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ergonomics, Connectivity, and Feel',
+                        fa: 'ارگونومی، اتصال و حس کار',
+                    },
+                    content: {
+                        en: 'The feature set of the Microsoft Xbox Wireless Controller is where Microsoft shows its experience. long battery life covers the scenarios users care about most, and each one has been tuned for console and PC gaming rather than treated as a checkbox. Underneath, Wireless controller for Xbox and compatible Windows devices provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and custom button mapping and headset support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های دسته بی‌سیم Xbox جایی است که تجربه مایکروسافت را نشان می‌دهد. باتری طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی کنسول و PC بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، دسته بی‌سیم برای Xbox و دستگاه‌های سازگار Windows فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنظیم دکمه‌ها و پشتیبانی از هدست بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-4',
@@ -4192,7 +7847,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Nintendo Joy-Con (L)/(R) worth your money? For most buyers, the answer is yes. responsive analog controls delivers on its promises in everyday scenarios, Detachable controllers for compatible Nintendo Switch consoles provides dependable performance under load, and custom button mapping and headset support rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Nintendo Joy-Con (L)/(R) holds its own on the things people notice — comfort during console and PC gaming, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Nintendo Joy-Con (L)/(R) earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا دسته Nintendo Joy-Con چپ و راست ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. کنترل‌های آنالوگ پاسخ‌گو در سناریوهای روزمره به وعده‌هایش عمل می‌کند، دسته‌های جداشدنی برای کنسول‌های سازگار Nintendo Switch عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و تنظیم دکمه‌ها و پشتیبانی از هدست با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، دسته Nintendo Joy-Con چپ و راست در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی کنسول و PC، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، دسته Nintendo Joy-Con چپ و راست شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'The Nintendo Joy-Con (L)/(R) from Nintendo makes a strong first impression, pairing ergonomic grip design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the textured grips and quality triggers gives the product a confident stance on a desk or in a hand, while custom button mapping and headset support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console and PC gaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Nintendo Joy-Con (L)/(R) presents itself as a product worth owning.',
+                        fa: 'محصول دسته Nintendo Joy-Con چپ و راست از برند نینتندو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. فرم ارگونومیک در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دسته‌های بافت‌دار و تریگرهای باکیفیت به محصول وقار و استحکام می‌بخشد و تنظیم دکمه‌ها و پشتیبانی از هدست هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسول و PC بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، دسته Nintendo Joy-Con چپ و راست حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ergonomics, Connectivity, and Feel',
+                        fa: 'ارگونومی، اتصال و حس کار',
+                    },
+                    content: {
+                        en: 'The feature set of the Nintendo Joy-Con (L)/(R) is where Nintendo shows its experience. long battery life covers the scenarios users care about most, and each one has been tuned for console and PC gaming rather than treated as a checkbox. Underneath, Detachable controllers for compatible Nintendo Switch consoles provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and custom button mapping and headset support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های دسته Nintendo Joy-Con چپ و راست جایی است که تجربه نینتندو را نشان می‌دهد. باتری طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی کنسول و PC بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، دسته‌های جداشدنی برای کنسول‌های سازگار Nintendo Switch فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنظیم دکمه‌ها و پشتیبانی از هدست بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-5',
@@ -4226,7 +7918,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Nintendo Nintendo Switch Pro Controller worth your money? For most buyers, the answer is yes. responsive analog controls delivers on its promises in everyday scenarios, Wireless controller designed for Nintendo Switch provides dependable performance under load, and custom button mapping and headset support rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Nintendo Nintendo Switch Pro Controller holds its own on the things people notice — comfort during console and PC gaming, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Nintendo Nintendo Switch Pro Controller earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا دسته Nintendo Switch Pro Controller ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. کنترل‌های آنالوگ پاسخ‌گو در سناریوهای روزمره به وعده‌هایش عمل می‌کند، دسته بی‌سیم مخصوص Nintendo Switch عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و تنظیم دکمه‌ها و پشتیبانی از هدست با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، دسته Nintendo Switch Pro Controller در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی کنسول و PC، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، دسته Nintendo Switch Pro Controller شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'The Nintendo Nintendo Switch Pro Controller from Nintendo makes a strong first impression, pairing ergonomic grip design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the textured grips and quality triggers gives the product a confident stance on a desk or in a hand, while custom button mapping and headset support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console and PC gaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Nintendo Nintendo Switch Pro Controller presents itself as a product worth owning.',
+                        fa: 'محصول دسته Nintendo Switch Pro Controller از برند نینتندو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. فرم ارگونومیک در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دسته‌های بافت‌دار و تریگرهای باکیفیت به محصول وقار و استحکام می‌بخشد و تنظیم دکمه‌ها و پشتیبانی از هدست هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسول و PC بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، دسته Nintendo Switch Pro Controller حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-1-6',
@@ -4261,7 +7979,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Control That Responds',
+                        fa: 'کنترلی که پاسخ می‌دهد',
+                    },
+                    content: {
+                        en: 'The 8BitDo Ultimate Bluetooth Controller from 8BitDo makes a strong first impression, pairing ergonomic grip design with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the textured grips and quality triggers gives the product a confident stance on a desk or in a hand, while custom button mapping and headset support adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console and PC gaming, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the 8BitDo Ultimate Bluetooth Controller presents itself as a product worth owning.',
+                        fa: 'محصول دسته 8BitDo Ultimate Bluetooth از برند 8BitDo با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. فرم ارگونومیک در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دسته‌های بافت‌دار و تریگرهای باکیفیت به محصول وقار و استحکام می‌بخشد و تنظیم دکمه‌ها و پشتیبانی از هدست هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسول و PC بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، دسته 8BitDo Ultimate Bluetooth حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Ergonomics, Connectivity, and Feel',
+                        fa: 'ارگونومی، اتصال و حس کار',
+                    },
+                    content: {
+                        en: 'The feature set of the 8BitDo Ultimate Bluetooth Controller is where 8BitDo shows its experience. long battery life covers the scenarios users care about most, and each one has been tuned for console and PC gaming rather than treated as a checkbox. Underneath, Wireless controller; platform compatibility depends on version provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and custom button mapping and headset support quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های دسته 8BitDo Ultimate Bluetooth جایی است که تجربه 8BitDo را نشان می‌دهد. باتری طولانی سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی کنسول و PC بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، دسته بی‌سیم؛ سازگاری با پلتفرم وابسته به نسخه فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و تنظیم دکمه‌ها و پشتیبانی از هدست بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607853585090-e43eeb442dd2?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-1',
@@ -4295,7 +8039,44 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 9 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Charging Speed and Device Support',
+                        fa: 'سرعت شارژ و پشتیبانی دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'The feature set of the Sony DualSense Charging Station is where Sony shows its experience. GaN power delivery covers the scenarios users care about most, and each one has been tuned for keeping a whole desk setup powered rather than treated as a checkbox. Underneath, Charges two DualSense controllers; designed for PS5 provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multi-device charging and smart power allocation quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های پایه شارژ Sony DualSense جایی است که تجربه سونی را نشان می‌دهد. فناوری GaN برای توان بالا سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای تأمین انرژی کل ست میز کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، شارژ هم‌زمان دو دسته DualSense؛ مخصوص PS5 فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و شارژ چند دستگاهی و تخصیص هوشمند توان بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Sony DualSense Charging Station, the verdict is clear: this is a product that understands its job and does it reliably. fast laptop charging translates into measurable advantages during keeping a whole desk setup powered, while Charges two DualSense controllers; designed for PS5 ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Sony optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Sony DualSense Charging Station is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از پایه شارژ Sony DualSense، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع لپ‌تاپ در حین تأمین انرژی کل ست میز کار مزایای واقعی به همراه دارد و شارژ هم‌زمان دو دسته DualSense؛ مخصوص PS5 ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: سونی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، پایه شارژ Sony DualSense یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Power for Your Whole Desk',
+                        fa: 'انرژی برای کل میز کار شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Sony DualSense Charging Station, the Sony design philosophy is obvious: multi-device support is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping a whole desk setup powered when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multi-device charging and smart power allocation show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Sony DualSense Charging Station does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پایه شارژ Sony DualSense را در دست می‌گیرید، فلسفه طراحی سونی کاملاً مشخص است: پشتیبانی از چند دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح تأمین انرژی کل ست میز کار را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند شارژ چند دستگاهی و تخصیص هوشمند توان نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پایه شارژ Sony DualSense فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-2',
@@ -4328,7 +8109,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the PowerA Twin Charging Station for DualSense worth your money? For most buyers, the answer is yes. multi-device support delivers on its promises in everyday scenarios, Charging station for two compatible DualSense controllers provides dependable performance under load, and multi-device charging and smart power allocation rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the PowerA Twin Charging Station for DualSense holds its own on the things people notice — comfort during keeping a whole desk setup powered, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the PowerA Twin Charging Station for DualSense earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پایه شارژ دوتایی PowerA برای DualSense ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. پشتیبانی از چند دستگاه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، پایه شارژ برای دو دسته سازگار DualSense عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و شارژ چند دستگاهی و تخصیص هوشمند توان با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پایه شارژ دوتایی PowerA برای DualSense در چیزهایی که مردم متوجه می‌شوند — راحتی در حین تأمین انرژی کل ست میز کار، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پایه شارژ دوتایی PowerA برای DualSense شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Power for Your Whole Desk',
+                        fa: 'انرژی برای کل میز کار شما',
+                    },
+                    content: {
+                        en: 'The PowerA Twin Charging Station for DualSense from PowerA makes a strong first impression, pairing fast laptop charging with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the GaN power delivery in a foldable chassis gives the product a confident stance on a desk or in a hand, while multi-device charging and smart power allocation adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping a whole desk setup powered, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the PowerA Twin Charging Station for DualSense presents itself as a product worth owning.',
+                        fa: 'محصول پایه شارژ دوتایی PowerA برای DualSense از برند پاورای با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. شارژ سریع لپ‌تاپ در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: تحویل توان GaN در بدنه تاشو به محصول وقار و استحکام می‌بخشد و شارژ چند دستگاهی و تخصیص هوشمند توان هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تأمین انرژی کل ست میز کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پایه شارژ دوتایی PowerA برای DualSense حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-3',
@@ -4362,7 +8169,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Nintendo Joy-Con Charging Grip, the verdict is clear: this is a product that understands its job and does it reliably. fast laptop charging translates into measurable advantages during keeping a whole desk setup powered, while Charging grip for Joy-Con controllers; compatible cable required ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Nintendo optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Nintendo Joy-Con Charging Grip is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از دسته شارژ Nintendo Joy-Con، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع لپ‌تاپ در حین تأمین انرژی کل ست میز کار مزایای واقعی به همراه دارد و گریپ شارژ برای دسته‌های Joy-Con؛ نیازمند کابل سازگار ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: نینتندو این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، دسته شارژ Nintendo Joy-Con یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Power for Your Whole Desk',
+                        fa: 'انرژی برای کل میز کار شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Nintendo Joy-Con Charging Grip, the Nintendo design philosophy is obvious: multi-device support is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping a whole desk setup powered when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multi-device charging and smart power allocation show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Nintendo Joy-Con Charging Grip does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه دسته شارژ Nintendo Joy-Con را در دست می‌گیرید، فلسفه طراحی نینتندو کاملاً مشخص است: پشتیبانی از چند دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح تأمین انرژی کل ست میز کار را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند شارژ چند دستگاهی و تخصیص هوشمند توان نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، دسته شارژ Nintendo Joy-Con فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-4',
@@ -4395,7 +8228,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Power for Your Whole Desk',
+                        fa: 'انرژی برای کل میز کار شما',
+                    },
+                    content: {
+                        en: 'The HORI Dual USB PlayStand for Nintendo Switch from HORI makes a strong first impression, pairing fast laptop charging with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the GaN power delivery in a foldable chassis gives the product a confident stance on a desk or in a hand, while multi-device charging and smart power allocation adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for keeping a whole desk setup powered, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the HORI Dual USB PlayStand for Nintendo Switch presents itself as a product worth owning.',
+                        fa: 'محصول پایه HORI Dual USB PlayStand برای Nintendo Switch از برند هوری با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. شارژ سریع لپ‌تاپ در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: تحویل توان GaN در بدنه تاشو به محصول وقار و استحکام می‌بخشد و شارژ چند دستگاهی و تخصیص هوشمند توان هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای تأمین انرژی کل ست میز کار بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، پایه HORI Dual USB PlayStand برای Nintendo Switch حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Charging Speed and Device Support',
+                        fa: 'سرعت شارژ و پشتیبانی دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'The feature set of the HORI Dual USB PlayStand for Nintendo Switch is where HORI shows its experience. GaN power delivery covers the scenarios users care about most, and each one has been tuned for keeping a whole desk setup powered rather than treated as a checkbox. Underneath, Play stand with USB expansion for compatible Switch models provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and multi-device charging and smart power allocation quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های پایه HORI Dual USB PlayStand برای Nintendo Switch جایی است که تجربه هوری را نشان می‌دهد. فناوری GaN برای توان بالا سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای تأمین انرژی کل ست میز کار بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، پایه بازی با توسعه USB برای مدل‌های سازگار Switch فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و شارژ چند دستگاهی و تخصیص هوشمند توان بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the HORI Dual USB PlayStand for Nintendo Switch, the verdict is clear: this is a product that understands its job and does it reliably. fast laptop charging translates into measurable advantages during keeping a whole desk setup powered, while Play stand with USB expansion for compatible Switch models ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — HORI optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the HORI Dual USB PlayStand for Nintendo Switch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از پایه HORI Dual USB PlayStand برای Nintendo Switch، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع لپ‌تاپ در حین تأمین انرژی کل ست میز کار مزایای واقعی به همراه دارد و پایه بازی با توسعه USB برای مدل‌های سازگار Switch ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: هوری این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، پایه HORI Dual USB PlayStand برای Nintendo Switch یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-5',
@@ -4428,7 +8298,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Belkin BoostCharge Pro 3-in-1 Wireless Charging Pad, the verdict is clear: this is a product that understands its job and does it reliably. fast laptop charging translates into measurable advantages during keeping a whole desk setup powered, while 3-in-1 charging for compatible Apple devices; not a console dock ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Belkin optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Belkin BoostCharge Pro 3-in-1 Wireless Charging Pad is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از پد شارژ بی‌سیم Belkin BoostCharge Pro سه‌کاره، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. شارژ سریع لپ‌تاپ در حین تأمین انرژی کل ست میز کار مزایای واقعی به همراه دارد و شارژ سه‌کاره دستگاه‌های سازگار اپل؛ داک کنسول نیست ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: بلکین این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، پد شارژ بی‌سیم Belkin BoostCharge Pro سه‌کاره یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Power for Your Whole Desk',
+                        fa: 'انرژی برای کل میز کار شما',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Belkin BoostCharge Pro 3-in-1 Wireless Charging Pad, the Belkin design philosophy is obvious: multi-device support is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized keeping a whole desk setup powered when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as multi-device charging and smart power allocation show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Belkin BoostCharge Pro 3-in-1 Wireless Charging Pad does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه پد شارژ بی‌سیم Belkin BoostCharge Pro سه‌کاره را در دست می‌گیرید، فلسفه طراحی بلکین کاملاً مشخص است: پشتیبانی از چند دستگاه در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح تأمین انرژی کل ست میز کار را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند شارژ چند دستگاهی و تخصیص هوشمند توان نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، پد شارژ بی‌سیم Belkin BoostCharge Pro سه‌کاره فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-2-6',
@@ -4462,7 +8358,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Charging Speed and Device Support',
+                        fa: 'سرعت شارژ و پشتیبانی دستگاه‌ها',
+                    },
+                    content: {
+                        en: 'Day to day, the Venom Twin Docking Station for PS5 Controllers proves that its headline features translate into real-world convenience. a compact folding design means that keeping a whole desk setup powered becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Dual charging dock for compatible PS5 controllers — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with multi-device charging and smart power allocation handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Venom Twin Docking Station for PS5 Controllers leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، پایه شارژ دوتایی Venom برای دسته PS5 ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. طراحی جمع‌وجور تاشو یعنی تأمین انرژی کل ست میز کار به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — داک شارژ دوگانه برای دسته‌های سازگار PS5 — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و شارژ چند دستگاهی و تخصیص هوشمند توان جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، پایه شارژ دوتایی Venom برای دسته PS5 روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Venom Twin Docking Station for PS5 Controllers worth your money? For most buyers, the answer is yes. multi-device support delivers on its promises in everyday scenarios, Dual charging dock for compatible PS5 controllers provides dependable performance under load, and multi-device charging and smart power allocation rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Venom Twin Docking Station for PS5 Controllers holds its own on the things people notice — comfort during keeping a whole desk setup powered, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Venom Twin Docking Station for PS5 Controllers earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا پایه شارژ دوتایی Venom برای دسته PS5 ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. پشتیبانی از چند دستگاه در سناریوهای روزمره به وعده‌هایش عمل می‌کند، داک شارژ دوگانه برای دسته‌های سازگار PS5 عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و شارژ چند دستگاهی و تخصیص هوشمند توان با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، پایه شارژ دوتایی Venom برای دسته PS5 در چیزهایی که مردم متوجه می‌شوند — راحتی در حین تأمین انرژی کل ست میز کار، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، پایه شارژ دوتایی Venom برای دسته PS5 شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-1',
@@ -4496,7 +8418,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Sony PULSE Elite Wireless Headset, the Sony design philosophy is obvious: clear chat and game audio is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized console gaming with friends when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as detachable mics and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Sony PULSE Elite Wireless Headset does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست بی‌سیم Sony PULSE Elite را در دست می‌گیرید، فلسفه طراحی سونی کاملاً مشخص است: صدای شفاف برای گفتگو و بازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی کنسولی با دوستان را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست بی‌سیم Sony PULSE Elite فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Chat, Comfort, and Console Compatibility',
+                        fa: 'گفتگو، راحتی و سازگاری با کنسول',
+                    },
+                    content: {
+                        en: 'Day to day, the Sony PULSE Elite Wireless Headset proves that its headline features translate into real-world convenience. all-day comfort means that console gaming with friends becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — PlayStation Link wireless; planar magnetic drivers — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with detachable mics and platform-specific connectors handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Sony PULSE Elite Wireless Headset leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، هدست بی‌سیم Sony PULSE Elite ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. راحتی تمام‌روز یعنی بازی کنسولی با دوستان به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — اتصال بی‌سیم PlayStation Link؛ درایورهای مغناطیسی مسطح — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، هدست بی‌سیم Sony PULSE Elite روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Sony PULSE Elite Wireless Headset worth your money? For most buyers, the answer is yes. clear chat and game audio delivers on its promises in everyday scenarios, PlayStation Link wireless; planar magnetic drivers provides dependable performance under load, and detachable mics and platform-specific connectors rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sony PULSE Elite Wireless Headset holds its own on the things people notice — comfort during console gaming with friends, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sony PULSE Elite Wireless Headset earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدست بی‌سیم Sony PULSE Elite ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای شفاف برای گفتگو و بازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، اتصال بی‌سیم PlayStation Link؛ درایورهای مغناطیسی مسطح عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدست بی‌سیم Sony PULSE Elite در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی کنسولی با دوستان، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدست بی‌سیم Sony PULSE Elite شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-2',
@@ -4530,7 +8489,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Sony PULSE 3D Wireless Headset worth your money? For most buyers, the answer is yes. clear chat and game audio delivers on its promises in everyday scenarios, Wireless headset designed for PS5 3D audio provides dependable performance under load, and detachable mics and platform-specific connectors rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Sony PULSE 3D Wireless Headset holds its own on the things people notice — comfort during console gaming with friends, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Sony PULSE 3D Wireless Headset earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدست بی‌سیم Sony PULSE 3D ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای شفاف برای گفتگو و بازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، هدست بی‌سیم طراحی‌شده برای صدای سه‌بعدی PS5 عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدست بی‌سیم Sony PULSE 3D در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی کنسولی با دوستان، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدست بی‌سیم Sony PULSE 3D شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'The Sony PULSE 3D Wireless Headset from Sony makes a strong first impression, pairing console-ready compatibility with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the padded headbands and noise-isolating ear cups gives the product a confident stance on a desk or in a hand, while detachable mics and platform-specific connectors adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console gaming with friends, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Sony PULSE 3D Wireless Headset presents itself as a product worth owning.',
+                        fa: 'محصول هدست بی‌سیم Sony PULSE 3D از برند سونی با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سازگاری آماده با کنسول در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بندهای بالشی‌دار و گوشی‌های عایق صدا به محصول وقار و استحکام می‌بخشد و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسولی با دوستان بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، هدست بی‌سیم Sony PULSE 3D حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-3',
@@ -4563,7 +8548,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the SteelSeries Arctis Nova 5 Wireless worth your money? For most buyers, the answer is yes. clear chat and game audio delivers on its promises in everyday scenarios, Wireless gaming headset with platform-specific versions provides dependable performance under load, and detachable mics and platform-specific connectors rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the SteelSeries Arctis Nova 5 Wireless holds its own on the things people notice — comfort during console gaming with friends, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the SteelSeries Arctis Nova 5 Wireless earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا هدست SteelSeries Arctis Nova 5 Wireless ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. صدای شفاف برای گفتگو و بازی در سناریوهای روزمره به وعده‌هایش عمل می‌کند، هدست گیمینگ بی‌سیم با نسخه‌های مخصوص پلتفرم‌های مختلف عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، هدست SteelSeries Arctis Nova 5 Wireless در چیزهایی که مردم متوجه می‌شوند — راحتی در حین بازی کنسولی با دوستان، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، هدست SteelSeries Arctis Nova 5 Wireless شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'The SteelSeries Arctis Nova 5 Wireless from SteelSeries makes a strong first impression, pairing console-ready compatibility with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the padded headbands and noise-isolating ear cups gives the product a confident stance on a desk or in a hand, while detachable mics and platform-specific connectors adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for console gaming with friends, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the SteelSeries Arctis Nova 5 Wireless presents itself as a product worth owning.',
+                        fa: 'محصول هدست SteelSeries Arctis Nova 5 Wireless از برند استیل‌سیریز با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. سازگاری آماده با کنسول در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: بندهای بالشی‌دار و گوشی‌های عایق صدا به محصول وقار و استحکام می‌بخشد و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای بازی کنسولی با دوستان بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، هدست SteelSeries Arctis Nova 5 Wireless حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-4',
@@ -4597,7 +8608,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Chat, Comfort, and Console Compatibility',
+                        fa: 'گفتگو، راحتی و سازگاری با کنسول',
+                    },
+                    content: {
+                        en: 'The feature set of the Logitech G G Astro A30 Wireless is where Logitech G shows its experience. durable construction covers the scenarios users care about most, and each one has been tuned for console gaming with friends rather than treated as a checkbox. Underneath, Wireless gaming headset; platform compatibility depends on version provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and detachable mics and platform-specific connectors quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های هدست Logitech G Astro A30 Wireless جایی است که تجربه لاجیتک جی را نشان می‌دهد. ساختار بادوام سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای بازی کنسولی با دوستان بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، هدست گیمینگ بی‌سیم؛ سازگاری وابسته به نسخه فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Logitech G G Astro A30 Wireless, the verdict is clear: this is a product that understands its job and does it reliably. console-ready compatibility translates into measurable advantages during console gaming with friends, while Wireless gaming headset; platform compatibility depends on version ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Logitech G optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Logitech G G Astro A30 Wireless is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست Logitech G Astro A30 Wireless، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سازگاری آماده با کنسول در حین بازی کنسولی با دوستان مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم؛ سازگاری وابسته به نسخه ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: لاجیتک جی این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست Logitech G Astro A30 Wireless یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Logitech G G Astro A30 Wireless, the Logitech G design philosophy is obvious: clear chat and game audio is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized console gaming with friends when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as detachable mics and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Logitech G G Astro A30 Wireless does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست Logitech G Astro A30 Wireless را در دست می‌گیرید، فلسفه طراحی لاجیتک جی کاملاً مشخص است: صدای شفاف برای گفتگو و بازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی کنسولی با دوستان را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست Logitech G Astro A30 Wireless فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-5',
@@ -4631,7 +8679,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Purple', fa: 'بنفش کم‌رنگ' }, value: '#D8C8E8', slug: 'light-purple', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Razer Kaira Pro for PlayStation, the verdict is clear: this is a product that understands its job and does it reliably. console-ready compatibility translates into measurable advantages during console gaming with friends, while Wireless PlayStation gaming headset; model compatibility varies ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Razer optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Razer Kaira Pro for PlayStation is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست Razer Kaira Pro برای PlayStation، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سازگاری آماده با کنسول در حین بازی کنسولی با دوستان مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم PlayStation؛ سازگاری وابسته به مدل ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: ریزر این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست Razer Kaira Pro برای PlayStation یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Razer Kaira Pro for PlayStation, the Razer design philosophy is obvious: clear chat and game audio is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized console gaming with friends when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as detachable mics and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Razer Kaira Pro for PlayStation does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست Razer Kaira Pro برای PlayStation را در دست می‌گیرید، فلسفه طراحی ریزر کاملاً مشخص است: صدای شفاف برای گفتگو و بازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی کنسولی با دوستان را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست Razer Kaira Pro برای PlayStation فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-3-6',
@@ -4664,7 +8738,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Performance and Verdict',
+                        fa: 'عملکرد و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the Turtle Beach Stealth 600 (Gen 3), the verdict is clear: this is a product that understands its job and does it reliably. console-ready compatibility translates into measurable advantages during console gaming with friends, while Wireless gaming headset; select PlayStation/Xbox/PC version ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Turtle Beach optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Turtle Beach Stealth 600 (Gen 3) is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از هدست Turtle Beach Stealth 600 نسل سوم، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. سازگاری آماده با کنسول در حین بازی کنسولی با دوستان مزایای واقعی به همراه دارد و هدست گیمینگ بی‌سیم؛ انتخاب نسخه PlayStation/Xbox/PC ضروری است ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: تارتل بیچ این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، هدست Turtle Beach Stealth 600 نسل سوم یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Game Day Starts Here',
+                        fa: 'روز بازی از همین‌جا شروع می‌شود',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Turtle Beach Stealth 600 (Gen 3), the Turtle Beach design philosophy is obvious: clear chat and game audio is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized console gaming with friends when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as detachable mics and platform-specific connectors show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Turtle Beach Stealth 600 (Gen 3) does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه هدست Turtle Beach Stealth 600 نسل سوم را در دست می‌گیرید، فلسفه طراحی تارتل بیچ کاملاً مشخص است: صدای شفاف برای گفتگو و بازی در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح بازی کنسولی با دوستان را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند میکروفون‌های جداشدنی و کانکتورهای مخصوص پلتفرم نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، هدست Turtle Beach Stealth 600 نسل سوم فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-1',
@@ -4697,7 +8797,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Travel-Ready and Verdict',
+                        fa: 'آماده سفر و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the PowerA Protection Case for Nintendo Switch, the verdict is clear: this is a product that understands its job and does it reliably. padded device protection translates into measurable advantages during traveling with laptops and accessories, while Portable protective case; choose console generation and size ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — PowerA optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the PowerA Protection Case for Nintendo Switch is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کیف محافظ PowerA برای Nintendo Switch، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. محافظت بالشی‌دار برای دستگاه در حین سفر با لپ‌تاپ و لوازم جانبی مزایای واقعی به همراه دارد و کیف محافظ قابل‌حمل؛ انتخاب نسل و اندازه کنسول ضروری است ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: پاورای این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کیف محافظ PowerA برای Nintendo Switch یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Your Gear, Organized and Safe',
+                        fa: 'تجهیزات شما، مرتب و ایمن',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the PowerA Protection Case for Nintendo Switch, the PowerA design philosophy is obvious: organized interior compartments is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized traveling with laptops and accessories when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as padded sleeves and built-in cable management show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the PowerA Protection Case for Nintendo Switch does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیف محافظ PowerA برای Nintendo Switch را در دست می‌گیرید، فلسفه طراحی پاورای کاملاً مشخص است: جیب‌های سازمان‌دهی‌شده در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح سفر با لپ‌تاپ و لوازم جانبی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند آستین‌های بالشی‌دار و مدیریت داخلی کابل نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیف محافظ PowerA برای Nintendo Switch فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Storage, Protection, and Portability',
+                        fa: 'فضای نگهداری، محافظت و قابلیت حمل',
+                    },
+                    content: {
+                        en: 'Day to day, the PowerA Protection Case for Nintendo Switch proves that its headline features translate into real-world convenience. durable water-resistant materials means that traveling with laptops and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Portable protective case; choose console generation and size — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with padded sleeves and built-in cable management handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the PowerA Protection Case for Nintendo Switch leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیف محافظ PowerA برای Nintendo Switch ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام و ضدآب یعنی سفر با لپ‌تاپ و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیف محافظ قابل‌حمل؛ انتخاب نسل و اندازه کنسول ضروری است — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و آستین‌های بالشی‌دار و مدیریت داخلی کابل جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیف محافظ PowerA برای Nintendo Switch روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-2',
@@ -4730,7 +8867,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Your Gear, Organized and Safe',
+                        fa: 'تجهیزات شما، مرتب و ایمن',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Nintendo Nintendo Switch Carrying Case & Screen Protector, the Nintendo design philosophy is obvious: organized interior compartments is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized traveling with laptops and accessories when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as padded sleeves and built-in cable management show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Nintendo Nintendo Switch Carrying Case & Screen Protector does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیف حمل و محافظ صفحه Nintendo Switch را در دست می‌گیرید، فلسفه طراحی نینتندو کاملاً مشخص است: جیب‌های سازمان‌دهی‌شده در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح سفر با لپ‌تاپ و لوازم جانبی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند آستین‌های بالشی‌دار و مدیریت داخلی کابل نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیف حمل و محافظ صفحه Nintendo Switch فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Storage, Protection, and Portability',
+                        fa: 'فضای نگهداری، محافظت و قابلیت حمل',
+                    },
+                    content: {
+                        en: 'Day to day, the Nintendo Nintendo Switch Carrying Case & Screen Protector proves that its headline features translate into real-world convenience. durable water-resistant materials means that traveling with laptops and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Official carrying case bundle; fit depends on Switch model — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with padded sleeves and built-in cable management handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Nintendo Nintendo Switch Carrying Case & Screen Protector leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیف حمل و محافظ صفحه Nintendo Switch ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام و ضدآب یعنی سفر با لپ‌تاپ و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — بسته کیف حمل و محافظ صفحه رسمی؛ تناسب وابسته به مدل Switch — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و آستین‌های بالشی‌دار و مدیریت داخلی کابل جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیف حمل و محافظ صفحه Nintendo Switch روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-3',
@@ -4764,7 +8927,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 9 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Travel-Ready and Verdict',
+                        fa: 'آماده سفر و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the Razer Arctech Pro Case for iPhone (gaming accessory) worth your money? For most buyers, the answer is yes. organized interior compartments delivers on its promises in everyday scenarios, Phone case, not a console case; listed only for portable gaming use provides dependable performance under load, and padded sleeves and built-in cable management rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the Razer Arctech Pro Case for iPhone (gaming accessory) holds its own on the things people notice — comfort during traveling with laptops and accessories, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the Razer Arctech Pro Case for iPhone (gaming accessory) earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا قاب Razer Arctech Pro برای آیفون ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. جیب‌های سازمان‌دهی‌شده در سناریوهای روزمره به وعده‌هایش عمل می‌کند، قاب گوشی، نه کنسول؛ صرفاً برای بازی قابل‌حمل عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و آستین‌های بالشی‌دار و مدیریت داخلی کابل با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، قاب Razer Arctech Pro برای آیفون در چیزهایی که مردم متوجه می‌شوند — راحتی در حین سفر با لپ‌تاپ و لوازم جانبی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، قاب Razer Arctech Pro برای آیفون شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Your Gear, Organized and Safe',
+                        fa: 'تجهیزات شما، مرتب و ایمن',
+                    },
+                    content: {
+                        en: 'The Razer Arctech Pro Case for iPhone (gaming accessory) from Razer makes a strong first impression, pairing padded device protection with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the reinforced stitching and quality zippers gives the product a confident stance on a desk or in a hand, while padded sleeves and built-in cable management adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for traveling with laptops and accessories, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Razer Arctech Pro Case for iPhone (gaming accessory) presents itself as a product worth owning.',
+                        fa: 'محصول قاب Razer Arctech Pro برای آیفون از برند ریزر با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. محافظت بالشی‌دار برای دستگاه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دوخت تقویت‌شده و زیپ‌های باکیفیت به محصول وقار و استحکام می‌بخشد و آستین‌های بالشی‌دار و مدیریت داخلی کابل هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای سفر با لپ‌تاپ و لوازم جانبی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، قاب Razer Arctech Pro برای آیفون حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-4',
@@ -4797,7 +8986,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Storage, Protection, and Portability',
+                        fa: 'فضای نگهداری، محافظت و قابلیت حمل',
+                    },
+                    content: {
+                        en: 'The feature set of the tomtoc Nintendo Switch 2 Slim Case is where tomtoc shows its experience. comfortable carrying covers the scenarios users care about most, and each one has been tuned for traveling with laptops and accessories rather than treated as a checkbox. Underneath, Slim carrying case; confirm exact console fit before purchase provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and padded sleeves and built-in cable management quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های کیف باریک tomtoc برای Nintendo Switch 2 جایی است که تجربه تام‌توک را نشان می‌دهد. حمل راحت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای سفر با لپ‌تاپ و لوازم جانبی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، کیف حمل باریک؛ پیش از خرید تناسب با مدل دقیق کنسول بررسی شود فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و آستین‌های بالشی‌دار و مدیریت داخلی کابل بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Travel-Ready and Verdict',
+                        fa: 'آماده سفر و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'After extended time with the tomtoc Nintendo Switch 2 Slim Case, the verdict is clear: this is a product that understands its job and does it reliably. padded device protection translates into measurable advantages during traveling with laptops and accessories, while Slim carrying case; confirm exact console fit before purchase ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — tomtoc optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the tomtoc Nintendo Switch 2 Slim Case is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از کیف باریک tomtoc برای Nintendo Switch 2، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. محافظت بالشی‌دار برای دستگاه در حین سفر با لپ‌تاپ و لوازم جانبی مزایای واقعی به همراه دارد و کیف حمل باریک؛ پیش از خرید تناسب با مدل دقیق کنسول بررسی شود ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: تام‌توک این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، کیف باریک tomtoc برای Nintendo Switch 2 یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Your Gear, Organized and Safe',
+                        fa: 'تجهیزات شما، مرتب و ایمن',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the tomtoc Nintendo Switch 2 Slim Case, the tomtoc design philosophy is obvious: organized interior compartments is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized traveling with laptops and accessories when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as padded sleeves and built-in cable management show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the tomtoc Nintendo Switch 2 Slim Case does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه کیف باریک tomtoc برای Nintendo Switch 2 را در دست می‌گیرید، فلسفه طراحی تام‌توک کاملاً مشخص است: جیب‌های سازمان‌دهی‌شده در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح سفر با لپ‌تاپ و لوازم جانبی را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند آستین‌های بالشی‌دار و مدیریت داخلی کابل نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، کیف باریک tomtoc برای Nintendo Switch 2 فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-5',
@@ -4831,7 +9057,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 11 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Storage, Protection, and Portability',
+                        fa: 'فضای نگهداری، محافظت و قابلیت حمل',
+                    },
+                    content: {
+                        en: 'Day to day, the HORI Adventure Pack for Nintendo Switch proves that its headline features translate into real-world convenience. durable water-resistant materials means that traveling with laptops and accessories becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Portable case/accessory for compatible Switch systems — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with padded sleeves and built-in cable management handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the HORI Adventure Pack for Nintendo Switch leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، کیف حمل HORI Adventure Pack برای Nintendo Switch ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. متریال‌های بادوام و ضدآب یعنی سفر با لپ‌تاپ و لوازم جانبی به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — کیف و لوازم حمل برای سیستم‌های سازگار Switch — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و آستین‌های بالشی‌دار و مدیریت داخلی کابل جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، کیف حمل HORI Adventure Pack برای Nintendo Switch روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Travel-Ready and Verdict',
+                        fa: 'آماده سفر و جمع‌بندی',
+                    },
+                    content: {
+                        en: 'Is the HORI Adventure Pack for Nintendo Switch worth your money? For most buyers, the answer is yes. organized interior compartments delivers on its promises in everyday scenarios, Portable case/accessory for compatible Switch systems provides dependable performance under load, and padded sleeves and built-in cable management rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the HORI Adventure Pack for Nintendo Switch holds its own on the things people notice — comfort during traveling with laptops and accessories, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the HORI Adventure Pack for Nintendo Switch earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا کیف حمل HORI Adventure Pack برای Nintendo Switch ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. جیب‌های سازمان‌دهی‌شده در سناریوهای روزمره به وعده‌هایش عمل می‌کند، کیف و لوازم حمل برای سیستم‌های سازگار Switch عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و آستین‌های بالشی‌دار و مدیریت داخلی کابل با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، کیف حمل HORI Adventure Pack برای Nintendo Switch در چیزهایی که مردم متوجه می‌شوند — راحتی در حین سفر با لپ‌تاپ و لوازم جانبی، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، کیف حمل HORI Adventure Pack برای Nintendo Switch شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-4-6',
@@ -4864,7 +9116,33 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Your Gear, Organized and Safe',
+                        fa: 'تجهیزات شما، مرتب و ایمن',
+                    },
+                    content: {
+                        en: 'The Skull & Co. NeoGrip Case and Carry Case for Nintendo Switch from Skull & Co. makes a strong first impression, pairing padded device protection with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the reinforced stitching and quality zippers gives the product a confident stance on a desk or in a hand, while padded sleeves and built-in cable management adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for traveling with laptops and accessories, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the Skull & Co. NeoGrip Case and Carry Case for Nintendo Switch presents itself as a product worth owning.',
+                        fa: 'محصول کیف و قاب Skull & Co. NeoGrip برای Nintendo Switch از برند اسکال اند کو با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. محافظت بالشی‌دار برای دستگاه در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: دوخت تقویت‌شده و زیپ‌های باکیفیت به محصول وقار و استحکام می‌بخشد و آستین‌های بالشی‌دار و مدیریت داخلی کابل هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای سفر با لپ‌تاپ و لوازم جانبی بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، کیف و قاب Skull & Co. NeoGrip برای Nintendo Switch حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Storage, Protection, and Portability',
+                        fa: 'فضای نگهداری، محافظت و قابلیت حمل',
+                    },
+                    content: {
+                        en: 'The feature set of the Skull & Co. NeoGrip Case and Carry Case for Nintendo Switch is where Skull & Co. shows its experience. comfortable carrying covers the scenarios users care about most, and each one has been tuned for traveling with laptops and accessories rather than treated as a checkbox. Underneath, Grip case and carrying case set; compatibility depends on console version provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and padded sleeves and built-in cable management quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های کیف و قاب Skull & Co. NeoGrip برای Nintendo Switch جایی است که تجربه اسکال اند کو را نشان می‌دهد. حمل راحت سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای سفر با لپ‌تاپ و لوازم جانبی بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، مجموعه قاب گریپ و کیف حمل؛ سازگاری وابسته به نسخه کنسول فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و آستین‌های بالشی‌دار و مدیریت داخلی کابل بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-1',
@@ -4897,7 +9175,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'The feature set of the dbrand PlayStation 5 Console Skins is where dbrand shows its experience. a stylish finish covers the scenarios users care about most, and each one has been tuned for personalizing laptops and devices rather than treated as a checkbox. Underneath, Precision-cut console skin; choose PS5 model and disc/digital version provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and matte, glossy, and patterned finishes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اسکین کنسول PlayStation 5 از dbrand جایی است که تجربه دی‌برند را نشان می‌دهد. پرداخت شیک و متنوع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، اسکین برش‌خورده دقیق؛ انتخاب مدل PS5 و نسخه دیسک/دیجیتال ضروری است فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پرداخت‌های مات، براق و طرح‌دار بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth It?',
+                        fa: 'آیا ارزش دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the dbrand PlayStation 5 Console Skins, the verdict is clear: this is a product that understands its job and does it reliably. scratch and fingerprint resistance translates into measurable advantages during personalizing laptops and devices, while Precision-cut console skin; choose PS5 model and disc/digital version ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — dbrand optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the dbrand PlayStation 5 Console Skins is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اسکین کنسول PlayStation 5 از dbrand، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. مقاومت در برابر خط و خش در حین شخصی‌سازی لپ‌تاپ و دستگاه‌ها مزایای واقعی به همراه دارد و اسکین برش‌خورده دقیق؛ انتخاب مدل PS5 و نسخه دیسک/دیجیتال ضروری است ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: دی‌برند این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اسکین کنسول PlayStation 5 از dbrand یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Style Without the Sacrifice',
+                        fa: 'سبک بدون فداکاری',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the dbrand PlayStation 5 Console Skins, the dbrand design philosophy is obvious: precise cutout alignment is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized personalizing laptops and devices when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as matte, glossy, and patterned finishes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the dbrand PlayStation 5 Console Skins does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه اسکین کنسول PlayStation 5 از dbrand را در دست می‌گیرید، فلسفه طراحی دی‌برند کاملاً مشخص است: تراز دقیق با برش‌ها در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شخصی‌سازی لپ‌تاپ و دستگاه‌ها را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پرداخت‌های مات، براق و طرح‌دار نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، اسکین کنسول PlayStation 5 از dbrand فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-2',
@@ -4931,7 +9246,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Mint Green', fa: 'سبز نعنایی کم‌رنگ' }, value: '#B7D7C0', slug: 'mint-green', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'The feature set of the Skinit PlayStation 5 Console Skin is where Skinit shows its experience. a stylish finish covers the scenarios users care about most, and each one has been tuned for personalizing laptops and devices rather than treated as a checkbox. Underneath, Decorative console skin; model-specific cutouts provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and matte, glossy, and patterned finishes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اسکین کنسول PlayStation 5 از Skinit جایی است که تجربه اسکینیت را نشان می‌دهد. پرداخت شیک و متنوع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، اسکین تزئینی کنسول؛ برش‌ها متناسب با مدل فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پرداخت‌های مات، براق و طرح‌دار بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth It?',
+                        fa: 'آیا ارزش دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the Skinit PlayStation 5 Console Skin, the verdict is clear: this is a product that understands its job and does it reliably. scratch and fingerprint resistance translates into measurable advantages during personalizing laptops and devices, while Decorative console skin; model-specific cutouts ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — Skinit optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the Skinit PlayStation 5 Console Skin is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اسکین کنسول PlayStation 5 از Skinit، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. مقاومت در برابر خط و خش در حین شخصی‌سازی لپ‌تاپ و دستگاه‌ها مزایای واقعی به همراه دارد و اسکین تزئینی کنسول؛ برش‌ها متناسب با مدل ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: اسکینیت این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اسکین کنسول PlayStation 5 از Skinit یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-3',
@@ -4966,7 +9307,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 5 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Style Without the Sacrifice',
+                        fa: 'سبک بدون فداکاری',
+                    },
+                    content: {
+                        en: 'The DecalGirl Nintendo Switch Console Skin from DecalGirl makes a strong first impression, pairing scratch and fingerprint resistance with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin vinyl that preserves the original look gives the product a confident stance on a desk or in a hand, while matte, glossy, and patterned finishes adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for personalizing laptops and devices, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the DecalGirl Nintendo Switch Console Skin presents itself as a product worth owning.',
+                        fa: 'محصول اسکین کنسول Nintendo Switch از DecalGirl از برند دکال‌گرل با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. مقاومت در برابر خط و خش در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: وینیل نازک با حفظ ظاهر اصلی به محصول وقار و استحکام می‌بخشد و پرداخت‌های مات، براق و طرح‌دار هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، اسکین کنسول Nintendo Switch از DecalGirl حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'The feature set of the DecalGirl Nintendo Switch Console Skin is where DecalGirl shows its experience. a stylish finish covers the scenarios users care about most, and each one has been tuned for personalizing laptops and devices rather than treated as a checkbox. Underneath, Decorative vinyl skin; choose Switch model and Joy-Con layout provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and matte, glossy, and patterned finishes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اسکین کنسول Nintendo Switch از DecalGirl جایی است که تجربه دکال‌گرل را نشان می‌دهد. پرداخت شیک و متنوع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، اسکین وینیل تزئینی؛ انتخاب مدل Switch و چیدمان Joy-Con ضروری است فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پرداخت‌های مات، براق و طرح‌دار بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-4',
@@ -5000,7 +9367,44 @@ export const PRODUCTS: Product[] = [
         colors: [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'Day to day, the dbrand Nintendo Switch Skin proves that its headline features translate into real-world convenience. easy bubble-free application means that personalizing laptops and devices becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Precision-cut vinyl skin for the specified Switch generation — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with matte, glossy, and patterned finishes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the dbrand Nintendo Switch Skin leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، اسکین Nintendo Switch از dbrand ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. نصب آسان بدون حباب یعنی شخصی‌سازی لپ‌تاپ و دستگاه‌ها به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — اسکین وینیل با برش دقیق برای نسل مشخص Switch — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پرداخت‌های مات، براق و طرح‌دار جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، اسکین Nintendo Switch از dbrand روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth It?',
+                        fa: 'آیا ارزش دارد؟',
+                    },
+                    content: {
+                        en: 'Is the dbrand Nintendo Switch Skin worth your money? For most buyers, the answer is yes. precise cutout alignment delivers on its promises in everyday scenarios, Precision-cut vinyl skin for the specified Switch generation provides dependable performance under load, and matte, glossy, and patterned finishes rounds out the experience with thoughtful touches that cheaper rivals skip. Where it competes directly with premium alternatives, the dbrand Nintendo Switch Skin holds its own on the things people notice — comfort during personalizing laptops and devices, reliability over months of use, and a design that ages well. It is not the cheapest option in its category, but it offers a level of polish that justifies the spend. If you want a product you can trust day after day without thinking about it, the dbrand Nintendo Switch Skin earns a place on your shortlist and, most likely, at the top of it.',
+                        fa: 'آیا اسکین Nintendo Switch از dbrand ارزش خرید را دارد؟ برای بیشتر خریداران پاسخ مثبت است. تراز دقیق با برش‌ها در سناریوهای روزمره به وعده‌هایش عمل می‌کند، اسکین وینیل با برش دقیق برای نسل مشخص Switch عملکرد قابل‌اعتمادی تحت فشار ارائه می‌دهد و پرداخت‌های مات، براق و طرح‌دار با جزئیات حساب‌شده‌ای تجربه را کامل می‌کند که رقبا در قیمت پایین‌تر حذفش می‌کنند. در مقایسه مستقیم با گزینه‌های پریمیوم، اسکین Nintendo Switch از dbrand در چیزهایی که مردم متوجه می‌شوند — راحتی در حین شخصی‌سازی لپ‌تاپ و دستگاه‌ها، پایداری در ماه‌های استفاده و طراحی‌ای که با گذر زمان خوب به نظر می‌رسد — خود را اثبات می‌کند. این ارزان‌ترین گزینه نیست، اما سطحی از صیقل ارائه می‌دهد که هزینه را توجیه می‌کند. اگر محصولی می‌خواهید که هر روز بی‌فکر به آن اتکا کنید، اسکین Nintendo Switch از dbrand شایسته حضور در فهرست کوتاه شماست و احتمالاً در صدر آن.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Style Without the Sacrifice',
+                        fa: 'سبک بدون فداکاری',
+                    },
+                    content: {
+                        en: 'The dbrand Nintendo Switch Skin from dbrand makes a strong first impression, pairing scratch and fingerprint resistance with a design language that feels considered rather than generic. Attention to detail shows up everywhere: the thin vinyl that preserves the original look gives the product a confident stance on a desk or in a hand, while matte, glossy, and patterned finishes adds a practical touch that buyers will notice during everyday use. The shape and proportions are tuned for personalizing laptops and devices, so comfort is built in rather than bolted on. Even the small things — button placement, texture, and finish — feel like the result of careful iteration rather than an afterthought. It is rare for a product in this category to balance visual appeal and usability this well. Whether it sits on a shelf, travels in a bag, or stays on a desk all day, the dbrand Nintendo Switch Skin presents itself as a product worth owning.',
+                        fa: 'محصول اسکین Nintendo Switch از dbrand از برند دی‌برند با طراحی دقیق و جزئیات حساب‌شده، نخستین تأثیر خوبی بر کاربر می‌گذارد. مقاومت در برابر خط و خش در کنار زبان طراحی‌ای قرار گرفته که به‌جای کلیشه‌ای‌بودن، حساب‌شده به نظر می‌رسد. دقت در ساخت همه‌جا دیده می‌شود: وینیل نازک با حفظ ظاهر اصلی به محصول وقار و استحکام می‌بخشد و پرداخت‌های مات، براق و طرح‌دار هم در استفاده روزمره به‌چشم می‌آید. فرم و ابعاد محصول برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، بنابراین راحتی از قبل در آن لحاظ شده است. حتی جزئیات کوچک — جای دکمه‌ها، بافت سطح و پرداخت نهایی — حاصل یک فرایند طراحی دقیق هستند. به‌ندرت محصولی در این دسته می‌تواند زیبایی و کاربردی‌بودن را تا این حد با هم ترکیب کند. چه روی میز باشد، چه در کیف سفر کند و چه در دست، اسکین Nintendo Switch از dbrand حضوری شیک و مطمئن دارد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-5',
@@ -5034,7 +9438,33 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Gray', fa: 'خاکستری' }, value: '#9CA3AF', slug: 'gray', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 10 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Style Without the Sacrifice',
+                        fa: 'سبک بدون فداکاری',
+                    },
+                    content: {
+                        en: 'From the moment you pick up the Skinit Xbox Series X Console Skin, the Skinit design philosophy is obvious: precise cutout alignment is matched by clean lines, balanced proportions, and a finish that photographs well and feels good in person. The engineers clearly prioritized personalizing laptops and devices when shaping the body, and the result is a device that disappears into your routine instead of demanding attention. Practical details such as matte, glossy, and patterned finishes show that form followed function throughout development. The colorway and materials also hold up under daily handling, resisting fingerprints and minor scuffs better than most rivals in this class. In short, the Skinit Xbox Series X Console Skin does not just look good in renders — it looks and feels right in real life, which is exactly what a well-designed product should do.',
+                        fa: 'به‌محض اینکه اسکین کنسول Xbox Series X از Skinit را در دست می‌گیرید، فلسفه طراحی اسکینیت کاملاً مشخص است: تراز دقیق با برش‌ها در کنار خطوط تمیز، تناسب متعادل و پرداختی قرار گرفته که هم در تصاویر زیبا به نظر می‌رسد و هم در لمس واقعی حس خوبی دارد. مهندسان به‌وضوح شخصی‌سازی لپ‌تاپ و دستگاه‌ها را در شکل بدنه در نظر گرفته‌اند و نتیجه محصولی است که به‌جای نیازمند توجه، خود را با روال روزانه شما هماهنگ می‌کند. جزئیات عملی مانند پرداخت‌های مات، براق و طرح‌دار نشان می‌دهد که در تمام مراحل توسعه، فرم تابع عملکرد بوده است. رنگ‌بندی و متریال‌ها هم در استفاده روزانه در برابر اثر انگشت و خط‌وخش‌های جزئی بهتر از رقبا دوام می‌آورند. به‌طور خلاصه، اسکین کنسول Xbox Series X از Skinit فقط در رندر خوب به نظر نمی‌رسد؛ در زندگی واقعی هم درست و شیک است — دقیقاً همان‌طور که یک محصول خوب باید باشد.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'Day to day, the Skinit Xbox Series X Console Skin proves that its headline features translate into real-world convenience. easy bubble-free application means that personalizing laptops and devices becomes noticeably easier, whether you are at your desk, commuting, or moving between locations. The technical foundation — Decorative skin designed for Xbox Series X console — supports everything else, keeping performance consistent rather than merely adequate. Setup is refreshingly simple: within minutes of opening the box you are up and running, with matte, glossy, and patterned finishes handling the details that usually cause friction. Over weeks of use, the strengths stay consistent; there are no quirks that punish daily reliance. Compared with competing options, the Skinit Xbox Series X Console Skin leans into the features people actually use every day instead of chasing spec-sheet numbers nobody reads. It is that practical focus that makes it an easy product to recommend.',
+                        fa: 'در استفاده روزمره، اسکین کنسول Xbox Series X از Skinit ثابت می‌کند که قابلیت‌های اصلی‌اش به راحتی واقعی تبدیل شده‌اند. نصب آسان بدون حباب یعنی شخصی‌سازی لپ‌تاپ و دستگاه‌ها به‌طور محسوسی آسان‌تر می‌شود، چه پشت میز باشید، چه در مسیر و چه در رفت‌وآمدهای مداوم. زیرساخت فنی — اسکین تزئینی مخصوص کنسول Xbox Series X — همه‌چیز را پشتیبانی می‌کند و عملکردی ثابت ارائه می‌دهد، نه صرفاً قابل‌قبول. راه‌اندازی هم به‌شکل خوشایندی ساده است: چند دقیقه پس از باز کردن جعبه آماده کار هستید و پرداخت‌های مات، براق و طرح‌دار جزئیاتی را مدیریت می‌کند که معمولاً دردسرسازند. در طول هفته‌ها، نقاط قوت ثابت می‌مانند و هیچ عیب آزاردهنده‌ای برای اتکا روزانه وجود ندارد. در مقایسه با گزینه‌های رقیب، اسکین کنسول Xbox Series X از Skinit روی قابلیت‌هایی تمرکز دارد که مردم واقعاً هر روز استفاده می‌کنند. همین تمرکز عملی، آن را به محصولی تبدیل می‌کند که به‌راحتی پیشنهاد می‌شود.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     },
     {
         id: 'p-c-5-6',
@@ -5068,6 +9498,32 @@ export const PRODUCTS: Product[] = [
             { name: { en: 'Black', fa: 'مشکی' }, value: '#18181B', slug: 'black', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 },
             { name: { en: 'White', fa: 'سفید' }, value: '#F4F4F5', slug: 'white', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop', stock: 8 },
             { name: { en: 'Light Blue', fa: 'آبی روشن' }, value: '#A7D8F0', slug: 'light-blue', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=400&auto=format&fit=crop', stock: 12 }
-        ]
+        ],
+        introduction: {
+            sections: [
+                {
+                    title: {
+                        en: 'Fit, Finish, and Protection',
+                        fa: 'تناسب، پرداخت و محافظت',
+                    },
+                    content: {
+                        en: 'The feature set of the DecalGirl PlayStation 5 Controller Skin is where DecalGirl shows its experience. a stylish finish covers the scenarios users care about most, and each one has been tuned for personalizing laptops and devices rather than treated as a checkbox. Underneath, Vinyl controller skin; select compatible controller model provides the headroom needed for demanding moments, so the product does not stutter when it matters. Everyday interactions feel polished: controls respond predictably, the interface stays out of your way, and matte, glossy, and patterned finishes quietly solves problems you did not know you had. Whether you are pushing the device through a busy day or using it lightly, the experience remains smooth and consistent. It is a well-rounded package — not perfect in every niche, but dependable in all of them, which is what most buyers actually need.',
+                        fa: 'مجموعه قابلیت‌های اسکین دسته PlayStation 5 از DecalGirl جایی است که تجربه دکال‌گرل را نشان می‌دهد. پرداخت شیک و متنوع سناریوهایی را پوشش می‌دهد که کاربران بیشتر به آن‌ها اهمیت می‌دهند و هر یک برای شخصی‌سازی لپ‌تاپ و دستگاه‌ها بهینه شده‌اند، نه اینکه صرفاً یک تیک در فهرست مشخصات باشند. در لایه پایین‌تر، اسکین وینیل دسته؛ انتخاب مدل سازگار کنترلر ضروری است فضای کافی برای لحظات سخت فراهم می‌کند تا محصول در زمان لازم ضعیف نشود. تعاملات روزانه هم صیقلی است: کنترل‌ها قابل‌پیش‌بینی پاسخ می‌دهند، رابط کاربری مزاحم نمی‌شود و پرداخت‌های مات، براق و طرح‌دار بی‌سروصدا مشکلاتی را حل می‌کند که شاید هرگز متوجه‌شان نمی‌شدید. چه دستگاه را سنگین به کار بگیرید و چه سبک، تجربه روان و یکدست باقی می‌ماند. بسته‌ای متعادل است — نه بی‌نقص در هر حوزه‌ای، اما در همه قابل‌اعتماد — و همین برای بیشتر خریداران همان چیزی است که نیاز دارند.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+                },
+                {
+                    title: {
+                        en: 'Worth It?',
+                        fa: 'آیا ارزش دارد؟',
+                    },
+                    content: {
+                        en: 'After extended time with the DecalGirl PlayStation 5 Controller Skin, the verdict is clear: this is a product that understands its job and does it reliably. scratch and fingerprint resistance translates into measurable advantages during personalizing laptops and devices, while Vinyl controller skin; select compatible controller model ensures there is enough reserve for demanding tasks. Battery life, build quality, and software behavior all point in the same direction — DecalGirl optimized this product for real users rather than benchmark screenshots. The only caveats are minor ones: a few advanced options live in companion software, and the price sits above the very cheapest alternatives, though the gap is justified by the overall refinement. For shoppers who value consistency over hype, the DecalGirl PlayStation 5 Controller Skin is an easy recommendation. It may not win every spec-sheet argument, but it wins the argument that matters most — whether you reach for it every single day.',
+                        fa: 'پس از استفاده طولانی از اسکین دسته PlayStation 5 از DecalGirl، نتیجه کاملاً روشن است: این محصول کارش را می‌شناسد و با اطمینان انجام می‌دهد. مقاومت در برابر خط و خش در حین شخصی‌سازی لپ‌تاپ و دستگاه‌ها مزایای واقعی به همراه دارد و اسکین وینیل دسته؛ انتخاب مدل سازگار کنترلر ضروری است ذخیره کافی برای کارهای سنگین‌تر را هم تضمین می‌کند. عمر باتری، کیفیت ساخت و رفتار نرم‌افزار همگی به یک سو اشاره می‌کنند: دکال‌گرل این محصول را برای کاربران واقعی بهینه کرده، نه برای اسکرین‌شات‌های بنچمارک. تنها ایرادات جزئی‌اند: برخی گزینه‌های پیشرفته در نرم‌افزار همراه قرار دارند و قیمت کمی بالاتر از ارزان‌ترین رقباست، هرچند این فاصله با کیفیت کلی توجیه می‌شود. برای خریدارانی که به‌جای هیپ، ثبات می‌خواهند، اسکین دسته PlayStation 5 از DecalGirl یک پیشنهاد آسان است. شاید در هر بحث مشخصات فنی برنده نباشد، اما در بحثی که مهم‌تر است — اینکه هر روز دست‌کم می‌رسید یا نه — برنده است.',
+                    },
+                    image: 'https://images.unsplash.com/photo-1606318801954-d46d46d3360a?q=80&w=800&auto=format&fit=crop',
+                },
+            ],
+        },
     }
 ];

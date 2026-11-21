@@ -224,6 +224,25 @@
         "linkCopied": "Link copied",
         "viewFullscreen": "View fullscreen",
         "closeViewer": "Close",
+        "tabs": {
+            "introduction": "Introduction",
+            "details": "Details",
+            "reviews": "Reviews"
+        },
+        "reviews": {
+            "title": "Customer Reviews",
+            "writeReview": "Write a Review",
+            "yourRating": "Your Rating",
+            "namePlaceholder": "Your name",
+            "reviewPlaceholder": "Share your experience with this product",
+            "submitReview": "Submit Review",
+            "cancel": "Cancel",
+            "reviewSubmitted": "Thank you! Your review has been submitted.",
+            "nameRequired": "Please enter your name.",
+            "reviewRequired": "Please write a review before submitting.",
+            "ratingRequired": "Please select a rating.",
+            "noReviews": "No reviews yet. Be the first to share your experience."
+        },
         "benefits": {
             "shipping": "Free Shipping",
             "shippingDesc": "Free shipping on all orders",

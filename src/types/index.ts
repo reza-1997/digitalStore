@@ -27,6 +27,16 @@ export interface Collection {
     bannerImage: string;
 }
 
+export interface ProductIntroductionSection {
+    title: LocalizedText;
+    content: LocalizedText;
+    image: string;
+}
+
+export interface ProductIntroduction {
+    sections: ProductIntroductionSection[];
+}
+
 export interface Product {
     id: string;
     slug: string; // e.g. 'luxe-pro-wireless-keyboard'
@@ -45,6 +55,7 @@ export interface Product {
     isFeatured: boolean;
     isNewArrival: boolean;
     specifications: ProductSpecification[];
+    introduction: ProductIntroduction;
     rating: number;
     reviewsCount: number;
     colors: ProductColor[];
